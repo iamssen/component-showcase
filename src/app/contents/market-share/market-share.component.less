@@ -1,0 +1,88 @@
+:host {
+  display: block;
+  width: 640px;
+  text-align: center;
+  padding: 2.5rem 1.5rem 1.5rem;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+dotter-map-sample {
+  margin: 1rem;
+}
+
+h1.title {
+  color: #575757;
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2.title {
+  color: #575757;
+  font-size: 1.9rem;
+  font-weight: 200;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+div.description {
+  text-align: left;
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #7B7B7B;
+    margin-bottom: 0.1rem;
+  }
+
+  ol {
+    margin-top: 0.3rem;
+    padding-left: 2rem;
+
+    li {
+      font-size: 0.9rem;
+      font-weight: 200;
+      color: #7B7B7B;
+
+      b {
+        color: #1A1A1A;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+div.local-container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+
+  div {
+    flex-basis: 50%;
+    height: 230px;
+    position: relative;
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #7B7B7B;
+      margin: 0;
+    }
+
+    bubble-map {
+      position: absolute;
+      top: 20px;
+    }
+
+    local-table {
+      position: absolute;
+      top: 60px;
+      left: 190px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<h1 class="title">DOTTER COMPONENT SAMPLE</h1>
+<dotter-map-sample [source]="worldmap"></dotter-map-sample>
+
+<!--<dotter [width]="500"-->
+        <!--[height]="300"-->
+        <!--[source]="worldmap"-->
+        <!--[sourceRect]="sampleDotterSourceRect"></dotter>-->
+
+<!--<dotter [width]="400"-->
+        <!--[height]="600"-->
+        <!--[source]="worldmap"-->
+        <!--[sourceRect]="sampleDotterSourceRect"></dotter>-->
+
+<h1 class="title">MOBILE MARKET MONITOR Q1 2016</h1>
+<h2 class="title">Mobile handset & smartphone shipment</h2>
+
+<bubble-map [map]="worldmap"
+            [data]="global"
+            [size]="550"
+            [mapArea]="{x: 531, y: 84, width: 1300, height: 1300}">
+</bubble-map>
+
+<global-table [data]="global"></global-table>
+
+<div class="description">
+  <h3>Mobile Phone Market Summary</h3>
+
+  <ol>
+    <li><b>Global mobile phone</b> shipments YoY and sequential decline of <b>4% and 18%</b> respectively.</li>
+    <li><b>APAC and MEA</b> were the only two regions registering positive YoY growth during Q1 2016.</li>
+    <li>More than six in ten handset shipped globally came <b>from Top 10 mobile phone brands.</b></li>
+    <li><b>Global smartphone shipments</b> contribute to <b>78% of the total mobile phone shipments.</b></li>
+    <li><b>Samsung</b> maintained its leads, still No.1 handset brand followed by Apple.</li>
+  </ol>
+</div>
+
+<div class="local-container">
+  <!-- Asia -->
+  <div>
+    <h3>Asia</h3>
+    <bubble-map [map]="worldmap"
+                [data]="asia"
+                [size]="180"
+                [mapArea]="{x: 2512, y: 480, width: 328, height: 328}">
+    </bubble-map>
+    <local-table [data]="asia"></local-table>
+  </div>
+
+  <!-- North America -->
+  <div>
+    <h3>North America</h3>
+    <bubble-map [map]="worldmap"
+                [data]="northAmerica"
+                [size]="180"
+                [mapArea]="{x: 333, y: 279, width: 735, height: 735}"
+                [circleColor]="'rgba(174, 132, 108, 0.85)'">
+    </bubble-map>
+    <local-table [data]="northAmerica"></local-table>
+  </div>
+
+  <!-- Europe -->
+  <div>
+    <h3>Europe</h3>
+    <bubble-map [map]="worldmap"
+                [data]="europe"
+                [size]="180"
+                [mapArea]="{x: 1382, y: 219, width: 550, height: 550}"
+                [circleColor]="'rgba(90, 169, 186, 0.85)'">
+    </bubble-map>
+    <local-table [data]="europe"></local-table>
+  </div>
+
+  <!-- LATAM -->
+  <div>
+    <h3>LATAM</h3>
+    <bubble-map [map]="worldmap"
+                [data]="latam"
+                [size]="180"
+                [mapArea]="{x: 544, y: 768, width: 733, height: 733}"
+                [circleColor]="'rgba(194, 146, 206, 0.85)'">
+    </bubble-map>
+    <local-table [data]="latam"></local-table>
+  </div>
+
+  <!-- MEA -->
+  <div>
+    <h3>MEA</h3>
+    <bubble-map [map]="worldmap"
+                [data]="mea"
+                [size]="180"
+                [mapArea]="{x: 2495, y: 1022, width: 493, height: 493}"
+                [circleColor]="'rgba(219, 148, 176, 0.85)'">
+    </bubble-map>
+    <local-table [data]="mea"></local-table>
+  </div>
+</div>
