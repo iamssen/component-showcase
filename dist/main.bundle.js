@@ -14680,7 +14680,7 @@ webpackJsonp([1],[
 	        this.backgroundColor = '#f2f2f2';
 	        this.dotColor = '#cbcbcb';
 	        this.dotSize = 2.5;
-	        this.dotBound = 3.75;
+	        this.dotBound = 4;
 	    }
 	    DotterComponent.prototype.render = function (complete) {
 	        if (!this.source || !this.sourceRect) {

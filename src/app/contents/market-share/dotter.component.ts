@@ -31,7 +31,7 @@ export class DotterComponent extends RenderComponent implements OnChanges {
   @Input() backgroundColor:string = '#f2f2f2';
   @Input() dotColor:string = '#cbcbcb';
   @Input() dotSize:number = 2.5;
-  @Input() dotBound:number = 3.75;
+  @Input() dotBound:number = 4;
   
   @ViewChild('canvas') private canvasElement:ElementRef;
   
