@@ -14714,7 +14714,7 @@ webpackJsonp([1],[
 	                var i = tiles.getPointer(x, y);
 	                if (p[i + 3] > 0) {
 	                    context.beginPath();
-	                    context.arc(px, py, this.dotSize, 0, Math.PI * 2);
+	                    context.arc(px, py, r > 1 ? this.dotSize : Math.floor(this.dotSize), 0, Math.PI * 2);
 	                    context.closePath();
 	                    context.fill();
 	                }
