@@ -10,14 +10,14 @@
     "d3-interpolate": "registry:npm/d3-interpolate#1.1.0+20160701011035",
     "d3-path": "registry:npm/d3-path#1.0.0+20160622193901",
     "d3-polygon": "registry:npm/d3-polygon#1.0.0+20160622193901",
-    "d3-scale": "registry:npm/d3-scale#1.0.0+20160701011035",
+    "d3-scale": "registry:npm/d3-scale#1.0.0+20160707082208",
     "d3-selection": "registry:npm/d3-selection#1.0.0+20160701011035",
     "d3-shape": "registry:npm/d3-shape#1.0.0+20160701011035",
     "d3-transition": "registry:npm/d3-transition#1.0.0+20160701011035"
   },
   "globalDependencies": {
-    "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
-    "node": "registry:dt/node#4.0.0+20160423143914",
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "node": "registry:dt/node#6.0.0+20160621231320",
     "react": "registry:dt/react#0.14.0+20160630100702",
     "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
   }
