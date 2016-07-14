@@ -5,11 +5,11 @@ webpackJsonp([2],[
 	// Vendors
 	"use strict";
 	// Angular 2
-	__webpack_require__(390);
-	__webpack_require__(168);
+	__webpack_require__(399);
+	__webpack_require__(172);
 	__webpack_require__(2);
-	__webpack_require__(382);
-	__webpack_require__(266);
+	__webpack_require__(391);
+	__webpack_require__(270);
 	// RxJS 5
 	// import 'rxjs/Rx';
 	// For vendors for example jQuery, Lodash, angular2-jwt import them here
@@ -22,8 +22,8 @@ webpackJsonp([2],[
 
 	"use strict";
 	var root_1 = __webpack_require__(50);
-	var observable_1 = __webpack_require__(182);
-	var toSubscriber_1 = __webpack_require__(824);
+	var observable_1 = __webpack_require__(185);
+	var toSubscriber_1 = __webpack_require__(833);
 	/**
 	 * A representation of any set of values over any amount of time. This the most basic building block
 	 * of RxJS.
@@ -160,6 +160,13 @@ webpackJsonp([2],[
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -167,12 +174,12 @@ webpackJsonp([2],[
 	/**
 	 * @module
 	 * @description
-	 * Starting point to import all public core APIs.
+	 * Entry point from which you should import all public core APIs.
 	 */
-	__export(__webpack_require__(560));
-	__export(__webpack_require__(566));
-	__export(__webpack_require__(111));
-	var application_ref_1 = __webpack_require__(239);
+	__export(__webpack_require__(574));
+	__export(__webpack_require__(580));
+	__export(__webpack_require__(112));
+	var application_ref_1 = __webpack_require__(242);
 	exports.createPlatform = application_ref_1.createPlatform;
 	exports.assertPlatform = application_ref_1.assertPlatform;
 	exports.disposePlatform = application_ref_1.disposePlatform;
@@ -185,40 +192,40 @@ webpackJsonp([2],[
 	exports.enableProdMode = application_ref_1.enableProdMode;
 	exports.lockRunMode = application_ref_1.lockRunMode;
 	exports.isDevMode = application_ref_1.isDevMode;
-	var application_tokens_1 = __webpack_require__(157);
+	var application_tokens_1 = __webpack_require__(161);
 	exports.APP_ID = application_tokens_1.APP_ID;
 	exports.APP_INITIALIZER = application_tokens_1.APP_INITIALIZER;
 	exports.PACKAGE_ROOT_URL = application_tokens_1.PACKAGE_ROOT_URL;
 	exports.PLATFORM_INITIALIZER = application_tokens_1.PLATFORM_INITIALIZER;
-	__export(__webpack_require__(567));
-	__export(__webpack_require__(565));
-	__export(__webpack_require__(555));
-	var debug_node_1 = __webpack_require__(363);
+	__export(__webpack_require__(581));
+	__export(__webpack_require__(579));
+	__export(__webpack_require__(568));
+	var debug_node_1 = __webpack_require__(372);
 	exports.DebugElement = debug_node_1.DebugElement;
 	exports.DebugNode = debug_node_1.DebugNode;
 	exports.asNativeElements = debug_node_1.asNativeElements;
 	exports.getDebugNode = debug_node_1.getDebugNode;
-	__export(__webpack_require__(253));
-	__export(__webpack_require__(549));
+	__export(__webpack_require__(257));
 	__export(__webpack_require__(562));
+	__export(__webpack_require__(576));
+	__export(__webpack_require__(575));
 	__export(__webpack_require__(561));
-	__export(__webpack_require__(548));
-	var profile_1 = __webpack_require__(163);
+	var profile_1 = __webpack_require__(167);
 	exports.wtfCreateScope = profile_1.wtfCreateScope;
 	exports.wtfLeave = profile_1.wtfLeave;
 	exports.wtfStartTimeRange = profile_1.wtfStartTimeRange;
 	exports.wtfEndTimeRange = profile_1.wtfEndTimeRange;
 	var lang_1 = __webpack_require__(6);
 	exports.Type = lang_1.Type;
-	var async_1 = __webpack_require__(92);
+	var async_1 = __webpack_require__(93);
 	exports.EventEmitter = async_1.EventEmitter;
 	var exceptions_1 = __webpack_require__(19);
 	exports.ExceptionHandler = exceptions_1.ExceptionHandler;
 	exports.WrappedException = exceptions_1.WrappedException;
 	exports.BaseException = exceptions_1.BaseException;
-	__export(__webpack_require__(541));
-	__export(__webpack_require__(359));
-	var animation_player_1 = __webpack_require__(156);
+	__export(__webpack_require__(554));
+	__export(__webpack_require__(368));
+	var animation_player_1 = __webpack_require__(160);
 	exports.AnimationPlayer = animation_player_1.AnimationPlayer;
 	//# sourceMappingURL=index.js.map
 
@@ -228,7 +235,14 @@ webpackJsonp([2],[
 /* 5 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -256,6 +270,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -684,7 +706,14 @@ webpackJsonp([2],[
 /* 6 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -712,6 +741,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -1146,10 +1183,10 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isFunction_1 = __webpack_require__(186);
-	var Subscription_1 = __webpack_require__(41);
-	var rxSubscriber_1 = __webpack_require__(183);
-	var Observer_1 = __webpack_require__(613);
+	var isFunction_1 = __webpack_require__(189);
+	var Subscription_1 = __webpack_require__(42);
+	var rxSubscriber_1 = __webpack_require__(186);
+	var Observer_1 = __webpack_require__(625);
 	/**
 	 * Implements the {@link Observer} interface and extends the
 	 * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -1397,7 +1434,14 @@ webpackJsonp([2],[
 /* 9 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -1425,6 +1469,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -1851,9 +1903,18 @@ webpackJsonp([2],[
 
 /***/ },
 /* 10 */,
-/* 11 */
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	exports.Map = lang_1.global.Map;
@@ -2224,8 +2285,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 12 */,
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2260,17 +2320,17 @@ webpackJsonp([2],[
 	//# sourceMappingURL=OuterSubscriber.js.map
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(50);
-	var isArray_1 = __webpack_require__(82);
-	var isPromise_1 = __webpack_require__(424);
+	var isArray_1 = __webpack_require__(84);
+	var isPromise_1 = __webpack_require__(438);
 	var Observable_1 = __webpack_require__(1);
-	var iterator_1 = __webpack_require__(135);
-	var observable_1 = __webpack_require__(182);
-	var InnerSubscriber_1 = __webpack_require__(612);
+	var iterator_1 = __webpack_require__(137);
+	var observable_1 = __webpack_require__(185);
+	var InnerSubscriber_1 = __webpack_require__(624);
 	function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 	    var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
 	    if (destination.isUnsubscribed) {
@@ -2336,19 +2396,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=subscribeToResult.js.map
 
 /***/ },
-/* 15 */,
-/* 16 */
+/* 16 */,
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(346);
-	var exception_handler_1 = __webpack_require__(347);
-	var exception_handler_2 = __webpack_require__(347);
+	var base_wrapped_exception_1 = __webpack_require__(352);
+	var exception_handler_1 = __webpack_require__(353);
+	var exception_handler_2 = __webpack_require__(353);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -2424,10 +2491,17 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -2455,6 +2529,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -2880,19 +2962,25 @@ webpackJsonp([2],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 18 */,
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(366);
-	var exception_handler_1 = __webpack_require__(367);
-	var exception_handler_2 = __webpack_require__(367);
+	var base_wrapped_exception_1 = __webpack_require__(375);
+	var exception_handler_1 = __webpack_require__(376);
+	var exception_handler_2 = __webpack_require__(376);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -2968,7 +3056,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 20 */
+/* 20 */,
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2979,11 +3068,11 @@ webpackJsonp([2],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var Subscriber_1 = __webpack_require__(7);
-	var Subscription_1 = __webpack_require__(41);
-	var SubjectSubscription_1 = __webpack_require__(616);
-	var rxSubscriber_1 = __webpack_require__(183);
-	var throwError_1 = __webpack_require__(426);
-	var ObjectUnsubscribedError_1 = __webpack_require__(276);
+	var Subscription_1 = __webpack_require__(42);
+	var SubjectSubscription_1 = __webpack_require__(627);
+	var rxSubscriber_1 = __webpack_require__(186);
+	var throwError_1 = __webpack_require__(440);
+	var ObjectUnsubscribedError_1 = __webpack_require__(281);
 	/**
 	 * @class Subject<T>
 	 */
@@ -3179,12 +3268,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=Subject.js.map
 
 /***/ },
-/* 21 */,
 /* 22 */,
 /* 23 */,
-/* 24 */
+/* 24 */,
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -4166,9 +4262,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=output_ast.js.map
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	exports.Map = lang_1.global.Map;
@@ -4539,12 +4642,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 26 */,
-/* 27 */
+/* 27 */,
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(17);
+	var lang_1 = __webpack_require__(18);
 	var _DOM = null;
 	function getDOM() {
 	    return _DOM;
@@ -4588,14 +4698,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_adapter.js.map
 
 /***/ },
-/* 28 */,
-/* 29 */
+/* 29 */,
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	exports.isDefaultChangeDetectionStrategy = core_1.__core_private__.isDefaultChangeDetectionStrategy;
-	exports.ChangeDetectorState = core_1.__core_private__.ChangeDetectorState;
+	exports.ChangeDetectorStatus = core_1.__core_private__.ChangeDetectorStatus;
 	exports.CHANGE_DETECTION_STRATEGY_VALUES = core_1.__core_private__.CHANGE_DETECTION_STRATEGY_VALUES;
 	exports.constructDependencies = core_1.__core_private__.constructDependencies;
 	exports.LifecycleHooks = core_1.__core_private__.LifecycleHooks;
@@ -4603,6 +4720,7 @@ webpackJsonp([2],[
 	exports.ReflectorReader = core_1.__core_private__.ReflectorReader;
 	exports.ReflectorComponentResolver = core_1.__core_private__.ReflectorComponentResolver;
 	exports.AppElement = core_1.__core_private__.AppElement;
+	exports.CodegenComponentFactoryResolver = core_1.__core_private__.CodegenComponentFactoryResolver;
 	exports.AppView = core_1.__core_private__.AppView;
 	exports.DebugAppView = core_1.__core_private__.DebugAppView;
 	exports.ViewType = core_1.__core_private__.ViewType;
@@ -4659,10 +4777,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=core_private.js.map
 
 /***/ },
-/* 30 */,
-/* 31 */
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(9);
 	exports.Map = lang_1.global.Map;
@@ -5033,13 +5160,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 32 */,
-/* 33 */,
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(17);
+	var lang_1 = __webpack_require__(18);
 	exports.Map = lang_1.global.Map;
 	exports.Set = lang_1.global.Set;
 	// Safari and Internet Explorer do not support the iterable parameter to the
@@ -5408,12 +5540,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 35 */,
 /* 36 */,
-/* 37 */
+/* 37 */,
+/* 38 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -5441,6 +5580,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -5866,7 +6013,7 @@ webpackJsonp([2],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -5875,9 +6022,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=errorObject.js.map
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -5885,13 +6039,13 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var selector_1 = __webpack_require__(232);
-	var url_resolver_1 = __webpack_require__(109);
-	var util_1 = __webpack_require__(75);
+	var selector_1 = __webpack_require__(238);
+	var url_resolver_1 = __webpack_require__(110);
+	var util_1 = __webpack_require__(77);
 	// group 2: "event" from "(event)"
 	var HOST_REG_EXP = /^(?:(?:\[([^\]]+)\])|(?:\(([^\)]+)\)))$/g;
 	var CompileMetadataWithIdentifier = (function () {
@@ -6456,16 +6610,36 @@ webpackJsonp([2],[
 	}());
 	exports.CompileQueryMetadata = CompileQueryMetadata;
 	/**
+	 * Metadata about a stylesheet
+	 */
+	var CompileStylesheetMetadata = (function () {
+	    function CompileStylesheetMetadata(_a) {
+	        var _b = _a === void 0 ? {} : _a, moduleUrl = _b.moduleUrl, styles = _b.styles, styleUrls = _b.styleUrls;
+	        this.moduleUrl = moduleUrl;
+	        this.styles = _normalizeArray(styles);
+	        this.styleUrls = _normalizeArray(styleUrls);
+	    }
+	    CompileStylesheetMetadata.fromJson = function (data) {
+	        return new CompileStylesheetMetadata({ moduleUrl: data['moduleUrl'], styles: data['styles'], styleUrls: data['styleUrls'] });
+	    };
+	    CompileStylesheetMetadata.prototype.toJson = function () {
+	        return { 'moduleUrl': this.moduleUrl, 'styles': this.styles, 'styleUrls': this.styleUrls };
+	    };
+	    return CompileStylesheetMetadata;
+	}());
+	exports.CompileStylesheetMetadata = CompileStylesheetMetadata;
+	/**
 	 * Metadata regarding compilation of a template.
 	 */
 	var CompileTemplateMetadata = (function () {
 	    function CompileTemplateMetadata(_a) {
-	        var _b = _a === void 0 ? {} : _a, encapsulation = _b.encapsulation, template = _b.template, templateUrl = _b.templateUrl, styles = _b.styles, styleUrls = _b.styleUrls, animations = _b.animations, ngContentSelectors = _b.ngContentSelectors, interpolation = _b.interpolation;
+	        var _b = _a === void 0 ? {} : _a, encapsulation = _b.encapsulation, template = _b.template, templateUrl = _b.templateUrl, styles = _b.styles, styleUrls = _b.styleUrls, externalStylesheets = _b.externalStylesheets, animations = _b.animations, ngContentSelectors = _b.ngContentSelectors, interpolation = _b.interpolation;
 	        this.encapsulation = encapsulation;
 	        this.template = template;
 	        this.templateUrl = templateUrl;
-	        this.styles = lang_1.isPresent(styles) ? styles : [];
-	        this.styleUrls = lang_1.isPresent(styleUrls) ? styleUrls : [];
+	        this.styles = _normalizeArray(styles);
+	        this.styleUrls = _normalizeArray(styleUrls);
+	        this.externalStylesheets = _normalizeArray(externalStylesheets);
 	        this.animations = lang_1.isPresent(animations) ? collection_1.ListWrapper.flatten(animations) : [];
 	        this.ngContentSelectors = lang_1.isPresent(ngContentSelectors) ? ngContentSelectors : [];
 	        if (lang_1.isPresent(interpolation) && interpolation.length != 2) {
@@ -6483,6 +6657,7 @@ webpackJsonp([2],[
 	            templateUrl: data['templateUrl'],
 	            styles: data['styles'],
 	            styleUrls: data['styleUrls'],
+	            externalStylesheets: _arrayFromJson(data['externalStylesheets'], CompileStylesheetMetadata.fromJson),
 	            animations: animations,
 	            ngContentSelectors: data['ngContentSelectors'],
 	            interpolation: data['interpolation']
@@ -6496,6 +6671,7 @@ webpackJsonp([2],[
 	            'templateUrl': this.templateUrl,
 	            'styles': this.styles,
 	            'styleUrls': this.styleUrls,
+	            'externalStylesheets': _objToJson(this.externalStylesheets),
 	            'animations': _objToJson(this.animations),
 	            'ngContentSelectors': this.ngContentSelectors,
 	            'interpolation': this.interpolation
@@ -6509,7 +6685,7 @@ webpackJsonp([2],[
 	 */
 	var CompileDirectiveMetadata = (function () {
 	    function CompileDirectiveMetadata(_a) {
-	        var _b = _a === void 0 ? {} : _a, type = _b.type, isComponent = _b.isComponent, selector = _b.selector, exportAs = _b.exportAs, changeDetection = _b.changeDetection, inputs = _b.inputs, outputs = _b.outputs, hostListeners = _b.hostListeners, hostProperties = _b.hostProperties, hostAttributes = _b.hostAttributes, lifecycleHooks = _b.lifecycleHooks, providers = _b.providers, viewProviders = _b.viewProviders, queries = _b.queries, viewQueries = _b.viewQueries, template = _b.template;
+	        var _b = _a === void 0 ? {} : _a, type = _b.type, isComponent = _b.isComponent, selector = _b.selector, exportAs = _b.exportAs, changeDetection = _b.changeDetection, inputs = _b.inputs, outputs = _b.outputs, hostListeners = _b.hostListeners, hostProperties = _b.hostProperties, hostAttributes = _b.hostAttributes, lifecycleHooks = _b.lifecycleHooks, providers = _b.providers, viewProviders = _b.viewProviders, queries = _b.queries, viewQueries = _b.viewQueries, precompile = _b.precompile, template = _b.template;
 	        this.type = type;
 	        this.isComponent = isComponent;
 	        this.selector = selector;
@@ -6525,10 +6701,11 @@ webpackJsonp([2],[
 	        this.viewProviders = _normalizeArray(viewProviders);
 	        this.queries = _normalizeArray(queries);
 	        this.viewQueries = _normalizeArray(viewQueries);
+	        this.precompile = _normalizeArray(precompile);
 	        this.template = template;
 	    }
 	    CompileDirectiveMetadata.create = function (_a) {
-	        var _b = _a === void 0 ? {} : _a, type = _b.type, isComponent = _b.isComponent, selector = _b.selector, exportAs = _b.exportAs, changeDetection = _b.changeDetection, inputs = _b.inputs, outputs = _b.outputs, host = _b.host, lifecycleHooks = _b.lifecycleHooks, providers = _b.providers, viewProviders = _b.viewProviders, queries = _b.queries, viewQueries = _b.viewQueries, template = _b.template;
+	        var _b = _a === void 0 ? {} : _a, type = _b.type, isComponent = _b.isComponent, selector = _b.selector, exportAs = _b.exportAs, changeDetection = _b.changeDetection, inputs = _b.inputs, outputs = _b.outputs, host = _b.host, lifecycleHooks = _b.lifecycleHooks, providers = _b.providers, viewProviders = _b.viewProviders, queries = _b.queries, viewQueries = _b.viewQueries, precompile = _b.precompile, template = _b.template;
 	        var hostListeners = {};
 	        var hostProperties = {};
 	        var hostAttributes = {};
@@ -6580,6 +6757,7 @@ webpackJsonp([2],[
 	            viewProviders: viewProviders,
 	            queries: queries,
 	            viewQueries: viewQueries,
+	            precompile: precompile,
 	            template: template
 	        });
 	    };
@@ -6608,7 +6786,8 @@ webpackJsonp([2],[
 	            providers: _arrayFromJson(data['providers'], metadataFromJson),
 	            viewProviders: _arrayFromJson(data['viewProviders'], metadataFromJson),
 	            queries: _arrayFromJson(data['queries'], CompileQueryMetadata.fromJson),
-	            viewQueries: _arrayFromJson(data['viewQueries'], CompileQueryMetadata.fromJson)
+	            viewQueries: _arrayFromJson(data['viewQueries'], CompileQueryMetadata.fromJson),
+	            precompile: _arrayFromJson(data['precompile'], CompileTypeMetadata.fromJson)
 	        });
 	    };
 	    CompileDirectiveMetadata.prototype.toJson = function () {
@@ -6630,7 +6809,8 @@ webpackJsonp([2],[
 	            'providers': _arrayToJson(this.providers),
 	            'viewProviders': _arrayToJson(this.viewProviders),
 	            'queries': _arrayToJson(this.queries),
-	            'viewQueries': _arrayToJson(this.viewQueries)
+	            'viewQueries': _arrayToJson(this.viewQueries),
+	            'precompile': _arrayToJson(this.precompile)
 	        };
 	    };
 	    return CompileDirectiveMetadata;
@@ -6743,14 +6923,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_metadata.js.map
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var compile_metadata_1 = __webpack_require__(39);
-	var util_1 = __webpack_require__(75);
+	var core_private_1 = __webpack_require__(30);
+	var compile_metadata_1 = __webpack_require__(40);
+	var util_1 = __webpack_require__(77);
 	var APP_VIEW_MODULE_URL = util_1.assetUrl('core', 'linker/view');
 	var VIEW_UTILS_MODULE_URL = util_1.assetUrl('core', 'linker/view_utils');
 	var CD_MODULE_URL = util_1.assetUrl('core', 'change_detection/change_detection');
@@ -6778,7 +6965,7 @@ webpackJsonp([2],[
 	var impRenderer = core_1.Renderer;
 	var impSimpleChange = core_1.SimpleChange;
 	var impUninitialized = core_private_1.uninitialized;
-	var impChangeDetectorState = core_private_1.ChangeDetectorState;
+	var impChangeDetectorStatus = core_private_1.ChangeDetectorStatus;
 	var impFlattenNestedViewRenderNodes = core_private_1.flattenNestedViewRenderNodes;
 	var impDevModeEqual = core_private_1.devModeEqual;
 	var impInterpolate = core_private_1.interpolate;
@@ -6830,6 +7017,16 @@ webpackJsonp([2],[
 	        moduleUrl: util_1.assetUrl('core', 'linker/template_ref'),
 	        runtime: impTemplateRef_
 	    });
+	    Identifiers.CodegenComponentFactoryResolver = new compile_metadata_1.CompileIdentifierMetadata({
+	        name: 'CodegenComponentFactoryResolver',
+	        moduleUrl: util_1.assetUrl('core', 'linker/component_factory_resolver'),
+	        runtime: core_private_1.CodegenComponentFactoryResolver
+	    });
+	    Identifiers.ComponentFactoryResolver = new compile_metadata_1.CompileIdentifierMetadata({
+	        name: 'ComponentFactoryResolver',
+	        moduleUrl: util_1.assetUrl('core', 'linker/component_factory_resolver'),
+	        runtime: core_1.ComponentFactoryResolver
+	    });
 	    Identifiers.ValueUnwrapper = new compile_metadata_1.CompileIdentifierMetadata({ name: 'ValueUnwrapper', moduleUrl: CD_MODULE_URL, runtime: impValueUnwrapper });
 	    Identifiers.Injector = new compile_metadata_1.CompileIdentifierMetadata({ name: 'Injector', moduleUrl: util_1.assetUrl('core', 'di/injector'), runtime: impInjector });
 	    Identifiers.ViewEncapsulation = new compile_metadata_1.CompileIdentifierMetadata({
@@ -6856,7 +7053,7 @@ webpackJsonp([2],[
 	    Identifiers.Renderer = new compile_metadata_1.CompileIdentifierMetadata({ name: 'Renderer', moduleUrl: util_1.assetUrl('core', 'render/api'), runtime: impRenderer });
 	    Identifiers.SimpleChange = new compile_metadata_1.CompileIdentifierMetadata({ name: 'SimpleChange', moduleUrl: CD_MODULE_URL, runtime: impSimpleChange });
 	    Identifiers.uninitialized = new compile_metadata_1.CompileIdentifierMetadata({ name: 'uninitialized', moduleUrl: CD_MODULE_URL, runtime: impUninitialized });
-	    Identifiers.ChangeDetectorState = new compile_metadata_1.CompileIdentifierMetadata({ name: 'ChangeDetectorState', moduleUrl: CD_MODULE_URL, runtime: impChangeDetectorState });
+	    Identifiers.ChangeDetectorStatus = new compile_metadata_1.CompileIdentifierMetadata({ name: 'ChangeDetectorStatus', moduleUrl: CD_MODULE_URL, runtime: impChangeDetectorStatus });
 	    Identifiers.checkBinding = new compile_metadata_1.CompileIdentifierMetadata({ name: 'checkBinding', moduleUrl: VIEW_UTILS_MODULE_URL, runtime: impCheckBinding });
 	    Identifiers.flattenNestedViewRenderNodes = new compile_metadata_1.CompileIdentifierMetadata({
 	        name: 'flattenNestedViewRenderNodes',
@@ -6938,16 +7135,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=identifiers.js.map
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var isArray_1 = __webpack_require__(82);
-	var isObject_1 = __webpack_require__(423);
-	var isFunction_1 = __webpack_require__(186);
-	var tryCatch_1 = __webpack_require__(42);
-	var errorObject_1 = __webpack_require__(38);
-	var UnsubscriptionError_1 = __webpack_require__(422);
+	var isArray_1 = __webpack_require__(84);
+	var isObject_1 = __webpack_require__(437);
+	var isFunction_1 = __webpack_require__(189);
+	var tryCatch_1 = __webpack_require__(43);
+	var errorObject_1 = __webpack_require__(39);
+	var UnsubscriptionError_1 = __webpack_require__(436);
 	/**
 	 * Represents a disposable resource, such as the execution of an Observable. A
 	 * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -7093,11 +7290,11 @@ webpackJsonp([2],[
 	//# sourceMappingURL=Subscription.js.map
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var errorObject_1 = __webpack_require__(38);
+	var errorObject_1 = __webpack_require__(39);
 	var tryCatchTarget;
 	function tryCatcher() {
 	    try {
@@ -7117,7 +7314,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=tryCatch.js.map
 
 /***/ },
-/* 43 */,
 /* 44 */,
 /* 45 */,
 /* 46 */,
@@ -7145,30 +7341,47 @@ webpackJsonp([2],[
 	    exports.root = freeGlobal;
 	}
 	//# sourceMappingURL=root.js.map
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1072)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1084)(module), (function() { return this; }())))
 
 /***/ },
 /* 51 */,
 /* 52 */,
 /* 53 */,
-/* 54 */
+/* 54 */,
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(508));
-	__export(__webpack_require__(319));
-	__export(__webpack_require__(330));
-	__export(__webpack_require__(501));
-	__export(__webpack_require__(505));
+	__export(__webpack_require__(523));
+	__export(__webpack_require__(325));
+	__export(__webpack_require__(336));
+	__export(__webpack_require__(516));
+	__export(__webpack_require__(520));
+	var localization_1 = __webpack_require__(226);
+	exports.NgLocalization = localization_1.NgLocalization;
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	/**
@@ -7182,20 +7395,27 @@ webpackJsonp([2],[
 	//# sourceMappingURL=control_value_accessor.js.map
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(115);
-	var exceptions_1 = __webpack_require__(77);
-	var lang_1 = __webpack_require__(17);
-	var render_store_1 = __webpack_require__(133);
-	var serialized_types_1 = __webpack_require__(265);
+	var core_private_1 = __webpack_require__(116);
+	var exceptions_1 = __webpack_require__(79);
+	var lang_1 = __webpack_require__(18);
+	var render_store_1 = __webpack_require__(135);
+	var serialized_types_1 = __webpack_require__(269);
 	// PRIMITIVE is any type that does not need to be serialized (string, number, boolean)
 	// We set it to String so that it is considered a Type.
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is currently experimental.
 	 */
 	exports.PRIMITIVE = String;
 	var Serializer = (function () {
@@ -7306,28 +7526,35 @@ webpackJsonp([2],[
 	//# sourceMappingURL=serializer.js.map
 
 /***/ },
-/* 57 */,
 /* 58 */,
 /* 59 */,
 /* 60 */,
-/* 61 */
+/* 61 */,
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subject_1 = __webpack_require__(20);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var toPromise_1 = __webpack_require__(119);
+	var Subject_1 = __webpack_require__(21);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var toPromise_1 = __webpack_require__(120);
 	var lang_1 = __webpack_require__(9);
 	var Observable_1 = __webpack_require__(1);
 	exports.Observable = Observable_1.Observable;
-	var Subject_2 = __webpack_require__(20);
+	var Subject_2 = __webpack_require__(21);
 	exports.Subject = Subject_2.Subject;
-	var promise_1 = __webpack_require__(329);
+	var promise_1 = __webpack_require__(335);
 	exports.PromiseCompleter = promise_1.PromiseCompleter;
 	exports.PromiseWrapper = promise_1.PromiseWrapper;
 	var TimerWrapper = (function () {
@@ -7475,15 +7702,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=async.js.map
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var collection_1 = __webpack_require__(31);
+	var async_1 = __webpack_require__(62);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var promise_1 = __webpack_require__(329);
+	var promise_1 = __webpack_require__(335);
 	/**
 	 * Providers for validators to be used for {@link Control}s in a form.
 	 *
@@ -7621,16 +7855,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=validators.js.map
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var exceptions_1 = __webpack_require__(71);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
 	var InvalidPipeArgumentException = (function (_super) {
 	    __extends(InvalidPipeArgumentException, _super);
@@ -7643,16 +7884,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=invalid_pipe_argument_exception.js.map
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Message Bus is a low level API used to communicate between the UI and the background.
 	 * Communication is based on a channel abstraction. Messages published in a
 	 * given channel to one MessageBusSink are received on the same channel
 	 * by the corresponding MessageBusSource.
-	 * @experimental
+	 *
+	 * @experimental WebWorker support in Angular is currenlty experimental.
 	 */
 	var MessageBus = (function () {
 	    function MessageBus() {
@@ -7663,24 +7912,32 @@ webpackJsonp([2],[
 	//# sourceMappingURL=message_bus.js.map
 
 /***/ },
-/* 65 */,
 /* 66 */,
 /* 67 */,
 /* 68 */,
 /* 69 */,
 /* 70 */,
-/* 71 */
+/* 71 */,
+/* 72 */,
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(326);
-	var exception_handler_1 = __webpack_require__(327);
-	var exception_handler_2 = __webpack_require__(327);
+	var base_wrapped_exception_1 = __webpack_require__(332);
+	var exception_handler_1 = __webpack_require__(333);
+	var exception_handler_2 = __webpack_require__(333);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -7756,9 +8013,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	var HtmlTextAst = (function () {
@@ -7845,9 +8109,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_ast.js.map
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var ParseLocation = (function () {
 	    function ParseLocation(file, offset, line, col) {
@@ -7930,9 +8201,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=parse_util.js.map
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	/**
@@ -8216,11 +8494,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=template_ast.js.map
 
 /***/ },
-/* 75 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
 	exports.MODULE_SUFFIX = lang_1.IS_DART ? '.dart' : '';
 	var CAMEL_CASE_REGEXP = /([A-Z])/g;
@@ -8301,12 +8586,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=util.js.map
 
 /***/ },
-/* 76 */
+/* 78 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Supported http methods.
+	 * @experimental
 	 */
 	(function (RequestMethod) {
 	    RequestMethod[RequestMethod["Get"] = 0] = "Get";
@@ -8322,6 +8615,7 @@ webpackJsonp([2],[
 	 * All possible states in which a connection can be, based on
 	 * [States](http://www.w3.org/TR/XMLHttpRequest/#states) from the `XMLHttpRequest` spec, but with an
 	 * additional "CANCELLED" state.
+	 * @experimental
 	 */
 	(function (ReadyState) {
 	    ReadyState[ReadyState["Unsent"] = 0] = "Unsent";
@@ -8335,6 +8629,7 @@ webpackJsonp([2],[
 	/**
 	 * Acceptable response types to be associated with a {@link Response}, based on
 	 * [ResponseType](https://fetch.spec.whatwg.org/#responsetype) from the Fetch spec.
+	 * @experimental
 	 */
 	(function (ResponseType) {
 	    ResponseType[ResponseType["Basic"] = 0] = "Basic";
@@ -8346,6 +8641,7 @@ webpackJsonp([2],[
 	var ResponseType = exports.ResponseType;
 	/**
 	 * Supported content type to be automatically associated with a {@link Request}.
+	 * @experimental
 	 */
 	(function (ContentType) {
 	    ContentType[ContentType["NONE"] = 0] = "NONE";
@@ -8360,18 +8656,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=enums.js.map
 
 /***/ },
-/* 77 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(397);
-	var exception_handler_1 = __webpack_require__(398);
-	var exception_handler_2 = __webpack_require__(398);
+	var base_wrapped_exception_1 = __webpack_require__(407);
+	var exception_handler_1 = __webpack_require__(408);
+	var exception_handler_2 = __webpack_require__(408);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -8447,7 +8750,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 78 */
+/* 80 */
 /***/ function(module, exports) {
 
 	/**
@@ -8461,12 +8764,14 @@ webpackJsonp([2],[
 	/**
 	 * Name of the primary outlet.
 	 * @type {string}
+	 *
+	 * @experimental
 	 */
 	exports.PRIMARY_OUTLET = 'PRIMARY_OUTLET';
 	//# sourceMappingURL=shared.js.map
 
 /***/ },
-/* 79 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8477,8 +8782,8 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var shared_1 = __webpack_require__(78);
-	var collection_1 = __webpack_require__(117);
+	var shared_1 = __webpack_require__(80);
+	var collection_1 = __webpack_require__(118);
 	function createEmptyUrlTree() {
 	    return new UrlTree(new UrlSegment([], {}), {}, null);
 	}
@@ -8495,7 +8800,7 @@ webpackJsonp([2],[
 	function equalSegments(container, containee) {
 	    if (!equalPath(container.pathsWithParams, containee.pathsWithParams))
 	        return false;
-	    if (Object.keys(container.children).length !== Object.keys(containee.children).length)
+	    if (container.numberOfChildren !== containee.numberOfChildren)
 	        return false;
 	    for (var c in containee.children) {
 	        if (!container.children[c])
@@ -8513,7 +8818,7 @@ webpackJsonp([2],[
 	        var current = container.pathsWithParams.slice(0, containeePaths.length);
 	        if (!equalPath(current, containeePaths))
 	            return false;
-	        if (Object.keys(containee.children).length > 0)
+	        if (containee.hasChildren())
 	            return false;
 	        return true;
 	    }
@@ -8533,11 +8838,15 @@ webpackJsonp([2],[
 	        var next = containeePaths.slice(container.pathsWithParams.length);
 	        if (!equalPath(container.pathsWithParams, current))
 	            return false;
+	        if (!container.children[shared_1.PRIMARY_OUTLET])
+	            return false;
 	        return containsSegmentHelper(container.children[shared_1.PRIMARY_OUTLET], containee, next);
 	    }
 	}
 	/**
 	 * A URL in the tree form.
+	 *
+	 * @stable
 	 */
 	var UrlTree = (function () {
 	    /**
@@ -8552,6 +8861,9 @@ webpackJsonp([2],[
 	    return UrlTree;
 	}());
 	exports.UrlTree = UrlTree;
+	/**
+	 * @stable
+	 */
 	var UrlSegment = (function () {
 	    function UrlSegment(pathsWithParams, children) {
 	        var _this = this;
@@ -8560,11 +8872,25 @@ webpackJsonp([2],[
 	        this.parent = null;
 	        collection_1.forEach(children, function (v, k) { return v.parent = _this; });
 	    }
-	    UrlSegment.prototype.hasChildren = function () { return Object.keys(this.children).length > 0; };
+	    /**
+	     * Return true if the segment has child segments
+	     */
+	    UrlSegment.prototype.hasChildren = function () { return this.numberOfChildren > 0; };
+	    Object.defineProperty(UrlSegment.prototype, "numberOfChildren", {
+	        /**
+	         * Returns the number of child sements.
+	         */
+	        get: function () { return Object.keys(this.children).length; },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    UrlSegment.prototype.toString = function () { return serializePaths(this); };
 	    return UrlSegment;
 	}());
 	exports.UrlSegment = UrlSegment;
+	/**
+	 * @stable
+	 */
 	var UrlPathWithParams = (function () {
 	    function UrlPathWithParams(path, parameters) {
 	        this.path = path;
@@ -8628,6 +8954,8 @@ webpackJsonp([2],[
 	exports.mapChildrenIntoArray = mapChildrenIntoArray;
 	/**
 	 * Defines a way to serialize/deserialize a url tree.
+	 *
+	 * @experimental
 	 */
 	var UrlSerializer = (function () {
 	    function UrlSerializer() {
@@ -8637,6 +8965,8 @@ webpackJsonp([2],[
 	exports.UrlSerializer = UrlSerializer;
 	/**
 	 * A default implementation of the serialization.
+	 *
+	 * @experimental
 	 */
 	var DefaultUrlSerializer = (function () {
 	    function DefaultUrlSerializer() {
@@ -8746,7 +9076,10 @@ webpackJsonp([2],[
 	        this.remaining = this.remaining.substring(str.length);
 	    };
 	    UrlParser.prototype.parseRootSegment = function () {
-	        if (this.remaining === '' || this.remaining === '/') {
+	        if (this.remaining.startsWith('/')) {
+	            this.capture('/');
+	        }
+	        if (this.remaining === '' || this.remaining.startsWith('?')) {
 	            return new UrlSegment([], {});
 	        }
 	        else {
@@ -8880,7 +9213,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=url_tree.js.map
 
 /***/ },
-/* 80 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8890,9 +9223,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
-	var ScalarObservable_1 = __webpack_require__(269);
-	var EmptyObservable_1 = __webpack_require__(81);
-	var isScheduler_1 = __webpack_require__(96);
+	var ScalarObservable_1 = __webpack_require__(274);
+	var EmptyObservable_1 = __webpack_require__(83);
+	var isScheduler_1 = __webpack_require__(97);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -9007,7 +9340,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ArrayObservable.js.map
 
 /***/ },
-/* 81 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9087,7 +9420,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=EmptyObservable.js.map
 
 /***/ },
-/* 82 */
+/* 84 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9095,25 +9428,31 @@ webpackJsonp([2],[
 	//# sourceMappingURL=isArray.js.map
 
 /***/ },
-/* 83 */,
-/* 84 */,
 /* 85 */,
 /* 86 */,
 /* 87 */,
 /* 88 */,
 /* 89 */,
 /* 90 */,
-/* 91 */
+/* 91 */,
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var exceptions_1 = __webpack_require__(71);
-	var abstract_control_directive_1 = __webpack_require__(211);
+	var exceptions_1 = __webpack_require__(73);
+	var abstract_control_directive_1 = __webpack_require__(215);
 	/**
 	 * A base class that all control directive extend.
 	 * It binds a {@link Control} object to a DOM element.
@@ -9145,24 +9484,31 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_control.js.map
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subject_1 = __webpack_require__(20);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var toPromise_1 = __webpack_require__(119);
+	var Subject_1 = __webpack_require__(21);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var toPromise_1 = __webpack_require__(120);
 	var lang_1 = __webpack_require__(6);
 	var Observable_1 = __webpack_require__(1);
 	exports.Observable = Observable_1.Observable;
-	var Subject_2 = __webpack_require__(20);
+	var Subject_2 = __webpack_require__(21);
 	exports.Subject = Subject_2.Subject;
-	var promise_1 = __webpack_require__(554);
+	var promise_1 = __webpack_require__(567);
 	exports.PromiseCompleter = promise_1.PromiseCompleter;
 	exports.PromiseWrapper = promise_1.PromiseWrapper;
 	var TimerWrapper = (function () {
@@ -9310,13 +9656,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=async.js.map
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(34);
-	var exceptions_1 = __webpack_require__(77);
+	var collection_1 = __webpack_require__(35);
+	var exceptions_1 = __webpack_require__(79);
+	/**
+	 * @stable
+	 */
 	exports.EVENT_MANAGER_PLUGINS = new core_1.OpaqueToken('EventManagerPlugins');
 	var EventManager = (function () {
 	    function EventManager(plugins, _zone) {
@@ -9374,24 +9730,31 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_manager.js.map
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subject_1 = __webpack_require__(20);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var toPromise_1 = __webpack_require__(119);
-	var lang_1 = __webpack_require__(17);
+	var Subject_1 = __webpack_require__(21);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var toPromise_1 = __webpack_require__(120);
+	var lang_1 = __webpack_require__(18);
 	var Observable_1 = __webpack_require__(1);
 	exports.Observable = Observable_1.Observable;
-	var Subject_2 = __webpack_require__(20);
+	var Subject_2 = __webpack_require__(21);
 	exports.Subject = Subject_2.Subject;
-	var promise_1 = __webpack_require__(586);
+	var promise_1 = __webpack_require__(600);
 	exports.PromiseCompleter = promise_1.PromiseCompleter;
 	exports.PromiseWrapper = promise_1.PromiseWrapper;
 	var TimerWrapper = (function () {
@@ -9539,7 +9902,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=async.js.map
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9649,7 +10012,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9660,7 +10023,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=isScheduler.js.map
 
 /***/ },
-/* 97 */,
 /* 98 */,
 /* 99 */,
 /* 100 */,
@@ -9669,20 +10031,29 @@ webpackJsonp([2],[
 /* 103 */,
 /* 104 */,
 /* 105 */,
-/* 106 */
+/* 106 */,
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(31);
-	var exceptions_1 = __webpack_require__(71);
+	var collection_1 = __webpack_require__(34);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
-	var validators_1 = __webpack_require__(62);
-	var checkbox_value_accessor_1 = __webpack_require__(145);
-	var default_value_accessor_1 = __webpack_require__(146);
-	var normalize_validator_1 = __webpack_require__(504);
-	var number_value_accessor_1 = __webpack_require__(219);
-	var radio_control_value_accessor_1 = __webpack_require__(147);
-	var select_control_value_accessor_1 = __webpack_require__(148);
+	var validators_1 = __webpack_require__(63);
+	var checkbox_value_accessor_1 = __webpack_require__(148);
+	var default_value_accessor_1 = __webpack_require__(149);
+	var normalize_validator_1 = __webpack_require__(519);
+	var number_value_accessor_1 = __webpack_require__(223);
+	var radio_control_value_accessor_1 = __webpack_require__(150);
+	var select_control_value_accessor_1 = __webpack_require__(151);
+	var select_multiple_control_value_accessor_1 = __webpack_require__(224);
 	function controlPath(name, parent) {
 	    var p = collection_1.ListWrapper.clone(parent.path);
 	    p.push(name);
@@ -9751,6 +10122,7 @@ webpackJsonp([2],[
 	        }
 	        else if (lang_1.hasConstructor(v, checkbox_value_accessor_1.CheckboxControlValueAccessor) || lang_1.hasConstructor(v, number_value_accessor_1.NumberValueAccessor) ||
 	            lang_1.hasConstructor(v, select_control_value_accessor_1.SelectControlValueAccessor) ||
+	            lang_1.hasConstructor(v, select_multiple_control_value_accessor_1.SelectMultipleControlValueAccessor) ||
 	            lang_1.hasConstructor(v, radio_control_value_accessor_1.RadioControlValueAccessor)) {
 	            if (lang_1.isPresent(builtinAccessor))
 	                _throwError(dir, 'More than one built-in value accessor matches');
@@ -9775,13 +10147,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=shared.js.map
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(16);
-	var identifiers_1 = __webpack_require__(40);
+	var exceptions_1 = __webpack_require__(17);
+	var identifiers_1 = __webpack_require__(41);
 	var CompilerConfig = (function () {
 	    function CompilerConfig(_a) {
 	        var _b = _a === void 0 ? {} : _a, _c = _b.renderTypes, renderTypes = _c === void 0 ? new DefaultRenderTypes() : _c, _d = _b.defaultEncapsulation, defaultEncapsulation = _d === void 0 ? core_1.ViewEncapsulation.Emulated : _d, genDebugInfo = _b.genDebugInfo, logBindingUpdate = _b.logBindingUpdate, _e = _b.useJit, useJit = _e === void 0 ? true : _e, _f = _b.platformDirectives, platformDirectives = _f === void 0 ? [] : _f, _g = _b.platformPipes, platformPipes = _g === void 0 ? [] : _g;
@@ -9866,9 +10245,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=config.js.map
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -9877,11 +10263,11 @@ webpackJsonp([2],[
 	};
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(5);
-	var collection_1 = __webpack_require__(11);
-	var html_ast_1 = __webpack_require__(72);
-	var html_lexer_1 = __webpack_require__(520);
-	var parse_util_1 = __webpack_require__(73);
-	var html_tags_1 = __webpack_require__(151);
+	var collection_1 = __webpack_require__(13);
+	var html_ast_1 = __webpack_require__(74);
+	var html_lexer_1 = __webpack_require__(534);
+	var parse_util_1 = __webpack_require__(75);
+	var html_tags_1 = __webpack_require__(154);
 	var HtmlTreeError = (function (_super) {
 	    __extends(HtmlTreeError, _super);
 	    function HtmlTreeError(elementName, span, msg) {
@@ -10235,9 +10621,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_parser.js.map
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(5);
@@ -10555,16 +10948,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=url_resolver.js.map
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var compile_metadata_1 = __webpack_require__(39);
+	var core_private_1 = __webpack_require__(30);
+	var compile_metadata_1 = __webpack_require__(40);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
 	function _enumExpression(classIdentifier, value) {
 	    if (lang_1.isBlank(value))
 	        return o.NULL_EXPR;
@@ -10599,33 +10999,32 @@ webpackJsonp([2],[
 	    return ViewEncapsulationEnum;
 	}());
 	exports.ViewEncapsulationEnum = ViewEncapsulationEnum;
-	var ChangeDetectorStateEnum = (function () {
-	    function ChangeDetectorStateEnum() {
-	    }
-	    ChangeDetectorStateEnum.fromValue = function (value) {
-	        return _enumExpression(identifiers_1.Identifiers.ChangeDetectorState, value);
-	    };
-	    ChangeDetectorStateEnum.NeverChecked = ChangeDetectorStateEnum.fromValue(core_private_1.ChangeDetectorState.NeverChecked);
-	    ChangeDetectorStateEnum.CheckedBefore = ChangeDetectorStateEnum.fromValue(core_private_1.ChangeDetectorState.CheckedBefore);
-	    ChangeDetectorStateEnum.Errored = ChangeDetectorStateEnum.fromValue(core_private_1.ChangeDetectorState.Errored);
-	    return ChangeDetectorStateEnum;
-	}());
-	exports.ChangeDetectorStateEnum = ChangeDetectorStateEnum;
 	var ChangeDetectionStrategyEnum = (function () {
 	    function ChangeDetectionStrategyEnum() {
 	    }
 	    ChangeDetectionStrategyEnum.fromValue = function (value) {
 	        return _enumExpression(identifiers_1.Identifiers.ChangeDetectionStrategy, value);
 	    };
-	    ChangeDetectionStrategyEnum.CheckOnce = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.CheckOnce);
-	    ChangeDetectionStrategyEnum.Checked = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.Checked);
-	    ChangeDetectionStrategyEnum.CheckAlways = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.CheckAlways);
-	    ChangeDetectionStrategyEnum.Detached = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.Detached);
 	    ChangeDetectionStrategyEnum.OnPush = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.OnPush);
 	    ChangeDetectionStrategyEnum.Default = ChangeDetectionStrategyEnum.fromValue(core_1.ChangeDetectionStrategy.Default);
 	    return ChangeDetectionStrategyEnum;
 	}());
 	exports.ChangeDetectionStrategyEnum = ChangeDetectionStrategyEnum;
+	var ChangeDetectorStatusEnum = (function () {
+	    function ChangeDetectorStatusEnum() {
+	    }
+	    ChangeDetectorStatusEnum.fromValue = function (value) {
+	        return _enumExpression(identifiers_1.Identifiers.ChangeDetectorStatus, value);
+	    };
+	    ChangeDetectorStatusEnum.CheckOnce = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.CheckOnce);
+	    ChangeDetectorStatusEnum.Checked = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.Checked);
+	    ChangeDetectorStatusEnum.CheckAlways = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.CheckAlways);
+	    ChangeDetectorStatusEnum.Detached = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.Detached);
+	    ChangeDetectorStatusEnum.Errored = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.Errored);
+	    ChangeDetectorStatusEnum.Destroyed = ChangeDetectorStatusEnum.fromValue(core_private_1.ChangeDetectorStatus.Destroyed);
+	    return ChangeDetectorStatusEnum;
+	}());
+	exports.ChangeDetectorStatusEnum = ChangeDetectorStatusEnum;
 	var ViewConstructorVars = (function () {
 	    function ViewConstructorVars() {
 	    }
@@ -10673,19 +11072,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=constants.js.map
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * @module
-	 * @description
-	 * The `di` module provides dependency injection container services.
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	var metadata_1 = __webpack_require__(113);
+	/**
+	 * @module
+	 * @description
+	 * The `di` module provides dependency injection container services.
+	 */
+	var metadata_1 = __webpack_require__(114);
 	exports.HostMetadata = metadata_1.HostMetadata;
 	exports.InjectMetadata = metadata_1.InjectMetadata;
 	exports.InjectableMetadata = metadata_1.InjectableMetadata;
@@ -10693,25 +11099,25 @@ webpackJsonp([2],[
 	exports.SelfMetadata = metadata_1.SelfMetadata;
 	exports.SkipSelfMetadata = metadata_1.SkipSelfMetadata;
 	// we have to reexport * because Dart and TS export two different sets of types
-	__export(__webpack_require__(112));
-	var forward_ref_1 = __webpack_require__(160);
+	__export(__webpack_require__(113));
+	var forward_ref_1 = __webpack_require__(164);
 	exports.forwardRef = forward_ref_1.forwardRef;
 	exports.resolveForwardRef = forward_ref_1.resolveForwardRef;
-	var injector_1 = __webpack_require__(243);
+	var injector_1 = __webpack_require__(246);
 	exports.Injector = injector_1.Injector;
-	var reflective_injector_1 = __webpack_require__(365);
+	var reflective_injector_1 = __webpack_require__(374);
 	exports.ReflectiveInjector = reflective_injector_1.ReflectiveInjector;
-	var provider_1 = __webpack_require__(244);
+	var provider_1 = __webpack_require__(247);
 	exports.Binding = provider_1.Binding;
 	exports.ProviderBuilder = provider_1.ProviderBuilder;
 	exports.bind = provider_1.bind;
 	exports.Provider = provider_1.Provider;
 	exports.provide = provider_1.provide;
-	var reflective_provider_1 = __webpack_require__(247);
+	var reflective_provider_1 = __webpack_require__(250);
 	exports.ResolvedReflectiveFactory = reflective_provider_1.ResolvedReflectiveFactory;
-	var reflective_key_1 = __webpack_require__(246);
+	var reflective_key_1 = __webpack_require__(249);
 	exports.ReflectiveKey = reflective_key_1.ReflectiveKey;
-	var reflective_exceptions_1 = __webpack_require__(245);
+	var reflective_exceptions_1 = __webpack_require__(248);
 	exports.NoProviderError = reflective_exceptions_1.NoProviderError;
 	exports.AbstractProviderError = reflective_exceptions_1.AbstractProviderError;
 	exports.CyclicDependencyError = reflective_exceptions_1.CyclicDependencyError;
@@ -10719,17 +11125,24 @@ webpackJsonp([2],[
 	exports.InvalidProviderError = reflective_exceptions_1.InvalidProviderError;
 	exports.NoAnnotationError = reflective_exceptions_1.NoAnnotationError;
 	exports.OutOfBoundsError = reflective_exceptions_1.OutOfBoundsError;
-	var opaque_token_1 = __webpack_require__(552);
+	var opaque_token_1 = __webpack_require__(565);
 	exports.OpaqueToken = opaque_token_1.OpaqueToken;
 	//# sourceMappingURL=di.js.map
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var decorators_1 = __webpack_require__(165);
-	var metadata_1 = __webpack_require__(113);
+	var decorators_1 = __webpack_require__(169);
+	var metadata_1 = __webpack_require__(114);
 	/**
 	 * Factory for creating {@link InjectMetadata}.
 	 * @stable
@@ -10769,9 +11182,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=decorators.js.map
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	/**
@@ -10817,7 +11237,7 @@ webpackJsonp([2],[
 	 * @stable
 	 */
 	var InjectMetadata = (function () {
-	    function InjectMetadata(token /** TODO #9100 */) {
+	    function InjectMetadata(token) {
 	        this.token = token;
 	    }
 	    InjectMetadata.prototype.toString = function () { return "@Inject(" + lang_1.stringify(this.token) + ")"; };
@@ -11046,10 +11466,17 @@ webpackJsonp([2],[
 	//# sourceMappingURL=metadata.js.map
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
@@ -11077,6 +11504,14 @@ webpackJsonp([2],[
 	// exports the original value of the symbol.
 	var _global = globalScope;
 	exports.global = _global;
+	/**
+	 * Runtime representation a type that a Component or other object is instances of.
+	 *
+	 * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
+	 * the `MyCustomComponent` constructor function.
+	 *
+	 * @stable
+	 */
 	exports.Type = Function;
 	function getTypeNameForDebugging(type) {
 	    if (type['name']) {
@@ -11502,9 +11937,16 @@ webpackJsonp([2],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	exports.RenderDebugInfo = core_1.__core_private__.RenderDebugInfo;
@@ -11512,6 +11954,10 @@ webpackJsonp([2],[
 	exports.ReflectionCapabilities = core_1.__core_private__.ReflectionCapabilities;
 	exports.VIEW_ENCAPSULATION_VALUES = core_1.__core_private__.VIEW_ENCAPSULATION_VALUES;
 	exports.DebugDomRootRenderer = core_1.__core_private__.DebugDomRootRenderer;
+	/**
+	 * @experimental bogus marker to pass the ts-api-guardian's check - this api should be public so
+	 * this line will go away when that happens
+	 */
 	exports.SecurityContext = core_1.__core_private__.SecurityContext;
 	exports.SanitizationService = core_1.__core_private__.SanitizationService;
 	exports.reflector = core_1.__core_private__.reflector;
@@ -11531,7 +11977,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=core_private.js.map
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -11547,11 +11993,11 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var BehaviorSubject_1 = __webpack_require__(177);
-	var shared_1 = __webpack_require__(78);
-	var url_tree_1 = __webpack_require__(79);
-	var collection_1 = __webpack_require__(117);
-	var tree_1 = __webpack_require__(267);
+	var BehaviorSubject_1 = __webpack_require__(180);
+	var shared_1 = __webpack_require__(80);
+	var url_tree_1 = __webpack_require__(81);
+	var collection_1 = __webpack_require__(118);
+	var tree_1 = __webpack_require__(272);
 	/**
 	 * The state of the router.
 	 *
@@ -11566,6 +12012,8 @@ webpackJsonp([2],[
 	 *   }
 	 * }
 	 * ```
+	 *
+	 * @stable
 	 */
 	var RouterState = (function (_super) {
 	    __extends(RouterState, _super);
@@ -11586,24 +12034,25 @@ webpackJsonp([2],[
 	    var snapshot = createEmptyStateSnapshot(urlTree, rootComponent);
 	    var emptyUrl = new BehaviorSubject_1.BehaviorSubject([new url_tree_1.UrlPathWithParams('', {})]);
 	    var emptyParams = new BehaviorSubject_1.BehaviorSubject({});
+	    var emptyData = new BehaviorSubject_1.BehaviorSubject({});
 	    var emptyQueryParams = new BehaviorSubject_1.BehaviorSubject({});
 	    var fragment = new BehaviorSubject_1.BehaviorSubject('');
-	    var activated = new ActivatedRoute(emptyUrl, emptyParams, shared_1.PRIMARY_OUTLET, rootComponent, snapshot.root);
+	    var activated = new ActivatedRoute(emptyUrl, emptyParams, emptyData, shared_1.PRIMARY_OUTLET, rootComponent, snapshot.root);
 	    activated.snapshot = snapshot.root;
 	    return new RouterState(new tree_1.TreeNode(activated, []), emptyQueryParams, fragment, snapshot);
 	}
 	exports.createEmptyState = createEmptyState;
 	function createEmptyStateSnapshot(urlTree, rootComponent) {
 	    var emptyParams = {};
+	    var emptyData = {};
 	    var emptyQueryParams = {};
 	    var fragment = '';
-	    var activated = new ActivatedRouteSnapshot([], emptyParams, shared_1.PRIMARY_OUTLET, rootComponent, null, urlTree.root, -1);
+	    var activated = new ActivatedRouteSnapshot([], emptyParams, emptyData, shared_1.PRIMARY_OUTLET, rootComponent, null, urlTree.root, -1, InheritedResolve.empty);
 	    return new RouterStateSnapshot('', new tree_1.TreeNode(activated, []), emptyQueryParams, fragment);
 	}
 	/**
 	 * Contains the information about a component loaded in an outlet. The information is provided
-	 * through
-	 * the params and urlSegments observables.
+	 * through the params, urlSegments, and data observables.
 	 *
 	 * ### Usage
 	 *
@@ -11611,17 +12060,21 @@ webpackJsonp([2],[
 	 * class MyComponent {
 	 *   constructor(route: ActivatedRoute) {
 	 *     const id: Observable<string> = route.params.map(p => p.id);
+	 *     const data = route.data.map(d => d.user); //includes `data` and `resolve`
 	 *   }
 	 * }
 	 * ```
+	 *
+	 * @stable
 	 */
 	var ActivatedRoute = (function () {
 	    /**
 	     * @internal
 	     */
-	    function ActivatedRoute(url, params, outlet, component, futureSnapshot) {
+	    function ActivatedRoute(url, params, data, outlet, component, futureSnapshot) {
 	        this.url = url;
 	        this.params = params;
+	        this.data = data;
 	        this.outlet = outlet;
 	        this.component = component;
 	        this._futureSnapshot = futureSnapshot;
@@ -11633,6 +12086,37 @@ webpackJsonp([2],[
 	}());
 	exports.ActivatedRoute = ActivatedRoute;
 	/**
+	 * @internal
+	 */
+	var InheritedResolve = (function () {
+	    function InheritedResolve(parent, current) {
+	        this.parent = parent;
+	        this.current = current;
+	        /**
+	         * @internal
+	         */
+	        this.resolvedData = {};
+	    }
+	    Object.defineProperty(InheritedResolve.prototype, "flattenedResolvedData", {
+	        /**
+	         * @internal
+	         */
+	        get: function () {
+	            return this.parent ? collection_1.merge(this.parent.flattenedResolvedData, this.resolvedData) :
+	                this.resolvedData;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(InheritedResolve, "empty", {
+	        get: function () { return new InheritedResolve(null, {}); },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    return InheritedResolve;
+	}());
+	exports.InheritedResolve = InheritedResolve;
+	/**
 	 * Contains the information about a component loaded in an outlet at a particular moment in time.
 	 *
 	 * ### Usage
@@ -11641,22 +12125,27 @@ webpackJsonp([2],[
 	 * class MyComponent {
 	 *   constructor(route: ActivatedRoute) {
 	 *     const id: string = route.snapshot.params.id;
+	 *     const data = route.snapshot.data;
 	 *   }
 	 * }
 	 * ```
+	 *
+	 * @stable
 	 */
 	var ActivatedRouteSnapshot = (function () {
 	    /**
 	     * @internal
 	     */
-	    function ActivatedRouteSnapshot(url, params, outlet, component, routeConfig, urlSegment, lastPathIndex) {
+	    function ActivatedRouteSnapshot(url, params, data, outlet, component, routeConfig, urlSegment, lastPathIndex, resolve) {
 	        this.url = url;
 	        this.params = params;
+	        this.data = data;
 	        this.outlet = outlet;
 	        this.component = component;
 	        this._routeConfig = routeConfig;
 	        this._urlSegment = urlSegment;
 	        this._lastPathIndex = lastPathIndex;
+	        this._resolve = resolve;
 	    }
 	    ActivatedRouteSnapshot.prototype.toString = function () {
 	        var url = this.url.map(function (s) { return s.toString(); }).join('/');
@@ -11678,6 +12167,8 @@ webpackJsonp([2],[
 	 *   }
 	 * }
 	 * ```
+	 *
+	 * @stable
 	 */
 	var RouterStateSnapshot = (function (_super) {
 	    __extends(RouterStateSnapshot, _super);
@@ -11707,6 +12198,7 @@ webpackJsonp([2],[
 	    if (route.snapshot) {
 	        if (!collection_1.shallowEqual(route.snapshot.params, route._futureSnapshot.params)) {
 	            route.params.next(route._futureSnapshot.params);
+	            route.data.next(route._futureSnapshot.data);
 	        }
 	        if (!collection_1.shallowEqualArrays(route.snapshot.url, route._futureSnapshot.url)) {
 	            route.url.next(route._futureSnapshot.url);
@@ -11715,13 +12207,14 @@ webpackJsonp([2],[
 	    }
 	    else {
 	        route.snapshot = route._futureSnapshot;
+	        route.data.next(route._futureSnapshot.data);
 	    }
 	}
 	exports.advanceActivatedRoute = advanceActivatedRoute;
 	//# sourceMappingURL=router_state.js.map
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports) {
 
 	/**
@@ -11806,8 +12299,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 118 */,
-/* 119 */
+/* 119 */,
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11840,20 +12333,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 120 */,
 /* 121 */,
 /* 122 */,
 /* 123 */,
-/* 124 */
+/* 124 */,
+/* 125 */,
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var abstract_control_directive_1 = __webpack_require__(211);
+	var abstract_control_directive_1 = __webpack_require__(215);
 	/**
 	 * A directive that contains multiple {@link NgControl}s.
 	 *
@@ -11888,9 +12389,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=control_container.js.map
 
 /***/ },
-/* 125 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	/**
@@ -11922,14 +12430,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=message.js.map
 
 /***/ },
-/* 126 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var o = __webpack_require__(24);
-	var identifiers_1 = __webpack_require__(40);
+	var o = __webpack_require__(25);
+	var identifiers_1 = __webpack_require__(41);
 	function getPropertyInView(property, callingView, definedView) {
 	    if (callingView === definedView) {
 	        return property;
@@ -12017,21 +12532,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=util.js.map
 
 /***/ },
-/* 127 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var decorators_1 = __webpack_require__(112);
-	var async_1 = __webpack_require__(92);
+	var decorators_1 = __webpack_require__(113);
+	var async_1 = __webpack_require__(93);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var reflection_1 = __webpack_require__(164);
-	var component_factory_1 = __webpack_require__(368);
+	var reflection_1 = __webpack_require__(168);
+	var component_factory_1 = __webpack_require__(377);
 	/**
 	 * Low-level service for loading {@link ComponentFactory}s, which
 	 * can later be used to create and render a Component instance.
@@ -12073,18 +12595,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=component_resolver.js.map
 
 /***/ },
-/* 128 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(386);
-	var exception_handler_1 = __webpack_require__(387);
-	var exception_handler_2 = __webpack_require__(387);
+	var base_wrapped_exception_1 = __webpack_require__(395);
+	var exception_handler_1 = __webpack_require__(396);
+	var exception_handler_2 = __webpack_require__(396);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -12160,13 +12689,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 129 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(128);
-	var lang_1 = __webpack_require__(37);
-	var collection_1 = __webpack_require__(257);
+	var exceptions_1 = __webpack_require__(130);
+	var lang_1 = __webpack_require__(38);
+	var collection_1 = __webpack_require__(261);
 	/**
 	 * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
 	 * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
@@ -12192,6 +12728,8 @@ webpackJsonp([2],[
 	 * var thirdHeaders = new Headers(secondHeaders);
 	 * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
 	 * ```
+	 *
+	 * @experimental
 	 */
 	var Headers = (function () {
 	    function Headers(headers) {
@@ -12300,15 +12838,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=headers.js.map
 
 /***/ },
-/* 130 */
+/* 132 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Abstract class from which real backends are derived.
 	 *
 	 * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
 	 * {@link Request}.
+	 *
+	 * @experimental
 	 */
 	var ConnectionBackend = (function () {
 	    function ConnectionBackend() {
@@ -12318,6 +12865,8 @@ webpackJsonp([2],[
 	exports.ConnectionBackend = ConnectionBackend;
 	/**
 	 * Abstract class from which real connections are derived.
+	 *
+	 * @experimental
 	 */
 	var Connection = (function () {
 	    function Connection() {
@@ -12325,7 +12874,11 @@ webpackJsonp([2],[
 	    return Connection;
 	}());
 	exports.Connection = Connection;
-	/** An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request. */
+	/**
+	 * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
+	 *
+	 * @experimental
+	 */
 	var XSRFStrategy = (function () {
 	    function XSRFStrategy() {
 	    }
@@ -12335,9 +12888,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=interfaces.js.map
 
 /***/ },
-/* 131 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	/**
@@ -12345,14 +12905,23 @@ webpackJsonp([2],[
 	 *
 	 * Note: Document might not be available in the Application Context when Application and Rendering
 	 * Contexts are not the same (e.g. when running the application into a Web Worker).
+	 *
+	 * @stable
 	 */
 	exports.DOCUMENT = new core_1.OpaqueToken('DocumentToken');
 	//# sourceMappingURL=dom_tokens.js.map
 
 /***/ },
-/* 132 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -12360,13 +12929,13 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(94);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
-	var message_bus_1 = __webpack_require__(64);
-	var serializer_1 = __webpack_require__(56);
+	var async_1 = __webpack_require__(95);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
+	var message_bus_1 = __webpack_require__(65);
+	var serializer_1 = __webpack_require__(57);
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is experimental.
 	 */
 	var ClientMessageBrokerFactory = (function () {
 	    function ClientMessageBrokerFactory() {
@@ -12402,7 +12971,7 @@ webpackJsonp([2],[
 	}(ClientMessageBrokerFactory));
 	exports.ClientMessageBrokerFactory_ = ClientMessageBrokerFactory_;
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is experimental.
 	 */
 	var ClientMessageBroker = (function () {
 	    function ClientMessageBroker() {
@@ -12515,7 +13084,7 @@ webpackJsonp([2],[
 	    return MessageData;
 	}());
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is experimental.
 	 */
 	var FnArg = (function () {
 	    function FnArg(value /** TODO #9100 */, type) {
@@ -12526,7 +13095,7 @@ webpackJsonp([2],[
 	}());
 	exports.FnArg = FnArg;
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is experimental.
 	 */
 	var UiArguments = (function () {
 	    function UiArguments(method, args) {
@@ -12539,9 +13108,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=client_message_broker.js.map
 
 /***/ },
-/* 133 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var RenderStore = (function () {
@@ -12587,9 +13163,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=render_store.js.map
 
 /***/ },
-/* 134 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -12597,11 +13180,14 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(94);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
-	var message_bus_1 = __webpack_require__(64);
-	var serializer_1 = __webpack_require__(56);
+	var async_1 = __webpack_require__(95);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
+	var message_bus_1 = __webpack_require__(65);
+	var serializer_1 = __webpack_require__(57);
+	/**
+	 * @experimental WebWorker support in Angular is currently experimental.
+	 */
 	var ServiceMessageBrokerFactory = (function () {
 	    function ServiceMessageBrokerFactory() {
 	    }
@@ -12633,7 +13219,12 @@ webpackJsonp([2],[
 	}(ServiceMessageBrokerFactory));
 	exports.ServiceMessageBrokerFactory_ = ServiceMessageBrokerFactory_;
 	/**
-	 * @experimental
+	 * Helper class for UIComponents that allows components to register methods.
+	 * If a registered method message is received from the broker on the worker,
+	 * the UIMessageBroker deserializes its arguments and calls the registered method.
+	 * If that method returns a promise, the UIMessageBroker returns the result to the worker.
+	 *
+	 * @experimental WebWorker support in Angular is currently experimental.
 	 */
 	var ServiceMessageBroker = (function () {
 	    function ServiceMessageBroker() {
@@ -12641,12 +13232,6 @@ webpackJsonp([2],[
 	    return ServiceMessageBroker;
 	}());
 	exports.ServiceMessageBroker = ServiceMessageBroker;
-	/**
-	 * Helper class for UIComponents that allows components to register methods.
-	 * If a registered method message is received from the broker on the worker,
-	 * the UIMessageBroker deserializes its arguments and calls the registered method.
-	 * If that method returns a promise, the UIMessageBroker returns the result to the worker.
-	 */
 	var ServiceMessageBroker_ = (function (_super) {
 	    __extends(ServiceMessageBroker_, _super);
 	    function ServiceMessageBroker_(messageBus, _serializer, channel /** TODO #9100 */) {
@@ -12691,7 +13276,7 @@ webpackJsonp([2],[
 	}(ServiceMessageBroker));
 	exports.ServiceMessageBroker_ = ServiceMessageBroker_;
 	/**
-	 * @experimental
+	 * @experimental WebWorker support in Angular is currently experimental.
 	 */
 	var ReceivedMessage = (function () {
 	    function ReceivedMessage(data) {
@@ -12706,7 +13291,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=service_message_broker.js.map
 
 /***/ },
-/* 135 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12743,8 +13328,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=iterator.js.map
 
 /***/ },
-/* 136 */,
-/* 137 */,
 /* 138 */,
 /* 139 */,
 /* 140 */,
@@ -12752,12 +13335,22 @@ webpackJsonp([2],[
 /* 142 */,
 /* 143 */,
 /* 144 */,
-/* 145 */
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var control_value_accessor_1 = __webpack_require__(55);
+	var control_value_accessor_1 = __webpack_require__(56);
 	exports.CHECKBOX_VALUE_ACCESSOR = {
 	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return CheckboxControlValueAccessor; }),
@@ -12794,13 +13387,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=checkbox_value_accessor.js.map
 
 /***/ },
-/* 146 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var control_value_accessor_1 = __webpack_require__(55);
+	var control_value_accessor_1 = __webpack_require__(56);
 	exports.DEFAULT_VALUE_ACCESSOR = 
 	/* @ts2dart_Provider */ {
 	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
@@ -12842,15 +13442,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=default_value_accessor.js.map
 
 /***/ },
-/* 147 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var control_value_accessor_1 = __webpack_require__(55);
-	var ng_control_1 = __webpack_require__(91);
+	var control_value_accessor_1 = __webpack_require__(56);
+	var ng_control_1 = __webpack_require__(92);
 	exports.RADIO_VALUE_ACCESSOR = {
 	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return RadioControlValueAccessor; }),
@@ -12959,14 +13566,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=radio_control_value_accessor.js.map
 
 /***/ },
-/* 148 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var control_value_accessor_1 = __webpack_require__(55);
+	var control_value_accessor_1 = __webpack_require__(56);
 	exports.SELECT_VALUE_ACCESSOR = {
 	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return SelectControlValueAccessor; }),
@@ -13097,17 +13711,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=select_control_value_accessor.js.map
 
 /***/ },
-/* 149 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(61);
-	var collection_1 = __webpack_require__(31);
+	var async_1 = __webpack_require__(62);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
 	/**
 	 * Indicates that a Control is valid, i.e. that no errors exist in the input value.
@@ -13620,9 +14241,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=model.js.map
 
 /***/ },
-/* 150 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	/**
@@ -13683,9 +14311,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=location_strategy.js.map
 
 /***/ },
-/* 151 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	// see http://www.w3.org/TR/html51/syntax.html#named-character-references
@@ -14067,9 +14702,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_tags.js.map
 
 /***/ },
-/* 152 */
+/* 155 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	exports.DEFAULT_INTERPOLATION_CONFIG = {
 	    start: '{{',
@@ -14078,13 +14720,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=interpolation_config.js.map
 
 /***/ },
-/* 153 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var o = __webpack_require__(24);
+	var o = __webpack_require__(25);
 	var _SINGLE_QUOTE_ESCAPE_STRING_RE = /'|\\|\n|\r|\$/g;
 	exports.CATCH_ERROR_VAR = o.variable('error');
 	exports.CATCH_STACK_VAR = o.variable('stack');
@@ -14494,9 +15143,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=abstract_emitter.js.map
 
 /***/ },
-/* 154 */
+/* 157 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var ElementSchemaRegistry = (function () {
 	    function ElementSchemaRegistry() {
@@ -14507,9 +15163,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=element_schema_registry.js.map
 
 /***/ },
-/* 155 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -14517,24 +15180,24 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var exceptions_1 = __webpack_require__(16);
-	var ast_1 = __webpack_require__(345);
-	var parser_1 = __webpack_require__(227);
-	var html_parser_1 = __webpack_require__(108);
-	var html_tags_1 = __webpack_require__(151);
-	var parse_util_1 = __webpack_require__(73);
-	var template_ast_1 = __webpack_require__(74);
-	var selector_1 = __webpack_require__(232);
-	var element_schema_registry_1 = __webpack_require__(154);
-	var template_preparser_1 = __webpack_require__(351);
-	var style_url_resolver_1 = __webpack_require__(234);
-	var html_ast_1 = __webpack_require__(72);
-	var util_1 = __webpack_require__(75);
-	var identifiers_1 = __webpack_require__(40);
-	var provider_parser_1 = __webpack_require__(532);
+	var exceptions_1 = __webpack_require__(17);
+	var ast_1 = __webpack_require__(350);
+	var parser_1 = __webpack_require__(234);
+	var html_parser_1 = __webpack_require__(109);
+	var html_tags_1 = __webpack_require__(154);
+	var parse_util_1 = __webpack_require__(75);
+	var template_ast_1 = __webpack_require__(76);
+	var selector_1 = __webpack_require__(238);
+	var element_schema_registry_1 = __webpack_require__(157);
+	var template_preparser_1 = __webpack_require__(358);
+	var style_url_resolver_1 = __webpack_require__(357);
+	var html_ast_1 = __webpack_require__(74);
+	var util_1 = __webpack_require__(77);
+	var identifiers_1 = __webpack_require__(41);
+	var provider_parser_1 = __webpack_require__(546);
 	// Group 1 = "bind-"
 	// Group 2 = "var-"
 	// Group 3 = "let-"
@@ -14803,6 +15466,9 @@ webpackJsonp([2],[
 	        element.attrs.forEach(function (attr) {
 	            var hasBinding = _this._parseAttr(isTemplateElement, attr, matchableAttrs, elementOrDirectiveProps, animationProps, events, elementOrDirectiveRefs, elementVars);
 	            var hasTemplateBinding = _this._parseInlineTemplateBinding(attr, templateMatchableAttrs, templateElementOrDirectiveProps, templateElementVars);
+	            if (hasTemplateBinding && hasInlineTemplates) {
+	                _this._reportError("Can't have multiple template bindings on one element. Use only one attribute named 'template' or prefixed with *", attr.sourceSpan);
+	            }
 	            if (!hasBinding && !hasTemplateBinding) {
 	                // don't include the bindings as attributes as well in the AST
 	                attrs.push(_this.visitAttr(attr, null));
@@ -14966,6 +15632,12 @@ webpackJsonp([2],[
 	        this._parsePropertyAst(name, this._parseBinding(expression, sourceSpan), sourceSpan, targetMatchableAttrs, targetProps);
 	    };
 	    TemplateParseVisitor.prototype._parseAnimation = function (name, expression, sourceSpan, targetMatchableAttrs, targetAnimationProps) {
+	        // This will occur when a @trigger is not paired with an expression.
+	        // For animations it is valid to not have an expression since */void
+	        // states will be applied by angular when the element is attached/detached
+	        if (!lang_1.isPresent(expression) || expression.length == 0) {
+	            expression = 'null';
+	        }
 	        var ast = this._parseBinding(expression, sourceSpan);
 	        targetMatchableAttrs.push([name, ast.source]);
 	        targetAnimationProps.push(new template_ast_1.BoundElementPropertyAst(name, template_ast_1.PropertyBindingType.Animation, core_private_1.SecurityContext.NONE, ast, null, sourceSpan));
@@ -15175,18 +15847,20 @@ webpackJsonp([2],[
 	            this._reportError("Components on an embedded template: " + componentTypeNames.join(','), sourceSpan);
 	        }
 	        elementProps.forEach(function (prop) {
-	            _this._reportError("Property binding " + prop.name + " not used by any directive on an embedded template", sourceSpan);
+	            _this._reportError("Property binding " + prop.name + " not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the \"directives\" section.", sourceSpan);
 	        });
 	    };
 	    TemplateParseVisitor.prototype._assertAllEventsPublishedByDirectives = function (directives, events) {
 	        var _this = this;
 	        var allDirectiveEvents = new Set();
 	        directives.forEach(function (directive) {
-	            collection_1.StringMapWrapper.forEach(directive.directive.outputs, function (eventName, _ /** TODO #???? */) { allDirectiveEvents.add(eventName); });
+	            collection_1.StringMapWrapper.forEach(directive.directive.outputs, function (eventName) {
+	                allDirectiveEvents.add(eventName);
+	            });
 	        });
 	        events.forEach(function (event) {
 	            if (lang_1.isPresent(event.target) || !collection_1.SetWrapper.has(allDirectiveEvents, event.name)) {
-	                _this._reportError("Event binding " + event.fullName + " not emitted by any directive on an embedded template", event.sourceSpan);
+	                _this._reportError("Event binding " + event.fullName + " not emitted by any directive on an embedded template. Make sure that the event name is spelled correctly and all directives are listed in the \"directives\" section.", event.sourceSpan);
 	            }
 	        });
 	    };
@@ -15328,12 +16002,87 @@ webpackJsonp([2],[
 	//# sourceMappingURL=template_parser.js.map
 
 /***/ },
-/* 156 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var core_1 = __webpack_require__(2);
+	var animation_compiler_1 = __webpack_require__(349);
+	var config_1 = __webpack_require__(108);
+	var compile_element_1 = __webpack_require__(360);
+	var compile_view_1 = __webpack_require__(362);
+	var view_binder_1 = __webpack_require__(553);
+	var view_builder_1 = __webpack_require__(364);
+	var view_builder_2 = __webpack_require__(364);
+	exports.ComponentFactoryDependency = view_builder_2.ComponentFactoryDependency;
+	exports.ViewFactoryDependency = view_builder_2.ViewFactoryDependency;
+	var ViewCompileResult = (function () {
+	    function ViewCompileResult(statements, viewFactoryVar, dependencies) {
+	        this.statements = statements;
+	        this.viewFactoryVar = viewFactoryVar;
+	        this.dependencies = dependencies;
+	    }
+	    return ViewCompileResult;
+	}());
+	exports.ViewCompileResult = ViewCompileResult;
+	var ViewCompiler = (function () {
+	    function ViewCompiler(_genConfig) {
+	        this._genConfig = _genConfig;
+	        this._animationCompiler = new animation_compiler_1.AnimationCompiler();
+	    }
+	    ViewCompiler.prototype.compileComponent = function (component, template, styles, pipes) {
+	        var dependencies = [];
+	        var compiledAnimations = this._animationCompiler.compileComponent(component);
+	        var statements = [];
+	        compiledAnimations.map(function (entry) {
+	            statements.push(entry.statesMapStatement);
+	            statements.push(entry.fnStatement);
+	        });
+	        var view = new compile_view_1.CompileView(component, this._genConfig, pipes, styles, compiledAnimations, 0, compile_element_1.CompileElement.createNull(), []);
+	        view_builder_1.buildView(view, template, dependencies);
+	        // Need to separate binding from creation to be able to refer to
+	        // variables that have been declared after usage.
+	        view_binder_1.bindView(view, template);
+	        view_builder_1.finishView(view, statements);
+	        return new ViewCompileResult(statements, view.viewFactory.name, dependencies);
+	    };
+	    /** @nocollapse */
+	    ViewCompiler.decorators = [
+	        { type: core_1.Injectable },
+	    ];
+	    /** @nocollapse */
+	    ViewCompiler.ctorParameters = [
+	        { type: config_1.CompilerConfig, },
+	    ];
+	    return ViewCompiler;
+	}());
+	exports.ViewCompiler = ViewCompiler;
+	//# sourceMappingURL=view_compiler.js.map
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
+	/**
+	 * @experimental Animation support is experimental.
+	 */
 	var AnimationPlayer = (function () {
 	    function AnimationPlayer() {
 	    }
@@ -15375,12 +16124,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_player.js.map
 
 /***/ },
-/* 157 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	var di_1 = __webpack_require__(111);
+	var di_1 = __webpack_require__(112);
 	/**
 	 * A DI Token representing a unique string id assigned to the application by Angular and used
 	 * primarily for prefixing application attributes and CSS styles when
@@ -15429,40 +16185,46 @@ webpackJsonp([2],[
 	//# sourceMappingURL=application_tokens.js.map
 
 /***/ },
-/* 158 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var default_iterable_differ_1 = __webpack_require__(241);
-	var default_keyvalue_differ_1 = __webpack_require__(360);
-	var iterable_differs_1 = __webpack_require__(361);
-	var keyvalue_differs_1 = __webpack_require__(362);
-	var change_detection_util_1 = __webpack_require__(240);
+	var default_iterable_differ_1 = __webpack_require__(244);
+	var default_keyvalue_differ_1 = __webpack_require__(369);
+	var iterable_differs_1 = __webpack_require__(370);
+	var keyvalue_differs_1 = __webpack_require__(371);
+	var change_detection_util_1 = __webpack_require__(243);
 	exports.SimpleChange = change_detection_util_1.SimpleChange;
 	exports.ValueUnwrapper = change_detection_util_1.ValueUnwrapper;
 	exports.WrappedValue = change_detection_util_1.WrappedValue;
 	exports.devModeEqual = change_detection_util_1.devModeEqual;
 	exports.looseIdentical = change_detection_util_1.looseIdentical;
 	exports.uninitialized = change_detection_util_1.uninitialized;
-	var change_detector_ref_1 = __webpack_require__(550);
+	var change_detector_ref_1 = __webpack_require__(563);
 	exports.ChangeDetectorRef = change_detector_ref_1.ChangeDetectorRef;
-	var constants_1 = __webpack_require__(159);
+	var constants_1 = __webpack_require__(163);
 	exports.CHANGE_DETECTION_STRATEGY_VALUES = constants_1.CHANGE_DETECTION_STRATEGY_VALUES;
-	exports.CHANGE_DETECTOR_STATE_VALUES = constants_1.CHANGE_DETECTOR_STATE_VALUES;
 	exports.ChangeDetectionStrategy = constants_1.ChangeDetectionStrategy;
-	exports.ChangeDetectorState = constants_1.ChangeDetectorState;
+	exports.ChangeDetectorStatus = constants_1.ChangeDetectorStatus;
 	exports.isDefaultChangeDetectionStrategy = constants_1.isDefaultChangeDetectionStrategy;
-	var default_iterable_differ_2 = __webpack_require__(241);
+	var default_iterable_differ_2 = __webpack_require__(244);
 	exports.CollectionChangeRecord = default_iterable_differ_2.CollectionChangeRecord;
 	exports.DefaultIterableDifferFactory = default_iterable_differ_2.DefaultIterableDifferFactory;
-	var default_iterable_differ_3 = __webpack_require__(241);
+	var default_iterable_differ_3 = __webpack_require__(244);
 	exports.DefaultIterableDiffer = default_iterable_differ_3.DefaultIterableDiffer;
-	var default_keyvalue_differ_2 = __webpack_require__(360);
+	var default_keyvalue_differ_2 = __webpack_require__(369);
 	exports.DefaultKeyValueDifferFactory = default_keyvalue_differ_2.DefaultKeyValueDifferFactory;
 	exports.KeyValueChangeRecord = default_keyvalue_differ_2.KeyValueChangeRecord;
-	var iterable_differs_2 = __webpack_require__(361);
+	var iterable_differs_2 = __webpack_require__(370);
 	exports.IterableDiffers = iterable_differs_2.IterableDiffers;
-	var keyvalue_differs_2 = __webpack_require__(362);
+	var keyvalue_differs_2 = __webpack_require__(371);
 	exports.KeyValueDiffers = keyvalue_differs_2.KeyValueDiffers;
 	/**
 	 * Structural diffing for `Object`s and `Map`s.
@@ -15479,33 +16241,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=change_detection.js.map
 
 /***/ },
-/* 159 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	/**
-	 * Describes the current state of the change detector.
-	 */
-	(function (ChangeDetectorState) {
-	    /**
-	     * `NeverChecked` means that the change detector has not been checked yet, and
-	     * initialization methods should be called during detection.
-	     */
-	    ChangeDetectorState[ChangeDetectorState["NeverChecked"] = 0] = "NeverChecked";
-	    /**
-	     * `CheckedBefore` means that the change detector has successfully completed at least
-	     * one detection previously.
-	     */
-	    ChangeDetectorState[ChangeDetectorState["CheckedBefore"] = 1] = "CheckedBefore";
-	    /**
-	     * `Errored` means that the change detector encountered an error checking a binding
-	     * or calling a directive lifecycle method and is now in an inconsistent state. Change
-	     * detectors in this state will no longer detect changes.
-	     */
-	    ChangeDetectorState[ChangeDetectorState["Errored"] = 2] = "Errored";
-	})(exports.ChangeDetectorState || (exports.ChangeDetectorState = {}));
-	var ChangeDetectorState = exports.ChangeDetectorState;
 	/**
 	 * Describes within the change detector which strategy will be used the next time change
 	 * detection is triggered.
@@ -15513,53 +16260,68 @@ webpackJsonp([2],[
 	 */
 	(function (ChangeDetectionStrategy) {
 	    /**
+	     * `OnPush` means that the change detector's mode will be set to `CheckOnce` during hydration.
+	     */
+	    ChangeDetectionStrategy[ChangeDetectionStrategy["OnPush"] = 0] = "OnPush";
+	    /**
+	     * `Default` means that the change detector's mode will be set to `CheckAlways` during hydration.
+	     */
+	    ChangeDetectionStrategy[ChangeDetectionStrategy["Default"] = 1] = "Default";
+	})(exports.ChangeDetectionStrategy || (exports.ChangeDetectionStrategy = {}));
+	var ChangeDetectionStrategy = exports.ChangeDetectionStrategy;
+	/**
+	 * Describes the status of the detector.
+	 */
+	(function (ChangeDetectorStatus) {
+	    /**
 	     * `CheckedOnce` means that after calling detectChanges the mode of the change detector
 	     * will become `Checked`.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["CheckOnce"] = 0] = "CheckOnce";
+	    ChangeDetectorStatus[ChangeDetectorStatus["CheckOnce"] = 0] = "CheckOnce";
 	    /**
 	     * `Checked` means that the change detector should be skipped until its mode changes to
 	     * `CheckOnce`.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["Checked"] = 1] = "Checked";
+	    ChangeDetectorStatus[ChangeDetectorStatus["Checked"] = 1] = "Checked";
 	    /**
 	     * `CheckAlways` means that after calling detectChanges the mode of the change detector
 	     * will remain `CheckAlways`.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["CheckAlways"] = 2] = "CheckAlways";
+	    ChangeDetectorStatus[ChangeDetectorStatus["CheckAlways"] = 2] = "CheckAlways";
 	    /**
 	     * `Detached` means that the change detector sub tree is not a part of the main tree and
 	     * should be skipped.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["Detached"] = 3] = "Detached";
+	    ChangeDetectorStatus[ChangeDetectorStatus["Detached"] = 3] = "Detached";
 	    /**
-	     * `OnPush` means that the change detector's mode will be set to `CheckOnce` during hydration.
+	     * `Errored` means that the change detector encountered an error checking a binding
+	     * or calling a directive lifecycle method and is now in an inconsistent state. Change
+	     * detectors in this state will no longer detect changes.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["OnPush"] = 4] = "OnPush";
+	    ChangeDetectorStatus[ChangeDetectorStatus["Errored"] = 4] = "Errored";
 	    /**
-	     * `Default` means that the change detector's mode will be set to `CheckAlways` during hydration.
+	     * `Destroyed` means that the change detector is destroyed.
 	     */
-	    ChangeDetectionStrategy[ChangeDetectionStrategy["Default"] = 5] = "Default";
-	})(exports.ChangeDetectionStrategy || (exports.ChangeDetectionStrategy = {}));
-	var ChangeDetectionStrategy = exports.ChangeDetectionStrategy;
+	    ChangeDetectorStatus[ChangeDetectorStatus["Destroyed"] = 5] = "Destroyed";
+	})(exports.ChangeDetectorStatus || (exports.ChangeDetectorStatus = {}));
+	var ChangeDetectorStatus = exports.ChangeDetectorStatus;
 	/**
 	 * List of possible {@link ChangeDetectionStrategy} values.
 	 */
 	exports.CHANGE_DETECTION_STRATEGY_VALUES = [
-	    ChangeDetectionStrategy.CheckOnce,
-	    ChangeDetectionStrategy.Checked,
-	    ChangeDetectionStrategy.CheckAlways,
-	    ChangeDetectionStrategy.Detached,
 	    ChangeDetectionStrategy.OnPush,
 	    ChangeDetectionStrategy.Default,
 	];
 	/**
-	 * List of possible {@link ChangeDetectorState} values.
+	 * List of possible {@link ChangeDetectorStatus} values.
 	 */
-	exports.CHANGE_DETECTOR_STATE_VALUES = [
-	    ChangeDetectorState.NeverChecked,
-	    ChangeDetectorState.CheckedBefore,
-	    ChangeDetectorState.Errored,
+	exports.CHANGE_DETECTOR_STATUS_VALUES = [
+	    ChangeDetectorStatus.CheckOnce,
+	    ChangeDetectorStatus.Checked,
+	    ChangeDetectorStatus.CheckAlways,
+	    ChangeDetectorStatus.Detached,
+	    ChangeDetectorStatus.Errored,
+	    ChangeDetectorStatus.Destroyed,
 	];
 	function isDefaultChangeDetectionStrategy(changeDetectionStrategy) {
 	    return lang_1.isBlank(changeDetectionStrategy) ||
@@ -15569,9 +16331,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=constants.js.map
 
 /***/ },
-/* 160 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	/**
@@ -15621,9 +16390,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=forward_ref.js.map
 
 /***/ },
-/* 161 */
+/* 165 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	(function (ViewType) {
 	    // A view that contains the host element with bound component directive.
@@ -15640,21 +16416,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_type.js.map
 
 /***/ },
-/* 162 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var application_tokens_1 = __webpack_require__(157);
-	var change_detection_1 = __webpack_require__(158);
-	var change_detection_util_1 = __webpack_require__(240);
-	var decorators_1 = __webpack_require__(112);
-	var collection_1 = __webpack_require__(25);
+	var application_tokens_1 = __webpack_require__(161);
+	var change_detection_1 = __webpack_require__(162);
+	var change_detection_util_1 = __webpack_require__(243);
+	var decorators_1 = __webpack_require__(113);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var api_1 = __webpack_require__(252);
-	var security_1 = __webpack_require__(380);
-	var element_1 = __webpack_require__(248);
-	var exceptions_2 = __webpack_require__(249);
+	var api_1 = __webpack_require__(256);
+	var security_1 = __webpack_require__(389);
+	var element_1 = __webpack_require__(252);
+	var exceptions_2 = __webpack_require__(253);
 	var ViewUtils = (function () {
 	    function ViewUtils(_renderer, _appId, sanitizer) {
 	        this._renderer = _renderer;
@@ -15999,16 +16782,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_utils.js.map
 
 /***/ },
-/* 163 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var impl = __webpack_require__(563);
+	var wtf_impl_1 = __webpack_require__(577);
 	// Change exports to const once https://github.com/angular/ts2dart/issues/150
 	/**
 	 * True if WTF is enabled.
 	 */
-	exports.wtfEnabled = impl.detectWTF();
+	exports.wtfEnabled = wtf_impl_1.detectWTF();
 	function noopScope(arg0, arg1) {
 	    return null;
 	}
@@ -16042,7 +16832,7 @@ webpackJsonp([2],[
 	 *
 	 * @experimental
 	 */
-	exports.wtfCreateScope = exports.wtfEnabled ? impl.createScope : function (signature, flags) { return noopScope; };
+	exports.wtfCreateScope = exports.wtfEnabled ? wtf_impl_1.createScope : function (signature, flags) { return noopScope; };
 	/**
 	 * Used to mark end of Scope.
 	 *
@@ -16052,7 +16842,7 @@ webpackJsonp([2],[
 	 * Returns the `returnValue for easy chaining.
 	 * @experimental
 	 */
-	exports.wtfLeave = exports.wtfEnabled ? impl.leave : function (s, r) { return r; };
+	exports.wtfLeave = exports.wtfEnabled ? wtf_impl_1.leave : function (s, r) { return r; };
 	/**
 	 * Used to mark Async start. Async are similar to scope but they don't have to be strictly nested.
 	 * The return value is used in the call to [endAsync]. Async ranges only work if WTF has been
@@ -16066,24 +16856,31 @@ webpackJsonp([2],[
 	 *     }
 	 * @experimental
 	 */
-	exports.wtfStartTimeRange = exports.wtfEnabled ? impl.startTimeRange : function (rangeType, action) { return null; };
+	exports.wtfStartTimeRange = exports.wtfEnabled ? wtf_impl_1.startTimeRange : function (rangeType, action) { return null; };
 	/**
 	 * Ends a async time range operation.
 	 * [range] is the return value from [wtfStartTimeRange] Async ranges only work if WTF has been
 	 * enabled.
 	 * @experimental
 	 */
-	exports.wtfEndTimeRange = exports.wtfEnabled ? impl.endTimeRange : function (r) { return null; };
+	exports.wtfEndTimeRange = exports.wtfEnabled ? wtf_impl_1.endTimeRange : function (r) { return null; };
 	//# sourceMappingURL=profile.js.map
 
 /***/ },
-/* 164 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var reflection_capabilities_1 = __webpack_require__(378);
-	var reflector_1 = __webpack_require__(379);
-	var reflector_2 = __webpack_require__(379);
+	var reflection_capabilities_1 = __webpack_require__(387);
+	var reflector_1 = __webpack_require__(388);
+	var reflector_2 = __webpack_require__(388);
 	exports.ReflectionInfo = reflector_2.ReflectionInfo;
 	exports.Reflector = reflector_2.Reflector;
 	/**
@@ -16094,9 +16891,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflection.js.map
 
 /***/ },
-/* 165 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	var _nextClassId = 0;
@@ -16358,9 +17162,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=decorators.js.map
 
 /***/ },
-/* 166 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -16368,9 +17179,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(37);
-	var enums_1 = __webpack_require__(76);
-	var headers_1 = __webpack_require__(129);
+	var lang_1 = __webpack_require__(38);
+	var enums_1 = __webpack_require__(78);
+	var headers_1 = __webpack_require__(131);
 	/**
 	 * Creates a response options object to be optionally provided when instantiating a
 	 * {@link Response}.
@@ -16396,6 +17207,8 @@ webpackJsonp([2],[
 	 *
 	 * console.log('res.json():', res.json()); // Object {name: "Jeff"}
 	 * ```
+	 *
+	 * @experimental
 	 */
 	var ResponseOptions = (function () {
 	    function ResponseOptions(_a) {
@@ -16463,13 +17276,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_response_options.js.map
 
 /***/ },
-/* 167 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(128);
-	var lang_1 = __webpack_require__(37);
-	var enums_1 = __webpack_require__(76);
+	var exceptions_1 = __webpack_require__(130);
+	var lang_1 = __webpack_require__(38);
+	var enums_1 = __webpack_require__(78);
 	function normalizeMethodName(method) {
 	    if (lang_1.isString(method)) {
 	        var originalMethod = method;
@@ -16493,167 +17313,89 @@ webpackJsonp([2],[
 	    return;
 	}
 	exports.getResponseURL = getResponseURL;
-	var lang_2 = __webpack_require__(37);
+	var lang_2 = __webpack_require__(38);
 	exports.isJsObject = lang_2.isJsObject;
 	//# sourceMappingURL=http_utils.js.map
 
 /***/ },
-/* 168 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	var browser_platform_location_1 = __webpack_require__(170);
+	var browser_platform_location_1 = __webpack_require__(173);
 	exports.BrowserPlatformLocation = browser_platform_location_1.BrowserPlatformLocation;
-	var title_1 = __webpack_require__(578);
+	var title_1 = __webpack_require__(592);
 	exports.Title = title_1.Title;
-	var tools_1 = __webpack_require__(580);
+	var tools_1 = __webpack_require__(594);
 	exports.disableDebugTools = tools_1.disableDebugTools;
 	exports.enableDebugTools = tools_1.enableDebugTools;
-	var by_1 = __webpack_require__(581);
+	var by_1 = __webpack_require__(595);
 	exports.By = by_1.By;
-	var ng_probe_1 = __webpack_require__(395);
-	exports.ELEMENT_PROBE_PROVIDERS = ng_probe_1.ELEMENT_PROBE_PROVIDERS;
-	var dom_tokens_1 = __webpack_require__(131);
+	var dom_tokens_1 = __webpack_require__(133);
 	exports.DOCUMENT = dom_tokens_1.DOCUMENT;
-	var dom_events_1 = __webpack_require__(261);
-	exports.DomEventsPlugin = dom_events_1.DomEventsPlugin;
-	var event_manager_1 = __webpack_require__(93);
+	var event_manager_1 = __webpack_require__(94);
 	exports.EVENT_MANAGER_PLUGINS = event_manager_1.EVENT_MANAGER_PLUGINS;
 	exports.EventManager = event_manager_1.EventManager;
-	var hammer_gestures_1 = __webpack_require__(262);
+	var hammer_gestures_1 = __webpack_require__(267);
 	exports.HAMMER_GESTURE_CONFIG = hammer_gestures_1.HAMMER_GESTURE_CONFIG;
 	exports.HammerGestureConfig = hammer_gestures_1.HammerGestureConfig;
-	var key_events_1 = __webpack_require__(263);
-	exports.KeyEventsPlugin = key_events_1.KeyEventsPlugin;
-	var dom_sanitization_service_1 = __webpack_require__(399);
+	var dom_sanitization_service_1 = __webpack_require__(409);
 	exports.DomSanitizationService = dom_sanitization_service_1.DomSanitizationService;
 	exports.SecurityContext = dom_sanitization_service_1.SecurityContext;
-	__export(__webpack_require__(169));
+	__export(__webpack_require__(265));
 	// Web Workers
-	var client_message_broker_1 = __webpack_require__(132);
+	var client_message_broker_1 = __webpack_require__(134);
 	exports.ClientMessageBroker = client_message_broker_1.ClientMessageBroker;
 	exports.ClientMessageBrokerFactory = client_message_broker_1.ClientMessageBrokerFactory;
 	exports.FnArg = client_message_broker_1.FnArg;
 	exports.UiArguments = client_message_broker_1.UiArguments;
-	var service_message_broker_1 = __webpack_require__(134);
+	var service_message_broker_1 = __webpack_require__(136);
 	exports.ReceivedMessage = service_message_broker_1.ReceivedMessage;
 	exports.ServiceMessageBroker = service_message_broker_1.ServiceMessageBroker;
 	exports.ServiceMessageBrokerFactory = service_message_broker_1.ServiceMessageBrokerFactory;
-	var serializer_1 = __webpack_require__(56);
+	var serializer_1 = __webpack_require__(57);
 	exports.PRIMITIVE = serializer_1.PRIMITIVE;
-	__export(__webpack_require__(64));
-	var location_providers_1 = __webpack_require__(594);
+	__export(__webpack_require__(65));
+	var location_providers_1 = __webpack_require__(608);
 	exports.WORKER_APP_LOCATION_PROVIDERS = location_providers_1.WORKER_APP_LOCATION_PROVIDERS;
-	var location_providers_2 = __webpack_require__(591);
+	var location_providers_2 = __webpack_require__(605);
 	exports.WORKER_UI_LOCATION_PROVIDERS = location_providers_2.WORKER_UI_LOCATION_PROVIDERS;
-	__export(__webpack_require__(599));
-	__export(__webpack_require__(598));
-	__export(__webpack_require__(575));
-	var browser_2 = __webpack_require__(169);
-	/* @deprecated use BROWSER_PLATFORM_PROVIDERS */
-	exports.BROWSER_PROVIDERS = browser_2.BROWSER_PLATFORM_PROVIDERS;
+	__export(__webpack_require__(613));
+	__export(__webpack_require__(612));
+	__export(__webpack_require__(589));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 169 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var common_1 = __webpack_require__(54);
-	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(115);
-	var web_animations_driver_1 = __webpack_require__(583);
-	var browser_adapter_1 = __webpack_require__(393);
-	var browser_platform_location_1 = __webpack_require__(170);
-	var testability_1 = __webpack_require__(394);
-	var ng_probe_1 = __webpack_require__(395);
-	var dom_adapter_1 = __webpack_require__(27);
-	var dom_renderer_1 = __webpack_require__(171);
-	var dom_tokens_1 = __webpack_require__(131);
-	var dom_events_1 = __webpack_require__(261);
-	var event_manager_1 = __webpack_require__(93);
-	var hammer_gestures_1 = __webpack_require__(262);
-	var key_events_1 = __webpack_require__(263);
-	var shared_styles_host_1 = __webpack_require__(172);
-	var lang_1 = __webpack_require__(17);
-	var dom_sanitization_service_1 = __webpack_require__(399);
-	var BROWSER_PLATFORM_MARKER = new core_1.OpaqueToken('BrowserPlatformMarker');
 	/**
-	 * A set of providers to initialize the Angular platform in a web browser.
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
 	 *
-	 * Used automatically by `bootstrap`, or can be passed to {@link platform}.
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
-	exports.BROWSER_PLATFORM_PROVIDERS = [
-	    { provide: BROWSER_PLATFORM_MARKER, useValue: true }, core_1.PLATFORM_COMMON_PROVIDERS,
-	    { provide: core_1.PLATFORM_INITIALIZER, useValue: initDomAdapter, multi: true },
-	    { provide: common_1.PlatformLocation, useClass: browser_platform_location_1.BrowserPlatformLocation }
-	];
-	exports.BROWSER_SANITIZATION_PROVIDERS = [
-	    { provide: core_private_1.SanitizationService, useExisting: dom_sanitization_service_1.DomSanitizationService },
-	    { provide: dom_sanitization_service_1.DomSanitizationService, useClass: dom_sanitization_service_1.DomSanitizationServiceImpl },
-	];
-	/**
-	 * A set of providers to initialize an Angular application in a web browser.
-	 *
-	 * Used automatically by `bootstrap`, or can be passed to {@link PlatformRef.application}.
-	 */
-	exports.BROWSER_APP_PROVIDERS = [
-	    core_1.APPLICATION_COMMON_PROVIDERS, common_1.FORM_PROVIDERS, exports.BROWSER_SANITIZATION_PROVIDERS,
-	    { provide: core_1.ExceptionHandler, useFactory: _exceptionHandler, deps: [] },
-	    { provide: dom_tokens_1.DOCUMENT, useFactory: _document, deps: [] },
-	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: dom_events_1.DomEventsPlugin, multi: true },
-	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: key_events_1.KeyEventsPlugin, multi: true },
-	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: hammer_gestures_1.HammerGesturesPlugin, multi: true },
-	    { provide: hammer_gestures_1.HAMMER_GESTURE_CONFIG, useClass: hammer_gestures_1.HammerGestureConfig },
-	    { provide: dom_renderer_1.DomRootRenderer, useClass: dom_renderer_1.DomRootRenderer_ },
-	    { provide: core_1.RootRenderer, useExisting: dom_renderer_1.DomRootRenderer },
-	    { provide: shared_styles_host_1.SharedStylesHost, useExisting: shared_styles_host_1.DomSharedStylesHost },
-	    { provide: core_private_1.AnimationDriver, useFactory: _resolveDefaultAnimationDriver }, shared_styles_host_1.DomSharedStylesHost,
-	    core_1.Testability, event_manager_1.EventManager, ng_probe_1.ELEMENT_PROBE_PROVIDERS
-	];
-	function browserPlatform() {
-	    if (lang_1.isBlank(core_1.getPlatform())) {
-	        core_1.createPlatform(core_1.ReflectiveInjector.resolveAndCreate(exports.BROWSER_PLATFORM_PROVIDERS));
-	    }
-	    return core_1.assertPlatform(BROWSER_PLATFORM_MARKER);
-	}
-	exports.browserPlatform = browserPlatform;
-	function initDomAdapter() {
-	    browser_adapter_1.BrowserDomAdapter.makeCurrent();
-	    core_private_1.wtfInit();
-	    testability_1.BrowserGetTestability.init();
-	}
-	function _exceptionHandler() {
-	    return new core_1.ExceptionHandler(dom_adapter_1.getDOM());
-	}
-	function _document() {
-	    return dom_adapter_1.getDOM().defaultDoc();
-	}
-	function _resolveDefaultAnimationDriver() {
-	    if (dom_adapter_1.getDOM().supportsWebAnimation()) {
-	        return new web_animations_driver_1.WebAnimationsDriver();
-	    }
-	    return new core_private_1.NoOpAnimationDriver();
-	}
-	//# sourceMappingURL=browser.js.map
-
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var common_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(55);
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var history_1 = __webpack_require__(577);
+	var dom_adapter_1 = __webpack_require__(28);
+	var history_1 = __webpack_require__(591);
 	var BrowserPlatformLocation = (function (_super) {
 	    __extends(BrowserPlatformLocation, _super);
 	    function BrowserPlatformLocation() {
@@ -16725,9 +17467,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser_platform_location.js.map
 
 /***/ },
-/* 171 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -16735,17 +17484,18 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(77);
-	var lang_1 = __webpack_require__(17);
-	var shared_styles_host_1 = __webpack_require__(172);
-	var core_private_1 = __webpack_require__(115);
-	var event_manager_1 = __webpack_require__(93);
-	var dom_tokens_1 = __webpack_require__(131);
-	var dom_adapter_1 = __webpack_require__(27);
-	var util_1 = __webpack_require__(396);
+	var exceptions_1 = __webpack_require__(79);
+	var lang_1 = __webpack_require__(18);
+	var shared_styles_host_1 = __webpack_require__(175);
+	var core_private_1 = __webpack_require__(116);
+	var event_manager_1 = __webpack_require__(94);
+	var dom_tokens_1 = __webpack_require__(133);
+	var dom_adapter_1 = __webpack_require__(28);
+	var util_1 = __webpack_require__(406);
 	var NAMESPACE_URIS = {
 	    'xlink': 'http://www.w3.org/1999/xlink',
-	    'svg': 'http://www.w3.org/2000/svg'
+	    'svg': 'http://www.w3.org/2000/svg',
+	    'xhtml': 'http://www.w3.org/1999/xhtml'
 	};
 	var TEMPLATE_COMMENT_TEXT = 'template bindings={}';
 	var TEMPLATE_BINDINGS_EXP = /^template bindings=(.*)$/g;
@@ -17014,9 +17764,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_renderer.js.map
 
 /***/ },
-/* 172 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -17024,9 +17781,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(34);
-	var dom_adapter_1 = __webpack_require__(27);
-	var dom_tokens_1 = __webpack_require__(131);
+	var collection_1 = __webpack_require__(35);
+	var dom_adapter_1 = __webpack_require__(28);
+	var dom_tokens_1 = __webpack_require__(133);
 	var SharedStylesHost = (function () {
 	    function SharedStylesHost() {
 	        /** @internal */
@@ -17094,9 +17851,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=shared_styles_host.js.map
 
 /***/ },
-/* 173 */
+/* 176 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * All channels used by angular's WebWorker components are listed here.
@@ -17108,7 +17872,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=messaging_api.js.map
 
 /***/ },
-/* 174 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17119,28 +17883,32 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	__webpack_require__(268);
-	__webpack_require__(408);
-	__webpack_require__(407);
-	__webpack_require__(406);
-	__webpack_require__(405);
+	__webpack_require__(273);
+	__webpack_require__(421);
+	__webpack_require__(420);
+	__webpack_require__(422);
+	__webpack_require__(419);
+	__webpack_require__(418);
+	__webpack_require__(417);
 	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
-	var Subject_1 = __webpack_require__(20);
-	var of_1 = __webpack_require__(179);
-	var apply_redirects_1 = __webpack_require__(600);
-	var config_1 = __webpack_require__(602);
-	var create_router_state_1 = __webpack_require__(603);
-	var create_url_tree_1 = __webpack_require__(604);
-	var recognize_1 = __webpack_require__(607);
-	var resolve_1 = __webpack_require__(608);
-	var router_outlet_map_1 = __webpack_require__(175);
-	var router_state_1 = __webpack_require__(116);
-	var shared_1 = __webpack_require__(78);
-	var url_tree_1 = __webpack_require__(79);
-	var collection_1 = __webpack_require__(117);
+	var Subject_1 = __webpack_require__(21);
+	var of_1 = __webpack_require__(182);
+	var apply_redirects_1 = __webpack_require__(614);
+	var config_1 = __webpack_require__(616);
+	var create_router_state_1 = __webpack_require__(617);
+	var create_url_tree_1 = __webpack_require__(618);
+	var recognize_1 = __webpack_require__(619);
+	var resolve_1 = __webpack_require__(620);
+	var router_outlet_map_1 = __webpack_require__(178);
+	var router_state_1 = __webpack_require__(117);
+	var shared_1 = __webpack_require__(80);
+	var url_tree_1 = __webpack_require__(81);
+	var collection_1 = __webpack_require__(118);
 	/**
 	 * An event triggered when a navigation starts
+	 *
+	 * @stable
 	 */
 	var NavigationStart = (function () {
 	    function NavigationStart(id, url) {
@@ -17153,6 +17921,8 @@ webpackJsonp([2],[
 	exports.NavigationStart = NavigationStart;
 	/**
 	 * An event triggered when a navigation ends successfully
+	 *
+	 * @stable
 	 */
 	var NavigationEnd = (function () {
 	    function NavigationEnd(id, url, urlAfterRedirects) {
@@ -17168,6 +17938,8 @@ webpackJsonp([2],[
 	exports.NavigationEnd = NavigationEnd;
 	/**
 	 * An event triggered when a navigation is canceled
+	 *
+	 * @stable
 	 */
 	var NavigationCancel = (function () {
 	    function NavigationCancel(id, url) {
@@ -17180,6 +17952,8 @@ webpackJsonp([2],[
 	exports.NavigationCancel = NavigationCancel;
 	/**
 	 * An event triggered when a navigation fails due to unexpected error
+	 *
+	 * @stable
 	 */
 	var NavigationError = (function () {
 	    function NavigationError(id, url, error) {
@@ -17195,6 +17969,8 @@ webpackJsonp([2],[
 	exports.NavigationError = NavigationError;
 	/**
 	 * An event triggered when routes are recognized
+	 *
+	 * @stable
 	 */
 	var RoutesRecognized = (function () {
 	    function RoutesRecognized(id, url, urlAfterRedirects, state) {
@@ -17211,10 +17987,14 @@ webpackJsonp([2],[
 	exports.RoutesRecognized = RoutesRecognized;
 	/**
 	 * The `Router` is responsible for mapping URLs to components.
+	 *
+	 * See {@link RouterConfig) for more details and examples.
+	 *
+	 * @stable
 	 */
 	var Router = (function () {
 	    /**
-	     * @internal
+	     * Creates the router service.
 	     */
 	    function Router(rootComponentType, resolver, urlSerializer, outletMap, location, injector, config) {
 	        this.rootComponentType = rootComponentType;
@@ -17234,7 +18014,7 @@ webpackJsonp([2],[
 	     */
 	    Router.prototype.initialNavigation = function () {
 	        this.setUpLocationChangeListener();
-	        this.navigateByUrl(this.location.path());
+	        this.navigateByUrl(this.location.path(true));
 	    };
 	    Object.defineProperty(Router.prototype, "routerState", {
 	        /**
@@ -17390,6 +18170,8 @@ webpackJsonp([2],[
 	        return new Promise(function (resolvePromise, rejectPromise) {
 	            var updatedUrl;
 	            var state;
+	            var navigationIsSuccessful;
+	            var preActivation;
 	            apply_redirects_1.applyRedirects(url, _this.config)
 	                .mergeMap(function (u) {
 	                updatedUrl = u;
@@ -17404,15 +18186,26 @@ webpackJsonp([2],[
 	            })
 	                .map(function (newState) {
 	                state = newState;
+	                preActivation =
+	                    new PreActivation(state.snapshot, _this.currentRouterState.snapshot, _this.injector);
+	                preActivation.traverse(_this.outletMap);
 	            })
 	                .mergeMap(function (_) {
-	                return new GuardChecks(state.snapshot, _this.currentRouterState.snapshot, _this.injector)
-	                    .check(_this.outletMap);
+	                return preActivation.checkGuards();
+	            })
+	                .mergeMap(function (shouldActivate) {
+	                if (shouldActivate) {
+	                    return preActivation.resolveData().map(function () { return shouldActivate; });
+	                }
+	                else {
+	                    return of_1.of(shouldActivate);
+	                }
 	            })
 	                .forEach(function (shouldActivate) {
 	                if (!shouldActivate || id !== _this.navigationId) {
 	                    _this.routerEvents.next(new NavigationCancel(id, _this.serializeUrl(url)));
-	                    return Promise.resolve(false);
+	                    navigationIsSuccessful = false;
+	                    return;
 	                }
 	                new ActivateRoutes(state, _this.currentRouterState).activate(_this.outletMap);
 	                _this.currentUrlTree = updatedUrl;
@@ -17426,11 +18219,11 @@ webpackJsonp([2],[
 	                        _this.location.go(path);
 	                    }
 	                }
-	                return Promise.resolve(true);
+	                navigationIsSuccessful = true;
 	            })
 	                .then(function () {
 	                _this.routerEvents.next(new NavigationEnd(id, _this.serializeUrl(url), _this.serializeUrl(updatedUrl)));
-	                resolvePromise(true);
+	                resolvePromise(navigationIsSuccessful);
 	            }, function (e) {
 	                _this.routerEvents.next(new NavigationError(id, _this.serializeUrl(url), e));
 	                rejectPromise(e);
@@ -17440,12 +18233,18 @@ webpackJsonp([2],[
 	    return Router;
 	}());
 	exports.Router = Router;
+	/**
+	 * @experimental
+	 */
 	var CanActivate = (function () {
 	    function CanActivate(route) {
 	        this.route = route;
 	    }
 	    return CanActivate;
 	}());
+	/**
+	 * @experimental
+	 */
 	var CanDeactivate = (function () {
 	    function CanDeactivate(component, route) {
 	        this.component = component;
@@ -17453,18 +18252,20 @@ webpackJsonp([2],[
 	    }
 	    return CanDeactivate;
 	}());
-	var GuardChecks = (function () {
-	    function GuardChecks(future, curr, injector) {
+	var PreActivation = (function () {
+	    function PreActivation(future, curr, injector) {
 	        this.future = future;
 	        this.curr = curr;
 	        this.injector = injector;
 	        this.checks = [];
 	    }
-	    GuardChecks.prototype.check = function (parentOutletMap) {
-	        var _this = this;
+	    PreActivation.prototype.traverse = function (parentOutletMap) {
 	        var futureRoot = this.future._root;
 	        var currRoot = this.curr ? this.curr._root : null;
 	        this.traverseChildRoutes(futureRoot, currRoot, parentOutletMap);
+	    };
+	    PreActivation.prototype.checkGuards = function () {
+	        var _this = this;
 	        if (this.checks.length === 0)
 	            return of_1.of(true);
 	        return Observable_1.Observable.from(this.checks)
@@ -17473,7 +18274,9 @@ webpackJsonp([2],[
 	                return _this.runCanActivate(s.route);
 	            }
 	            else if (s instanceof CanDeactivate) {
-	                return _this.runCanDeactivate(s.component, s.route);
+	                // workaround https://github.com/Microsoft/TypeScript/issues/7271
+	                var s2 = s;
+	                return _this.runCanDeactivate(s2.component, s2.route);
 	            }
 	            else {
 	                throw new Error('Cannot be reached');
@@ -17482,7 +18285,22 @@ webpackJsonp([2],[
 	            .mergeAll()
 	            .every(function (result) { return result === true; });
 	    };
-	    GuardChecks.prototype.traverseChildRoutes = function (futureNode, currNode, outletMap) {
+	    PreActivation.prototype.resolveData = function () {
+	        var _this = this;
+	        if (this.checks.length === 0)
+	            return of_1.of(null);
+	        return Observable_1.Observable.from(this.checks)
+	            .mergeMap(function (s) {
+	            if (s instanceof CanActivate) {
+	                return _this.runResolve(s.route);
+	            }
+	            else {
+	                return of_1.of(null);
+	            }
+	        })
+	            .reduce(function (_, __) { return _; });
+	    };
+	    PreActivation.prototype.traverseChildRoutes = function (futureNode, currNode, outletMap) {
 	        var _this = this;
 	        var prevChildren = nodeChildrenAsMap(currNode);
 	        futureNode.children.forEach(function (c) {
@@ -17491,7 +18309,7 @@ webpackJsonp([2],[
 	        });
 	        collection_1.forEach(prevChildren, function (v, k) { return _this.deactivateOutletAndItChildren(v, outletMap._outlets[k]); });
 	    };
-	    GuardChecks.prototype.traverseRoutes = function (futureNode, currNode, parentOutletMap) {
+	    PreActivation.prototype.traverseRoutes = function (futureNode, currNode, parentOutletMap) {
 	        var future = futureNode.value;
 	        var curr = currNode ? currNode.value : null;
 	        var outlet = parentOutletMap ? parentOutletMap._outlets[futureNode.value.outlet] : null;
@@ -17528,13 +18346,13 @@ webpackJsonp([2],[
 	            }
 	        }
 	    };
-	    GuardChecks.prototype.deactivateOutletAndItChildren = function (route, outlet) {
+	    PreActivation.prototype.deactivateOutletAndItChildren = function (route, outlet) {
 	        if (outlet && outlet.isActivated) {
 	            this.deactivateOutletMap(outlet.outletMap);
 	            this.checks.push(new CanDeactivate(outlet.component, route));
 	        }
 	    };
-	    GuardChecks.prototype.deactivateOutletMap = function (outletMap) {
+	    PreActivation.prototype.deactivateOutletMap = function (outletMap) {
 	        var _this = this;
 	        collection_1.forEach(outletMap._outlets, function (v) {
 	            if (v.isActivated) {
@@ -17542,7 +18360,7 @@ webpackJsonp([2],[
 	            }
 	        });
 	    };
-	    GuardChecks.prototype.runCanActivate = function (future) {
+	    PreActivation.prototype.runCanActivate = function (future) {
 	        var _this = this;
 	        var canActivate = future._routeConfig ? future._routeConfig.canActivate : null;
 	        if (!canActivate || canActivate.length === 0)
@@ -17560,7 +18378,7 @@ webpackJsonp([2],[
 	            .mergeAll()
 	            .every(function (result) { return result === true; });
 	    };
-	    GuardChecks.prototype.runCanDeactivate = function (component, curr) {
+	    PreActivation.prototype.runCanDeactivate = function (component, curr) {
 	        var _this = this;
 	        var canDeactivate = curr && curr._routeConfig ? curr._routeConfig.canDeactivate : null;
 	        if (!canDeactivate || canDeactivate.length === 0)
@@ -17578,7 +18396,32 @@ webpackJsonp([2],[
 	            .mergeAll()
 	            .every(function (result) { return result === true; });
 	    };
-	    return GuardChecks;
+	    PreActivation.prototype.runResolve = function (future) {
+	        var resolve = future._resolve;
+	        return this.resolveNode(resolve.current, future).map(function (resolvedData) {
+	            resolve.resolvedData = resolvedData;
+	            future.data = collection_1.merge(future.data, resolve.flattenedResolvedData);
+	            return null;
+	        });
+	    };
+	    PreActivation.prototype.resolveNode = function (resolve, future) {
+	        var _this = this;
+	        var resolvingObs = [];
+	        var resolvedData = {};
+	        collection_1.forEach(resolve, function (v, k) {
+	            var resolver = _this.injector.get(v);
+	            var obs = resolver.resolve ? wrapIntoObservable(resolver.resolve(future, _this.future)) :
+	                wrapIntoObservable(resolver(future, _this.future));
+	            resolvingObs.push(obs.map(function (_) { resolvedData[k] = _; }));
+	        });
+	        if (resolvingObs.length > 0) {
+	            return Observable_1.Observable.forkJoin(resolvingObs).map(function (r) { return resolvedData; });
+	        }
+	        else {
+	            return of_1.of(resolvedData);
+	        }
+	    };
+	    return PreActivation;
 	}());
 	function wrapIntoObservable(value) {
 	    if (value instanceof Observable_1.Observable) {
@@ -17597,6 +18440,7 @@ webpackJsonp([2],[
 	        var futureRoot = this.futureState._root;
 	        var currRoot = this.currState ? this.currState._root : null;
 	        pushQueryParamsAndFragment(this.futureState);
+	        router_state_1.advanceActivatedRoute(this.futureState.root);
 	        this.activateChildRoutes(futureRoot, currRoot, parentOutletMap);
 	    };
 	    ActivateRoutes.prototype.activateChildRoutes = function (futureNode, currNode, outletMap) {
@@ -17655,7 +18499,7 @@ webpackJsonp([2],[
 	            { provide: router_state_1.ActivatedRoute, useValue: future },
 	            { provide: router_outlet_map_1.RouterOutletMap, useValue: outletMap }
 	        ]);
-	        outlet.activate(future._futureSnapshot._resolvedComponentFactory, future, resolved, outletMap);
+	        outlet.activate(future, resolved, outletMap);
 	    };
 	    ActivateRoutes.prototype.deactivateOutletAndItChildren = function (outlet) {
 	        if (outlet && outlet.isActivated) {
@@ -17699,7 +18543,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=router.js.map
 
 /***/ },
-/* 175 */
+/* 178 */
 /***/ function(module, exports) {
 
 	/**
@@ -17710,6 +18554,9 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
+	/**
+	 * @stable
+	 */
 	var RouterOutletMap = (function () {
 	    function RouterOutletMap() {
 	        /** @internal */
@@ -17722,8 +18569,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=router_outlet_map.js.map
 
 /***/ },
-/* 176 */,
-/* 177 */
+/* 179 */,
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17732,9 +18579,9 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subject_1 = __webpack_require__(20);
-	var throwError_1 = __webpack_require__(426);
-	var ObjectUnsubscribedError_1 = __webpack_require__(276);
+	var Subject_1 = __webpack_require__(21);
+	var throwError_1 = __webpack_require__(440);
+	var ObjectUnsubscribedError_1 = __webpack_require__(281);
 	/**
 	 * @class BehaviorSubject<T>
 	 */
@@ -17782,7 +18629,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ },
-/* 178 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17913,16 +18760,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=Notification.js.map
 
 /***/ },
-/* 179 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ArrayObservable_1 = __webpack_require__(80);
+	var ArrayObservable_1 = __webpack_require__(82);
 	exports.of = ArrayObservable_1.ArrayObservable.of;
 	//# sourceMappingURL=of.js.map
 
 /***/ },
-/* 180 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17931,8 +18778,8 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var OuterSubscriber_1 = __webpack_require__(13);
-	var subscribeToResult_1 = __webpack_require__(14);
+	var OuterSubscriber_1 = __webpack_require__(14);
+	var subscribeToResult_1 = __webpack_require__(15);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable which
 	 * concurrently delivers all values that are emitted on the inner Observables.
@@ -18038,8 +18885,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 181 */,
-/* 182 */
+/* 184 */,
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18065,7 +18912,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 183 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18076,9 +18923,9 @@ webpackJsonp([2],[
 	//# sourceMappingURL=rxSubscriber.js.map
 
 /***/ },
-/* 184 */,
-/* 185 */,
-/* 186 */
+/* 187 */,
+/* 188 */,
+/* 189 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18089,9 +18936,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=isFunction.js.map
 
 /***/ },
-/* 187 */,
-/* 188 */,
-/* 189 */,
 /* 190 */,
 /* 191 */,
 /* 192 */,
@@ -18112,14 +18956,27 @@ webpackJsonp([2],[
 /* 207 */,
 /* 208 */,
 /* 209 */,
-/* 210 */
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
 	var _CASE_DEFAULT = new Object();
+	// TODO: remove when fully deprecated
+	var _warned = false;
 	var SwitchView = (function () {
 	    function SwitchView(_viewContainerRef, _templateRef) {
 	        this._viewContainerRef = _viewContainerRef;
@@ -18240,8 +19097,8 @@ webpackJsonp([2],[
 	    });
 	    Object.defineProperty(NgSwitchCase.prototype, "ngSwitchWhen", {
 	        set: function (value) {
-	            if (!this._warned) {
-	                this._warned = true;
+	            if (!_warned) {
+	                _warned = true;
 	                console.warn('*ngSwitchWhen is deprecated and will be removed. Use *ngSwitchCase instead');
 	            }
 	            this._switch._onCaseValueChanged(this._value, value, this._view);
@@ -18283,11 +19140,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_switch.js.map
 
 /***/ },
-/* 211 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(71);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
 	/**
 	 * Base class for control directives.
@@ -18352,9 +19216,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=abstract_control_directive.js.map
 
 /***/ },
-/* 212 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18362,9 +19233,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var validators_1 = __webpack_require__(62);
-	var control_container_1 = __webpack_require__(124);
-	var shared_1 = __webpack_require__(106);
+	var validators_1 = __webpack_require__(63);
+	var control_container_1 = __webpack_require__(126);
+	var shared_1 = __webpack_require__(107);
 	exports.controlGroupProvider = 
 	/*@ts2dart_const*/ /* @ts2dart_Provider */ {
 	    provide: control_container_1.ControlContainer,
@@ -18435,9 +19306,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_control_group.js.map
 
 /***/ },
-/* 213 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18445,12 +19323,12 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var validators_1 = __webpack_require__(62);
-	var control_container_1 = __webpack_require__(124);
-	var control_value_accessor_1 = __webpack_require__(55);
-	var ng_control_1 = __webpack_require__(91);
-	var shared_1 = __webpack_require__(106);
+	var async_1 = __webpack_require__(62);
+	var validators_1 = __webpack_require__(63);
+	var control_container_1 = __webpack_require__(126);
+	var control_value_accessor_1 = __webpack_require__(56);
+	var ng_control_1 = __webpack_require__(92);
+	var shared_1 = __webpack_require__(107);
 	exports.controlNameBinding = 
 	/*@ts2dart_const*/ /* @ts2dart_Provider */ {
 	    provide: ng_control_1.NgControl,
@@ -18533,13 +19411,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_control_name.js.map
 
 /***/ },
-/* 214 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var ng_control_1 = __webpack_require__(91);
+	var ng_control_1 = __webpack_require__(92);
 	var NgControlStatus = (function () {
 	    function NgControlStatus(cd) {
 	        this._cd = cd;
@@ -18610,9 +19495,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_control_status.js.map
 
 /***/ },
-/* 215 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18620,13 +19512,13 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var collection_1 = __webpack_require__(31);
+	var async_1 = __webpack_require__(62);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var model_1 = __webpack_require__(149);
-	var validators_1 = __webpack_require__(62);
-	var control_container_1 = __webpack_require__(124);
-	var shared_1 = __webpack_require__(106);
+	var model_1 = __webpack_require__(152);
+	var validators_1 = __webpack_require__(63);
+	var control_container_1 = __webpack_require__(126);
+	var shared_1 = __webpack_require__(107);
 	exports.formDirectiveProvider = 
 	/*@ts2dart_const*/ { provide: control_container_1.ControlContainer, useExisting: core_1.forwardRef(function () { return NgForm; }) };
 	var _formWarningDisplayed = false;
@@ -18753,9 +19645,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_form.js.map
 
 /***/ },
-/* 216 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18763,12 +19662,12 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var collection_1 = __webpack_require__(31);
-	var validators_1 = __webpack_require__(62);
-	var control_value_accessor_1 = __webpack_require__(55);
-	var ng_control_1 = __webpack_require__(91);
-	var shared_1 = __webpack_require__(106);
+	var async_1 = __webpack_require__(62);
+	var collection_1 = __webpack_require__(34);
+	var validators_1 = __webpack_require__(63);
+	var control_value_accessor_1 = __webpack_require__(56);
+	var ng_control_1 = __webpack_require__(92);
+	var shared_1 = __webpack_require__(107);
 	exports.formControlBinding = 
 	/*@ts2dart_const*/ /* @ts2dart_Provider */ {
 	    provide: ng_control_1.NgControl,
@@ -18844,9 +19743,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_form_control.js.map
 
 /***/ },
-/* 217 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18854,13 +19760,13 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var collection_1 = __webpack_require__(31);
-	var exceptions_1 = __webpack_require__(71);
+	var async_1 = __webpack_require__(62);
+	var collection_1 = __webpack_require__(34);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
-	var validators_1 = __webpack_require__(62);
-	var control_container_1 = __webpack_require__(124);
-	var shared_1 = __webpack_require__(106);
+	var validators_1 = __webpack_require__(63);
+	var control_container_1 = __webpack_require__(126);
+	var shared_1 = __webpack_require__(107);
 	exports.formDirectiveProvider = 
 	/*@ts2dart_const*/ /* @ts2dart_Provider */ {
 	    provide: control_container_1.ControlContainer,
@@ -18978,9 +19884,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_form_model.js.map
 
 /***/ },
-/* 218 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -18988,12 +19901,12 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var model_1 = __webpack_require__(149);
-	var validators_1 = __webpack_require__(62);
-	var control_value_accessor_1 = __webpack_require__(55);
-	var ng_control_1 = __webpack_require__(91);
-	var shared_1 = __webpack_require__(106);
+	var async_1 = __webpack_require__(62);
+	var model_1 = __webpack_require__(152);
+	var validators_1 = __webpack_require__(63);
+	var control_value_accessor_1 = __webpack_require__(56);
+	var ng_control_1 = __webpack_require__(92);
+	var shared_1 = __webpack_require__(107);
 	exports.formControlBinding = 
 	/*@ts2dart_const*/ /* @ts2dart_Provider */ {
 	    provide: ng_control_1.NgControl,
@@ -19071,13 +19984,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_model.js.map
 
 /***/ },
-/* 219 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var control_value_accessor_1 = __webpack_require__(55);
+	var control_value_accessor_1 = __webpack_require__(56);
 	exports.NUMBER_VALUE_ACCESSOR = {
 	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return NumberValueAccessor; }),
@@ -19120,13 +20040,206 @@ webpackJsonp([2],[
 	//# sourceMappingURL=number_value_accessor.js.map
 
 /***/ },
-/* 220 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var core_1 = __webpack_require__(2);
+	var collection_1 = __webpack_require__(34);
+	var lang_1 = __webpack_require__(9);
+	var control_value_accessor_1 = __webpack_require__(56);
+	var SELECT_MULTIPLE_VALUE_ACCESSOR = {
+	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
+	    useExisting: core_1.forwardRef(function () { return SelectMultipleControlValueAccessor; }),
+	    multi: true
+	};
+	function _buildValueString(id, value) {
+	    if (lang_1.isBlank(id))
+	        return "" + value;
+	    if (lang_1.isString(value))
+	        value = "'" + value + "'";
+	    if (!lang_1.isPrimitive(value))
+	        value = 'Object';
+	    return lang_1.StringWrapper.slice(id + ": " + value, 0, 50);
+	}
+	function _extractId(valueString) {
+	    return valueString.split(':')[0];
+	}
+	/** Mock interface for HTMLCollection */
+	var HTMLCollection = (function () {
+	    function HTMLCollection() {
+	    }
+	    return HTMLCollection;
+	}());
+	var SelectMultipleControlValueAccessor = (function () {
+	    function SelectMultipleControlValueAccessor() {
+	        /** @internal */
+	        this._optionMap = new Map();
+	        /** @internal */
+	        this._idCounter = 0;
+	        this.onChange = function (_) { };
+	        this.onTouched = function () { };
+	    }
+	    SelectMultipleControlValueAccessor.prototype.writeValue = function (value) {
+	        var _this = this;
+	        this.value = value;
+	        if (value == null)
+	            return;
+	        var values = value;
+	        // convert values to ids
+	        var ids = values.map(function (v) { return _this._getOptionId(v); });
+	        this._optionMap.forEach(function (opt, o) { opt._setSelected(ids.indexOf(o.toString()) > -1); });
+	    };
+	    SelectMultipleControlValueAccessor.prototype.registerOnChange = function (fn) {
+	        var _this = this;
+	        this.onChange = function (_) {
+	            var selected = [];
+	            if (_.hasOwnProperty('selectedOptions')) {
+	                var options = _.selectedOptions;
+	                for (var i = 0; i < options.length; i++) {
+	                    var opt = options.item(i);
+	                    var val = _this._getOptionValue(opt.value);
+	                    selected.push(val);
+	                }
+	            }
+	            else {
+	                var options = _.options;
+	                for (var i = 0; i < options.length; i++) {
+	                    var opt = options.item(i);
+	                    if (opt.selected) {
+	                        var val = _this._getOptionValue(opt.value);
+	                        selected.push(val);
+	                    }
+	                }
+	            }
+	            fn(selected);
+	        };
+	    };
+	    SelectMultipleControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+	    /** @internal */
+	    SelectMultipleControlValueAccessor.prototype._registerOption = function (value) {
+	        var id = (this._idCounter++).toString();
+	        this._optionMap.set(id, value);
+	        return id;
+	    };
+	    /** @internal */
+	    SelectMultipleControlValueAccessor.prototype._getOptionId = function (value) {
+	        for (var _i = 0, _a = collection_1.MapWrapper.keys(this._optionMap); _i < _a.length; _i++) {
+	            var id = _a[_i];
+	            if (lang_1.looseIdentical(this._optionMap.get(id)._value, value))
+	                return id;
+	        }
+	        return null;
+	    };
+	    /** @internal */
+	    SelectMultipleControlValueAccessor.prototype._getOptionValue = function (valueString) {
+	        var opt = this._optionMap.get(_extractId(valueString));
+	        return lang_1.isPresent(opt) ? opt._value : valueString;
+	    };
+	    /** @nocollapse */
+	    SelectMultipleControlValueAccessor.decorators = [
+	        { type: core_1.Directive, args: [{
+	                    selector: 'select[multiple][ngControl],select[multiple][ngFormControl],select[multiple][ngModel]',
+	                    host: { '(input)': 'onChange($event.target)', '(blur)': 'onTouched()' },
+	                    providers: [SELECT_MULTIPLE_VALUE_ACCESSOR]
+	                },] },
+	    ];
+	    /** @nocollapse */
+	    SelectMultipleControlValueAccessor.ctorParameters = [];
+	    return SelectMultipleControlValueAccessor;
+	}());
+	exports.SelectMultipleControlValueAccessor = SelectMultipleControlValueAccessor;
+	var NgSelectMultipleOption = (function () {
+	    function NgSelectMultipleOption(_element, _renderer, _select) {
+	        this._element = _element;
+	        this._renderer = _renderer;
+	        this._select = _select;
+	        if (lang_1.isPresent(this._select)) {
+	            this.id = this._select._registerOption(this);
+	        }
+	    }
+	    Object.defineProperty(NgSelectMultipleOption.prototype, "ngValue", {
+	        set: function (value) {
+	            if (this._select == null)
+	                return;
+	            this._value = value;
+	            this._setElementValue(_buildValueString(this.id, value));
+	            this._select.writeValue(this._select.value);
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(NgSelectMultipleOption.prototype, "value", {
+	        set: function (value) {
+	            if (lang_1.isPresent(this._select)) {
+	                this._value = value;
+	                this._setElementValue(_buildValueString(this.id, value));
+	                this._select.writeValue(this._select.value);
+	            }
+	            else {
+	                this._setElementValue(value);
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /** @internal */
+	    NgSelectMultipleOption.prototype._setElementValue = function (value) {
+	        this._renderer.setElementProperty(this._element.nativeElement, 'value', value);
+	    };
+	    /** @internal */
+	    NgSelectMultipleOption.prototype._setSelected = function (selected) {
+	        this._renderer.setElementProperty(this._element.nativeElement, 'selected', selected);
+	    };
+	    NgSelectMultipleOption.prototype.ngOnDestroy = function () {
+	        if (lang_1.isPresent(this._select)) {
+	            this._select._optionMap.delete(this.id);
+	            this._select.writeValue(this._select.value);
+	        }
+	    };
+	    /** @nocollapse */
+	    NgSelectMultipleOption.decorators = [
+	        { type: core_1.Directive, args: [{ selector: 'option' },] },
+	    ];
+	    /** @nocollapse */
+	    NgSelectMultipleOption.ctorParameters = [
+	        { type: core_1.ElementRef, },
+	        { type: core_1.Renderer, },
+	        { type: SelectMultipleControlValueAccessor, decorators: [{ type: core_1.Optional }, { type: core_1.Host },] },
+	    ];
+	    /** @nocollapse */
+	    NgSelectMultipleOption.propDecorators = {
+	        'ngValue': [{ type: core_1.Input, args: ['ngValue',] },],
+	        'value': [{ type: core_1.Input, args: ['value',] },],
+	    };
+	    return NgSelectMultipleOption;
+	}());
+	exports.NgSelectMultipleOption = NgSelectMultipleOption;
+	exports.SELECT_DIRECTIVES = [SelectMultipleControlValueAccessor, NgSelectMultipleOption];
+	//# sourceMappingURL=select_multiple_control_value_accessor.js.map
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var validators_1 = __webpack_require__(62);
+	var validators_1 = __webpack_require__(63);
 	var REQUIRED = validators_1.Validators.required;
 	exports.REQUIRED_VALIDATOR = {
 	    provide: validators_1.NG_VALIDATORS,
@@ -19235,13 +20348,55 @@ webpackJsonp([2],[
 	//# sourceMappingURL=validators.js.map
 
 /***/ },
-/* 221 */
+/* 226 */
+/***/ function(module, exports) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	/**
+	 * @experimental
+	 */
+	var NgLocalization = (function () {
+	    function NgLocalization() {
+	    }
+	    return NgLocalization;
+	}());
+	exports.NgLocalization = NgLocalization;
+	/**
+	 * Returns the plural category for a given value.
+	 * - "=value" when the case exists,
+	 * - the plural category otherwise
+	 *
+	 * @internal
+	 */
+	function getPluralCategory(value, cases, ngLocalization) {
+	    var nbCase = "=" + value;
+	    return cases.indexOf(nbCase) > -1 ? nbCase : ngLocalization.getPluralCategory(value);
+	}
+	exports.getPluralCategory = getPluralCategory;
+	//# sourceMappingURL=localization.js.map
+
+/***/ },
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
-	var location_strategy_1 = __webpack_require__(150);
+	var async_1 = __webpack_require__(62);
+	var location_strategy_1 = __webpack_require__(153);
 	var Location = (function () {
 	    function Location(platformStrategy) {
 	        var _this = this;
@@ -19251,13 +20406,18 @@ webpackJsonp([2],[
 	        var browserBaseHref = this._platformStrategy.getBaseHref();
 	        this._baseHref = Location.stripTrailingSlash(_stripIndexHtml(browserBaseHref));
 	        this._platformStrategy.onPopState(function (ev) {
-	            async_1.ObservableWrapper.callEmit(_this._subject, { 'url': _this.path(), 'pop': true, 'type': ev.type });
+	            async_1.ObservableWrapper.callEmit(_this._subject, { 'url': _this.path(true), 'pop': true, 'type': ev.type });
 	        });
 	    }
 	    /**
 	     * Returns the normalized URL path.
 	     */
-	    Location.prototype.path = function () { return this.normalize(this._platformStrategy.path()); };
+	    // TODO: vsavkin. Remove the boolean flag and always include hash once the deprecated router is
+	    // removed.
+	    Location.prototype.path = function (includeHash) {
+	        if (includeHash === void 0) { includeHash = false; }
+	        return this.normalize(this._platformStrategy.path(includeHash));
+	    };
 	    /**
 	     * Normalizes the given path and compares to the current normalized path.
 	     */
@@ -19385,9 +20545,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=location.js.map
 
 /***/ },
-/* 222 */
+/* 228 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * This class should not be used directly by an application developer. Instead, use
@@ -19439,116 +20606,281 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_location.js.map
 
 /***/ },
-/* 223 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(510));
+	__export(__webpack_require__(525));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 224 */
+/* 230 */
+/***/ function(module, exports) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	exports.$EOF = 0;
+	exports.$TAB = 9;
+	exports.$LF = 10;
+	exports.$VTAB = 11;
+	exports.$FF = 12;
+	exports.$CR = 13;
+	exports.$SPACE = 32;
+	exports.$BANG = 33;
+	exports.$DQ = 34;
+	exports.$HASH = 35;
+	exports.$$ = 36;
+	exports.$PERCENT = 37;
+	exports.$AMPERSAND = 38;
+	exports.$SQ = 39;
+	exports.$LPAREN = 40;
+	exports.$RPAREN = 41;
+	exports.$STAR = 42;
+	exports.$PLUS = 43;
+	exports.$COMMA = 44;
+	exports.$MINUS = 45;
+	exports.$PERIOD = 46;
+	exports.$SLASH = 47;
+	exports.$COLON = 58;
+	exports.$SEMICOLON = 59;
+	exports.$LT = 60;
+	exports.$EQ = 61;
+	exports.$GT = 62;
+	exports.$QUESTION = 63;
+	exports.$0 = 48;
+	exports.$9 = 57;
+	exports.$A = 65;
+	exports.$E = 69;
+	exports.$F = 70;
+	exports.$X = 88;
+	exports.$Z = 90;
+	exports.$LBRACKET = 91;
+	exports.$BACKSLASH = 92;
+	exports.$RBRACKET = 93;
+	exports.$CARET = 94;
+	exports.$_ = 95;
+	exports.$a = 97;
+	exports.$e = 101;
+	exports.$f = 102;
+	exports.$n = 110;
+	exports.$r = 114;
+	exports.$t = 116;
+	exports.$u = 117;
+	exports.$v = 118;
+	exports.$x = 120;
+	exports.$z = 122;
+	exports.$LBRACE = 123;
+	exports.$BAR = 124;
+	exports.$RBRACE = 125;
+	exports.$NBSP = 160;
+	exports.$PIPE = 124;
+	exports.$TILDA = 126;
+	exports.$AT = 64;
+	exports.$BT = 96;
+	function isWhitespace(code) {
+	    return (code >= exports.$TAB && code <= exports.$SPACE) || (code == exports.$NBSP);
+	}
+	exports.isWhitespace = isWhitespace;
+	function isDigit(code) {
+	    return exports.$0 <= code && code <= exports.$9;
+	}
+	exports.isDigit = isDigit;
+	function isAsciiLetter(code) {
+	    return code >= exports.$a && code <= exports.$z || code >= exports.$A && code <= exports.$Z;
+	}
+	exports.isAsciiLetter = isAsciiLetter;
+	function isAsciiHexDigit(code) {
+	    return code >= exports.$a && code <= exports.$f || code >= exports.$A && code <= exports.$F || isDigit(code);
+	}
+	exports.isAsciiHexDigit = isAsciiHexDigit;
+	//# sourceMappingURL=chars.js.map
+
+/***/ },
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(228);
-	var exceptions_1 = __webpack_require__(16);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var compile_metadata_1 = __webpack_require__(39);
-	var xhr_1 = __webpack_require__(238);
-	var url_resolver_1 = __webpack_require__(109);
-	var style_url_resolver_1 = __webpack_require__(234);
-	var html_ast_1 = __webpack_require__(72);
-	var html_parser_1 = __webpack_require__(108);
-	var config_1 = __webpack_require__(107);
-	var template_preparser_1 = __webpack_require__(351);
+	var compile_metadata_1 = __webpack_require__(40);
+	var config_1 = __webpack_require__(108);
+	var html_ast_1 = __webpack_require__(74);
+	var html_parser_1 = __webpack_require__(109);
+	var style_url_resolver_1 = __webpack_require__(357);
+	var template_preparser_1 = __webpack_require__(358);
+	var url_resolver_1 = __webpack_require__(110);
+	var xhr_1 = __webpack_require__(365);
+	var NormalizeDirectiveResult = (function () {
+	    function NormalizeDirectiveResult(syncResult, asyncResult) {
+	        this.syncResult = syncResult;
+	        this.asyncResult = asyncResult;
+	    }
+	    return NormalizeDirectiveResult;
+	}());
+	exports.NormalizeDirectiveResult = NormalizeDirectiveResult;
 	var DirectiveNormalizer = (function () {
 	    function DirectiveNormalizer(_xhr, _urlResolver, _htmlParser, _config) {
 	        this._xhr = _xhr;
 	        this._urlResolver = _urlResolver;
 	        this._htmlParser = _htmlParser;
 	        this._config = _config;
+	        this._xhrCache = new Map();
 	    }
+	    DirectiveNormalizer.prototype.clearCache = function () { this._xhrCache.clear(); };
+	    DirectiveNormalizer.prototype.clearCacheFor = function (normalizedDirective) {
+	        var _this = this;
+	        if (!normalizedDirective.isComponent) {
+	            return;
+	        }
+	        this._xhrCache.delete(normalizedDirective.template.templateUrl);
+	        normalizedDirective.template.externalStylesheets.forEach(function (stylesheet) { _this._xhrCache.delete(stylesheet.moduleUrl); });
+	    };
+	    DirectiveNormalizer.prototype._fetch = function (url) {
+	        var result = this._xhrCache.get(url);
+	        if (!result) {
+	            result = this._xhr.get(url);
+	            this._xhrCache.set(url, result);
+	        }
+	        return result;
+	    };
 	    DirectiveNormalizer.prototype.normalizeDirective = function (directive) {
+	        var _this = this;
 	        if (!directive.isComponent) {
 	            // For non components there is nothing to be normalized yet.
-	            return async_1.PromiseWrapper.resolve(directive);
+	            return new NormalizeDirectiveResult(directive, Promise.resolve(directive));
 	        }
-	        return this.normalizeTemplate(directive.type, directive.template)
-	            .then(function (normalizedTemplate) { return new compile_metadata_1.CompileDirectiveMetadata({
-	            type: directive.type,
-	            isComponent: directive.isComponent,
-	            selector: directive.selector,
-	            exportAs: directive.exportAs,
-	            changeDetection: directive.changeDetection,
-	            inputs: directive.inputs,
-	            outputs: directive.outputs,
-	            hostListeners: directive.hostListeners,
-	            hostProperties: directive.hostProperties,
-	            hostAttributes: directive.hostAttributes,
-	            lifecycleHooks: directive.lifecycleHooks,
-	            providers: directive.providers,
-	            viewProviders: directive.viewProviders,
-	            queries: directive.queries,
-	            viewQueries: directive.viewQueries,
-	            template: normalizedTemplate
-	        }); });
-	    };
-	    DirectiveNormalizer.prototype.normalizeTemplate = function (directiveType, template) {
-	        var _this = this;
-	        if (lang_1.isPresent(template.template)) {
-	            return async_1.PromiseWrapper.resolve(this.normalizeLoadedTemplate(directiveType, template, template.template, directiveType.moduleUrl));
+	        var normalizedTemplateSync = null;
+	        var normalizedTemplateAsync;
+	        if (lang_1.isPresent(directive.template.template)) {
+	            normalizedTemplateSync = this.normalizeTemplateSync(directive.type, directive.template);
+	            normalizedTemplateAsync = Promise.resolve(normalizedTemplateSync);
 	        }
-	        else if (lang_1.isPresent(template.templateUrl)) {
-	            var sourceAbsUrl = this._urlResolver.resolve(directiveType.moduleUrl, template.templateUrl);
-	            return this._xhr.get(sourceAbsUrl)
-	                .then(function (templateContent) { return _this.normalizeLoadedTemplate(directiveType, template, templateContent, sourceAbsUrl); });
+	        else if (directive.template.templateUrl) {
+	            normalizedTemplateAsync = this.normalizeTemplateAsync(directive.type, directive.template);
 	        }
 	        else {
-	            throw new exceptions_1.BaseException("No template specified for component " + directiveType.name);
+	            throw new exceptions_1.BaseException("No template specified for component " + directive.type.name);
+	        }
+	        if (normalizedTemplateSync && normalizedTemplateSync.styleUrls.length === 0) {
+	            // sync case
+	            var normalizedDirective = _cloneDirectiveWithTemplate(directive, normalizedTemplateSync);
+	            return new NormalizeDirectiveResult(normalizedDirective, Promise.resolve(normalizedDirective));
+	        }
+	        else {
+	            // async case
+	            return new NormalizeDirectiveResult(null, normalizedTemplateAsync
+	                .then(function (normalizedTemplate) { return _this.normalizeExternalStylesheets(normalizedTemplate); })
+	                .then(function (normalizedTemplate) {
+	                return _cloneDirectiveWithTemplate(directive, normalizedTemplate);
+	            }));
 	        }
 	    };
-	    DirectiveNormalizer.prototype.normalizeLoadedTemplate = function (directiveType, templateMeta, template, templateAbsUrl) {
+	    DirectiveNormalizer.prototype.normalizeTemplateSync = function (directiveType, template) {
+	        return this.normalizeLoadedTemplate(directiveType, template, template.template, directiveType.moduleUrl);
+	    };
+	    DirectiveNormalizer.prototype.normalizeTemplateAsync = function (directiveType, template) {
 	        var _this = this;
+	        var templateUrl = this._urlResolver.resolve(directiveType.moduleUrl, template.templateUrl);
+	        return this._fetch(templateUrl)
+	            .then(function (value) { return _this.normalizeLoadedTemplate(directiveType, template, value, templateUrl); });
+	    };
+	    DirectiveNormalizer.prototype.normalizeLoadedTemplate = function (directiveType, templateMeta, template, templateAbsUrl) {
 	        var rootNodesAndErrors = this._htmlParser.parse(template, directiveType.name);
 	        if (rootNodesAndErrors.errors.length > 0) {
 	            var errorString = rootNodesAndErrors.errors.join('\n');
 	            throw new exceptions_1.BaseException("Template parse errors:\n" + errorString);
 	        }
+	        var templateMetadataStyles = this.normalizeStylesheet(new compile_metadata_1.CompileStylesheetMetadata({
+	            styles: templateMeta.styles,
+	            styleUrls: templateMeta.styleUrls,
+	            moduleUrl: directiveType.moduleUrl
+	        }));
 	        var visitor = new TemplatePreparseVisitor();
 	        html_ast_1.htmlVisitAll(visitor, rootNodesAndErrors.rootNodes);
-	        var allStyles = templateMeta.styles.concat(visitor.styles);
-	        var allStyleAbsUrls = visitor.styleUrls.filter(style_url_resolver_1.isStyleUrlResolvable)
-	            .map(function (url) { return _this._urlResolver.resolve(templateAbsUrl, url); })
-	            .concat(templateMeta.styleUrls.filter(style_url_resolver_1.isStyleUrlResolvable)
-	            .map(function (url) { return _this._urlResolver.resolve(directiveType.moduleUrl, url); }));
-	        var allResolvedStyles = allStyles.map(function (style) {
-	            var styleWithImports = style_url_resolver_1.extractStyleUrls(_this._urlResolver, templateAbsUrl, style);
-	            styleWithImports.styleUrls.forEach(function (styleUrl) { return allStyleAbsUrls.push(styleUrl); });
-	            return styleWithImports.style;
-	        });
+	        var templateStyles = this.normalizeStylesheet(new compile_metadata_1.CompileStylesheetMetadata({ styles: visitor.styles, styleUrls: visitor.styleUrls, moduleUrl: templateAbsUrl }));
+	        var allStyles = templateMetadataStyles.styles.concat(templateStyles.styles);
+	        var allStyleUrls = templateMetadataStyles.styleUrls.concat(templateStyles.styleUrls);
 	        var encapsulation = templateMeta.encapsulation;
 	        if (lang_1.isBlank(encapsulation)) {
 	            encapsulation = this._config.defaultEncapsulation;
 	        }
-	        if (encapsulation === core_1.ViewEncapsulation.Emulated && allResolvedStyles.length === 0 &&
-	            allStyleAbsUrls.length === 0) {
+	        if (encapsulation === core_1.ViewEncapsulation.Emulated && allStyles.length === 0 &&
+	            allStyleUrls.length === 0) {
 	            encapsulation = core_1.ViewEncapsulation.None;
 	        }
 	        return new compile_metadata_1.CompileTemplateMetadata({
 	            encapsulation: encapsulation,
 	            template: template,
 	            templateUrl: templateAbsUrl,
-	            styles: allResolvedStyles,
-	            styleUrls: allStyleAbsUrls,
+	            styles: allStyles,
+	            styleUrls: allStyleUrls,
+	            externalStylesheets: templateMeta.externalStylesheets,
 	            ngContentSelectors: visitor.ngContentSelectors,
 	            animations: templateMeta.animations,
 	            interpolation: templateMeta.interpolation
 	        });
+	    };
+	    DirectiveNormalizer.prototype.normalizeExternalStylesheets = function (templateMeta) {
+	        return this._loadMissingExternalStylesheets(templateMeta.styleUrls)
+	            .then(function (externalStylesheets) { return new compile_metadata_1.CompileTemplateMetadata({
+	            encapsulation: templateMeta.encapsulation,
+	            template: templateMeta.template,
+	            templateUrl: templateMeta.templateUrl,
+	            styles: templateMeta.styles,
+	            styleUrls: templateMeta.styleUrls,
+	            externalStylesheets: externalStylesheets,
+	            ngContentSelectors: templateMeta.ngContentSelectors,
+	            animations: templateMeta.animations,
+	            interpolation: templateMeta.interpolation
+	        }); });
+	    };
+	    DirectiveNormalizer.prototype._loadMissingExternalStylesheets = function (styleUrls, loadedStylesheets) {
+	        var _this = this;
+	        if (loadedStylesheets === void 0) { loadedStylesheets = new Map(); }
+	        return Promise
+	            .all(styleUrls.filter(function (styleUrl) { return !loadedStylesheets.has(styleUrl); })
+	            .map(function (styleUrl) { return _this._fetch(styleUrl).then(function (loadedStyle) {
+	            var stylesheet = _this.normalizeStylesheet(new compile_metadata_1.CompileStylesheetMetadata({ styles: [loadedStyle], moduleUrl: styleUrl }));
+	            loadedStylesheets.set(styleUrl, stylesheet);
+	            return _this._loadMissingExternalStylesheets(stylesheet.styleUrls, loadedStylesheets);
+	        }); }))
+	            .then(function (_) { return collection_1.MapWrapper.values(loadedStylesheets); });
+	    };
+	    DirectiveNormalizer.prototype.normalizeStylesheet = function (stylesheet) {
+	        var _this = this;
+	        var allStyleUrls = stylesheet.styleUrls.filter(style_url_resolver_1.isStyleUrlResolvable)
+	            .map(function (url) { return _this._urlResolver.resolve(stylesheet.moduleUrl, url); });
+	        var allStyles = stylesheet.styles.map(function (style) {
+	            var styleWithImports = style_url_resolver_1.extractStyleUrls(_this._urlResolver, stylesheet.moduleUrl, style);
+	            allStyleUrls.push.apply(allStyleUrls, styleWithImports.styleUrls);
+	            return styleWithImports.style;
+	        });
+	        return new compile_metadata_1.CompileStylesheetMetadata({ styles: allStyles, styleUrls: allStyleUrls, moduleUrl: stylesheet.moduleUrl });
 	    };
 	    /** @nocollapse */
 	    DirectiveNormalizer.decorators = [
@@ -19612,17 +20944,45 @@ webpackJsonp([2],[
 	    TemplatePreparseVisitor.prototype.visitExpansionCase = function (ast, context) { return null; };
 	    return TemplatePreparseVisitor;
 	}());
+	function _cloneDirectiveWithTemplate(directive, template) {
+	    return new compile_metadata_1.CompileDirectiveMetadata({
+	        type: directive.type,
+	        isComponent: directive.isComponent,
+	        selector: directive.selector,
+	        exportAs: directive.exportAs,
+	        changeDetection: directive.changeDetection,
+	        inputs: directive.inputs,
+	        outputs: directive.outputs,
+	        hostListeners: directive.hostListeners,
+	        hostProperties: directive.hostProperties,
+	        hostAttributes: directive.hostAttributes,
+	        lifecycleHooks: directive.lifecycleHooks,
+	        providers: directive.providers,
+	        viewProviders: directive.viewProviders,
+	        queries: directive.queries,
+	        viewQueries: directive.viewQueries,
+	        precompile: directive.precompile,
+	        template: template
+	    });
+	}
 	//# sourceMappingURL=directive_normalizer.js.map
 
 /***/ },
-/* 225 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	function _isDirectiveMetadata(type) {
 	    return type instanceof core_1.DirectiveMetadata;
@@ -19715,7 +21075,8 @@ webpackJsonp([2],[
 	                queries: mergedQueries,
 	                changeDetection: dm.changeDetection,
 	                providers: dm.providers,
-	                viewProviders: dm.viewProviders
+	                viewProviders: dm.viewProviders,
+	                precompile: dm.precompile
 	            });
 	        }
 	        else {
@@ -19745,9 +21106,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=directive_resolver.js.map
 
 /***/ },
-/* 226 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -19755,8 +21123,8 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var chars = __webpack_require__(230);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	(function (TokenType) {
 	    TokenType[TokenType["Character"] = 0] = "Character";
@@ -19767,6 +21135,7 @@ webpackJsonp([2],[
 	    TokenType[TokenType["Number"] = 5] = "Number";
 	})(exports.TokenType || (exports.TokenType = {}));
 	var TokenType = exports.TokenType;
+	var KEYWORDS = ['var', 'let', 'null', 'undefined', 'true', 'false', 'if', 'else'];
 	var Lexer = (function () {
 	    function Lexer() {
 	    }
@@ -19854,49 +21223,6 @@ webpackJsonp([2],[
 	    return new Token(index, TokenType.Number, n, '');
 	}
 	exports.EOF = new Token(-1, TokenType.Character, 0, '');
-	exports.$EOF = 0;
-	exports.$TAB = 9;
-	exports.$LF = 10;
-	exports.$VTAB = 11;
-	exports.$FF = 12;
-	exports.$CR = 13;
-	exports.$SPACE = 32;
-	exports.$BANG = 33;
-	exports.$DQ = 34;
-	exports.$HASH = 35;
-	exports.$$ = 36;
-	exports.$PERCENT = 37;
-	exports.$AMPERSAND = 38;
-	exports.$SQ = 39;
-	exports.$LPAREN = 40;
-	exports.$RPAREN = 41;
-	exports.$STAR = 42;
-	exports.$PLUS = 43;
-	exports.$COMMA = 44;
-	exports.$MINUS = 45;
-	exports.$PERIOD = 46;
-	exports.$SLASH = 47;
-	exports.$COLON = 58;
-	exports.$SEMICOLON = 59;
-	exports.$LT = 60;
-	exports.$EQ = 61;
-	exports.$GT = 62;
-	exports.$QUESTION = 63;
-	var $0 = 48;
-	var $9 = 57;
-	var $A = 65, $E = 69, $Z = 90;
-	exports.$LBRACKET = 91;
-	exports.$BACKSLASH = 92;
-	exports.$RBRACKET = 93;
-	var $CARET = 94;
-	var $_ = 95;
-	exports.$BT = 96;
-	var $a = 97, $e = 101, $f = 102;
-	var $n = 110, $r = 114, $t = 116, $u = 117, $v = 118, $z = 122;
-	exports.$LBRACE = 123;
-	exports.$BAR = 124;
-	exports.$RBRACE = 125;
-	var $NBSP = 160;
 	var ScannerError = (function (_super) {
 	    __extends(ScannerError, _super);
 	    function ScannerError(message) {
@@ -19917,14 +21243,14 @@ webpackJsonp([2],[
 	    }
 	    _Scanner.prototype.advance = function () {
 	        this.peek =
-	            ++this.index >= this.length ? exports.$EOF : lang_1.StringWrapper.charCodeAt(this.input, this.index);
+	            ++this.index >= this.length ? chars.$EOF : lang_1.StringWrapper.charCodeAt(this.input, this.index);
 	    };
 	    _Scanner.prototype.scanToken = function () {
 	        var input = this.input, length = this.length, peek = this.peek, index = this.index;
 	        // Skip whitespace.
-	        while (peek <= exports.$SPACE) {
+	        while (peek <= chars.$SPACE) {
 	            if (++index >= length) {
-	                peek = exports.$EOF;
+	                peek = chars.$EOF;
 	                break;
 	            }
 	            else {
@@ -19939,48 +21265,49 @@ webpackJsonp([2],[
 	        // Handle identifiers and numbers.
 	        if (isIdentifierStart(peek))
 	            return this.scanIdentifier();
-	        if (isDigit(peek))
+	        if (chars.isDigit(peek))
 	            return this.scanNumber(index);
 	        var start = index;
 	        switch (peek) {
-	            case exports.$PERIOD:
+	            case chars.$PERIOD:
 	                this.advance();
-	                return isDigit(this.peek) ? this.scanNumber(start) : newCharacterToken(start, exports.$PERIOD);
-	            case exports.$LPAREN:
-	            case exports.$RPAREN:
-	            case exports.$LBRACE:
-	            case exports.$RBRACE:
-	            case exports.$LBRACKET:
-	            case exports.$RBRACKET:
-	            case exports.$COMMA:
-	            case exports.$COLON:
-	            case exports.$SEMICOLON:
+	                return chars.isDigit(this.peek) ? this.scanNumber(start) :
+	                    newCharacterToken(start, chars.$PERIOD);
+	            case chars.$LPAREN:
+	            case chars.$RPAREN:
+	            case chars.$LBRACE:
+	            case chars.$RBRACE:
+	            case chars.$LBRACKET:
+	            case chars.$RBRACKET:
+	            case chars.$COMMA:
+	            case chars.$COLON:
+	            case chars.$SEMICOLON:
 	                return this.scanCharacter(start, peek);
-	            case exports.$SQ:
-	            case exports.$DQ:
+	            case chars.$SQ:
+	            case chars.$DQ:
 	                return this.scanString();
-	            case exports.$HASH:
-	            case exports.$PLUS:
-	            case exports.$MINUS:
-	            case exports.$STAR:
-	            case exports.$SLASH:
-	            case exports.$PERCENT:
-	            case $CARET:
+	            case chars.$HASH:
+	            case chars.$PLUS:
+	            case chars.$MINUS:
+	            case chars.$STAR:
+	            case chars.$SLASH:
+	            case chars.$PERCENT:
+	            case chars.$CARET:
 	                return this.scanOperator(start, lang_1.StringWrapper.fromCharCode(peek));
-	            case exports.$QUESTION:
-	                return this.scanComplexOperator(start, '?', exports.$PERIOD, '.');
-	            case exports.$LT:
-	            case exports.$GT:
-	                return this.scanComplexOperator(start, lang_1.StringWrapper.fromCharCode(peek), exports.$EQ, '=');
-	            case exports.$BANG:
-	            case exports.$EQ:
-	                return this.scanComplexOperator(start, lang_1.StringWrapper.fromCharCode(peek), exports.$EQ, '=', exports.$EQ, '=');
-	            case exports.$AMPERSAND:
-	                return this.scanComplexOperator(start, '&', exports.$AMPERSAND, '&');
-	            case exports.$BAR:
-	                return this.scanComplexOperator(start, '|', exports.$BAR, '|');
-	            case $NBSP:
-	                while (isWhitespace(this.peek))
+	            case chars.$QUESTION:
+	                return this.scanComplexOperator(start, '?', chars.$PERIOD, '.');
+	            case chars.$LT:
+	            case chars.$GT:
+	                return this.scanComplexOperator(start, lang_1.StringWrapper.fromCharCode(peek), chars.$EQ, '=');
+	            case chars.$BANG:
+	            case chars.$EQ:
+	                return this.scanComplexOperator(start, lang_1.StringWrapper.fromCharCode(peek), chars.$EQ, '=', chars.$EQ, '=');
+	            case chars.$AMPERSAND:
+	                return this.scanComplexOperator(start, '&', chars.$AMPERSAND, '&');
+	            case chars.$BAR:
+	                return this.scanComplexOperator(start, '|', chars.$BAR, '|');
+	            case chars.$NBSP:
+	                while (chars.isWhitespace(this.peek))
 	                    this.advance();
 	                return this.scanToken();
 	        }
@@ -20025,27 +21352,23 @@ webpackJsonp([2],[
 	        while (isIdentifierPart(this.peek))
 	            this.advance();
 	        var str = this.input.substring(start, this.index);
-	        if (collection_1.SetWrapper.has(KEYWORDS, str)) {
-	            return newKeywordToken(start, str);
-	        }
-	        else {
-	            return newIdentifierToken(start, str);
-	        }
+	        return KEYWORDS.indexOf(str) > -1 ? newKeywordToken(start, str) :
+	            newIdentifierToken(start, str);
 	    };
 	    _Scanner.prototype.scanNumber = function (start) {
 	        var simple = (this.index === start);
 	        this.advance(); // Skip initial digit.
 	        while (true) {
-	            if (isDigit(this.peek)) {
+	            if (chars.isDigit(this.peek)) {
 	            }
-	            else if (this.peek == exports.$PERIOD) {
+	            else if (this.peek == chars.$PERIOD) {
 	                simple = false;
 	            }
 	            else if (isExponentStart(this.peek)) {
 	                this.advance();
 	                if (isExponentSign(this.peek))
 	                    this.advance();
-	                if (!isDigit(this.peek))
+	                if (!chars.isDigit(this.peek))
 	                    this.error('Invalid exponent', -1);
 	                simple = false;
 	            }
@@ -20055,7 +21378,6 @@ webpackJsonp([2],[
 	            this.advance();
 	        }
 	        var str = this.input.substring(start, this.index);
-	        // TODO
 	        var value = simple ? lang_1.NumberWrapper.parseIntAutoRadix(str) : lang_1.NumberWrapper.parseFloat(str);
 	        return newNumberToken(start, value);
 	    };
@@ -20067,13 +21389,13 @@ webpackJsonp([2],[
 	        var marker = this.index;
 	        var input = this.input;
 	        while (this.peek != quote) {
-	            if (this.peek == exports.$BACKSLASH) {
+	            if (this.peek == chars.$BACKSLASH) {
 	                if (buffer == null)
 	                    buffer = new lang_1.StringJoiner();
 	                buffer.add(input.substring(marker, this.index));
 	                this.advance();
 	                var unescapedCode;
-	                if (this.peek == $u) {
+	                if (this.peek == chars.$u) {
 	                    // 4 character hex code for unicode character.
 	                    var hex = input.substring(this.index + 1, this.index + 5);
 	                    try {
@@ -20093,7 +21415,7 @@ webpackJsonp([2],[
 	                buffer.add(lang_1.StringWrapper.fromCharCode(unescapedCode));
 	                marker = this.index;
 	            }
-	            else if (this.peek == exports.$EOF) {
+	            else if (this.peek == chars.$EOF) {
 	                this.error('Unterminated quote', 0);
 	            }
 	            else {
@@ -20116,11 +21438,9 @@ webpackJsonp([2],[
 	    };
 	    return _Scanner;
 	}());
-	function isWhitespace(code) {
-	    return (code >= exports.$TAB && code <= exports.$SPACE) || (code == $NBSP);
-	}
 	function isIdentifierStart(code) {
-	    return ($a <= code && code <= $z) || ($A <= code && code <= $Z) || (code == $_) || (code == exports.$$);
+	    return (chars.$a <= code && code <= chars.$z) || (chars.$A <= code && code <= chars.$Z) ||
+	        (code == chars.$_) || (code == chars.$$);
 	}
 	function isIdentifier(input) {
 	    if (input.length == 0)
@@ -20129,7 +21449,7 @@ webpackJsonp([2],[
 	    if (!isIdentifierStart(scanner.peek))
 	        return false;
 	    scanner.advance();
-	    while (scanner.peek !== exports.$EOF) {
+	    while (scanner.peek !== chars.$EOF) {
 	        if (!isIdentifierPart(scanner.peek))
 	            return false;
 	        scanner.advance();
@@ -20138,49 +21458,48 @@ webpackJsonp([2],[
 	}
 	exports.isIdentifier = isIdentifier;
 	function isIdentifierPart(code) {
-	    return ($a <= code && code <= $z) || ($A <= code && code <= $Z) || ($0 <= code && code <= $9) ||
-	        (code == $_) || (code == exports.$$);
-	}
-	function isDigit(code) {
-	    return $0 <= code && code <= $9;
+	    return chars.isAsciiLetter(code) || chars.isDigit(code) || (code == chars.$_) ||
+	        (code == chars.$$);
 	}
 	function isExponentStart(code) {
-	    return code == $e || code == $E;
+	    return code == chars.$e || code == chars.$E;
 	}
 	function isExponentSign(code) {
-	    return code == exports.$MINUS || code == exports.$PLUS;
+	    return code == chars.$MINUS || code == chars.$PLUS;
 	}
 	function isQuote(code) {
-	    return code === exports.$SQ || code === exports.$DQ || code === exports.$BT;
+	    return code === chars.$SQ || code === chars.$DQ || code === chars.$BT;
 	}
 	exports.isQuote = isQuote;
 	function unescape(code) {
 	    switch (code) {
-	        case $n:
-	            return exports.$LF;
-	        case $f:
-	            return exports.$FF;
-	        case $r:
-	            return exports.$CR;
-	        case $t:
-	            return exports.$TAB;
-	        case $v:
-	            return exports.$VTAB;
+	        case chars.$n:
+	            return chars.$LF;
+	        case chars.$f:
+	            return chars.$FF;
+	        case chars.$r:
+	            return chars.$CR;
+	        case chars.$t:
+	            return chars.$TAB;
+	        case chars.$v:
+	            return chars.$VTAB;
 	        default:
 	            return code;
 	    }
 	}
-	var OPERATORS = collection_1.SetWrapper.createFromList([
-	    '+', '-', '*', '/', '%', '^', '=', '==', '!=', '===', '!==', '<',
-	    '>', '<=', '>=', '&&', '||', '&', '|', '!', '?', '#', '?.'
-	]);
-	var KEYWORDS = collection_1.SetWrapper.createFromList(['var', 'let', 'null', 'undefined', 'true', 'false', 'if', 'else']);
 	//# sourceMappingURL=lexer.js.map
 
 /***/ },
-/* 227 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -20188,12 +21507,13 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var chars = __webpack_require__(230);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var interpolation_config_1 = __webpack_require__(152);
-	var ast_1 = __webpack_require__(345);
-	var lexer_1 = __webpack_require__(226);
+	var interpolation_config_1 = __webpack_require__(155);
+	var ast_1 = __webpack_require__(350);
+	var lexer_1 = __webpack_require__(233);
 	var _implicitReceiver = new ast_1.ImplicitReceiver();
 	var ParseException = (function (_super) {
 	    __extends(ParseException, _super);
@@ -20322,7 +21642,7 @@ webpackJsonp([2],[
 	        for (var i = 0; i < input.length - 1; i++) {
 	            var char = lang_1.StringWrapper.charCodeAt(input, i);
 	            var nextChar = lang_1.StringWrapper.charCodeAt(input, i + 1);
-	            if (char === lexer_1.$SLASH && nextChar == lexer_1.$SLASH && lang_1.isBlank(outerQuote))
+	            if (char === chars.$SLASH && nextChar == chars.$SLASH && lang_1.isBlank(outerQuote))
 	                return i;
 	            if (outerQuote === char) {
 	                outerQuote = null;
@@ -20437,11 +21757,11 @@ webpackJsonp([2],[
 	        while (this.index < this.tokens.length) {
 	            var expr = this.parsePipe();
 	            exprs.push(expr);
-	            if (this.optionalCharacter(lexer_1.$SEMICOLON)) {
+	            if (this.optionalCharacter(chars.$SEMICOLON)) {
 	                if (!this.parseAction) {
 	                    this.error('Binding expression cannot contain chained expression');
 	                }
-	                while (this.optionalCharacter(lexer_1.$SEMICOLON)) {
+	                while (this.optionalCharacter(chars.$SEMICOLON)) {
 	                } // read all semicolons
 	            }
 	            else if (this.index < this.tokens.length) {
@@ -20463,7 +21783,7 @@ webpackJsonp([2],[
 	            do {
 	                var name = this.expectIdentifierOrKeyword();
 	                var args = [];
-	                while (this.optionalCharacter(lexer_1.$COLON)) {
+	                while (this.optionalCharacter(chars.$COLON)) {
 	                    args.push(this.parseExpression());
 	                }
 	                result = new ast_1.BindingPipe(result, name, args);
@@ -20477,7 +21797,7 @@ webpackJsonp([2],[
 	        var result = this.parseLogicalOr();
 	        if (this.optionalOperator('?')) {
 	            var yes = this.parsePipe();
-	            if (!this.optionalCharacter(lexer_1.$COLON)) {
+	            if (!this.optionalCharacter(chars.$COLON)) {
 	                var end = this.inputIndex;
 	                var expression = this.input.substring(start, end);
 	                this.error("Conditional expression " + expression + " requires all 3 expressions");
@@ -20597,15 +21917,15 @@ webpackJsonp([2],[
 	    _ParseAST.prototype.parseCallChain = function () {
 	        var result = this.parsePrimary();
 	        while (true) {
-	            if (this.optionalCharacter(lexer_1.$PERIOD)) {
+	            if (this.optionalCharacter(chars.$PERIOD)) {
 	                result = this.parseAccessMemberOrMethodCall(result, false);
 	            }
 	            else if (this.optionalOperator('?.')) {
 	                result = this.parseAccessMemberOrMethodCall(result, true);
 	            }
-	            else if (this.optionalCharacter(lexer_1.$LBRACKET)) {
+	            else if (this.optionalCharacter(chars.$LBRACKET)) {
 	                var key = this.parsePipe();
-	                this.expectCharacter(lexer_1.$RBRACKET);
+	                this.expectCharacter(chars.$RBRACKET);
 	                if (this.optionalOperator('=')) {
 	                    var value = this.parseConditional();
 	                    result = new ast_1.KeyedWrite(result, key, value);
@@ -20614,9 +21934,9 @@ webpackJsonp([2],[
 	                    result = new ast_1.KeyedRead(result, key);
 	                }
 	            }
-	            else if (this.optionalCharacter(lexer_1.$LPAREN)) {
+	            else if (this.optionalCharacter(chars.$LPAREN)) {
 	                var args = this.parseCallArguments();
-	                this.expectCharacter(lexer_1.$RPAREN);
+	                this.expectCharacter(chars.$RPAREN);
 	                result = new ast_1.FunctionCall(result, args);
 	            }
 	            else {
@@ -20625,9 +21945,9 @@ webpackJsonp([2],[
 	        }
 	    };
 	    _ParseAST.prototype.parsePrimary = function () {
-	        if (this.optionalCharacter(lexer_1.$LPAREN)) {
+	        if (this.optionalCharacter(chars.$LPAREN)) {
 	            var result = this.parsePipe();
-	            this.expectCharacter(lexer_1.$RPAREN);
+	            this.expectCharacter(chars.$RPAREN);
 	            return result;
 	        }
 	        else if (this.next.isKeywordNull() || this.next.isKeywordUndefined()) {
@@ -20642,12 +21962,12 @@ webpackJsonp([2],[
 	            this.advance();
 	            return new ast_1.LiteralPrimitive(false);
 	        }
-	        else if (this.optionalCharacter(lexer_1.$LBRACKET)) {
-	            var elements = this.parseExpressionList(lexer_1.$RBRACKET);
-	            this.expectCharacter(lexer_1.$RBRACKET);
+	        else if (this.optionalCharacter(chars.$LBRACKET)) {
+	            var elements = this.parseExpressionList(chars.$RBRACKET);
+	            this.expectCharacter(chars.$RBRACKET);
 	            return new ast_1.LiteralArray(elements);
 	        }
-	        else if (this.next.isCharacter(lexer_1.$LBRACE)) {
+	        else if (this.next.isCharacter(chars.$LBRACE)) {
 	            return this.parseLiteralMap();
 	        }
 	        else if (this.next.isIdentifier()) {
@@ -20677,31 +21997,31 @@ webpackJsonp([2],[
 	        if (!this.next.isCharacter(terminator)) {
 	            do {
 	                result.push(this.parsePipe());
-	            } while (this.optionalCharacter(lexer_1.$COMMA));
+	            } while (this.optionalCharacter(chars.$COMMA));
 	        }
 	        return result;
 	    };
 	    _ParseAST.prototype.parseLiteralMap = function () {
 	        var keys = [];
 	        var values = [];
-	        this.expectCharacter(lexer_1.$LBRACE);
-	        if (!this.optionalCharacter(lexer_1.$RBRACE)) {
+	        this.expectCharacter(chars.$LBRACE);
+	        if (!this.optionalCharacter(chars.$RBRACE)) {
 	            do {
 	                var key = this.expectIdentifierOrKeywordOrString();
 	                keys.push(key);
-	                this.expectCharacter(lexer_1.$COLON);
+	                this.expectCharacter(chars.$COLON);
 	                values.push(this.parsePipe());
-	            } while (this.optionalCharacter(lexer_1.$COMMA));
-	            this.expectCharacter(lexer_1.$RBRACE);
+	            } while (this.optionalCharacter(chars.$COMMA));
+	            this.expectCharacter(chars.$RBRACE);
 	        }
 	        return new ast_1.LiteralMap(keys, values);
 	    };
 	    _ParseAST.prototype.parseAccessMemberOrMethodCall = function (receiver, isSafe) {
 	        if (isSafe === void 0) { isSafe = false; }
 	        var id = this.expectIdentifierOrKeyword();
-	        if (this.optionalCharacter(lexer_1.$LPAREN)) {
+	        if (this.optionalCharacter(chars.$LPAREN)) {
 	            var args = this.parseCallArguments();
-	            this.expectCharacter(lexer_1.$RPAREN);
+	            this.expectCharacter(chars.$RPAREN);
 	            return isSafe ? new ast_1.SafeMethodCall(receiver, id, args) : new ast_1.MethodCall(receiver, id, args);
 	        }
 	        else {
@@ -20729,12 +22049,12 @@ webpackJsonp([2],[
 	        return null;
 	    };
 	    _ParseAST.prototype.parseCallArguments = function () {
-	        if (this.next.isCharacter(lexer_1.$RPAREN))
+	        if (this.next.isCharacter(chars.$RPAREN))
 	            return [];
 	        var positionals = [];
 	        do {
 	            positionals.push(this.parsePipe());
-	        } while (this.optionalCharacter(lexer_1.$COMMA));
+	        } while (this.optionalCharacter(chars.$COMMA));
 	        return positionals;
 	    };
 	    /**
@@ -20778,7 +22098,7 @@ webpackJsonp([2],[
 	                    key = prefix + key[0].toUpperCase() + key.substring(1);
 	                }
 	            }
-	            this.optionalCharacter(lexer_1.$COLON);
+	            this.optionalCharacter(chars.$COLON);
 	            var name = null;
 	            var expression = null;
 	            if (keyIsVar) {
@@ -20797,8 +22117,8 @@ webpackJsonp([2],[
 	                expression = new ast_1.ASTWithSource(ast, source, this.location);
 	            }
 	            bindings.push(new ast_1.TemplateBinding(key, keyIsVar, name, expression));
-	            if (!this.optionalCharacter(lexer_1.$SEMICOLON)) {
-	                this.optionalCharacter(lexer_1.$COMMA);
+	            if (!this.optionalCharacter(chars.$SEMICOLON)) {
+	                this.optionalCharacter(chars.$COMMA);
 	            }
 	        }
 	        return new TemplateBindingParseResult(bindings, warnings);
@@ -20854,174 +22174,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=parser.js.map
 
 /***/ },
-/* 228 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var Subject_1 = __webpack_require__(20);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var toPromise_1 = __webpack_require__(119);
-	var lang_1 = __webpack_require__(5);
-	var Observable_1 = __webpack_require__(1);
-	exports.Observable = Observable_1.Observable;
-	var Subject_2 = __webpack_require__(20);
-	exports.Subject = Subject_2.Subject;
-	var promise_1 = __webpack_require__(519);
-	exports.PromiseCompleter = promise_1.PromiseCompleter;
-	exports.PromiseWrapper = promise_1.PromiseWrapper;
-	var TimerWrapper = (function () {
-	    function TimerWrapper() {
-	    }
-	    TimerWrapper.setTimeout = function (fn, millis) {
-	        return lang_1.global.setTimeout(fn, millis);
-	    };
-	    TimerWrapper.clearTimeout = function (id) { lang_1.global.clearTimeout(id); };
-	    TimerWrapper.setInterval = function (fn, millis) {
-	        return lang_1.global.setInterval(fn, millis);
-	    };
-	    TimerWrapper.clearInterval = function (id) { lang_1.global.clearInterval(id); };
-	    return TimerWrapper;
-	}());
-	exports.TimerWrapper = TimerWrapper;
-	var ObservableWrapper = (function () {
-	    function ObservableWrapper() {
-	    }
-	    // TODO(vsavkin): when we use rxnext, try inferring the generic type from the first arg
-	    ObservableWrapper.subscribe = function (emitter, onNext, onError, onComplete) {
-	        if (onComplete === void 0) { onComplete = function () { }; }
-	        onError = (typeof onError === 'function') && onError || lang_1.noop;
-	        onComplete = (typeof onComplete === 'function') && onComplete || lang_1.noop;
-	        return emitter.subscribe({ next: onNext, error: onError, complete: onComplete });
-	    };
-	    ObservableWrapper.isObservable = function (obs) { return !!obs.subscribe; };
-	    /**
-	     * Returns whether `obs` has any subscribers listening to events.
-	     */
-	    ObservableWrapper.hasSubscribers = function (obs) { return obs.observers.length > 0; };
-	    ObservableWrapper.dispose = function (subscription) { subscription.unsubscribe(); };
-	    /**
-	     * @deprecated - use callEmit() instead
-	     */
-	    ObservableWrapper.callNext = function (emitter, value) { emitter.emit(value); };
-	    ObservableWrapper.callEmit = function (emitter, value) { emitter.emit(value); };
-	    ObservableWrapper.callError = function (emitter, error) { emitter.error(error); };
-	    ObservableWrapper.callComplete = function (emitter) { emitter.complete(); };
-	    ObservableWrapper.fromPromise = function (promise) {
-	        return PromiseObservable_1.PromiseObservable.create(promise);
-	    };
-	    ObservableWrapper.toPromise = function (obj) { return toPromise_1.toPromise.call(obj); };
-	    return ObservableWrapper;
-	}());
-	exports.ObservableWrapper = ObservableWrapper;
 	/**
-	 * Use by directives and components to emit custom Events.
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
 	 *
-	 * ### Examples
-	 *
-	 * In the following example, `Zippy` alternatively emits `open` and `close` events when its
-	 * title gets clicked:
-	 *
-	 * ```
-	 * @Component({
-	 *   selector: 'zippy',
-	 *   template: `
-	 *   <div class="zippy">
-	 *     <div (click)="toggle()">Toggle</div>
-	 *     <div [hidden]="!visible">
-	 *       <ng-content></ng-content>
-	 *     </div>
-	 *  </div>`})
-	 * export class Zippy {
-	 *   visible: boolean = true;
-	 *   @Output() open: EventEmitter<any> = new EventEmitter();
-	 *   @Output() close: EventEmitter<any> = new EventEmitter();
-	 *
-	 *   toggle() {
-	 *     this.visible = !this.visible;
-	 *     if (this.visible) {
-	 *       this.open.emit(null);
-	 *     } else {
-	 *       this.close.emit(null);
-	 *     }
-	 *   }
-	 * }
-	 * ```
-	 *
-	 * The events payload can be accessed by the parameter `$event` on the components output event
-	 * handler:
-	 *
-	 * ```
-	 * <zippy (open)="onOpen($event)" (close)="onClose($event)"></zippy>
-	 * ```
-	 *
-	 * Uses Rx.Observable but provides an adapter to make it work as specified here:
-	 * https://github.com/jhusain/observable-spec
-	 *
-	 * Once a reference implementation of the spec is available, switch to it.
-	 * @stable
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
-	var EventEmitter = (function (_super) {
-	    __extends(EventEmitter, _super);
-	    /**
-	     * Creates an instance of [EventEmitter], which depending on [isAsync],
-	     * delivers events synchronously or asynchronously.
-	     */
-	    function EventEmitter(isAsync) {
-	        if (isAsync === void 0) { isAsync = false; }
-	        _super.call(this);
-	        this.__isAsync = isAsync;
-	    }
-	    EventEmitter.prototype.emit = function (value) { _super.prototype.next.call(this, value); };
-	    /**
-	     * @deprecated - use .emit(value) instead
-	     */
-	    EventEmitter.prototype.next = function (value) { _super.prototype.next.call(this, value); };
-	    EventEmitter.prototype.subscribe = function (generatorOrNext, error, complete) {
-	        var schedulerFn;
-	        var errorFn = function (err) { return null; };
-	        var completeFn = function () { return null; };
-	        if (generatorOrNext && typeof generatorOrNext === 'object') {
-	            schedulerFn = this.__isAsync ? function (value /** TODO #9100 */) {
-	                setTimeout(function () { return generatorOrNext.next(value); });
-	            } : function (value /** TODO #9100 */) { generatorOrNext.next(value); };
-	            if (generatorOrNext.error) {
-	                errorFn = this.__isAsync ? function (err) { setTimeout(function () { return generatorOrNext.error(err); }); } :
-	                    function (err) { generatorOrNext.error(err); };
-	            }
-	            if (generatorOrNext.complete) {
-	                completeFn = this.__isAsync ? function () { setTimeout(function () { return generatorOrNext.complete(); }); } :
-	                    function () { generatorOrNext.complete(); };
-	            }
-	        }
-	        else {
-	            schedulerFn = this.__isAsync ? function (value /** TODO #9100 */) {
-	                setTimeout(function () { return generatorOrNext(value); });
-	            } : function (value /** TODO #9100 */) { generatorOrNext(value); };
-	            if (error) {
-	                errorFn =
-	                    this.__isAsync ? function (err) { setTimeout(function () { return error(err); }); } : function (err) { error(err); };
-	            }
-	            if (complete) {
-	                completeFn =
-	                    this.__isAsync ? function () { setTimeout(function () { return complete(); }); } : function () { complete(); };
-	            }
-	        }
-	        return _super.prototype.subscribe.call(this, schedulerFn, errorFn, completeFn);
-	    };
-	    return EventEmitter;
-	}(Subject_1.Subject));
-	exports.EventEmitter = EventEmitter;
-	//# sourceMappingURL=async.js.map
-
-/***/ },
-/* 229 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -21029,9 +22191,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var lang_1 = __webpack_require__(5);
-	var html_ast_1 = __webpack_require__(72);
-	var parse_util_1 = __webpack_require__(73);
-	var message_1 = __webpack_require__(125);
+	var html_ast_1 = __webpack_require__(74);
+	var parse_util_1 = __webpack_require__(75);
+	var message_1 = __webpack_require__(127);
 	exports.I18N_ATTR = 'i18n';
 	exports.I18N_ATTR_PREFIX = 'i18n-';
 	var CUSTOM_PH_EXP = /\/\/[\s\S]*i18n[\s\S]*\([\s\S]*ph[\s\S]*=[\s\S]*"([\s\S]*?)"[\s\S]*\)/g;
@@ -21230,9 +22392,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=shared.js.map
 
 /***/ },
-/* 230 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -21240,19 +22409,19 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var assertions_1 = __webpack_require__(514);
-	var cpl = __webpack_require__(39);
-	var config_1 = __webpack_require__(107);
-	var directive_lifecycle_reflector_1 = __webpack_require__(517);
-	var directive_resolver_1 = __webpack_require__(225);
-	var pipe_resolver_1 = __webpack_require__(231);
-	var url_resolver_1 = __webpack_require__(109);
-	var util_1 = __webpack_require__(75);
-	var view_resolver_1 = __webpack_require__(237);
+	var assertions_1 = __webpack_require__(529);
+	var cpl = __webpack_require__(40);
+	var config_1 = __webpack_require__(108);
+	var directive_lifecycle_reflector_1 = __webpack_require__(531);
+	var directive_resolver_1 = __webpack_require__(232);
+	var pipe_resolver_1 = __webpack_require__(237);
+	var url_resolver_1 = __webpack_require__(110);
+	var util_1 = __webpack_require__(77);
+	var view_resolver_1 = __webpack_require__(241);
 	var CompileMetadataResolver = (function () {
 	    function CompileMetadataResolver(_directiveResolver, _pipeResolver, _viewResolver, _config, _reflector) {
 	        if (_reflector === void 0) { _reflector = core_private_1.reflector; }
@@ -21278,6 +22447,14 @@ webpackJsonp([2],[
 	            identifier = "anonymous_token_" + found + "_";
 	        }
 	        return util_1.sanitizeIdentifier(identifier);
+	    };
+	    CompileMetadataResolver.prototype.clearCacheFor = function (compType) {
+	        this._directiveCache.delete(compType);
+	        this._pipeCache.delete(compType);
+	    };
+	    CompileMetadataResolver.prototype.clearCache = function () {
+	        this._directiveCache.clear();
+	        this._pipeCache.clear();
 	    };
 	    CompileMetadataResolver.prototype.getAnimationEntryMetadata = function (entry) {
 	        var _this = this;
@@ -21330,8 +22507,8 @@ webpackJsonp([2],[
 	            var changeDetectionStrategy = null;
 	            var viewProviders = [];
 	            var moduleUrl = staticTypeModuleUrl(directiveType);
+	            var precompileTypes = [];
 	            if (dirMeta instanceof core_1.ComponentMetadata) {
-	                assertions_1.assertArrayOfStrings('styles', dirMeta.styles);
 	                var cmpMeta = dirMeta;
 	                var viewMeta = this._viewResolver.resolve(directiveType);
 	                assertions_1.assertArrayOfStrings('styles', viewMeta.styles);
@@ -21339,6 +22516,8 @@ webpackJsonp([2],[
 	                var animations = lang_1.isPresent(viewMeta.animations) ?
 	                    viewMeta.animations.map(function (e) { return _this.getAnimationEntryMetadata(e); }) :
 	                    null;
+	                assertions_1.assertArrayOfStrings('styles', viewMeta.styles);
+	                assertions_1.assertArrayOfStrings('styleUrls', viewMeta.styleUrls);
 	                templateMeta = new cpl.CompileTemplateMetadata({
 	                    encapsulation: viewMeta.encapsulation,
 	                    template: viewMeta.template,
@@ -21350,13 +22529,17 @@ webpackJsonp([2],[
 	                });
 	                changeDetectionStrategy = cmpMeta.changeDetection;
 	                if (lang_1.isPresent(dirMeta.viewProviders)) {
-	                    viewProviders = this.getProvidersMetadata(dirMeta.viewProviders);
+	                    viewProviders = this.getProvidersMetadata(verifyNonBlankProviders(directiveType, dirMeta.viewProviders, 'viewProviders'));
 	                }
 	                moduleUrl = componentModuleUrl(this._reflector, directiveType, cmpMeta);
+	                if (cmpMeta.precompile) {
+	                    precompileTypes = flattenArray(cmpMeta.precompile)
+	                        .map(function (cmp) { return _this.getTypeMetadata(cmp, staticTypeModuleUrl(cmp)); });
+	                }
 	            }
 	            var providers = [];
 	            if (lang_1.isPresent(dirMeta.providers)) {
-	                providers = this.getProvidersMetadata(dirMeta.providers);
+	                providers = this.getProvidersMetadata(verifyNonBlankProviders(directiveType, dirMeta.providers, 'providers'));
 	            }
 	            var queries = [];
 	            var viewQueries = [];
@@ -21378,7 +22561,8 @@ webpackJsonp([2],[
 	                providers: providers,
 	                viewProviders: viewProviders,
 	                queries: queries,
-	                viewQueries: viewQueries
+	                viewQueries: viewQueries,
+	                precompile: precompileTypes
 	            });
 	            this._directiveCache.set(directiveType, meta);
 	        }
@@ -21652,6 +22836,7 @@ webpackJsonp([2],[
 	    return pipes;
 	}
 	function flattenArray(tree, out) {
+	    if (out === void 0) { out = []; }
 	    for (var i = 0; i < tree.length; i++) {
 	        var item = core_1.resolveForwardRef(tree[i]);
 	        if (lang_1.isArray(item)) {
@@ -21661,6 +22846,19 @@ webpackJsonp([2],[
 	            out.push(item);
 	        }
 	    }
+	    return out;
+	}
+	function verifyNonBlankProviders(directiveType, providersTree, providersType) {
+	    var flat = [];
+	    var errMsg;
+	    flattenArray(providersTree, flat);
+	    for (var i = 0; i < flat.length; i++) {
+	        if (lang_1.isBlank(flat[i])) {
+	            errMsg = flat.map(function (provider) { return lang_1.isBlank(provider) ? '?' : lang_1.stringify(provider); }).join(', ');
+	            throw new exceptions_1.BaseException("One or more of " + providersType + " for \"" + lang_1.stringify(directiveType) + "\" were not defined: [" + errMsg + "].");
+	        }
+	    }
+	    return providersTree;
 	}
 	function isStaticType(value) {
 	    return lang_1.isStringMap(value) && lang_1.isPresent(value['name']) && lang_1.isPresent(value['filePath']);
@@ -21705,13 +22903,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=metadata_resolver.js.map
 
 /***/ },
-/* 231 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	function _isPipeMetadata(type) {
 	    return type instanceof core_1.PipeMetadata;
@@ -21748,12 +22953,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=pipe_resolver.js.map
 
 /***/ },
-/* 232 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	var _EMPTY_ATTR_VALUE = '';
 	// TODO: Can't use `const` here as
@@ -22111,17 +23323,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=selector.js.map
 
 /***/ },
-/* 233 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(5);
-	var compile_metadata_1 = __webpack_require__(39);
-	var o = __webpack_require__(24);
-	var shadow_css_1 = __webpack_require__(534);
-	var style_url_resolver_1 = __webpack_require__(234);
-	var url_resolver_1 = __webpack_require__(109);
+	var compile_metadata_1 = __webpack_require__(40);
+	var o = __webpack_require__(25);
+	var shadow_css_1 = __webpack_require__(548);
+	var url_resolver_1 = __webpack_require__(110);
 	var COMPONENT_VARIABLE = '%COMP%';
 	var HOST_ATTR = "_nghost-" + COMPONENT_VARIABLE;
 	var CONTENT_ATTR = "_ngcontent-" + COMPONENT_VARIABLE;
@@ -22135,42 +23352,61 @@ webpackJsonp([2],[
 	}());
 	exports.StylesCompileDependency = StylesCompileDependency;
 	var StylesCompileResult = (function () {
-	    function StylesCompileResult(statements, stylesVar, dependencies) {
-	        this.statements = statements;
-	        this.stylesVar = stylesVar;
-	        this.dependencies = dependencies;
+	    function StylesCompileResult(componentStylesheet, externalStylesheets) {
+	        this.componentStylesheet = componentStylesheet;
+	        this.externalStylesheets = externalStylesheets;
 	    }
 	    return StylesCompileResult;
 	}());
 	exports.StylesCompileResult = StylesCompileResult;
+	var CompiledStylesheet = (function () {
+	    function CompiledStylesheet(statements, stylesVar, dependencies, isShimmed, meta) {
+	        this.statements = statements;
+	        this.stylesVar = stylesVar;
+	        this.dependencies = dependencies;
+	        this.isShimmed = isShimmed;
+	        this.meta = meta;
+	    }
+	    return CompiledStylesheet;
+	}());
+	exports.CompiledStylesheet = CompiledStylesheet;
 	var StyleCompiler = (function () {
 	    function StyleCompiler(_urlResolver) {
 	        this._urlResolver = _urlResolver;
 	        this._shadowCss = new shadow_css_1.ShadowCss();
 	    }
 	    StyleCompiler.prototype.compileComponent = function (comp) {
-	        var shim = comp.template.encapsulation === core_1.ViewEncapsulation.Emulated;
-	        return this._compileStyles(getStylesVarName(comp), comp.template.styles, comp.template.styleUrls, shim);
-	    };
-	    StyleCompiler.prototype.compileStylesheet = function (stylesheetUrl, cssText, isShimmed) {
-	        var styleWithImports = style_url_resolver_1.extractStyleUrls(this._urlResolver, stylesheetUrl, cssText);
-	        return this._compileStyles(getStylesVarName(null), [styleWithImports.style], styleWithImports.styleUrls, isShimmed);
-	    };
-	    StyleCompiler.prototype._compileStyles = function (stylesVar, plainStyles, absUrls, shim) {
 	        var _this = this;
-	        var styleExpressions = plainStyles.map(function (plainStyle) { return o.literal(_this._shimIfNeeded(plainStyle, shim)); });
+	        var shim = comp.template.encapsulation === core_1.ViewEncapsulation.Emulated;
+	        var externalStylesheets = [];
+	        var componentStylesheet = this._compileStyles(comp, new compile_metadata_1.CompileStylesheetMetadata({
+	            styles: comp.template.styles,
+	            styleUrls: comp.template.styleUrls,
+	            moduleUrl: comp.type.moduleUrl
+	        }), true);
+	        comp.template.externalStylesheets.forEach(function (stylesheetMeta) {
+	            var compiledStylesheet = _this._compileStyles(comp, stylesheetMeta, false);
+	            externalStylesheets.push(compiledStylesheet);
+	        });
+	        return new StylesCompileResult(componentStylesheet, externalStylesheets);
+	    };
+	    StyleCompiler.prototype._compileStyles = function (comp, stylesheet, isComponentStylesheet) {
+	        var _this = this;
+	        var shim = comp.template.encapsulation === core_1.ViewEncapsulation.Emulated;
+	        var styleExpressions = stylesheet.styles.map(function (plainStyle) { return o.literal(_this._shimIfNeeded(plainStyle, shim)); });
 	        var dependencies = [];
-	        for (var i = 0; i < absUrls.length; i++) {
+	        for (var i = 0; i < stylesheet.styleUrls.length; i++) {
 	            var identifier = new compile_metadata_1.CompileIdentifierMetadata({ name: getStylesVarName(null) });
-	            dependencies.push(new StylesCompileDependency(absUrls[i], shim, identifier));
+	            dependencies.push(new StylesCompileDependency(stylesheet.styleUrls[i], shim, identifier));
 	            styleExpressions.push(new o.ExternalExpr(identifier));
 	        }
 	        // styles variable contains plain strings and arrays of other styles arrays (recursive),
 	        // so we set its type to dynamic.
+	        var stylesVar = getStylesVarName(isComponentStylesheet ? comp : null);
 	        var stmt = o.variable(stylesVar)
 	            .set(o.literalArr(styleExpressions, new o.ArrayType(o.DYNAMIC_TYPE, [o.TypeModifier.Const])))
 	            .toDeclStmt(null, [o.StmtModifier.Final]);
-	        return new StylesCompileResult([stmt], stylesVar, dependencies);
+	        return new CompiledStylesheet([stmt], stylesVar, dependencies, shim, stylesheet);
 	    };
 	    StyleCompiler.prototype._shimIfNeeded = function (style, shim) {
 	        return shim ? this._shadowCss.shimCssText(style, CONTENT_ATTR, HOST_ATTR) : style;
@@ -22188,7 +23424,7 @@ webpackJsonp([2],[
 	exports.StyleCompiler = StyleCompiler;
 	function getStylesVarName(component) {
 	    var result = "styles";
-	    if (lang_1.isPresent(component)) {
+	    if (component) {
 	        result += "_" + component.type.name;
 	    }
 	    return result;
@@ -22196,60 +23432,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=style_compiler.js.map
 
 /***/ },
-/* 234 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// Some of the code comes from WebComponents.JS
-	// https://github.com/webcomponents/webcomponentsjs/blob/master/src/HTMLImports/path.js
-	"use strict";
-	var lang_1 = __webpack_require__(5);
-	var StyleWithImports = (function () {
-	    function StyleWithImports(style, styleUrls) {
-	        this.style = style;
-	        this.styleUrls = styleUrls;
-	    }
-	    return StyleWithImports;
-	}());
-	exports.StyleWithImports = StyleWithImports;
-	function isStyleUrlResolvable(url) {
-	    if (lang_1.isBlank(url) || url.length === 0 || url[0] == '/')
-	        return false;
-	    var schemeMatch = lang_1.RegExpWrapper.firstMatch(_urlWithSchemaRe, url);
-	    return lang_1.isBlank(schemeMatch) || schemeMatch[1] == 'package' || schemeMatch[1] == 'asset';
-	}
-	exports.isStyleUrlResolvable = isStyleUrlResolvable;
 	/**
-	 * Rewrites stylesheets by resolving and removing the @import urls that
-	 * are either relative or don't have a `package:` scheme
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
-	function extractStyleUrls(resolver, baseUrl, cssText) {
-	    var foundUrls = [];
-	    var modifiedCssText = lang_1.StringWrapper.replaceAllMapped(cssText, _cssImportRe, function (m) {
-	        var url = lang_1.isPresent(m[1]) ? m[1] : m[2];
-	        if (!isStyleUrlResolvable(url)) {
-	            // Do not attempt to resolve non-package absolute URLs with URI scheme
-	            return m[0];
-	        }
-	        foundUrls.push(resolver.resolve(baseUrl, url));
-	        return '';
-	    });
-	    return new StyleWithImports(modifiedCssText, foundUrls);
-	}
-	exports.extractStyleUrls = extractStyleUrls;
-	var _cssImportRe = /@import\s+(?:url\()?\s*(?:(?:['"]([^'"]*))|([^;\)\s]*))[^;]*;?/g;
-	// TODO: can't use /^[^:/?#.]+:/g due to clang-format bug:
-	//       https://github.com/angular/angular/issues/4596
-	var _urlWithSchemaRe = /^([a-zA-Z\-\+\.]+):/g;
-	//# sourceMappingURL=style_url_resolver.js.map
-
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var o = __webpack_require__(24);
+	var o = __webpack_require__(25);
 	var _DebugState = (function () {
 	    function _DebugState(nodeIndex, sourceAst) {
 	        this.nodeIndex = nodeIndex;
@@ -22312,87 +23508,27 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_method.js.map
 
 /***/ },
-/* 236 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var animation_compiler_1 = __webpack_require__(344);
-	var config_1 = __webpack_require__(107);
-	var compile_element_1 = __webpack_require__(353);
-	var compile_view_1 = __webpack_require__(355);
-	var view_binder_1 = __webpack_require__(539);
-	var view_builder_1 = __webpack_require__(540);
-	var ViewCompileResult = (function () {
-	    function ViewCompileResult(statements, viewFactoryVar, dependencies) {
-	        this.statements = statements;
-	        this.viewFactoryVar = viewFactoryVar;
-	        this.dependencies = dependencies;
-	    }
-	    return ViewCompileResult;
-	}());
-	exports.ViewCompileResult = ViewCompileResult;
-	var ViewCompiler = (function () {
-	    function ViewCompiler(_genConfig) {
-	        this._genConfig = _genConfig;
-	        this._animationCompiler = new animation_compiler_1.AnimationCompiler();
-	    }
-	    ViewCompiler.prototype.compileComponent = function (component, template, styles, pipes) {
-	        var dependencies = [];
-	        var compiledAnimations = this._animationCompiler.compileComponent(component);
-	        var statements = [];
-	        compiledAnimations.map(function (entry) {
-	            statements.push(entry.statesMapStatement);
-	            statements.push(entry.fnStatement);
-	        });
-	        var view = new compile_view_1.CompileView(component, this._genConfig, pipes, styles, compiledAnimations, 0, compile_element_1.CompileElement.createNull(), []);
-	        view_builder_1.buildView(view, template, dependencies);
-	        // Need to separate binding from creation to be able to refer to
-	        // variables that have been declared after usage.
-	        view_binder_1.bindView(view, template);
-	        view_builder_1.finishView(view, statements);
-	        return new ViewCompileResult(statements, view.viewFactory.name, dependencies);
-	    };
-	    /** @nocollapse */
-	    ViewCompiler.decorators = [
-	        { type: core_1.Injectable },
-	    ];
-	    /** @nocollapse */
-	    ViewCompiler.ctorParameters = [
-	        { type: config_1.CompilerConfig, },
-	    ];
-	    return ViewCompiler;
-	}());
-	exports.ViewCompiler = ViewCompiler;
-	//# sourceMappingURL=view_compiler.js.map
-
-/***/ },
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
+	var core_private_1 = __webpack_require__(30);
 	var lang_1 = __webpack_require__(5);
-	var exceptions_1 = __webpack_require__(16);
-	var collection_1 = __webpack_require__(11);
+	var exceptions_1 = __webpack_require__(17);
 	var ViewResolver = (function () {
 	    function ViewResolver(_reflector) {
 	        if (_reflector === void 0) { _reflector = core_private_1.reflector; }
 	        this._reflector = _reflector;
-	        /** @internal */
-	        this._cache = new collection_1.Map();
 	    }
 	    ViewResolver.prototype.resolve = function (component) {
-	        var view = this._cache.get(component);
-	        if (lang_1.isBlank(view)) {
-	            view = this._resolve(component);
-	            this._cache.set(component, view);
-	        }
-	        return view;
-	    };
-	    /** @internal */
-	    ViewResolver.prototype._resolve = function (component) {
 	        var compMeta;
 	        this._reflector.annotations(component).forEach(function (m) {
 	            if (m instanceof core_1.ComponentMetadata) {
@@ -22435,45 +23571,33 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_resolver.js.map
 
 /***/ },
-/* 238 */
-/***/ function(module, exports) {
-
-	"use strict";
-	// TODO: vsavkin rename it into TemplateLoader
-	/**
-	 * An interface for retrieving documents by URL that the compiler uses
-	 * to load templates.
-	 */
-	var XHR = (function () {
-	    function XHR() {
-	    }
-	    XHR.prototype.get = function (url) { return null; };
-	    return XHR;
-	}());
-	exports.XHR = XHR;
-	//# sourceMappingURL=xhr.js.map
-
-/***/ },
-/* 239 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(92);
-	var collection_1 = __webpack_require__(25);
+	var async_1 = __webpack_require__(93);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var application_tokens_1 = __webpack_require__(157);
-	var console_1 = __webpack_require__(242);
-	var di_1 = __webpack_require__(111);
-	var component_resolver_1 = __webpack_require__(127);
-	var profile_1 = __webpack_require__(163);
-	var testability_1 = __webpack_require__(253);
-	var ng_zone_1 = __webpack_require__(254);
+	var application_tokens_1 = __webpack_require__(161);
+	var console_1 = __webpack_require__(245);
+	var di_1 = __webpack_require__(112);
+	var component_resolver_1 = __webpack_require__(129);
+	var profile_1 = __webpack_require__(167);
+	var testability_1 = __webpack_require__(257);
+	var ng_zone_1 = __webpack_require__(258);
 	/**
 	 * Create an Angular zone.
 	 * @experimental
@@ -22493,7 +23617,8 @@ webpackJsonp([2],[
 	 * One important assertion this disables verifies that a change detection pass
 	 * does not result in additional changes to any bindings (also known as
 	 * unidirectional data flow).
-	 * @stable
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function enableProdMode() {
 	    if (_runModeLocked) {
@@ -22508,6 +23633,8 @@ webpackJsonp([2],[
 	 * This can only be read after `lockRunMode` has been called.
 	 *
 	 * By default, this is true, unless a user calls `enableProdMode`.
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function isDevMode() {
 	    if (!_runModeLocked) {
@@ -22520,6 +23647,8 @@ webpackJsonp([2],[
 	 * Locks the run mode of Angular. After this has been called,
 	 * it can't be changed any more. I.e. `isDevMode()` will always
 	 * return the same value.
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function lockRunMode() {
 	    _runModeLocked = true;
@@ -22528,7 +23657,8 @@ webpackJsonp([2],[
 	/**
 	 * Creates a platform.
 	 * Platforms have to be eagerly created via this function.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function createPlatform(injector) {
 	    if (_inPlatformCreate) {
@@ -22551,7 +23681,8 @@ webpackJsonp([2],[
 	/**
 	 * Checks that there currently is a platform
 	 * which contains the given token as a provider.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function assertPlatform(requiredToken) {
 	    var platform = getPlatform();
@@ -22566,7 +23697,8 @@ webpackJsonp([2],[
 	exports.assertPlatform = assertPlatform;
 	/**
 	 * Dispose the existing platform.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function disposePlatform() {
 	    if (lang_1.isPresent(_platform) && !_platform.disposed) {
@@ -22576,7 +23708,8 @@ webpackJsonp([2],[
 	exports.disposePlatform = disposePlatform;
 	/**
 	 * Returns the current platform.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function getPlatform() {
 	    return lang_1.isPresent(_platform) && !_platform.disposed ? _platform : null;
@@ -22585,7 +23718,8 @@ webpackJsonp([2],[
 	/**
 	 * Shortcut for ApplicationRef.bootstrap.
 	 * Requires a platform to be created first.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function coreBootstrap(componentFactory, injector) {
 	    var appRef = injector.get(ApplicationRef);
@@ -22596,7 +23730,8 @@ webpackJsonp([2],[
 	 * Resolves the componentFactory for the given component,
 	 * waits for asynchronous initializers and bootstraps the component.
 	 * Requires a platform to be created first.
-	 * @experimental
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	function coreLoadAndBootstrap(componentType, injector) {
 	    var appRef = injector.get(ApplicationRef);
@@ -22615,7 +23750,8 @@ webpackJsonp([2],[
 	 *
 	 * A page's platform is initialized implicitly when {@link bootstrap}() is called, or
 	 * explicitly by calling {@link createPlatform}().
-	 * @stable
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	var PlatformRef = (function () {
 	    function PlatformRef() {
@@ -22689,7 +23825,8 @@ webpackJsonp([2],[
 	 * A reference to an Angular application running on a page.
 	 *
 	 * For more about Angular applications, see the documentation for {@link bootstrap}.
-	 * @stable
+	 *
+	 * @experimental APIs related to application bootstrap are currently under review.
 	 */
 	var ApplicationRef = (function () {
 	    function ApplicationRef() {
@@ -22921,11 +24058,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=application_ref.js.map
 
 /***/ },
-/* 240 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
 	var lang_2 = __webpack_require__(6);
 	exports.looseIdentical = lang_2.looseIdentical;
@@ -23006,11 +24150,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=change_detection_util.js.map
 
 /***/ },
-/* 241 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
 	/* @ts2dart_const */
@@ -23671,11 +24822,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=default_iterable_differ.js.map
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var decorators_1 = __webpack_require__(112);
+	var decorators_1 = __webpack_require__(113);
 	var lang_1 = __webpack_require__(6);
 	// Note: Need to rename warn as in Dart
 	// class members and imports can't use the same name.
@@ -23696,9 +24854,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=console.js.map
 
 /***/ },
-/* 243 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var exceptions_1 = __webpack_require__(19);
 	var _THROW_IF_NOT_FOUND = new Object();
@@ -23741,9 +24906,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=injector.js.map
 
 /***/ },
-/* 244 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -23770,7 +24942,7 @@ webpackJsonp([2],[
 	 * @deprecated
 	 */
 	var Provider = (function () {
-	    function Provider(token /** TODO #9100 */, _a) {
+	    function Provider(token, _a) {
 	        var useClass = _a.useClass, useValue = _a.useValue, useExisting = _a.useExisting, useFactory = _a.useFactory, deps = _a.deps, multi = _a.multi;
 	        this.token = token;
 	        this.useClass = useClass;
@@ -23826,7 +24998,7 @@ webpackJsonp([2],[
 	 */
 	var Binding = (function (_super) {
 	    __extends(Binding, _super);
-	    function Binding(token /** TODO #9100 */, _a) {
+	    function Binding(token, _a) {
 	        var toClass = _a.toClass, toValue = _a.toValue, toAlias = _a.toAlias, toFactory = _a.toFactory, deps = _a.deps, multi = _a.multi;
 	        _super.call(this, token, {
 	            useClass: toClass,
@@ -23884,7 +25056,7 @@ webpackJsonp([2],[
 	 *
 	 * @deprecated
 	 */
-	function bind(token /** TODO #9100 */) {
+	function bind(token) {
 	    return new ProviderBuilder(token);
 	}
 	exports.bind = bind;
@@ -23893,7 +25065,7 @@ webpackJsonp([2],[
 	 * @deprecated
 	 */
 	var ProviderBuilder = (function () {
-	    function ProviderBuilder(token /** TODO #9100 */) {
+	    function ProviderBuilder(token) {
 	        this.token = token;
 	    }
 	    /**
@@ -24015,7 +25187,7 @@ webpackJsonp([2],[
 	 * <!-- TODO: improve the docs -->
 	 * @deprecated
 	 */
-	function provide(token /** TODO #9100 */, _a) {
+	function provide(token, _a) {
 	    var useClass = _a.useClass, useValue = _a.useValue, useExisting = _a.useExisting, useFactory = _a.useFactory, deps = _a.deps, multi = _a.multi;
 	    return new Provider(token, {
 	        useClass: useClass,
@@ -24030,16 +25202,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=provider.js.map
 
 /***/ },
-/* 245 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
 	function findFirstClosedCycle(keys) {
@@ -24049,9 +25228,7 @@ webpackJsonp([2],[
 	            res.push(keys[i]);
 	            return res;
 	        }
-	        else {
-	            res.push(keys[i]);
-	        }
+	        res.push(keys[i]);
 	    }
 	    return res;
 	}
@@ -24061,9 +25238,7 @@ webpackJsonp([2],[
 	        var tokenStrs = reversed.map(function (k) { return lang_1.stringify(k.token); });
 	        return ' (' + tokenStrs.join(' -> ') + ')';
 	    }
-	    else {
-	        return '';
-	    }
+	    return '';
 	}
 	/**
 	 * Base class for all errors arising from misconfigured providers.
@@ -24173,7 +25348,7 @@ webpackJsonp([2],[
 	 */
 	var InstantiationError = (function (_super) {
 	    __extends(InstantiationError, _super);
-	    function InstantiationError(injector, originalException /** TODO #9100 */, originalStack /** TODO #9100 */, key) {
+	    function InstantiationError(injector, originalException, originalStack, key) {
 	        _super.call(this, 'DI Exception', originalException, originalStack, null);
 	        this.keys = [key];
 	        this.injectors = [injector];
@@ -24216,7 +25391,7 @@ webpackJsonp([2],[
 	 */
 	var InvalidProviderError = (function (_super) {
 	    __extends(InvalidProviderError, _super);
-	    function InvalidProviderError(provider /** TODO #9100 */) {
+	    function InvalidProviderError(provider) {
 	        _super.call(this, "Invalid provider - only instances of Provider and Type are allowed, got: " + provider);
 	    }
 	    return InvalidProviderError;
@@ -24253,10 +25428,10 @@ webpackJsonp([2],[
 	 */
 	var NoAnnotationError = (function (_super) {
 	    __extends(NoAnnotationError, _super);
-	    function NoAnnotationError(typeOrFunc /** TODO #9100 */, params) {
+	    function NoAnnotationError(typeOrFunc, params) {
 	        _super.call(this, NoAnnotationError._genMessage(typeOrFunc, params));
 	    }
-	    NoAnnotationError._genMessage = function (typeOrFunc /** TODO #9100 */, params) {
+	    NoAnnotationError._genMessage = function (typeOrFunc, params) {
 	        var signature = [];
 	        for (var i = 0, ii = params.length; i < ii; i++) {
 	            var parameter = params[i];
@@ -24291,7 +25466,7 @@ webpackJsonp([2],[
 	 */
 	var OutOfBoundsError = (function (_super) {
 	    __extends(OutOfBoundsError, _super);
-	    function OutOfBoundsError(index /** TODO #9100 */) {
+	    function OutOfBoundsError(index) {
 	        _super.call(this, "Index " + index + " is out-of-bounds.");
 	    }
 	    return OutOfBoundsError;
@@ -24312,7 +25487,7 @@ webpackJsonp([2],[
 	 */
 	var MixingMultiProvidersWithRegularProvidersError = (function (_super) {
 	    __extends(MixingMultiProvidersWithRegularProvidersError, _super);
-	    function MixingMultiProvidersWithRegularProvidersError(provider1 /** TODO #9100 */, provider2 /** TODO #9100 */) {
+	    function MixingMultiProvidersWithRegularProvidersError(provider1, provider2) {
 	        _super.call(this, 'Cannot mix multi providers and regular providers, got: ' + provider1.toString() + ' ' +
 	            provider2.toString());
 	    }
@@ -24322,13 +25497,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflective_exceptions.js.map
 
 /***/ },
-/* 246 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var forward_ref_1 = __webpack_require__(160);
+	var forward_ref_1 = __webpack_require__(164);
 	/**
 	 * A unique object used for retrieving items from the {@link ReflectiveInjector}.
 	 *
@@ -24410,19 +25592,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflective_key.js.map
 
 /***/ },
-/* 247 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	var collection_1 = __webpack_require__(25);
-	var reflection_1 = __webpack_require__(164);
-	var reflective_key_1 = __webpack_require__(246);
-	var metadata_1 = __webpack_require__(113);
-	var reflective_exceptions_1 = __webpack_require__(245);
-	var forward_ref_1 = __webpack_require__(160);
-	var provider_1 = __webpack_require__(244);
-	var provider_util_1 = __webpack_require__(364);
+	var collection_1 = __webpack_require__(26);
+	var reflection_1 = __webpack_require__(168);
+	var reflective_key_1 = __webpack_require__(249);
+	var metadata_1 = __webpack_require__(114);
+	var reflective_exceptions_1 = __webpack_require__(248);
+	var forward_ref_1 = __webpack_require__(164);
+	var provider_1 = __webpack_require__(247);
+	var provider_util_1 = __webpack_require__(373);
 	/**
 	 * `Dependency` is used by the framework to extend DI.
 	 * This is internal to Angular and should not be used directly.
@@ -24488,7 +25677,7 @@ webpackJsonp([2],[
 	        resolvedDeps = _dependenciesFor(useClass);
 	    }
 	    else if (lang_1.isPresent(provider.useExisting)) {
-	        factoryFn = function (aliasInstance /** TODO #9100 */) { return aliasInstance; };
+	        factoryFn = function (aliasInstance) { return aliasInstance; };
 	        resolvedDeps = [ReflectiveDependency.fromKey(reflective_key_1.ReflectiveKey.get(provider.useExisting))];
 	    }
 	    else if (lang_1.isPresent(provider.useFactory)) {
@@ -24654,16 +25843,93 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflective_provider.js.map
 
 /***/ },
-/* 248 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var element_ref_1 = __webpack_require__(371);
-	var view_container_ref_1 = __webpack_require__(373);
-	var view_type_1 = __webpack_require__(161);
+	/**
+	 * @stable
+	 */
+	var NoComponentFactoryError = (function (_super) {
+	    __extends(NoComponentFactoryError, _super);
+	    function NoComponentFactoryError(component) {
+	        _super.call(this, "No component factory found for " + lang_1.stringify(component));
+	        this.component = component;
+	    }
+	    return NoComponentFactoryError;
+	}(exceptions_1.BaseException));
+	exports.NoComponentFactoryError = NoComponentFactoryError;
+	var _NullComponentFactoryResolver = (function () {
+	    function _NullComponentFactoryResolver() {
+	    }
+	    _NullComponentFactoryResolver.prototype.resolveComponentFactory = function (component) {
+	        throw new NoComponentFactoryError(component);
+	    };
+	    return _NullComponentFactoryResolver;
+	}());
+	/**
+	 * @stable
+	 */
+	var ComponentFactoryResolver = (function () {
+	    function ComponentFactoryResolver() {
+	    }
+	    ComponentFactoryResolver.NULL = new _NullComponentFactoryResolver();
+	    return ComponentFactoryResolver;
+	}());
+	exports.ComponentFactoryResolver = ComponentFactoryResolver;
+	var CodegenComponentFactoryResolver = (function () {
+	    function CodegenComponentFactoryResolver(factories, _parent) {
+	        this._parent = _parent;
+	        this._factories = new Map();
+	        for (var i = 0; i < factories.length; i++) {
+	            var factory = factories[i];
+	            this._factories.set(factory.componentType, factory);
+	        }
+	    }
+	    CodegenComponentFactoryResolver.prototype.resolveComponentFactory = function (component) {
+	        var result = this._factories.get(component);
+	        if (!result) {
+	            result = this._parent.resolveComponentFactory(component);
+	        }
+	        return result;
+	    };
+	    return CodegenComponentFactoryResolver;
+	}());
+	exports.CodegenComponentFactoryResolver = CodegenComponentFactoryResolver;
+	//# sourceMappingURL=component_factory_resolver.js.map
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var collection_1 = __webpack_require__(26);
+	var exceptions_1 = __webpack_require__(19);
+	var lang_1 = __webpack_require__(6);
+	var element_ref_1 = __webpack_require__(380);
+	var view_container_ref_1 = __webpack_require__(382);
+	var view_type_1 = __webpack_require__(165);
 	/**
 	 * An AppElement is created for elements that have a ViewContainerRef,
 	 * a nested component or a <template> element to keep data around
@@ -24752,9 +26018,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=element.js.map
 
 /***/ },
-/* 249 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -24839,9 +26112,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 250 */
+/* 254 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Defines template and style encapsulation options available for Component's {@link View}.
@@ -24902,6 +26182,8 @@ webpackJsonp([2],[
 	 * }
 	 * ```
 	 * @ts2dart_const
+	 *
+	 * @experimental You should most likely be using ComponentMetadata instead.
 	 */
 	var ViewMetadata = (function () {
 	    function ViewMetadata(_a) {
@@ -24922,9 +26204,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view.js.map
 
 /***/ },
-/* 251 */
+/* 255 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Provides read-only access to reflection data about symbols. Used internally by Angular
@@ -24939,9 +26228,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflector_reader.js.map
 
 /***/ },
-/* 252 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var exceptions_1 = __webpack_require__(19);
 	/**
@@ -25025,16 +26321,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=api.js.map
 
 /***/ },
-/* 253 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var decorators_1 = __webpack_require__(112);
-	var async_1 = __webpack_require__(92);
-	var collection_1 = __webpack_require__(25);
+	var decorators_1 = __webpack_require__(113);
+	var async_1 = __webpack_require__(93);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var ng_zone_1 = __webpack_require__(254);
+	var ng_zone_1 = __webpack_require__(258);
 	var Testability = (function () {
 	    function Testability(_ngZone) {
 	        this._ngZone = _ngZone;
@@ -25174,14 +26477,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=testability.js.map
 
 /***/ },
-/* 254 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var async_1 = __webpack_require__(92);
+	var async_1 = __webpack_require__(93);
 	var exceptions_1 = __webpack_require__(19);
-	var ng_zone_impl_1 = __webpack_require__(381);
-	var ng_zone_impl_2 = __webpack_require__(381);
+	var ng_zone_impl_1 = __webpack_require__(390);
+	var ng_zone_impl_2 = __webpack_require__(390);
 	exports.NgZoneError = ng_zone_impl_2.NgZoneError;
 	/**
 	 * An injectable service for executing work inside or outside of the Angular zone.
@@ -25429,9 +26739,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_zone.js.map
 
 /***/ },
-/* 255 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var BrowserXhr = (function () {
@@ -25450,9 +26767,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser_xhr.js.map
 
 /***/ },
-/* 256 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -25460,11 +26784,11 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(37);
-	var enums_1 = __webpack_require__(76);
-	var headers_1 = __webpack_require__(129);
-	var http_utils_1 = __webpack_require__(167);
-	var url_search_params_1 = __webpack_require__(259);
+	var lang_1 = __webpack_require__(38);
+	var enums_1 = __webpack_require__(78);
+	var headers_1 = __webpack_require__(131);
+	var http_utils_1 = __webpack_require__(171);
+	var url_search_params_1 = __webpack_require__(263);
 	/**
 	 * Creates a request options object to be optionally provided when instantiating a
 	 * {@link Request}.
@@ -25488,6 +26812,8 @@ webpackJsonp([2],[
 	 * console.log('req.method:', RequestMethod[req.method]); // Post
 	 * console.log('options.url:', options.url); // https://google.com
 	 * ```
+	 *
+	 * @experimental
 	 */
 	var RequestOptions = (function () {
 	    function RequestOptions(_a) {
@@ -25561,11 +26887,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_request_options.js.map
 
 /***/ },
-/* 257 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(37);
+	var lang_1 = __webpack_require__(38);
 	exports.Map = lang_1.global.Map;
 	exports.Set = lang_1.global.Set;
 	// Safari and Internet Explorer do not support the iterable parameter to the
@@ -25934,13 +27267,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 258 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(128);
-	var lang_1 = __webpack_require__(37);
-	var http_utils_1 = __webpack_require__(167);
+	var exceptions_1 = __webpack_require__(130);
+	var lang_1 = __webpack_require__(38);
+	var http_utils_1 = __webpack_require__(171);
 	/**
 	 * Creates `Response` instances from provided values.
 	 *
@@ -25958,6 +27298,8 @@ webpackJsonp([2],[
 	 * Spec](https://fetch.spec.whatwg.org/#response-class), but is considered a static value whose body
 	 * can be accessed many times. There are other differences in the implementation, but this is the
 	 * most significant.
+	 *
+	 * @experimental
 	 */
 	var Response = (function () {
 	    function Response(responseOptions) {
@@ -26007,19 +27349,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=static_response.js.map
 
 /***/ },
-/* 259 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(257);
-	var lang_1 = __webpack_require__(37);
+	var collection_1 = __webpack_require__(261);
+	var lang_1 = __webpack_require__(38);
 	function paramParser(rawParams) {
 	    if (rawParams === void 0) { rawParams = ''; }
 	    var map = new collection_1.Map();
 	    if (rawParams.length > 0) {
 	        var params = rawParams.split('&');
 	        params.forEach(function (param) {
-	            var split = param.split('=');
+	            var split = param.split('=', 2);
 	            var key = split[0];
 	            var val = split[1];
 	            var list = lang_1.isPresent(map.get(key)) ? map.get(key) : [];
@@ -26030,17 +27379,69 @@ webpackJsonp([2],[
 	    return map;
 	}
 	/**
+	 * @experimental
+	 **/
+	var QueryEncoder = (function () {
+	    function QueryEncoder() {
+	    }
+	    QueryEncoder.prototype.encodeKey = function (k) { return standardEncoding(k); };
+	    QueryEncoder.prototype.encodeValue = function (v) { return standardEncoding(v); };
+	    return QueryEncoder;
+	}());
+	exports.QueryEncoder = QueryEncoder;
+	function standardEncoding(v) {
+	    return encodeURIComponent(v)
+	        .replace(/%40/gi, '@')
+	        .replace(/%3A/gi, ':')
+	        .replace(/%24/gi, '$')
+	        .replace(/%2C/gi, ',')
+	        .replace(/%3B/gi, ';')
+	        .replace(/%2B/gi, '+')
+	        .replace(/%3D/gi, ';')
+	        .replace(/%3F/gi, '?')
+	        .replace(/%2F/gi, '/');
+	}
+	/**
 	 * Map-like representation of url search parameters, based on
 	 * [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams) in the url living standard,
 	 * with several extensions for merging URLSearchParams objects:
 	 *   - setAll()
 	 *   - appendAll()
 	 *   - replaceAll()
+	 *
+	 * This class accepts an optional second parameter of ${@link QueryEncoder},
+	 * which is used to serialize parameters before making a request. By default,
+	 * `QueryEncoder` encodes keys and values of parameters using `encodeURIComponent`,
+	 * and then un-encodes certain characters that are allowed to be part of the query
+	 * according to IETF RFC 3986: https://tools.ietf.org/html/rfc3986.
+	 *
+	 * These are the characters that are not encoded: `! $ \' ( ) * + , ; A 9 - . _ ~ ? /`
+	 *
+	 * If the set of allowed query characters is not acceptable for a particular backend,
+	 * `QueryEncoder` can be subclassed and provided as the 2nd argument to URLSearchParams.
+	 *
+	 * ```
+	 * import {URLSearchParams, QueryEncoder} from '@angular/http';
+	 * class MyQueryEncoder extends QueryEncoder {
+	 *   encodeKey(k: string): string {
+	 *     return myEncodingFunction(k);
+	 *   }
+	 *
+	 *   encodeValue(v: string): string {
+	 *     return myEncodingFunction(v);
+	 *   }
+	 * }
+	 *
+	 * let params = new URLSearchParams('', new MyQueryEncoder());
+	 * ```
+	 * @experimental
 	 */
 	var URLSearchParams = (function () {
-	    function URLSearchParams(rawParams) {
+	    function URLSearchParams(rawParams, queryEncoder) {
 	        if (rawParams === void 0) { rawParams = ''; }
+	        if (queryEncoder === void 0) { queryEncoder = new QueryEncoder(); }
 	        this.rawParams = rawParams;
+	        this.queryEncoder = queryEncoder;
 	        this.paramsMap = paramParser(rawParams);
 	    }
 	    URLSearchParams.prototype.clone = function () {
@@ -26129,8 +27530,11 @@ webpackJsonp([2],[
 	        });
 	    };
 	    URLSearchParams.prototype.toString = function () {
+	        var _this = this;
 	        var paramsList = [];
-	        this.paramsMap.forEach(function (values, k) { values.forEach(function (v) { return paramsList.push(k + '=' + encodeURIComponent(v)); }); });
+	        this.paramsMap.forEach(function (values, k) {
+	            values.forEach(function (v) { return paramsList.push(_this.queryEncoder.encodeKey(k) + '=' + _this.queryEncoder.encodeValue(v)); });
+	        });
 	        return paramsList.join('&');
 	    };
 	    URLSearchParams.prototype.delete = function (param) { this.paramsMap.delete(param); };
@@ -26140,9 +27544,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=url_search_params.js.map
 
 /***/ },
-/* 260 */
+/* 264 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var PromiseCompleter = (function () {
 	    function PromiseCompleter() {
@@ -26193,9 +27604,119 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 261 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var common_1 = __webpack_require__(55);
+	var core_1 = __webpack_require__(2);
+	var core_private_1 = __webpack_require__(116);
+	var web_animations_driver_1 = __webpack_require__(597);
+	var browser_adapter_1 = __webpack_require__(402);
+	var browser_platform_location_1 = __webpack_require__(173);
+	var testability_1 = __webpack_require__(403);
+	var ng_probe_1 = __webpack_require__(404);
+	var dom_adapter_1 = __webpack_require__(28);
+	var dom_renderer_1 = __webpack_require__(174);
+	var dom_tokens_1 = __webpack_require__(133);
+	var dom_events_1 = __webpack_require__(266);
+	var event_manager_1 = __webpack_require__(94);
+	var hammer_gestures_1 = __webpack_require__(267);
+	var key_events_1 = __webpack_require__(405);
+	var shared_styles_host_1 = __webpack_require__(175);
+	var lang_1 = __webpack_require__(18);
+	var dom_sanitization_service_1 = __webpack_require__(409);
+	var BROWSER_PLATFORM_MARKER = new core_1.OpaqueToken('BrowserPlatformMarker');
+	/**
+	 * A set of providers to initialize the Angular platform in a web browser.
+	 *
+	 * Used automatically by `bootstrap`, or can be passed to {@link platform}.
+	 *
+	 * @experimental API related to bootstrapping are still under review.
+	 */
+	exports.BROWSER_PLATFORM_PROVIDERS = [
+	    { provide: BROWSER_PLATFORM_MARKER, useValue: true }, core_1.PLATFORM_COMMON_PROVIDERS,
+	    { provide: core_1.PLATFORM_INITIALIZER, useValue: initDomAdapter, multi: true },
+	    { provide: common_1.PlatformLocation, useClass: browser_platform_location_1.BrowserPlatformLocation }
+	];
+	/**
+	 * @security Replacing built-in sanitization providers exposes the application to XSS risks.
+	 * Attacker-controlled data introduced by an unsanitized provider could expose your
+	 * application to XSS risks. For more detail, see the [Security Guide](http://g.co/ng/security).
+	 * @experimental
+	 */
+	exports.BROWSER_SANITIZATION_PROVIDERS = [
+	    { provide: core_private_1.SanitizationService, useExisting: dom_sanitization_service_1.DomSanitizationService },
+	    { provide: dom_sanitization_service_1.DomSanitizationService, useClass: dom_sanitization_service_1.DomSanitizationServiceImpl },
+	];
+	/**
+	 * A set of providers to initialize an Angular application in a web browser.
+	 *
+	 * Used automatically by `bootstrap`, or can be passed to {@link PlatformRef.application}.
+	 *
+	 * @experimental API related to bootstrapping are still under review.
+	 */
+	exports.BROWSER_APP_PROVIDERS = [
+	    core_1.APPLICATION_COMMON_PROVIDERS, common_1.FORM_PROVIDERS, exports.BROWSER_SANITIZATION_PROVIDERS,
+	    { provide: core_1.ExceptionHandler, useFactory: _exceptionHandler, deps: [] },
+	    { provide: dom_tokens_1.DOCUMENT, useFactory: _document, deps: [] },
+	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: dom_events_1.DomEventsPlugin, multi: true },
+	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: key_events_1.KeyEventsPlugin, multi: true },
+	    { provide: event_manager_1.EVENT_MANAGER_PLUGINS, useClass: hammer_gestures_1.HammerGesturesPlugin, multi: true },
+	    { provide: hammer_gestures_1.HAMMER_GESTURE_CONFIG, useClass: hammer_gestures_1.HammerGestureConfig },
+	    { provide: dom_renderer_1.DomRootRenderer, useClass: dom_renderer_1.DomRootRenderer_ },
+	    { provide: core_1.RootRenderer, useExisting: dom_renderer_1.DomRootRenderer },
+	    { provide: shared_styles_host_1.SharedStylesHost, useExisting: shared_styles_host_1.DomSharedStylesHost },
+	    { provide: core_private_1.AnimationDriver, useFactory: _resolveDefaultAnimationDriver }, shared_styles_host_1.DomSharedStylesHost,
+	    core_1.Testability, event_manager_1.EventManager, ng_probe_1.ELEMENT_PROBE_PROVIDERS
+	];
+	/**
+	 * @experimental API related to bootstrapping are still under review.
+	 */
+	function browserPlatform() {
+	    if (lang_1.isBlank(core_1.getPlatform())) {
+	        core_1.createPlatform(core_1.ReflectiveInjector.resolveAndCreate(exports.BROWSER_PLATFORM_PROVIDERS));
+	    }
+	    return core_1.assertPlatform(BROWSER_PLATFORM_MARKER);
+	}
+	exports.browserPlatform = browserPlatform;
+	function initDomAdapter() {
+	    browser_adapter_1.BrowserDomAdapter.makeCurrent();
+	    core_private_1.wtfInit();
+	    testability_1.BrowserGetTestability.init();
+	}
+	function _exceptionHandler() {
+	    return new core_1.ExceptionHandler(dom_adapter_1.getDOM());
+	}
+	function _document() {
+	    return dom_adapter_1.getDOM().defaultDoc();
+	}
+	function _resolveDefaultAnimationDriver() {
+	    if (dom_adapter_1.getDOM().supportsWebAnimation()) {
+	        return new web_animations_driver_1.WebAnimationsDriver();
+	    }
+	    return new core_private_1.NoOpAnimationDriver();
+	}
+	//# sourceMappingURL=browser.js.map
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -26203,8 +27724,8 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var event_manager_1 = __webpack_require__(93);
+	var dom_adapter_1 = __webpack_require__(28);
+	var event_manager_1 = __webpack_require__(94);
 	var DomEventsPlugin = (function (_super) {
 	    __extends(DomEventsPlugin, _super);
 	    function DomEventsPlugin() {
@@ -26234,9 +27755,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_events.js.map
 
 /***/ },
-/* 262 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -26244,9 +27772,15 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(77);
-	var lang_1 = __webpack_require__(17);
-	var hammer_common_1 = __webpack_require__(582);
+	var exceptions_1 = __webpack_require__(79);
+	var lang_1 = __webpack_require__(18);
+	var hammer_common_1 = __webpack_require__(596);
+	/**
+	 * A DI token that you can use to provide{@link HammerGestureConfig} to Angular. Use it to configure
+	 * Hammer gestures.
+	 *
+	 * @experimental
+	 */
 	exports.HAMMER_GESTURE_CONFIG = new core_1.OpaqueToken('HammerGestureConfig');
 	var HammerGestureConfig = (function () {
 	    function HammerGestureConfig() {
@@ -26312,124 +27846,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=hammer_gestures.js.map
 
 /***/ },
-/* 263 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(17);
-	var collection_1 = __webpack_require__(34);
-	var dom_adapter_1 = __webpack_require__(27);
-	var event_manager_1 = __webpack_require__(93);
-	var modifierKeys = ['alt', 'control', 'meta', 'shift'];
-	var modifierKeyGetters = {
-	    'alt': function (event) { return event.altKey; },
-	    'control': function (event) { return event.ctrlKey; },
-	    'meta': function (event) { return event.metaKey; },
-	    'shift': function (event) { return event.shiftKey; }
-	};
-	var KeyEventsPlugin = (function (_super) {
-	    __extends(KeyEventsPlugin, _super);
-	    function KeyEventsPlugin() {
-	        _super.call(this);
-	    }
-	    KeyEventsPlugin.prototype.supports = function (eventName) {
-	        return lang_1.isPresent(KeyEventsPlugin.parseEventName(eventName));
-	    };
-	    KeyEventsPlugin.prototype.addEventListener = function (element, eventName, handler) {
-	        var parsedEvent = KeyEventsPlugin.parseEventName(eventName);
-	        var outsideHandler = KeyEventsPlugin.eventCallback(element, collection_1.StringMapWrapper.get(parsedEvent, 'fullKey'), handler, this.manager.getZone());
-	        return this.manager.getZone().runOutsideAngular(function () {
-	            return dom_adapter_1.getDOM().onAndCancel(element, collection_1.StringMapWrapper.get(parsedEvent, 'domEventName'), outsideHandler);
-	        });
-	    };
-	    KeyEventsPlugin.parseEventName = function (eventName) {
-	        var parts = eventName.toLowerCase().split('.');
-	        var domEventName = parts.shift();
-	        if ((parts.length === 0) ||
-	            !(lang_1.StringWrapper.equals(domEventName, 'keydown') ||
-	                lang_1.StringWrapper.equals(domEventName, 'keyup'))) {
-	            return null;
-	        }
-	        var key = KeyEventsPlugin._normalizeKey(parts.pop());
-	        var fullKey = '';
-	        modifierKeys.forEach(function (modifierName) {
-	            if (collection_1.ListWrapper.contains(parts, modifierName)) {
-	                collection_1.ListWrapper.remove(parts, modifierName);
-	                fullKey += modifierName + '.';
-	            }
-	        });
-	        fullKey += key;
-	        if (parts.length != 0 || key.length === 0) {
-	            // returning null instead of throwing to let another plugin process the event
-	            return null;
-	        }
-	        var result = collection_1.StringMapWrapper.create();
-	        collection_1.StringMapWrapper.set(result, 'domEventName', domEventName);
-	        collection_1.StringMapWrapper.set(result, 'fullKey', fullKey);
-	        return result;
-	    };
-	    KeyEventsPlugin.getEventFullKey = function (event) {
-	        var fullKey = '';
-	        var key = dom_adapter_1.getDOM().getEventKey(event);
-	        key = key.toLowerCase();
-	        if (lang_1.StringWrapper.equals(key, ' ')) {
-	            key = 'space'; // for readability
-	        }
-	        else if (lang_1.StringWrapper.equals(key, '.')) {
-	            key = 'dot'; // because '.' is used as a separator in event names
-	        }
-	        modifierKeys.forEach(function (modifierName) {
-	            if (modifierName != key) {
-	                var modifierGetter = collection_1.StringMapWrapper.get(modifierKeyGetters, modifierName);
-	                if (modifierGetter(event)) {
-	                    fullKey += modifierName + '.';
-	                }
-	            }
-	        });
-	        fullKey += key;
-	        return fullKey;
-	    };
-	    KeyEventsPlugin.eventCallback = function (element, fullKey, handler, zone) {
-	        return function (event /** TODO #9100 */) {
-	            if (lang_1.StringWrapper.equals(KeyEventsPlugin.getEventFullKey(event), fullKey)) {
-	                zone.runGuarded(function () { return handler(event); });
-	            }
-	        };
-	    };
-	    /** @internal */
-	    KeyEventsPlugin._normalizeKey = function (keyName) {
-	        // TODO: switch to a StringMap if the mapping grows too much
-	        switch (keyName) {
-	            case 'esc':
-	                return 'escape';
-	            default:
-	                return keyName;
-	        }
-	    };
-	    /** @nocollapse */
-	    KeyEventsPlugin.decorators = [
-	        { type: core_1.Injectable },
-	    ];
-	    /** @nocollapse */
-	    KeyEventsPlugin.ctorParameters = [];
-	    return KeyEventsPlugin;
-	}(event_manager_1.EventManagerPlugin));
-	exports.KeyEventsPlugin = KeyEventsPlugin;
-	//# sourceMappingURL=key_events.js.map
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
+	var dom_adapter_1 = __webpack_require__(28);
 	/**
 	 * A pattern that recognizes a commonly useful subset of URLs that are safe.
 	 *
@@ -26457,23 +27886,38 @@ webpackJsonp([2],[
 	 * This regular expression was taken from the Closure sanitization library.
 	 */
 	var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi;
-	/** A pattern that matches safe data URLs. Only matches image and video types. */
-	var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm));base64,[a-z0-9+\/]+=*$/i;
+	/* A pattern that matches safe srcset values */
+	var SAFE_SRCSET_PATTERN = /^(?:(?:https?|file):|[^&:/?#]*(?:[/?#]|$))/gi;
+	/** A pattern that matches safe data URLs. Only matches image, video and audio types. */
+	var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+\/]+=*$/i;
 	function sanitizeUrl(url) {
 	    url = String(url);
 	    if (url.match(SAFE_URL_PATTERN) || url.match(DATA_URL_PATTERN))
 	        return url;
-	    if (core_1.isDevMode())
-	        dom_adapter_1.getDOM().log('WARNING: sanitizing unsafe URL value ' + url);
+	    if (core_1.isDevMode()) {
+	        dom_adapter_1.getDOM().log("WARNING: sanitizing unsafe URL value " + url + " (see http://g.co/ng/security#xss)");
+	    }
 	    return 'unsafe:' + url;
 	}
 	exports.sanitizeUrl = sanitizeUrl;
+	function sanitizeSrcset(srcset) {
+	    srcset = String(srcset);
+	    return srcset.split(',').map(function (srcset) { return sanitizeUrl(srcset.trim()); }).join(', ');
+	}
+	exports.sanitizeSrcset = sanitizeSrcset;
 	//# sourceMappingURL=url_sanitizer.js.map
 
 /***/ },
-/* 265 */
+/* 269 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// This file contains interface versions of browser types that can be serialized to Plain Old
 	// JavaScript Objects
@@ -26495,7 +27939,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=serialized_types.js.map
 
 /***/ },
-/* 266 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26506,37 +27950,172 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var router_link_1 = __webpack_require__(403);
-	var router_link_active_1 = __webpack_require__(605);
-	var router_outlet_1 = __webpack_require__(606);
-	var router_1 = __webpack_require__(174);
+	var router_link_1 = __webpack_require__(271);
+	var router_link_active_1 = __webpack_require__(413);
+	var router_outlet_1 = __webpack_require__(414);
+	var router_link_2 = __webpack_require__(271);
+	exports.RouterLink = router_link_2.RouterLink;
+	exports.RouterLinkWithHref = router_link_2.RouterLinkWithHref;
+	var router_link_active_2 = __webpack_require__(413);
+	exports.RouterLinkActive = router_link_active_2.RouterLinkActive;
+	var router_outlet_2 = __webpack_require__(414);
+	exports.RouterOutlet = router_outlet_2.RouterOutlet;
+	var router_1 = __webpack_require__(177);
 	exports.NavigationCancel = router_1.NavigationCancel;
 	exports.NavigationEnd = router_1.NavigationEnd;
 	exports.NavigationError = router_1.NavigationError;
 	exports.NavigationStart = router_1.NavigationStart;
 	exports.Router = router_1.Router;
 	exports.RoutesRecognized = router_1.RoutesRecognized;
-	var router_outlet_map_1 = __webpack_require__(175);
+	var router_outlet_map_1 = __webpack_require__(178);
 	exports.RouterOutletMap = router_outlet_map_1.RouterOutletMap;
-	var router_providers_1 = __webpack_require__(609);
+	var router_providers_1 = __webpack_require__(621);
 	exports.provideRouter = router_providers_1.provideRouter;
-	var router_state_1 = __webpack_require__(116);
+	var router_state_1 = __webpack_require__(117);
 	exports.ActivatedRoute = router_state_1.ActivatedRoute;
 	exports.ActivatedRouteSnapshot = router_state_1.ActivatedRouteSnapshot;
 	exports.RouterState = router_state_1.RouterState;
 	exports.RouterStateSnapshot = router_state_1.RouterStateSnapshot;
-	var shared_1 = __webpack_require__(78);
+	var shared_1 = __webpack_require__(80);
 	exports.PRIMARY_OUTLET = shared_1.PRIMARY_OUTLET;
-	var url_tree_1 = __webpack_require__(79);
+	var url_tree_1 = __webpack_require__(81);
 	exports.DefaultUrlSerializer = url_tree_1.DefaultUrlSerializer;
 	exports.UrlPathWithParams = url_tree_1.UrlPathWithParams;
 	exports.UrlSerializer = url_tree_1.UrlSerializer;
 	exports.UrlTree = url_tree_1.UrlTree;
-	exports.ROUTER_DIRECTIVES = [router_outlet_1.RouterOutlet, router_link_1.RouterLink, router_link_active_1.RouterLinkActive];
+	/**
+	 * @stable
+	 */
+	exports.ROUTER_DIRECTIVES = [router_outlet_1.RouterOutlet, router_link_1.RouterLink, router_link_1.RouterLinkWithHref, router_link_active_1.RouterLinkActive];
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 267 */
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var common_1 = __webpack_require__(55);
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(177);
+	var router_state_1 = __webpack_require__(117);
+	var RouterLink = (function () {
+	    function RouterLink(router, route, locationStrategy) {
+	        this.router = router;
+	        this.route = route;
+	        this.locationStrategy = locationStrategy;
+	        this.commands = [];
+	    }
+	    Object.defineProperty(RouterLink.prototype, "routerLink", {
+	        set: function (data) {
+	            if (Array.isArray(data)) {
+	                this.commands = data;
+	            }
+	            else {
+	                this.commands = [data];
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    RouterLink.prototype.onClick = function (button, ctrlKey, metaKey) {
+	        if (button !== 0 || ctrlKey || metaKey) {
+	            return true;
+	        }
+	        this.router.navigate(this.commands, { relativeTo: this.route, queryParams: this.queryParams, fragment: this.fragment });
+	        return false;
+	    };
+	    /** @nocollapse */
+	    RouterLink.decorators = [
+	        { type: core_1.Directive, args: [{ selector: ':not(a)[routerLink]' },] },
+	    ];
+	    /** @nocollapse */
+	    RouterLink.ctorParameters = [
+	        { type: router_1.Router, },
+	        { type: router_state_1.ActivatedRoute, },
+	        { type: common_1.LocationStrategy, },
+	    ];
+	    /** @nocollapse */
+	    RouterLink.propDecorators = {
+	        'queryParams': [{ type: core_1.Input },],
+	        'fragment': [{ type: core_1.Input },],
+	        'routerLink': [{ type: core_1.Input },],
+	        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey'],] },],
+	    };
+	    return RouterLink;
+	}());
+	exports.RouterLink = RouterLink;
+	var RouterLinkWithHref = (function () {
+	    /**
+	     * @internal
+	     */
+	    function RouterLinkWithHref(router, route, locationStrategy) {
+	        this.router = router;
+	        this.route = route;
+	        this.locationStrategy = locationStrategy;
+	        this.commands = [];
+	    }
+	    Object.defineProperty(RouterLinkWithHref.prototype, "routerLink", {
+	        set: function (data) {
+	            if (Array.isArray(data)) {
+	                this.commands = data;
+	            }
+	            else {
+	                this.commands = [data];
+	            }
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    RouterLinkWithHref.prototype.ngOnChanges = function (changes) { this.updateTargetUrlAndHref(); };
+	    RouterLinkWithHref.prototype.onClick = function (button, ctrlKey, metaKey) {
+	        if (button !== 0 || ctrlKey || metaKey) {
+	            return true;
+	        }
+	        if (typeof this.target === 'string' && this.target != '_self') {
+	            return true;
+	        }
+	        this.router.navigateByUrl(this.urlTree);
+	        return false;
+	    };
+	    RouterLinkWithHref.prototype.updateTargetUrlAndHref = function () {
+	        this.urlTree = this.router.createUrlTree(this.commands, { relativeTo: this.route, queryParams: this.queryParams, fragment: this.fragment });
+	        if (this.urlTree) {
+	            this.href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.urlTree));
+	        }
+	    };
+	    /** @nocollapse */
+	    RouterLinkWithHref.decorators = [
+	        { type: core_1.Directive, args: [{ selector: 'a[routerLink]' },] },
+	    ];
+	    /** @nocollapse */
+	    RouterLinkWithHref.ctorParameters = [
+	        { type: router_1.Router, },
+	        { type: router_state_1.ActivatedRoute, },
+	        { type: common_1.LocationStrategy, },
+	    ];
+	    /** @nocollapse */
+	    RouterLinkWithHref.propDecorators = {
+	        'target': [{ type: core_1.Input },],
+	        'queryParams': [{ type: core_1.Input },],
+	        'fragment': [{ type: core_1.Input },],
+	        'href': [{ type: core_1.HostBinding },],
+	        'routerLink': [{ type: core_1.Input },],
+	        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey'],] },],
+	    };
+	    return RouterLinkWithHref;
+	}());
+	exports.RouterLinkWithHref = RouterLinkWithHref;
+	//# sourceMappingURL=router_link.js.map
+
+/***/ },
+/* 272 */
 /***/ function(module, exports) {
 
 	/**
@@ -26633,17 +28212,17 @@ webpackJsonp([2],[
 	//# sourceMappingURL=tree.js.map
 
 /***/ },
-/* 268 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var map_1 = __webpack_require__(414);
+	var map_1 = __webpack_require__(428);
 	Observable_1.Observable.prototype.map = map_1.map;
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 269 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26703,9 +28282,9 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ScalarObservable.js.map
 
 /***/ },
-/* 270 */,
-/* 271 */,
-/* 272 */
+/* 275 */,
+/* 276 */,
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26715,7 +28294,7 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(7);
-	var Notification_1 = __webpack_require__(178);
+	var Notification_1 = __webpack_require__(181);
 	/**
 	 * @see {@link Notification}
 	 *
@@ -26785,10 +28364,10 @@ webpackJsonp([2],[
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26818,11 +28397,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ },
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
 /* 282 */,
 /* 283 */,
 /* 284 */,
@@ -26860,44 +28434,63 @@ webpackJsonp([2],[
 /* 316 */,
 /* 317 */,
 /* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * @module
 	 * @description
 	 * Common directives shipped with Angular.
 	 */
-	var core_directives_1 = __webpack_require__(502);
+	var core_directives_1 = __webpack_require__(517);
 	exports.CORE_DIRECTIVES = core_directives_1.CORE_DIRECTIVES;
-	var ng_class_1 = __webpack_require__(320);
+	var ng_class_1 = __webpack_require__(326);
 	exports.NgClass = ng_class_1.NgClass;
-	var ng_for_1 = __webpack_require__(321);
+	var ng_for_1 = __webpack_require__(327);
 	exports.NgFor = ng_for_1.NgFor;
-	var ng_if_1 = __webpack_require__(322);
+	var ng_if_1 = __webpack_require__(328);
 	exports.NgIf = ng_if_1.NgIf;
-	var ng_plural_1 = __webpack_require__(323);
-	exports.NgLocalization = ng_plural_1.NgLocalization;
+	var ng_plural_1 = __webpack_require__(329);
 	exports.NgPlural = ng_plural_1.NgPlural;
 	exports.NgPluralCase = ng_plural_1.NgPluralCase;
-	var ng_style_1 = __webpack_require__(324);
+	var ng_style_1 = __webpack_require__(330);
 	exports.NgStyle = ng_style_1.NgStyle;
-	var ng_switch_1 = __webpack_require__(210);
+	var ng_switch_1 = __webpack_require__(214);
 	exports.NgSwitch = ng_switch_1.NgSwitch;
 	exports.NgSwitchCase = ng_switch_1.NgSwitchCase;
 	exports.NgSwitchDefault = ng_switch_1.NgSwitchDefault;
-	var ng_template_outlet_1 = __webpack_require__(325);
+	var ng_template_outlet_1 = __webpack_require__(331);
 	exports.NgTemplateOutlet = ng_template_outlet_1.NgTemplateOutlet;
 	//# sourceMappingURL=directives.js.map
 
 /***/ },
-/* 320 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
 	var NgClass = (function () {
 	    function NgClass(_iterableDiffers, _keyValueDiffers, _ngEl, _renderer) {
@@ -27024,12 +28617,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_class.js.map
 
 /***/ },
-/* 321 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(71);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
 	var NgForRow = (function () {
 	    function NgForRow($implicit, index, count) {
@@ -27191,9 +28791,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_for.js.map
 
 /***/ },
-/* 322 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
@@ -27232,24 +28839,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_if.js.map
 
 /***/ },
-/* 323 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
 	var lang_1 = __webpack_require__(9);
-	var ng_switch_1 = __webpack_require__(210);
-	var _CATEGORY_DEFAULT = 'other';
-	/**
-	 * @experimental
-	 */
-	var NgLocalization = (function () {
-	    function NgLocalization() {
-	    }
-	    return NgLocalization;
-	}());
-	exports.NgLocalization = NgLocalization;
+	var localization_1 = __webpack_require__(226);
+	var ng_switch_1 = __webpack_require__(214);
 	var NgPluralCase = (function () {
 	    function NgPluralCase(value, template, viewContainer) {
 	        this.value = value;
@@ -27271,7 +28875,7 @@ webpackJsonp([2],[
 	var NgPlural = (function () {
 	    function NgPlural(_localization) {
 	        this._localization = _localization;
-	        this._caseViews = new collection_1.Map();
+	        this._caseViews = {};
 	        this.cases = null;
 	    }
 	    Object.defineProperty(NgPlural.prototype, "ngPlural", {
@@ -27285,17 +28889,15 @@ webpackJsonp([2],[
 	    NgPlural.prototype.ngAfterContentInit = function () {
 	        var _this = this;
 	        this.cases.forEach(function (pluralCase) {
-	            _this._caseViews.set(_this._formatValue(pluralCase), pluralCase._view);
+	            _this._caseViews[pluralCase.value] = pluralCase._view;
 	        });
 	        this._updateView();
 	    };
 	    /** @internal */
 	    NgPlural.prototype._updateView = function () {
 	        this._clearViews();
-	        var view = this._caseViews.get(this._switchValue);
-	        if (!lang_1.isPresent(view))
-	            view = this._getCategoryView(this._switchValue);
-	        this._activateView(view);
+	        var key = localization_1.getPluralCategory(this._switchValue, Object.getOwnPropertyNames(this._caseViews), this._localization);
+	        this._activateView(this._caseViews[key]);
 	    };
 	    /** @internal */
 	    NgPlural.prototype._clearViews = function () {
@@ -27309,27 +28911,13 @@ webpackJsonp([2],[
 	        this._activeView = view;
 	        this._activeView.create();
 	    };
-	    /** @internal */
-	    NgPlural.prototype._getCategoryView = function (value) {
-	        var category = this._localization.getPluralCategory(value);
-	        var categoryView = this._caseViews.get(category);
-	        return lang_1.isPresent(categoryView) ? categoryView : this._caseViews.get(_CATEGORY_DEFAULT);
-	    };
-	    /** @internal */
-	    NgPlural.prototype._isValueView = function (pluralCase) { return pluralCase.value[0] === '='; };
-	    /** @internal */
-	    NgPlural.prototype._formatValue = function (pluralCase) {
-	        return this._isValueView(pluralCase) ? this._stripValue(pluralCase.value) : pluralCase.value;
-	    };
-	    /** @internal */
-	    NgPlural.prototype._stripValue = function (value) { return lang_1.NumberWrapper.parseInt(value.substring(1), 10); };
 	    /** @nocollapse */
 	    NgPlural.decorators = [
 	        { type: core_1.Directive, args: [{ selector: '[ngPlural]' },] },
 	    ];
 	    /** @nocollapse */
 	    NgPlural.ctorParameters = [
-	        { type: NgLocalization, },
+	        { type: localization_1.NgLocalization, },
 	    ];
 	    /** @nocollapse */
 	    NgPlural.propDecorators = {
@@ -27342,9 +28930,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_plural.js.map
 
 /***/ },
-/* 324 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
@@ -27397,9 +28992,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_style.js.map
 
 /***/ },
-/* 325 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
@@ -27456,9 +29058,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_template_outlet.js.map
 
 /***/ },
-/* 326 */
+/* 332 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -27511,12 +29120,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 327 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(326);
-	var collection_1 = __webpack_require__(31);
+	var base_wrapped_exception_1 = __webpack_require__(332);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
@@ -27649,9 +29265,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 328 */
+/* 334 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	(function (NumberFormatStyle) {
 	    NumberFormatStyle[NumberFormatStyle["Decimal"] = 0] = "Decimal";
@@ -27836,9 +29459,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=intl.js.map
 
 /***/ },
-/* 329 */
+/* 335 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var PromiseCompleter = (function () {
 	    function PromiseCompleter() {
@@ -27889,57 +29519,64 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 330 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var radio_control_value_accessor_1 = __webpack_require__(147);
-	var form_builder_1 = __webpack_require__(332);
-	var directives_1 = __webpack_require__(503);
+	var radio_control_value_accessor_1 = __webpack_require__(150);
+	var form_builder_1 = __webpack_require__(337);
+	var directives_1 = __webpack_require__(518);
 	exports.FORM_DIRECTIVES = directives_1.FORM_DIRECTIVES;
 	exports.RadioButtonState = directives_1.RadioButtonState;
-	var abstract_control_directive_1 = __webpack_require__(211);
+	var abstract_control_directive_1 = __webpack_require__(215);
 	exports.AbstractControlDirective = abstract_control_directive_1.AbstractControlDirective;
-	var checkbox_value_accessor_1 = __webpack_require__(145);
+	var checkbox_value_accessor_1 = __webpack_require__(148);
 	exports.CheckboxControlValueAccessor = checkbox_value_accessor_1.CheckboxControlValueAccessor;
-	var control_container_1 = __webpack_require__(124);
+	var control_container_1 = __webpack_require__(126);
 	exports.ControlContainer = control_container_1.ControlContainer;
-	var control_value_accessor_1 = __webpack_require__(55);
+	var control_value_accessor_1 = __webpack_require__(56);
 	exports.NG_VALUE_ACCESSOR = control_value_accessor_1.NG_VALUE_ACCESSOR;
-	var default_value_accessor_1 = __webpack_require__(146);
+	var default_value_accessor_1 = __webpack_require__(149);
 	exports.DefaultValueAccessor = default_value_accessor_1.DefaultValueAccessor;
-	var ng_control_1 = __webpack_require__(91);
+	var ng_control_1 = __webpack_require__(92);
 	exports.NgControl = ng_control_1.NgControl;
-	var ng_control_group_1 = __webpack_require__(212);
+	var ng_control_group_1 = __webpack_require__(216);
 	exports.NgControlGroup = ng_control_group_1.NgControlGroup;
-	var ng_control_name_1 = __webpack_require__(213);
+	var ng_control_name_1 = __webpack_require__(217);
 	exports.NgControlName = ng_control_name_1.NgControlName;
-	var ng_control_status_1 = __webpack_require__(214);
+	var ng_control_status_1 = __webpack_require__(218);
 	exports.NgControlStatus = ng_control_status_1.NgControlStatus;
-	var ng_form_1 = __webpack_require__(215);
+	var ng_form_1 = __webpack_require__(219);
 	exports.NgForm = ng_form_1.NgForm;
-	var ng_form_control_1 = __webpack_require__(216);
+	var ng_form_control_1 = __webpack_require__(220);
 	exports.NgFormControl = ng_form_control_1.NgFormControl;
-	var ng_form_model_1 = __webpack_require__(217);
+	var ng_form_model_1 = __webpack_require__(221);
 	exports.NgFormModel = ng_form_model_1.NgFormModel;
-	var ng_model_1 = __webpack_require__(218);
+	var ng_model_1 = __webpack_require__(222);
 	exports.NgModel = ng_model_1.NgModel;
-	var select_control_value_accessor_1 = __webpack_require__(148);
+	var select_control_value_accessor_1 = __webpack_require__(151);
 	exports.NgSelectOption = select_control_value_accessor_1.NgSelectOption;
 	exports.SelectControlValueAccessor = select_control_value_accessor_1.SelectControlValueAccessor;
-	var validators_1 = __webpack_require__(220);
+	var validators_1 = __webpack_require__(225);
 	exports.MaxLengthValidator = validators_1.MaxLengthValidator;
 	exports.MinLengthValidator = validators_1.MinLengthValidator;
 	exports.PatternValidator = validators_1.PatternValidator;
 	exports.RequiredValidator = validators_1.RequiredValidator;
-	var form_builder_2 = __webpack_require__(332);
+	var form_builder_2 = __webpack_require__(337);
 	exports.FormBuilder = form_builder_2.FormBuilder;
-	var model_1 = __webpack_require__(149);
+	var model_1 = __webpack_require__(152);
 	exports.AbstractControl = model_1.AbstractControl;
 	exports.Control = model_1.Control;
 	exports.ControlArray = model_1.ControlArray;
 	exports.ControlGroup = model_1.ControlGroup;
-	var validators_2 = __webpack_require__(62);
+	var validators_2 = __webpack_require__(63);
 	exports.NG_ASYNC_VALIDATORS = validators_2.NG_ASYNC_VALIDATORS;
 	exports.NG_VALIDATORS = validators_2.NG_VALIDATORS;
 	exports.Validators = validators_2.Validators;
@@ -27958,193 +29595,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=forms-deprecated.js.map
 
 /***/ },
-/* 331 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var control_value_accessor_1 = __webpack_require__(55);
-	var SELECT_MULTIPLE_VALUE_ACCESSOR = {
-	    provide: control_value_accessor_1.NG_VALUE_ACCESSOR,
-	    useExisting: core_1.forwardRef(function () { return SelectMultipleControlValueAccessor; }),
-	    multi: true
-	};
-	function _buildValueString(id, value) {
-	    if (lang_1.isBlank(id))
-	        return "" + value;
-	    if (lang_1.isString(value))
-	        value = "'" + value + "'";
-	    if (!lang_1.isPrimitive(value))
-	        value = 'Object';
-	    return lang_1.StringWrapper.slice(id + ": " + value, 0, 50);
-	}
-	function _extractId(valueString) {
-	    return valueString.split(':')[0];
-	}
-	/** Mock interface for HTMLCollection */
-	var HTMLCollection = (function () {
-	    function HTMLCollection() {
-	    }
-	    return HTMLCollection;
-	}());
-	var SelectMultipleControlValueAccessor = (function () {
-	    function SelectMultipleControlValueAccessor() {
-	        /** @internal */
-	        this._optionMap = new Map();
-	        /** @internal */
-	        this._idCounter = 0;
-	        this.onChange = function (_) { };
-	        this.onTouched = function () { };
-	    }
-	    SelectMultipleControlValueAccessor.prototype.writeValue = function (value) {
-	        var _this = this;
-	        this.value = value;
-	        if (value == null)
-	            return;
-	        var values = value;
-	        // convert values to ids
-	        var ids = values.map(function (v) { return _this._getOptionId(v); });
-	        this._optionMap.forEach(function (opt, o) { opt._setSelected(ids.indexOf(o.toString()) > -1); });
-	    };
-	    SelectMultipleControlValueAccessor.prototype.registerOnChange = function (fn) {
-	        var _this = this;
-	        this.onChange = function (_) {
-	            var selected = [];
-	            if (_.hasOwnProperty('selectedOptions')) {
-	                var options = _.selectedOptions;
-	                for (var i = 0; i < options.length; i++) {
-	                    var opt = options.item(i);
-	                    var val = _this._getOptionValue(opt.value);
-	                    selected.push(val);
-	                }
-	            }
-	            else {
-	                var options = _.options;
-	                for (var i = 0; i < options.length; i++) {
-	                    var opt = options.item(i);
-	                    if (opt.selected) {
-	                        var val = _this._getOptionValue(opt.value);
-	                        selected.push(val);
-	                    }
-	                }
-	            }
-	            fn(selected);
-	        };
-	    };
-	    SelectMultipleControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-	    /** @internal */
-	    SelectMultipleControlValueAccessor.prototype._registerOption = function (value) {
-	        var id = (this._idCounter++).toString();
-	        this._optionMap.set(id, value);
-	        return id;
-	    };
-	    /** @internal */
-	    SelectMultipleControlValueAccessor.prototype._getOptionId = function (value) {
-	        for (var _i = 0, _a = collection_1.MapWrapper.keys(this._optionMap); _i < _a.length; _i++) {
-	            var id = _a[_i];
-	            if (lang_1.looseIdentical(this._optionMap.get(id)._value, value))
-	                return id;
-	        }
-	        return null;
-	    };
-	    /** @internal */
-	    SelectMultipleControlValueAccessor.prototype._getOptionValue = function (valueString) {
-	        var opt = this._optionMap.get(_extractId(valueString));
-	        return lang_1.isPresent(opt) ? opt._value : valueString;
-	    };
-	    /** @nocollapse */
-	    SelectMultipleControlValueAccessor.decorators = [
-	        { type: core_1.Directive, args: [{
-	                    selector: 'select[multiple][ngControl],select[multiple][ngFormControl],select[multiple][ngModel]',
-	                    host: { '(input)': 'onChange($event.target)', '(blur)': 'onTouched()' },
-	                    providers: [SELECT_MULTIPLE_VALUE_ACCESSOR]
-	                },] },
-	    ];
-	    /** @nocollapse */
-	    SelectMultipleControlValueAccessor.ctorParameters = [];
-	    return SelectMultipleControlValueAccessor;
-	}());
-	exports.SelectMultipleControlValueAccessor = SelectMultipleControlValueAccessor;
-	var NgSelectMultipleOption = (function () {
-	    function NgSelectMultipleOption(_element, _renderer, _select) {
-	        this._element = _element;
-	        this._renderer = _renderer;
-	        this._select = _select;
-	        if (lang_1.isPresent(this._select)) {
-	            this.id = this._select._registerOption(this);
-	        }
-	    }
-	    Object.defineProperty(NgSelectMultipleOption.prototype, "ngValue", {
-	        set: function (value) {
-	            if (this._select == null)
-	                return;
-	            this._value = value;
-	            this._setElementValue(_buildValueString(this.id, value));
-	            this._select.writeValue(this._select.value);
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(NgSelectMultipleOption.prototype, "value", {
-	        set: function (value) {
-	            if (lang_1.isPresent(this._select)) {
-	                this._value = value;
-	                this._setElementValue(_buildValueString(this.id, value));
-	                this._select.writeValue(this._select.value);
-	            }
-	            else {
-	                this._setElementValue(value);
-	            }
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    /** @internal */
-	    NgSelectMultipleOption.prototype._setElementValue = function (value) {
-	        this._renderer.setElementProperty(this._element.nativeElement, 'value', value);
-	    };
-	    /** @internal */
-	    NgSelectMultipleOption.prototype._setSelected = function (selected) {
-	        this._renderer.setElementProperty(this._element.nativeElement, 'selected', selected);
-	    };
-	    NgSelectMultipleOption.prototype.ngOnDestroy = function () {
-	        if (lang_1.isPresent(this._select)) {
-	            this._select._optionMap.delete(this.id);
-	            this._select.writeValue(this._select.value);
-	        }
-	    };
-	    /** @nocollapse */
-	    NgSelectMultipleOption.decorators = [
-	        { type: core_1.Directive, args: [{ selector: 'option' },] },
-	    ];
-	    /** @nocollapse */
-	    NgSelectMultipleOption.ctorParameters = [
-	        { type: core_1.ElementRef, },
-	        { type: core_1.Renderer, },
-	        { type: SelectMultipleControlValueAccessor, decorators: [{ type: core_1.Optional }, { type: core_1.Host },] },
-	    ];
-	    /** @nocollapse */
-	    NgSelectMultipleOption.propDecorators = {
-	        'ngValue': [{ type: core_1.Input, args: ['ngValue',] },],
-	        'value': [{ type: core_1.Input, args: ['value',] },],
-	    };
-	    return NgSelectMultipleOption;
-	}());
-	exports.NgSelectMultipleOption = NgSelectMultipleOption;
-	exports.SELECT_DIRECTIVES = [SelectMultipleControlValueAccessor, NgSelectMultipleOption];
-	//# sourceMappingURL=select_multiple_control_value_accessor.js.map
-
-/***/ },
-/* 332 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
-	var lang_1 = __webpack_require__(9);
-	var modelModule = __webpack_require__(149);
+	var model_1 = __webpack_require__(152);
 	var FormBuilder = (function () {
 	    function FormBuilder() {
 	    }
@@ -28160,7 +29625,7 @@ webpackJsonp([2],[
 	        var optionals = (lang_1.isPresent(extra) ? collection_1.StringMapWrapper.get(extra, 'optionals') : null);
 	        var validator = lang_1.isPresent(extra) ? collection_1.StringMapWrapper.get(extra, 'validator') : null;
 	        var asyncValidator = lang_1.isPresent(extra) ? collection_1.StringMapWrapper.get(extra, 'asyncValidator') : null;
-	        return new modelModule.ControlGroup(controls, optionals, validator, asyncValidator);
+	        return new model_1.ControlGroup(controls, optionals, validator, asyncValidator);
 	    };
 	    /**
 	     * Construct a new {@link Control} with the given `value`,`validator`, and `asyncValidator`.
@@ -28168,7 +29633,7 @@ webpackJsonp([2],[
 	    FormBuilder.prototype.control = function (value, validator, asyncValidator) {
 	        if (validator === void 0) { validator = null; }
 	        if (asyncValidator === void 0) { asyncValidator = null; }
-	        return new modelModule.Control(value, validator, asyncValidator);
+	        return new model_1.Control(value, validator, asyncValidator);
 	    };
 	    /**
 	     * Construct an array of {@link Control}s from the given `controlsConfig` array of
@@ -28179,7 +29644,7 @@ webpackJsonp([2],[
 	        if (validator === void 0) { validator = null; }
 	        if (asyncValidator === void 0) { asyncValidator = null; }
 	        var controls = controlsConfig.map(function (c) { return _this._createControl(c); });
-	        return new modelModule.ControlArray(controls, validator, asyncValidator);
+	        return new model_1.ControlArray(controls, validator, asyncValidator);
 	    };
 	    /** @internal */
 	    FormBuilder.prototype._reduceControls = function (controlsConfig) {
@@ -28192,9 +29657,8 @@ webpackJsonp([2],[
 	    };
 	    /** @internal */
 	    FormBuilder.prototype._createControl = function (controlConfig) {
-	        if (controlConfig instanceof modelModule.Control ||
-	            controlConfig instanceof modelModule.ControlGroup ||
-	            controlConfig instanceof modelModule.ControlArray) {
+	        if (controlConfig instanceof model_1.Control || controlConfig instanceof model_1.ControlGroup ||
+	            controlConfig instanceof model_1.ControlArray) {
 	            return controlConfig;
 	        }
 	        else if (lang_1.isArray(controlConfig)) {
@@ -28217,14 +29681,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=form_builder.js.map
 
 /***/ },
-/* 333 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(61);
+	var async_1 = __webpack_require__(62);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var ObservableStrategy = (function () {
 	    function ObservableStrategy() {
 	    }
@@ -28334,15 +29805,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=async_pipe.js.map
 
 /***/ },
-/* 334 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
-	var intl_1 = __webpack_require__(328);
+	var collection_1 = __webpack_require__(34);
+	var intl_1 = __webpack_require__(334);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	// TODO: move to a global configurable location along with other i18n components.
 	var defaultLocale = 'en-US';
 	var DatePipe = (function () {
@@ -28396,30 +29874,42 @@ webpackJsonp([2],[
 	//# sourceMappingURL=date_pipe.js.map
 
 /***/ },
-/* 335 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var localization_1 = __webpack_require__(226);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var _INTERPOLATION_REGEXP = /#/g;
 	var I18nPluralPipe = (function () {
-	    function I18nPluralPipe() {
+	    function I18nPluralPipe(_localization) {
+	        this._localization = _localization;
 	    }
 	    I18nPluralPipe.prototype.transform = function (value, pluralMap) {
-	        var key;
-	        var valueStr;
+	        if (lang_1.isBlank(value))
+	            return '';
 	        if (!lang_1.isStringMap(pluralMap)) {
 	            throw new invalid_pipe_argument_exception_1.InvalidPipeArgumentException(I18nPluralPipe, pluralMap);
 	        }
-	        key = value === 0 || value === 1 ? "=" + value : 'other';
-	        valueStr = lang_1.isPresent(value) ? value.toString() : '';
-	        return lang_1.StringWrapper.replaceAll(pluralMap[key], _INTERPOLATION_REGEXP, valueStr);
+	        var key = localization_1.getPluralCategory(value, Object.getOwnPropertyNames(pluralMap), this._localization);
+	        return lang_1.StringWrapper.replaceAll(pluralMap[key], _INTERPOLATION_REGEXP, value.toString());
 	    };
 	    /** @nocollapse */
 	    I18nPluralPipe.decorators = [
 	        { type: core_1.Pipe, args: [{ name: 'i18nPlural', pure: true },] },
+	    ];
+	    /** @nocollapse */
+	    I18nPluralPipe.ctorParameters = [
+	        { type: localization_1.NgLocalization, },
 	    ];
 	    return I18nPluralPipe;
 	}());
@@ -28427,22 +29917,30 @@ webpackJsonp([2],[
 	//# sourceMappingURL=i18n_plural_pipe.js.map
 
 /***/ },
-/* 336 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var I18nSelectPipe = (function () {
 	    function I18nSelectPipe() {
 	    }
 	    I18nSelectPipe.prototype.transform = function (value, mapping) {
+	        if (lang_1.isBlank(value))
+	            return '';
 	        if (!lang_1.isStringMap(mapping)) {
 	            throw new invalid_pipe_argument_exception_1.InvalidPipeArgumentException(I18nSelectPipe, mapping);
 	        }
-	        return collection_1.StringMapWrapper.contains(mapping, value) ? mapping[value] : mapping['other'];
+	        return mapping.hasOwnProperty(value) ? mapping[value] : '';
 	    };
 	    /** @nocollapse */
 	    I18nSelectPipe.decorators = [
@@ -28454,9 +29952,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=i18n_select_pipe.js.map
 
 /***/ },
-/* 337 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
@@ -28474,13 +29979,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=json_pipe.js.map
 
 /***/ },
-/* 338 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var LowerCasePipe = (function () {
 	    function LowerCasePipe() {
 	    }
@@ -28502,15 +30014,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=lowercase_pipe.js.map
 
 /***/ },
-/* 339 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(71);
-	var intl_1 = __webpack_require__(328);
+	var exceptions_1 = __webpack_require__(73);
+	var intl_1 = __webpack_require__(334);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var defaultLocale = 'en-US';
 	var _NUMBER_FORMAT_REGEXP = /^(\d+)?\.((\d+)(\-(\d+))?)?$/g;
 	/**
@@ -28595,13 +30114,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=number_pipe.js.map
 
 /***/ },
-/* 340 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var ReplacePipe = (function () {
 	    function ReplacePipe() {
 	    }
@@ -28646,14 +30172,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=replace_pipe.js.map
 
 /***/ },
-/* 341 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(31);
+	var collection_1 = __webpack_require__(34);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var SlicePipe = (function () {
 	    function SlicePipe() {
 	    }
@@ -28680,13 +30213,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=slice_pipe.js.map
 
 /***/ },
-/* 342 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var invalid_pipe_argument_exception_1 = __webpack_require__(63);
+	var invalid_pipe_argument_exception_1 = __webpack_require__(64);
 	var UpperCasePipe = (function () {
 	    function UpperCasePipe() {
 	    }
@@ -28708,9 +30248,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=uppercase_pipe.js.map
 
 /***/ },
-/* 343 */
+/* 348 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -28856,18 +30403,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_ast.js.map
 
 /***/ },
-/* 344 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var animation_ast_1 = __webpack_require__(343);
-	var animation_parser_1 = __webpack_require__(512);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var animation_ast_1 = __webpack_require__(348);
+	var animation_parser_1 = __webpack_require__(527);
 	var CompiledAnimation = (function () {
 	    function CompiledAnimation(name, statesMapStatement, statesVariableName, fnStatement, fnVariable) {
 	        this.name = name;
@@ -29147,16 +30701,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_compiler.js.map
 
 /***/ },
-/* 345 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var AST = (function () {
 	    function AST() {
 	    }
@@ -29639,9 +31200,188 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ast.js.map
 
 /***/ },
-/* 346 */
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Subject_1 = __webpack_require__(21);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var toPromise_1 = __webpack_require__(120);
+	var lang_1 = __webpack_require__(5);
+	var Observable_1 = __webpack_require__(1);
+	exports.Observable = Observable_1.Observable;
+	var Subject_2 = __webpack_require__(21);
+	exports.Subject = Subject_2.Subject;
+	var promise_1 = __webpack_require__(533);
+	exports.PromiseCompleter = promise_1.PromiseCompleter;
+	exports.PromiseWrapper = promise_1.PromiseWrapper;
+	var TimerWrapper = (function () {
+	    function TimerWrapper() {
+	    }
+	    TimerWrapper.setTimeout = function (fn, millis) {
+	        return lang_1.global.setTimeout(fn, millis);
+	    };
+	    TimerWrapper.clearTimeout = function (id) { lang_1.global.clearTimeout(id); };
+	    TimerWrapper.setInterval = function (fn, millis) {
+	        return lang_1.global.setInterval(fn, millis);
+	    };
+	    TimerWrapper.clearInterval = function (id) { lang_1.global.clearInterval(id); };
+	    return TimerWrapper;
+	}());
+	exports.TimerWrapper = TimerWrapper;
+	var ObservableWrapper = (function () {
+	    function ObservableWrapper() {
+	    }
+	    // TODO(vsavkin): when we use rxnext, try inferring the generic type from the first arg
+	    ObservableWrapper.subscribe = function (emitter, onNext, onError, onComplete) {
+	        if (onComplete === void 0) { onComplete = function () { }; }
+	        onError = (typeof onError === 'function') && onError || lang_1.noop;
+	        onComplete = (typeof onComplete === 'function') && onComplete || lang_1.noop;
+	        return emitter.subscribe({ next: onNext, error: onError, complete: onComplete });
+	    };
+	    ObservableWrapper.isObservable = function (obs) { return !!obs.subscribe; };
+	    /**
+	     * Returns whether `obs` has any subscribers listening to events.
+	     */
+	    ObservableWrapper.hasSubscribers = function (obs) { return obs.observers.length > 0; };
+	    ObservableWrapper.dispose = function (subscription) { subscription.unsubscribe(); };
+	    /**
+	     * @deprecated - use callEmit() instead
+	     */
+	    ObservableWrapper.callNext = function (emitter, value) { emitter.emit(value); };
+	    ObservableWrapper.callEmit = function (emitter, value) { emitter.emit(value); };
+	    ObservableWrapper.callError = function (emitter, error) { emitter.error(error); };
+	    ObservableWrapper.callComplete = function (emitter) { emitter.complete(); };
+	    ObservableWrapper.fromPromise = function (promise) {
+	        return PromiseObservable_1.PromiseObservable.create(promise);
+	    };
+	    ObservableWrapper.toPromise = function (obj) { return toPromise_1.toPromise.call(obj); };
+	    return ObservableWrapper;
+	}());
+	exports.ObservableWrapper = ObservableWrapper;
+	/**
+	 * Use by directives and components to emit custom Events.
+	 *
+	 * ### Examples
+	 *
+	 * In the following example, `Zippy` alternatively emits `open` and `close` events when its
+	 * title gets clicked:
+	 *
+	 * ```
+	 * @Component({
+	 *   selector: 'zippy',
+	 *   template: `
+	 *   <div class="zippy">
+	 *     <div (click)="toggle()">Toggle</div>
+	 *     <div [hidden]="!visible">
+	 *       <ng-content></ng-content>
+	 *     </div>
+	 *  </div>`})
+	 * export class Zippy {
+	 *   visible: boolean = true;
+	 *   @Output() open: EventEmitter<any> = new EventEmitter();
+	 *   @Output() close: EventEmitter<any> = new EventEmitter();
+	 *
+	 *   toggle() {
+	 *     this.visible = !this.visible;
+	 *     if (this.visible) {
+	 *       this.open.emit(null);
+	 *     } else {
+	 *       this.close.emit(null);
+	 *     }
+	 *   }
+	 * }
+	 * ```
+	 *
+	 * The events payload can be accessed by the parameter `$event` on the components output event
+	 * handler:
+	 *
+	 * ```
+	 * <zippy (open)="onOpen($event)" (close)="onClose($event)"></zippy>
+	 * ```
+	 *
+	 * Uses Rx.Observable but provides an adapter to make it work as specified here:
+	 * https://github.com/jhusain/observable-spec
+	 *
+	 * Once a reference implementation of the spec is available, switch to it.
+	 * @stable
+	 */
+	var EventEmitter = (function (_super) {
+	    __extends(EventEmitter, _super);
+	    /**
+	     * Creates an instance of [EventEmitter], which depending on [isAsync],
+	     * delivers events synchronously or asynchronously.
+	     */
+	    function EventEmitter(isAsync) {
+	        if (isAsync === void 0) { isAsync = false; }
+	        _super.call(this);
+	        this.__isAsync = isAsync;
+	    }
+	    EventEmitter.prototype.emit = function (value) { _super.prototype.next.call(this, value); };
+	    /**
+	     * @deprecated - use .emit(value) instead
+	     */
+	    EventEmitter.prototype.next = function (value) { _super.prototype.next.call(this, value); };
+	    EventEmitter.prototype.subscribe = function (generatorOrNext, error, complete) {
+	        var schedulerFn;
+	        var errorFn = function (err) { return null; };
+	        var completeFn = function () { return null; };
+	        if (generatorOrNext && typeof generatorOrNext === 'object') {
+	            schedulerFn = this.__isAsync ? function (value /** TODO #9100 */) {
+	                setTimeout(function () { return generatorOrNext.next(value); });
+	            } : function (value /** TODO #9100 */) { generatorOrNext.next(value); };
+	            if (generatorOrNext.error) {
+	                errorFn = this.__isAsync ? function (err) { setTimeout(function () { return generatorOrNext.error(err); }); } :
+	                    function (err) { generatorOrNext.error(err); };
+	            }
+	            if (generatorOrNext.complete) {
+	                completeFn = this.__isAsync ? function () { setTimeout(function () { return generatorOrNext.complete(); }); } :
+	                    function () { generatorOrNext.complete(); };
+	            }
+	        }
+	        else {
+	            schedulerFn = this.__isAsync ? function (value /** TODO #9100 */) {
+	                setTimeout(function () { return generatorOrNext(value); });
+	            } : function (value /** TODO #9100 */) { generatorOrNext(value); };
+	            if (error) {
+	                errorFn =
+	                    this.__isAsync ? function (err) { setTimeout(function () { return error(err); }); } : function (err) { error(err); };
+	            }
+	            if (complete) {
+	                completeFn =
+	                    this.__isAsync ? function () { setTimeout(function () { return complete(); }); } : function () { complete(); };
+	            }
+	        }
+	        return _super.prototype.subscribe.call(this, schedulerFn, errorFn, completeFn);
+	    };
+	    return EventEmitter;
+	}(Subject_1.Subject));
+	exports.EventEmitter = EventEmitter;
+	//# sourceMappingURL=async.js.map
+
+/***/ },
+/* 352 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -29694,12 +31434,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 347 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(346);
-	var collection_1 = __webpack_require__(11);
+	var base_wrapped_exception_1 = __webpack_require__(352);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
@@ -29832,19 +31579,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 348 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var abstract_emitter_1 = __webpack_require__(153);
-	var o = __webpack_require__(24);
+	var abstract_emitter_1 = __webpack_require__(156);
+	var o = __webpack_require__(25);
 	var _debugModuleUrl = 'asset://debug/lib';
 	function debugOutputAstAsTypeScript(ast) {
 	    var converter = new _TsEmitterVisitor(_debugModuleUrl);
@@ -30142,153 +31896,189 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ts_emitter.js.map
 
 /***/ },
-/* 349 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var collection_1 = __webpack_require__(11);
-	var async_1 = __webpack_require__(228);
-	var compile_metadata_1 = __webpack_require__(39);
-	var style_compiler_1 = __webpack_require__(233);
-	var view_compiler_1 = __webpack_require__(236);
-	var template_parser_1 = __webpack_require__(155);
-	var directive_normalizer_1 = __webpack_require__(224);
-	var metadata_resolver_1 = __webpack_require__(230);
-	var config_1 = __webpack_require__(107);
-	var ir = __webpack_require__(24);
-	var output_jit_1 = __webpack_require__(530);
-	var output_interpreter_1 = __webpack_require__(529);
-	var interpretive_view_1 = __webpack_require__(528);
-	var xhr_1 = __webpack_require__(238);
+	var async_1 = __webpack_require__(351);
+	var compile_metadata_1 = __webpack_require__(40);
+	var style_compiler_1 = __webpack_require__(239);
+	var view_compiler_1 = __webpack_require__(159);
+	var template_parser_1 = __webpack_require__(158);
+	var directive_normalizer_1 = __webpack_require__(231);
+	var metadata_resolver_1 = __webpack_require__(236);
+	var config_1 = __webpack_require__(108);
+	var ir = __webpack_require__(25);
+	var output_jit_1 = __webpack_require__(544);
+	var output_interpreter_1 = __webpack_require__(543);
+	var interpretive_view_1 = __webpack_require__(542);
 	var RuntimeCompiler = (function () {
-	    function RuntimeCompiler(_metadataResolver, _templateNormalizer, _templateParser, _styleCompiler, _viewCompiler, _xhr, _genConfig) {
+	    function RuntimeCompiler(_metadataResolver, _templateNormalizer, _templateParser, _styleCompiler, _viewCompiler, _genConfig) {
 	        this._metadataResolver = _metadataResolver;
 	        this._templateNormalizer = _templateNormalizer;
 	        this._templateParser = _templateParser;
 	        this._styleCompiler = _styleCompiler;
 	        this._viewCompiler = _viewCompiler;
-	        this._xhr = _xhr;
 	        this._genConfig = _genConfig;
-	        this._styleCache = new Map();
-	        this._hostCacheKeys = new Map();
 	        this._compiledTemplateCache = new Map();
-	        this._compiledTemplateDone = new Map();
+	        this._compiledHostTemplateCache = new Map();
 	    }
 	    RuntimeCompiler.prototype.resolveComponent = function (component) {
 	        if (lang_1.isString(component)) {
 	            return async_1.PromiseWrapper.reject(new exceptions_1.BaseException("Cannot resolve component using '" + component + "'."), null);
 	        }
-	        var componentType = component;
-	        var compMeta = this._metadataResolver.getDirectiveMetadata(componentType);
-	        var hostCacheKey = this._hostCacheKeys.get(componentType);
-	        if (lang_1.isBlank(hostCacheKey)) {
-	            hostCacheKey = new Object();
-	            this._hostCacheKeys.set(componentType, hostCacheKey);
-	            assertComponent(compMeta);
-	            var hostMeta = compile_metadata_1.createHostComponentMeta(compMeta.type, compMeta.selector);
-	            this._loadAndCompileComponent(hostCacheKey, hostMeta, [compMeta], [], []);
+	        return this.compileComponentAsync(component);
+	    };
+	    RuntimeCompiler.prototype.compileComponentAsync = function (compType) {
+	        var _this = this;
+	        var templates = this._getTransitiveCompiledTemplates(compType, true);
+	        var loadingPromises = [];
+	        templates.forEach(function (template) {
+	            if (template.loading) {
+	                loadingPromises.push(template.loading);
+	            }
+	        });
+	        return Promise.all(loadingPromises).then(function () {
+	            templates.forEach(function (template) { _this._compileTemplate(template); });
+	            return _this._getCompiledHostTemplate(compType).proxyComponentFactory;
+	        });
+	    };
+	    RuntimeCompiler.prototype.compileComponentSync = function (compType) {
+	        var _this = this;
+	        var templates = this._getTransitiveCompiledTemplates(compType, true);
+	        templates.forEach(function (template) {
+	            if (template.loading) {
+	                throw new exceptions_1.BaseException("Can't compile synchronously as " + template.compType.name + " is still being loaded!");
+	            }
+	        });
+	        templates.forEach(function (template) { _this._compileTemplate(template); });
+	        return this._getCompiledHostTemplate(compType).proxyComponentFactory;
+	    };
+	    RuntimeCompiler.prototype.clearCacheFor = function (compType) {
+	        this._metadataResolver.clearCacheFor(compType);
+	        this._compiledHostTemplateCache.delete(compType);
+	        var compiledTemplate = this._compiledTemplateCache.get(compType);
+	        if (compiledTemplate) {
+	            this._templateNormalizer.clearCacheFor(compiledTemplate.normalizedCompMeta);
+	            this._compiledTemplateCache.delete(compType);
 	        }
-	        return this._compiledTemplateDone.get(hostCacheKey)
-	            .then(function (compiledTemplate) { return new core_1.ComponentFactory(compMeta.selector, compiledTemplate.viewFactory, componentType); });
 	    };
 	    RuntimeCompiler.prototype.clearCache = function () {
-	        this._styleCache.clear();
+	        this._metadataResolver.clearCache();
 	        this._compiledTemplateCache.clear();
-	        this._compiledTemplateDone.clear();
-	        this._hostCacheKeys.clear();
+	        this._compiledHostTemplateCache.clear();
+	        this._templateNormalizer.clearCache();
 	    };
-	    RuntimeCompiler.prototype._loadAndCompileComponent = function (cacheKey, compMeta, viewDirectives, pipes, compilingComponentsPath) {
-	        var _this = this;
-	        var compiledTemplate = this._compiledTemplateCache.get(cacheKey);
-	        var done = this._compiledTemplateDone.get(cacheKey);
+	    RuntimeCompiler.prototype._getCompiledHostTemplate = function (type) {
+	        var compiledTemplate = this._compiledHostTemplateCache.get(type);
 	        if (lang_1.isBlank(compiledTemplate)) {
-	            compiledTemplate = new CompiledTemplate();
-	            this._compiledTemplateCache.set(cacheKey, compiledTemplate);
-	            done =
-	                async_1.PromiseWrapper
-	                    .all([this._compileComponentStyles(compMeta)].concat(viewDirectives.map(function (dirMeta) { return _this._templateNormalizer.normalizeDirective(dirMeta); })))
-	                    .then(function (stylesAndNormalizedViewDirMetas) {
-	                    var normalizedViewDirMetas = stylesAndNormalizedViewDirMetas.slice(1);
-	                    var styles = stylesAndNormalizedViewDirMetas[0];
-	                    var parsedTemplate = _this._templateParser.parse(compMeta, compMeta.template.template, normalizedViewDirMetas, pipes, compMeta.type.name);
-	                    var childPromises = [];
-	                    compiledTemplate.init(_this._compileComponent(compMeta, parsedTemplate, styles, pipes, compilingComponentsPath, childPromises));
-	                    return async_1.PromiseWrapper.all(childPromises).then(function (_) { return compiledTemplate; });
-	                });
-	            this._compiledTemplateDone.set(cacheKey, done);
+	            var compMeta = this._metadataResolver.getDirectiveMetadata(type);
+	            assertComponent(compMeta);
+	            var hostMeta = compile_metadata_1.createHostComponentMeta(compMeta.type, compMeta.selector);
+	            compiledTemplate = new CompiledTemplate(true, compMeta.selector, compMeta.type, [], [type], [], [], this._templateNormalizer.normalizeDirective(hostMeta));
+	            this._compiledHostTemplateCache.set(type, compiledTemplate);
 	        }
 	        return compiledTemplate;
 	    };
-	    RuntimeCompiler.prototype._compileComponent = function (compMeta, parsedTemplate, styles, pipes, compilingComponentsPath, childPromises) {
+	    RuntimeCompiler.prototype._getCompiledTemplate = function (type) {
+	        var compiledTemplate = this._compiledTemplateCache.get(type);
+	        if (lang_1.isBlank(compiledTemplate)) {
+	            var compMeta = this._metadataResolver.getDirectiveMetadata(type);
+	            assertComponent(compMeta);
+	            var viewDirectives = [];
+	            var viewComponentTypes = [];
+	            this._metadataResolver.getViewDirectivesMetadata(type).forEach(function (dirOrComp) {
+	                if (dirOrComp.isComponent) {
+	                    viewComponentTypes.push(dirOrComp.type.runtime);
+	                }
+	                else {
+	                    viewDirectives.push(dirOrComp);
+	                }
+	            });
+	            var precompileComponentTypes = compMeta.precompile.map(function (typeMeta) { return typeMeta.runtime; });
+	            var pipes = this._metadataResolver.getViewPipesMetadata(type);
+	            compiledTemplate = new CompiledTemplate(false, compMeta.selector, compMeta.type, viewDirectives, viewComponentTypes, precompileComponentTypes, pipes, this._templateNormalizer.normalizeDirective(compMeta));
+	            this._compiledTemplateCache.set(type, compiledTemplate);
+	        }
+	        return compiledTemplate;
+	    };
+	    RuntimeCompiler.prototype._getTransitiveCompiledTemplates = function (compType, isHost, target) {
 	        var _this = this;
-	        var compileResult = this._viewCompiler.compileComponent(compMeta, parsedTemplate, new ir.ExternalExpr(new compile_metadata_1.CompileIdentifierMetadata({ runtime: styles })), pipes);
-	        compileResult.dependencies.forEach(function (dep) {
-	            var childCompilingComponentsPath = collection_1.ListWrapper.clone(compilingComponentsPath);
-	            var childCacheKey = dep.comp.type.runtime;
-	            var childViewDirectives = _this._metadataResolver.getViewDirectivesMetadata(dep.comp.type.runtime);
-	            var childViewPipes = _this._metadataResolver.getViewPipesMetadata(dep.comp.type.runtime);
-	            var childIsRecursive = collection_1.ListWrapper.contains(childCompilingComponentsPath, childCacheKey);
-	            childCompilingComponentsPath.push(childCacheKey);
-	            var childComp = _this._loadAndCompileComponent(dep.comp.type.runtime, dep.comp, childViewDirectives, childViewPipes, childCompilingComponentsPath);
-	            dep.factoryPlaceholder.runtime = childComp.proxyViewFactory;
-	            dep.factoryPlaceholder.name = "viewFactory_" + dep.comp.type.name;
-	            if (!childIsRecursive) {
-	                // Only wait for a child if it is not a cycle
-	                childPromises.push(_this._compiledTemplateDone.get(childCacheKey));
+	        if (target === void 0) { target = new Set(); }
+	        var template = isHost ? this._getCompiledHostTemplate(compType) : this._getCompiledTemplate(compType);
+	        if (!target.has(template)) {
+	            target.add(template);
+	            template.viewComponentTypes.forEach(function (compType) { _this._getTransitiveCompiledTemplates(compType, false, target); });
+	            template.precompileHostComponentTypes.forEach(function (compType) { _this._getTransitiveCompiledTemplates(compType, true, target); });
+	        }
+	        return target;
+	    };
+	    RuntimeCompiler.prototype._compileTemplate = function (template) {
+	        var _this = this;
+	        if (template.isCompiled) {
+	            return;
+	        }
+	        var compMeta = template.normalizedCompMeta;
+	        var externalStylesheetsByModuleUrl = new Map();
+	        var stylesCompileResult = this._styleCompiler.compileComponent(compMeta);
+	        stylesCompileResult.externalStylesheets.forEach(function (r) { externalStylesheetsByModuleUrl.set(r.meta.moduleUrl, r); });
+	        this._resolveStylesCompileResult(stylesCompileResult.componentStylesheet, externalStylesheetsByModuleUrl);
+	        var viewCompMetas = template.viewComponentTypes.map(function (compType) { return _this._getCompiledTemplate(compType).normalizedCompMeta; });
+	        var parsedTemplate = this._templateParser.parse(compMeta, compMeta.template.template, template.viewDirectives.concat(viewCompMetas), template.viewPipes, compMeta.type.name);
+	        var compileResult = this._viewCompiler.compileComponent(compMeta, parsedTemplate, ir.variable(stylesCompileResult.componentStylesheet.stylesVar), template.viewPipes);
+	        var depTemplates = compileResult.dependencies.map(function (dep) {
+	            var depTemplate;
+	            if (dep instanceof view_compiler_1.ViewFactoryDependency) {
+	                var vfd = dep;
+	                depTemplate = _this._getCompiledTemplate(vfd.comp.runtime);
+	                vfd.placeholder.runtime = depTemplate.proxyViewFactory;
+	                vfd.placeholder.name = "viewFactory_" + vfd.comp.name;
 	            }
+	            else if (dep instanceof view_compiler_1.ComponentFactoryDependency) {
+	                var cfd = dep;
+	                depTemplate = _this._getCompiledHostTemplate(cfd.comp.runtime);
+	                cfd.placeholder.runtime = depTemplate.proxyComponentFactory;
+	                cfd.placeholder.name = "compFactory_" + cfd.comp.name;
+	            }
+	            return depTemplate;
 	        });
+	        var statements = stylesCompileResult.componentStylesheet.statements.concat(compileResult.statements);
 	        var factory;
 	        if (lang_1.IS_DART || !this._genConfig.useJit) {
-	            factory = output_interpreter_1.interpretStatements(compileResult.statements, compileResult.viewFactoryVar, new interpretive_view_1.InterpretiveAppViewInstanceFactory());
+	            factory = output_interpreter_1.interpretStatements(statements, compileResult.viewFactoryVar, new interpretive_view_1.InterpretiveAppViewInstanceFactory());
 	        }
 	        else {
-	            factory = output_jit_1.jitStatements(compMeta.type.name + ".template.js", compileResult.statements, compileResult.viewFactoryVar);
+	            factory = output_jit_1.jitStatements(template.compType.name + ".template.js", statements, compileResult.viewFactoryVar);
 	        }
-	        return factory;
+	        template.compiled(factory);
 	    };
-	    RuntimeCompiler.prototype._compileComponentStyles = function (compMeta) {
-	        var compileResult = this._styleCompiler.compileComponent(compMeta);
-	        return this._resolveStylesCompileResult(compMeta.type.name, compileResult);
-	    };
-	    RuntimeCompiler.prototype._resolveStylesCompileResult = function (sourceUrl, result) {
+	    RuntimeCompiler.prototype._resolveStylesCompileResult = function (result, externalStylesheetsByModuleUrl) {
 	        var _this = this;
-	        var promises = result.dependencies.map(function (dep) { return _this._loadStylesheetDep(dep); });
-	        return async_1.PromiseWrapper.all(promises)
-	            .then(function (cssTexts) {
-	            var nestedCompileResultPromises = [];
-	            for (var i = 0; i < result.dependencies.length; i++) {
-	                var dep = result.dependencies[i];
-	                var cssText = cssTexts[i];
-	                var nestedCompileResult = _this._styleCompiler.compileStylesheet(dep.moduleUrl, cssText, dep.isShimmed);
-	                nestedCompileResultPromises.push(_this._resolveStylesCompileResult(dep.moduleUrl, nestedCompileResult));
-	            }
-	            return async_1.PromiseWrapper.all(nestedCompileResultPromises);
-	        })
-	            .then(function (nestedStylesArr) {
-	            for (var i = 0; i < result.dependencies.length; i++) {
-	                var dep = result.dependencies[i];
-	                dep.valuePlaceholder.runtime = nestedStylesArr[i];
-	                dep.valuePlaceholder.name = "importedStyles" + i;
-	            }
-	            if (lang_1.IS_DART || !_this._genConfig.useJit) {
-	                return output_interpreter_1.interpretStatements(result.statements, result.stylesVar, new interpretive_view_1.InterpretiveAppViewInstanceFactory());
-	            }
-	            else {
-	                return output_jit_1.jitStatements(sourceUrl + ".css.js", result.statements, result.stylesVar);
-	            }
+	        result.dependencies.forEach(function (dep, i) {
+	            var nestedCompileResult = externalStylesheetsByModuleUrl.get(dep.moduleUrl);
+	            var nestedStylesArr = _this._resolveAndEvalStylesCompileResult(nestedCompileResult, externalStylesheetsByModuleUrl);
+	            dep.valuePlaceholder.runtime = nestedStylesArr;
+	            dep.valuePlaceholder.name = "importedStyles" + i;
 	        });
 	    };
-	    RuntimeCompiler.prototype._loadStylesheetDep = function (dep) {
-	        var cacheKey = "" + dep.moduleUrl + (dep.isShimmed ? '.shim' : '');
-	        var cssTextPromise = this._styleCache.get(cacheKey);
-	        if (lang_1.isBlank(cssTextPromise)) {
-	            cssTextPromise = this._xhr.get(dep.moduleUrl);
-	            this._styleCache.set(cacheKey, cssTextPromise);
+	    RuntimeCompiler.prototype._resolveAndEvalStylesCompileResult = function (result, externalStylesheetsByModuleUrl) {
+	        this._resolveStylesCompileResult(result, externalStylesheetsByModuleUrl);
+	        if (lang_1.IS_DART || !this._genConfig.useJit) {
+	            return output_interpreter_1.interpretStatements(result.statements, result.stylesVar, new interpretive_view_1.InterpretiveAppViewInstanceFactory());
 	        }
-	        return cssTextPromise;
+	        else {
+	            return output_jit_1.jitStatements(result.meta.moduleUrl + ".css.js", result.statements, result.stylesVar);
+	        }
 	    };
 	    /** @nocollapse */
 	    RuntimeCompiler.decorators = [
@@ -30301,22 +32091,61 @@ webpackJsonp([2],[
 	        { type: template_parser_1.TemplateParser, },
 	        { type: style_compiler_1.StyleCompiler, },
 	        { type: view_compiler_1.ViewCompiler, },
-	        { type: xhr_1.XHR, },
 	        { type: config_1.CompilerConfig, },
 	    ];
 	    return RuntimeCompiler;
 	}());
 	exports.RuntimeCompiler = RuntimeCompiler;
 	var CompiledTemplate = (function () {
-	    function CompiledTemplate() {
+	    function CompiledTemplate(isHost, selector, compType, viewDirectives, viewComponentTypes, precompileHostComponentTypes, viewPipes, _normalizeResult) {
 	        var _this = this;
-	        this.viewFactory = null;
-	        this.proxyViewFactory =
-	            function (viewUtils /** TODO #9100 */, childInjector /** TODO #9100 */, contextEl /** TODO #9100 */) {
-	                return _this.viewFactory(viewUtils, childInjector, contextEl);
-	            };
+	        this.isHost = isHost;
+	        this.compType = compType;
+	        this.viewDirectives = viewDirectives;
+	        this.viewComponentTypes = viewComponentTypes;
+	        this.precompileHostComponentTypes = precompileHostComponentTypes;
+	        this.viewPipes = viewPipes;
+	        this._normalizeResult = _normalizeResult;
+	        this._viewFactory = null;
+	        this.loading = null;
+	        this._normalizedCompMeta = null;
+	        this.isCompiled = false;
+	        this.isCompiledWithDeps = false;
+	        this.proxyViewFactory = function () {
+	            var args = [];
+	            for (var _i = 0; _i < arguments.length; _i++) {
+	                args[_i - 0] = arguments[_i];
+	            }
+	            return _this._viewFactory.apply(null, args);
+	        };
+	        this.proxyComponentFactory = isHost ?
+	            new core_1.ComponentFactory(selector, this.proxyViewFactory, compType.runtime) :
+	            null;
+	        if (_normalizeResult.syncResult) {
+	            this._normalizedCompMeta = _normalizeResult.syncResult;
+	        }
+	        else {
+	            this.loading = _normalizeResult.asyncResult.then(function (normalizedCompMeta) {
+	                _this._normalizedCompMeta = normalizedCompMeta;
+	                _this.loading = null;
+	            });
+	        }
 	    }
-	    CompiledTemplate.prototype.init = function (viewFactory) { this.viewFactory = viewFactory; };
+	    Object.defineProperty(CompiledTemplate.prototype, "normalizedCompMeta", {
+	        get: function () {
+	            if (this.loading) {
+	                throw new exceptions_1.BaseException("Template is still loading for " + this.compType.name + "!");
+	            }
+	            return this._normalizedCompMeta;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    CompiledTemplate.prototype.compiled = function (viewFactory) {
+	        this._viewFactory = viewFactory;
+	        this.isCompiled = true;
+	    };
+	    CompiledTemplate.prototype.depsCompiled = function () { this.isCompiledWithDeps = true; };
 	    return CompiledTemplate;
 	}());
 	function assertComponent(meta) {
@@ -30327,9 +32156,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=runtime_compiler.js.map
 
 /***/ },
-/* 350 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -30337,11 +32173,11 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var dom_security_schema_1 = __webpack_require__(533);
-	var element_schema_registry_1 = __webpack_require__(154);
+	var dom_security_schema_1 = __webpack_require__(547);
+	var element_schema_registry_1 = __webpack_require__(157);
 	var EVENT = 'event';
 	var BOOLEAN = 'boolean';
 	var NUMBER = 'number';
@@ -30646,12 +32482,73 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_element_schema_registry.js.map
 
 /***/ },
-/* 351 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	// Some of the code comes from WebComponents.JS
+	// https://github.com/webcomponents/webcomponentsjs/blob/master/src/HTMLImports/path.js
+	var lang_1 = __webpack_require__(5);
+	var StyleWithImports = (function () {
+	    function StyleWithImports(style, styleUrls) {
+	        this.style = style;
+	        this.styleUrls = styleUrls;
+	    }
+	    return StyleWithImports;
+	}());
+	exports.StyleWithImports = StyleWithImports;
+	function isStyleUrlResolvable(url) {
+	    if (lang_1.isBlank(url) || url.length === 0 || url[0] == '/')
+	        return false;
+	    var schemeMatch = lang_1.RegExpWrapper.firstMatch(_urlWithSchemaRe, url);
+	    return lang_1.isBlank(schemeMatch) || schemeMatch[1] == 'package' || schemeMatch[1] == 'asset';
+	}
+	exports.isStyleUrlResolvable = isStyleUrlResolvable;
+	/**
+	 * Rewrites stylesheets by resolving and removing the @import urls that
+	 * are either relative or don't have a `package:` scheme
+	 */
+	function extractStyleUrls(resolver, baseUrl, cssText) {
+	    var foundUrls = [];
+	    var modifiedCssText = lang_1.StringWrapper.replaceAllMapped(cssText, _cssImportRe, function (m) {
+	        var url = lang_1.isPresent(m[1]) ? m[1] : m[2];
+	        if (!isStyleUrlResolvable(url)) {
+	            // Do not attempt to resolve non-package absolute URLs with URI scheme
+	            return m[0];
+	        }
+	        foundUrls.push(resolver.resolve(baseUrl, url));
+	        return '';
+	    });
+	    return new StyleWithImports(modifiedCssText, foundUrls);
+	}
+	exports.extractStyleUrls = extractStyleUrls;
+	var _cssImportRe = /@import\s+(?:url\()?\s*(?:(?:['"]([^'"]*))|([^;\)\s]*))[^;]*;?/g;
+	// TODO: can't use /^[^:/?#.]+:/g due to clang-format bug:
+	//       https://github.com/angular/angular/issues/4596
+	var _urlWithSchemaRe = /^([a-zA-Z\-\+\.]+):/g;
+	//# sourceMappingURL=style_url_resolver.js.map
+
+/***/ },
+/* 358 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
-	var html_tags_1 = __webpack_require__(151);
+	var html_tags_1 = __webpack_require__(154);
 	var NG_CONTENT_SELECT_ATTR = 'select';
 	var NG_CONTENT_ELEMENT = 'ng-content';
 	var LINK_ELEMENT = 'link';
@@ -30734,9 +32631,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=template_preparser.js.map
 
 /***/ },
-/* 352 */
+/* 359 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var CompileBinding = (function () {
 	    function CompileBinding(node, sourceAst) {
@@ -30749,9 +32653,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_binding.js.map
 
 /***/ },
-/* 353 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -30759,17 +32670,17 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var template_ast_1 = __webpack_require__(74);
-	var constants_1 = __webpack_require__(110);
-	var compile_metadata_1 = __webpack_require__(39);
-	var util_1 = __webpack_require__(126);
-	var compile_query_1 = __webpack_require__(354);
-	var compile_method_1 = __webpack_require__(235);
-	var util_2 = __webpack_require__(75);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var template_ast_1 = __webpack_require__(76);
+	var constants_1 = __webpack_require__(111);
+	var compile_metadata_1 = __webpack_require__(40);
+	var util_1 = __webpack_require__(128);
+	var compile_query_1 = __webpack_require__(361);
+	var compile_method_1 = __webpack_require__(240);
+	var util_2 = __webpack_require__(77);
 	var CompileNode = (function () {
 	    function CompileNode(parent, view, nodeIndex, renderNode, sourceAst) {
 	        this.parent = parent;
@@ -30826,6 +32737,23 @@ webpackJsonp([2],[
 	        this.view.createMethod.addStmt(statement);
 	        this.appElement = o.THIS_EXPR.prop(fieldName);
 	        this._instances.add(identifiers_1.identifierToken(identifiers_1.Identifiers.AppElement), this.appElement);
+	    };
+	    CompileElement.prototype.createComponentFactoryResolver = function (precompileComponent) {
+	        if (!precompileComponent || precompileComponent.length === 0) {
+	            return;
+	        }
+	        var createComponentFactoryResolverExpr = o.importExpr(identifiers_1.Identifiers.CodegenComponentFactoryResolver).instantiate([
+	            o.literalArr(precompileComponent.map(function (precompiledComponent) { return o.importExpr(precompiledComponent); })),
+	            util_1.injectFromViewParentInjector(identifiers_1.identifierToken(identifiers_1.Identifiers.ComponentFactoryResolver), false)
+	        ]);
+	        var provider = new compile_metadata_1.CompileProviderMetadata({
+	            token: identifiers_1.identifierToken(identifiers_1.Identifiers.ComponentFactoryResolver),
+	            useValue: createComponentFactoryResolverExpr
+	        });
+	        // Add ComponentFactoryResolver as first provider as it does not have deps on other providers
+	        // ProviderAstType.PrivateService as only the component and its view can see it,
+	        // but nobody else
+	        this._resolvedProvidersArray.unshift(new template_ast_1.ProviderAst(provider.token, false, true, [provider], template_ast_1.ProviderAstType.PrivateService, this.sourceAst.sourceSpan));
 	    };
 	    CompileElement.prototype.setComponentView = function (compViewExpr) {
 	        this._compViewExpr = compViewExpr;
@@ -30891,7 +32819,7 @@ webpackJsonp([2],[
 	            var queriesForProvider = _this._getQueriesFor(resolvedProvider.token);
 	            collection_1.ListWrapper.addAll(queriesWithReads, queriesForProvider.map(function (query) { return new _QueryWithRead(query, resolvedProvider.token); }));
 	        });
-	        collection_1.StringMapWrapper.forEach(this.referenceTokens, function (_ /** TODO #9100 */, varName /** TODO #9100 */) {
+	        collection_1.StringMapWrapper.forEach(this.referenceTokens, function (_, varName) {
 	            var token = _this.referenceTokens[varName];
 	            var varValue;
 	            if (lang_1.isPresent(token)) {
@@ -31015,6 +32943,14 @@ webpackJsonp([2],[
 	            }
 	            // access regular providers on the element
 	            if (lang_1.isBlank(result)) {
+	                var resolvedProvider = this._resolvedProviders.get(dep.token);
+	                // don't allow directives / public services to access private services.
+	                // only components and private services can access private services.
+	                if (resolvedProvider && (requestingProviderType === template_ast_1.ProviderAstType.Directive ||
+	                    requestingProviderType === template_ast_1.ProviderAstType.PublicService) &&
+	                    resolvedProvider.providerType === template_ast_1.ProviderAstType.PrivateService) {
+	                    return null;
+	                }
 	                result = this._instances.get(dep.token);
 	            }
 	        }
@@ -31110,7 +33046,7 @@ webpackJsonp([2],[
 	    _ValueOutputAstTransformer.prototype.visitStringMap = function (map, context) {
 	        var _this = this;
 	        var entries = [];
-	        collection_1.StringMapWrapper.forEach(map, function (value /** TODO #9100 */, key /** TODO #9100 */) {
+	        collection_1.StringMapWrapper.forEach(map, function (value, key) {
 	            entries.push([key, util_2.visitValue(value, _this, context)]);
 	        });
 	        return o.literalMap(entries);
@@ -31132,15 +33068,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_element.js.map
 
 /***/ },
-/* 354 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var util_1 = __webpack_require__(126);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var util_1 = __webpack_require__(128);
 	var ViewQueryValues = (function () {
 	    function ViewQueryValues(view, values) {
 	        this.view = view;
@@ -31250,21 +33193,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_query.js.map
 
 /***/ },
-/* 355 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
-	var compile_metadata_1 = __webpack_require__(39);
-	var collection_1 = __webpack_require__(11);
+	var core_private_1 = __webpack_require__(30);
+	var compile_metadata_1 = __webpack_require__(40);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var compile_method_1 = __webpack_require__(235);
-	var compile_pipe_1 = __webpack_require__(535);
-	var compile_query_1 = __webpack_require__(354);
-	var constants_1 = __webpack_require__(110);
-	var util_1 = __webpack_require__(126);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var compile_method_1 = __webpack_require__(240);
+	var compile_pipe_1 = __webpack_require__(549);
+	var compile_query_1 = __webpack_require__(361);
+	var constants_1 = __webpack_require__(111);
+	var util_1 = __webpack_require__(128);
 	var CompileView = (function () {
 	    function CompileView(component, genConfig, pipeMetas, styles, animations, viewIndex, declarationElement, templateVariableBindings) {
 	        var _this = this;
@@ -31416,14 +33366,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_view.js.map
 
 /***/ },
-/* 356 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
 	var IMPLICIT_RECEIVER = o.variable('#implicit');
 	var ExpressionWithWrappedValueInfo = (function () {
 	    function ExpressionWithWrappedValueInfo(expression, needsValueUnwrapper) {
@@ -31658,9 +33615,559 @@ webpackJsonp([2],[
 	//# sourceMappingURL=expression_converter.js.map
 
 /***/ },
-/* 357 */
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var core_1 = __webpack_require__(2);
+	var core_private_1 = __webpack_require__(30);
+	var animation_compiler_1 = __webpack_require__(349);
+	var compile_metadata_1 = __webpack_require__(40);
+	var collection_1 = __webpack_require__(13);
+	var lang_1 = __webpack_require__(5);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var template_ast_1 = __webpack_require__(76);
+	var compile_element_1 = __webpack_require__(360);
+	var compile_view_1 = __webpack_require__(362);
+	var constants_1 = __webpack_require__(111);
+	var util_1 = __webpack_require__(128);
+	var IMPLICIT_TEMPLATE_VAR = '\$implicit';
+	var CLASS_ATTR = 'class';
+	var STYLE_ATTR = 'style';
+	var NG_CONTAINER_TAG = 'ng-container';
+	var parentRenderNodeVar = o.variable('parentRenderNode');
+	var rootSelectorVar = o.variable('rootSelector');
+	var ViewFactoryDependency = (function () {
+	    function ViewFactoryDependency(comp, placeholder) {
+	        this.comp = comp;
+	        this.placeholder = placeholder;
+	    }
+	    return ViewFactoryDependency;
+	}());
+	exports.ViewFactoryDependency = ViewFactoryDependency;
+	var ComponentFactoryDependency = (function () {
+	    function ComponentFactoryDependency(comp, placeholder) {
+	        this.comp = comp;
+	        this.placeholder = placeholder;
+	    }
+	    return ComponentFactoryDependency;
+	}());
+	exports.ComponentFactoryDependency = ComponentFactoryDependency;
+	function buildView(view, template, targetDependencies) {
+	    var builderVisitor = new ViewBuilderVisitor(view, targetDependencies);
+	    template_ast_1.templateVisitAll(builderVisitor, template, view.declarationElement.isNull() ? view.declarationElement : view.declarationElement.parent);
+	    return builderVisitor.nestedViewCount;
+	}
+	exports.buildView = buildView;
+	function finishView(view, targetStatements) {
+	    view.afterNodes();
+	    createViewTopLevelStmts(view, targetStatements);
+	    view.nodes.forEach(function (node) {
+	        if (node instanceof compile_element_1.CompileElement && node.hasEmbeddedView) {
+	            finishView(node.embeddedView, targetStatements);
+	        }
+	    });
+	}
+	exports.finishView = finishView;
+	var ViewBuilderVisitor = (function () {
+	    function ViewBuilderVisitor(view, targetDependencies) {
+	        this.view = view;
+	        this.targetDependencies = targetDependencies;
+	        this.nestedViewCount = 0;
+	        this._animationCompiler = new animation_compiler_1.AnimationCompiler();
+	    }
+	    ViewBuilderVisitor.prototype._isRootNode = function (parent) { return parent.view !== this.view; };
+	    ViewBuilderVisitor.prototype._addRootNodeAndProject = function (node) {
+	        var projectedNode = _getOuterContainerOrSelf(node);
+	        var parent = projectedNode.parent;
+	        var ngContentIndex = projectedNode.sourceAst.ngContentIndex;
+	        var vcAppEl = (node instanceof compile_element_1.CompileElement && node.hasViewContainer) ? node.appElement : null;
+	        if (this._isRootNode(parent)) {
+	            // store appElement as root node only for ViewContainers
+	            if (this.view.viewType !== core_private_1.ViewType.COMPONENT) {
+	                this.view.rootNodesOrAppElements.push(lang_1.isPresent(vcAppEl) ? vcAppEl : node.renderNode);
+	            }
+	        }
+	        else if (lang_1.isPresent(parent.component) && lang_1.isPresent(ngContentIndex)) {
+	            parent.addContentNode(ngContentIndex, lang_1.isPresent(vcAppEl) ? vcAppEl : node.renderNode);
+	        }
+	    };
+	    ViewBuilderVisitor.prototype._getParentRenderNode = function (parent) {
+	        parent = _getOuterContainerParentOrSelf(parent);
+	        if (this._isRootNode(parent)) {
+	            if (this.view.viewType === core_private_1.ViewType.COMPONENT) {
+	                return parentRenderNodeVar;
+	            }
+	            else {
+	                // root node of an embedded/host view
+	                return o.NULL_EXPR;
+	            }
+	        }
+	        else {
+	            return lang_1.isPresent(parent.component) &&
+	                parent.component.template.encapsulation !== core_1.ViewEncapsulation.Native ?
+	                o.NULL_EXPR :
+	                parent.renderNode;
+	        }
+	    };
+	    ViewBuilderVisitor.prototype.visitBoundText = function (ast, parent) {
+	        return this._visitText(ast, '', parent);
+	    };
+	    ViewBuilderVisitor.prototype.visitText = function (ast, parent) {
+	        return this._visitText(ast, ast.value, parent);
+	    };
+	    ViewBuilderVisitor.prototype._visitText = function (ast, value, parent) {
+	        var fieldName = "_text_" + this.view.nodes.length;
+	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderText)));
+	        var renderNode = o.THIS_EXPR.prop(fieldName);
+	        var compileNode = new compile_element_1.CompileNode(parent, this.view, this.view.nodes.length, renderNode, ast);
+	        var createRenderNode = o.THIS_EXPR.prop(fieldName)
+	            .set(constants_1.ViewProperties.renderer.callMethod('createText', [
+	            this._getParentRenderNode(parent), o.literal(value),
+	            this.view.createMethod.resetDebugInfoExpr(this.view.nodes.length, ast)
+	        ]))
+	            .toStmt();
+	        this.view.nodes.push(compileNode);
+	        this.view.createMethod.addStmt(createRenderNode);
+	        this._addRootNodeAndProject(compileNode);
+	        return renderNode;
+	    };
+	    ViewBuilderVisitor.prototype.visitNgContent = function (ast, parent) {
+	        // the projected nodes originate from a different view, so we don't
+	        // have debug information for them...
+	        this.view.createMethod.resetDebugInfo(null, ast);
+	        var parentRenderNode = this._getParentRenderNode(parent);
+	        var nodesExpression = constants_1.ViewProperties.projectableNodes.key(o.literal(ast.index), new o.ArrayType(o.importType(this.view.genConfig.renderTypes.renderNode)));
+	        if (parentRenderNode !== o.NULL_EXPR) {
+	            this.view.createMethod.addStmt(constants_1.ViewProperties.renderer
+	                .callMethod('projectNodes', [
+	                parentRenderNode,
+	                o.importExpr(identifiers_1.Identifiers.flattenNestedViewRenderNodes).callFn([nodesExpression])
+	            ])
+	                .toStmt());
+	        }
+	        else if (this._isRootNode(parent)) {
+	            if (this.view.viewType !== core_private_1.ViewType.COMPONENT) {
+	                // store root nodes only for embedded/host views
+	                this.view.rootNodesOrAppElements.push(nodesExpression);
+	            }
+	        }
+	        else {
+	            if (lang_1.isPresent(parent.component) && lang_1.isPresent(ast.ngContentIndex)) {
+	                parent.addContentNode(ast.ngContentIndex, nodesExpression);
+	            }
+	        }
+	        return null;
+	    };
+	    ViewBuilderVisitor.prototype.visitElement = function (ast, parent) {
+	        var _this = this;
+	        var nodeIndex = this.view.nodes.length;
+	        var createRenderNodeExpr;
+	        var debugContextExpr = this.view.createMethod.resetDebugInfoExpr(nodeIndex, ast);
+	        if (nodeIndex === 0 && this.view.viewType === core_private_1.ViewType.HOST) {
+	            createRenderNodeExpr = o.THIS_EXPR.callMethod('selectOrCreateHostElement', [o.literal(ast.name), rootSelectorVar, debugContextExpr]);
+	        }
+	        else {
+	            if (ast.name === NG_CONTAINER_TAG) {
+	                createRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createTemplateAnchor', [this._getParentRenderNode(parent), debugContextExpr]);
+	            }
+	            else {
+	                createRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createElement', [this._getParentRenderNode(parent), o.literal(ast.name), debugContextExpr]);
+	            }
+	        }
+	        var fieldName = "_el_" + nodeIndex;
+	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderElement)));
+	        this.view.createMethod.addStmt(o.THIS_EXPR.prop(fieldName).set(createRenderNodeExpr).toStmt());
+	        var renderNode = o.THIS_EXPR.prop(fieldName);
+	        var directives = ast.directives.map(function (directiveAst) { return directiveAst.directive; });
+	        var component = directives.find(function (directive) { return directive.isComponent; });
+	        var htmlAttrs = _readHtmlAttrs(ast.attrs);
+	        var attrNameAndValues = _mergeHtmlAndDirectiveAttrs(htmlAttrs, directives);
+	        for (var i = 0; i < attrNameAndValues.length; i++) {
+	            var attrName = attrNameAndValues[i][0];
+	            var attrValue = attrNameAndValues[i][1];
+	            this.view.createMethod.addStmt(constants_1.ViewProperties.renderer
+	                .callMethod('setElementAttribute', [renderNode, o.literal(attrName), o.literal(attrValue)])
+	                .toStmt());
+	        }
+	        var compileElement = new compile_element_1.CompileElement(parent, this.view, nodeIndex, renderNode, ast, component, directives, ast.providers, ast.hasViewContainer, false, ast.references);
+	        this.view.nodes.push(compileElement);
+	        var compViewExpr = null;
+	        if (lang_1.isPresent(component)) {
+	            var nestedComponentIdentifier = new compile_metadata_1.CompileIdentifierMetadata({ name: util_1.getViewFactoryName(component, 0) });
+	            this.targetDependencies.push(new ViewFactoryDependency(component.type, nestedComponentIdentifier));
+	            var precompileComponentIdentifiers = component.precompile.map(function (precompileComp) {
+	                var id = new compile_metadata_1.CompileIdentifierMetadata({ name: precompileComp.name });
+	                _this.targetDependencies.push(new ComponentFactoryDependency(precompileComp, id));
+	                return id;
+	            });
+	            compileElement.createComponentFactoryResolver(precompileComponentIdentifiers);
+	            compViewExpr = o.variable("compView_" + nodeIndex); // fix highlighting: `
+	            compileElement.setComponentView(compViewExpr);
+	            this.view.createMethod.addStmt(compViewExpr
+	                .set(o.importExpr(nestedComponentIdentifier).callFn([
+	                constants_1.ViewProperties.viewUtils, compileElement.injector, compileElement.appElement
+	            ]))
+	                .toDeclStmt());
+	        }
+	        compileElement.beforeChildren();
+	        this._addRootNodeAndProject(compileElement);
+	        template_ast_1.templateVisitAll(this, ast.children, compileElement);
+	        compileElement.afterChildren(this.view.nodes.length - nodeIndex - 1);
+	        if (lang_1.isPresent(compViewExpr)) {
+	            var codeGenContentNodes;
+	            if (this.view.component.type.isHost) {
+	                codeGenContentNodes = constants_1.ViewProperties.projectableNodes;
+	            }
+	            else {
+	                codeGenContentNodes = o.literalArr(compileElement.contentNodesByNgContentIndex.map(function (nodes) { return util_1.createFlatArray(nodes); }));
+	            }
+	            this.view.createMethod.addStmt(compViewExpr
+	                .callMethod('create', [compileElement.getComponent(), codeGenContentNodes, o.NULL_EXPR])
+	                .toStmt());
+	        }
+	        return null;
+	    };
+	    ViewBuilderVisitor.prototype.visitEmbeddedTemplate = function (ast, parent) {
+	        var nodeIndex = this.view.nodes.length;
+	        var fieldName = "_anchor_" + nodeIndex;
+	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderComment)));
+	        this.view.createMethod.addStmt(o.THIS_EXPR.prop(fieldName)
+	            .set(constants_1.ViewProperties.renderer.callMethod('createTemplateAnchor', [
+	            this._getParentRenderNode(parent),
+	            this.view.createMethod.resetDebugInfoExpr(nodeIndex, ast)
+	        ]))
+	            .toStmt());
+	        var renderNode = o.THIS_EXPR.prop(fieldName);
+	        var templateVariableBindings = ast.variables.map(function (varAst) { return [varAst.value.length > 0 ? varAst.value : IMPLICIT_TEMPLATE_VAR, varAst.name]; });
+	        var directives = ast.directives.map(function (directiveAst) { return directiveAst.directive; });
+	        var compileElement = new compile_element_1.CompileElement(parent, this.view, nodeIndex, renderNode, ast, null, directives, ast.providers, ast.hasViewContainer, true, ast.references);
+	        this.view.nodes.push(compileElement);
+	        var compiledAnimations = this._animationCompiler.compileComponent(this.view.component);
+	        this.nestedViewCount++;
+	        var embeddedView = new compile_view_1.CompileView(this.view.component, this.view.genConfig, this.view.pipeMetas, o.NULL_EXPR, compiledAnimations, this.view.viewIndex + this.nestedViewCount, compileElement, templateVariableBindings);
+	        this.nestedViewCount += buildView(embeddedView, ast.children, this.targetDependencies);
+	        compileElement.beforeChildren();
+	        this._addRootNodeAndProject(compileElement);
+	        compileElement.afterChildren(0);
+	        return null;
+	    };
+	    ViewBuilderVisitor.prototype.visitAttr = function (ast, ctx) { return null; };
+	    ViewBuilderVisitor.prototype.visitDirective = function (ast, ctx) { return null; };
+	    ViewBuilderVisitor.prototype.visitEvent = function (ast, eventTargetAndNames) {
+	        return null;
+	    };
+	    ViewBuilderVisitor.prototype.visitReference = function (ast, ctx) { return null; };
+	    ViewBuilderVisitor.prototype.visitVariable = function (ast, ctx) { return null; };
+	    ViewBuilderVisitor.prototype.visitDirectiveProperty = function (ast, context) { return null; };
+	    ViewBuilderVisitor.prototype.visitElementProperty = function (ast, context) { return null; };
+	    return ViewBuilderVisitor;
+	}());
+	/**
+	 * Walks up the nodes while the direct parent is a container.
+	 *
+	 * Returns the outer container or the node itself when it is not a direct child of a container.
+	 *
+	 * @internal
+	 */
+	function _getOuterContainerOrSelf(node) {
+	    var view = node.view;
+	    while (_isNgContainer(node.parent, view)) {
+	        node = node.parent;
+	    }
+	    return node;
+	}
+	/**
+	 * Walks up the nodes while they are container and returns the first parent which is not.
+	 *
+	 * Returns the parent of the outer container or the node itself when it is not a container.
+	 *
+	 * @internal
+	 */
+	function _getOuterContainerParentOrSelf(el) {
+	    var view = el.view;
+	    while (_isNgContainer(el, view)) {
+	        el = el.parent;
+	    }
+	    return el;
+	}
+	function _isNgContainer(node, view) {
+	    return !node.isNull() && node.sourceAst.name === NG_CONTAINER_TAG &&
+	        node.view === view;
+	}
+	function _mergeHtmlAndDirectiveAttrs(declaredHtmlAttrs, directives) {
+	    var result = {};
+	    collection_1.StringMapWrapper.forEach(declaredHtmlAttrs, function (value, key) { result[key] = value; });
+	    directives.forEach(function (directiveMeta) {
+	        collection_1.StringMapWrapper.forEach(directiveMeta.hostAttributes, function (value, name) {
+	            var prevValue = result[name];
+	            result[name] = lang_1.isPresent(prevValue) ? mergeAttributeValue(name, prevValue, value) : value;
+	        });
+	    });
+	    return mapToKeyValueArray(result);
+	}
+	function _readHtmlAttrs(attrs) {
+	    var htmlAttrs = {};
+	    attrs.forEach(function (ast) { htmlAttrs[ast.name] = ast.value; });
+	    return htmlAttrs;
+	}
+	function mergeAttributeValue(attrName, attrValue1, attrValue2) {
+	    if (attrName == CLASS_ATTR || attrName == STYLE_ATTR) {
+	        return attrValue1 + " " + attrValue2;
+	    }
+	    else {
+	        return attrValue2;
+	    }
+	}
+	function mapToKeyValueArray(data) {
+	    var entryArray = [];
+	    collection_1.StringMapWrapper.forEach(data, function (value, name) {
+	        entryArray.push([name, value]);
+	    });
+	    // We need to sort to get a defined output order
+	    // for tests and for caching generated artifacts...
+	    collection_1.ListWrapper.sort(entryArray, function (entry1, entry2) { return lang_1.StringWrapper.compare(entry1[0], entry2[0]); });
+	    return entryArray;
+	}
+	function createViewTopLevelStmts(view, targetStatements) {
+	    var nodeDebugInfosVar = o.NULL_EXPR;
+	    if (view.genConfig.genDebugInfo) {
+	        nodeDebugInfosVar = o.variable("nodeDebugInfos_" + view.component.type.name + view.viewIndex); // fix highlighting: `
+	        targetStatements.push(nodeDebugInfosVar
+	            .set(o.literalArr(view.nodes.map(createStaticNodeDebugInfo), new o.ArrayType(new o.ExternalType(identifiers_1.Identifiers.StaticNodeDebugInfo), [o.TypeModifier.Const])))
+	            .toDeclStmt(null, [o.StmtModifier.Final]));
+	    }
+	    var renderCompTypeVar = o.variable("renderType_" + view.component.type.name); // fix highlighting: `
+	    if (view.viewIndex === 0) {
+	        targetStatements.push(renderCompTypeVar.set(o.NULL_EXPR)
+	            .toDeclStmt(o.importType(identifiers_1.Identifiers.RenderComponentType)));
+	    }
+	    var viewClass = createViewClass(view, renderCompTypeVar, nodeDebugInfosVar);
+	    targetStatements.push(viewClass);
+	    targetStatements.push(createViewFactory(view, viewClass, renderCompTypeVar));
+	}
+	function createStaticNodeDebugInfo(node) {
+	    var compileElement = node instanceof compile_element_1.CompileElement ? node : null;
+	    var providerTokens = [];
+	    var componentToken = o.NULL_EXPR;
+	    var varTokenEntries = [];
+	    if (lang_1.isPresent(compileElement)) {
+	        providerTokens = compileElement.getProviderTokens();
+	        if (lang_1.isPresent(compileElement.component)) {
+	            componentToken = util_1.createDiTokenExpression(identifiers_1.identifierToken(compileElement.component.type));
+	        }
+	        collection_1.StringMapWrapper.forEach(compileElement.referenceTokens, function (token, varName) {
+	            varTokenEntries.push([varName, lang_1.isPresent(token) ? util_1.createDiTokenExpression(token) : o.NULL_EXPR]);
+	        });
+	    }
+	    return o.importExpr(identifiers_1.Identifiers.StaticNodeDebugInfo)
+	        .instantiate([
+	        o.literalArr(providerTokens, new o.ArrayType(o.DYNAMIC_TYPE, [o.TypeModifier.Const])),
+	        componentToken,
+	        o.literalMap(varTokenEntries, new o.MapType(o.DYNAMIC_TYPE, [o.TypeModifier.Const]))
+	    ], o.importType(identifiers_1.Identifiers.StaticNodeDebugInfo, null, [o.TypeModifier.Const]));
+	}
+	function createViewClass(view, renderCompTypeVar, nodeDebugInfosVar) {
+	    var viewConstructorArgs = [
+	        new o.FnParam(constants_1.ViewConstructorVars.viewUtils.name, o.importType(identifiers_1.Identifiers.ViewUtils)),
+	        new o.FnParam(constants_1.ViewConstructorVars.parentInjector.name, o.importType(identifiers_1.Identifiers.Injector)),
+	        new o.FnParam(constants_1.ViewConstructorVars.declarationEl.name, o.importType(identifiers_1.Identifiers.AppElement))
+	    ];
+	    var superConstructorArgs = [
+	        o.variable(view.className), renderCompTypeVar, constants_1.ViewTypeEnum.fromValue(view.viewType),
+	        constants_1.ViewConstructorVars.viewUtils, constants_1.ViewConstructorVars.parentInjector,
+	        constants_1.ViewConstructorVars.declarationEl,
+	        constants_1.ChangeDetectorStatusEnum.fromValue(getChangeDetectionMode(view))
+	    ];
+	    if (view.genConfig.genDebugInfo) {
+	        superConstructorArgs.push(nodeDebugInfosVar);
+	    }
+	    var viewConstructor = new o.ClassMethod(null, viewConstructorArgs, [o.SUPER_EXPR.callFn(superConstructorArgs).toStmt()]);
+	    var viewMethods = [
+	        new o.ClassMethod('createInternal', [new o.FnParam(rootSelectorVar.name, o.STRING_TYPE)], generateCreateMethod(view), o.importType(identifiers_1.Identifiers.AppElement)),
+	        new o.ClassMethod('injectorGetInternal', [
+	            new o.FnParam(constants_1.InjectMethodVars.token.name, o.DYNAMIC_TYPE),
+	            // Note: Can't use o.INT_TYPE here as the method in AppView uses number
+	            new o.FnParam(constants_1.InjectMethodVars.requestNodeIndex.name, o.NUMBER_TYPE),
+	            new o.FnParam(constants_1.InjectMethodVars.notFoundResult.name, o.DYNAMIC_TYPE)
+	        ], addReturnValuefNotEmpty(view.injectorGetMethod.finish(), constants_1.InjectMethodVars.notFoundResult), o.DYNAMIC_TYPE),
+	        new o.ClassMethod('detectChangesInternal', [new o.FnParam(constants_1.DetectChangesVars.throwOnChange.name, o.BOOL_TYPE)], generateDetectChangesMethod(view)),
+	        new o.ClassMethod('dirtyParentQueriesInternal', [], view.dirtyParentQueriesMethod.finish()),
+	        new o.ClassMethod('destroyInternal', [], view.destroyMethod.finish()),
+	        new o.ClassMethod('detachInternal', [], view.detachMethod.finish())
+	    ].concat(view.eventHandlerMethods);
+	    var superClass = view.genConfig.genDebugInfo ? identifiers_1.Identifiers.DebugAppView : identifiers_1.Identifiers.AppView;
+	    var viewClass = new o.ClassStmt(view.className, o.importExpr(superClass, [getContextType(view)]), view.fields, view.getters, viewConstructor, viewMethods.filter(function (method) { return method.body.length > 0; }));
+	    return viewClass;
+	}
+	function createViewFactory(view, viewClass, renderCompTypeVar) {
+	    var viewFactoryArgs = [
+	        new o.FnParam(constants_1.ViewConstructorVars.viewUtils.name, o.importType(identifiers_1.Identifiers.ViewUtils)),
+	        new o.FnParam(constants_1.ViewConstructorVars.parentInjector.name, o.importType(identifiers_1.Identifiers.Injector)),
+	        new o.FnParam(constants_1.ViewConstructorVars.declarationEl.name, o.importType(identifiers_1.Identifiers.AppElement))
+	    ];
+	    var initRenderCompTypeStmts = [];
+	    var templateUrlInfo;
+	    if (view.component.template.templateUrl == view.component.type.moduleUrl) {
+	        templateUrlInfo =
+	            view.component.type.moduleUrl + " class " + view.component.type.name + " - inline template";
+	    }
+	    else {
+	        templateUrlInfo = view.component.template.templateUrl;
+	    }
+	    if (view.viewIndex === 0) {
+	        initRenderCompTypeStmts = [new o.IfStmt(renderCompTypeVar.identical(o.NULL_EXPR), [
+	                renderCompTypeVar
+	                    .set(constants_1.ViewConstructorVars.viewUtils.callMethod('createRenderComponentType', [
+	                    o.literal(templateUrlInfo),
+	                    o.literal(view.component.template.ngContentSelectors.length),
+	                    constants_1.ViewEncapsulationEnum.fromValue(view.component.template.encapsulation), view.styles
+	                ]))
+	                    .toStmt()
+	            ])];
+	    }
+	    return o
+	        .fn(viewFactoryArgs, initRenderCompTypeStmts.concat([new o.ReturnStatement(o.variable(viewClass.name)
+	            .instantiate(viewClass.constructorMethod.params.map(function (param) { return o.variable(param.name); })))]), o.importType(identifiers_1.Identifiers.AppView, [getContextType(view)]))
+	        .toDeclStmt(view.viewFactory.name, [o.StmtModifier.Final]);
+	}
+	function generateCreateMethod(view) {
+	    var parentRenderNodeExpr = o.NULL_EXPR;
+	    var parentRenderNodeStmts = [];
+	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
+	        parentRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createViewRoot', [o.THIS_EXPR.prop('declarationAppElement').prop('nativeElement')]);
+	        parentRenderNodeStmts =
+	            [parentRenderNodeVar.set(parentRenderNodeExpr)
+	                    .toDeclStmt(o.importType(view.genConfig.renderTypes.renderNode), [o.StmtModifier.Final])];
+	    }
+	    var resultExpr;
+	    if (view.viewType === core_private_1.ViewType.HOST) {
+	        resultExpr = view.nodes[0].appElement;
+	    }
+	    else {
+	        resultExpr = o.NULL_EXPR;
+	    }
+	    return parentRenderNodeStmts.concat(view.createMethod.finish(), [
+	        o.THIS_EXPR
+	            .callMethod('init', [
+	            util_1.createFlatArray(view.rootNodesOrAppElements),
+	            o.literalArr(view.nodes.map(function (node) { return node.renderNode; })), o.literalArr(view.disposables),
+	            o.literalArr(view.subscriptions)
+	        ])
+	            .toStmt(),
+	        new o.ReturnStatement(resultExpr)
+	    ]);
+	}
+	function generateDetectChangesMethod(view) {
+	    var stmts = [];
+	    if (view.detectChangesInInputsMethod.isEmpty() && view.updateContentQueriesMethod.isEmpty() &&
+	        view.afterContentLifecycleCallbacksMethod.isEmpty() &&
+	        view.detectChangesRenderPropertiesMethod.isEmpty() &&
+	        view.updateViewQueriesMethod.isEmpty() && view.afterViewLifecycleCallbacksMethod.isEmpty()) {
+	        return stmts;
+	    }
+	    collection_1.ListWrapper.addAll(stmts, view.detectChangesInInputsMethod.finish());
+	    stmts.push(o.THIS_EXPR.callMethod('detectContentChildrenChanges', [constants_1.DetectChangesVars.throwOnChange])
+	        .toStmt());
+	    var afterContentStmts = view.updateContentQueriesMethod.finish().concat(view.afterContentLifecycleCallbacksMethod.finish());
+	    if (afterContentStmts.length > 0) {
+	        stmts.push(new o.IfStmt(o.not(constants_1.DetectChangesVars.throwOnChange), afterContentStmts));
+	    }
+	    collection_1.ListWrapper.addAll(stmts, view.detectChangesRenderPropertiesMethod.finish());
+	    stmts.push(o.THIS_EXPR.callMethod('detectViewChildrenChanges', [constants_1.DetectChangesVars.throwOnChange])
+	        .toStmt());
+	    var afterViewStmts = view.updateViewQueriesMethod.finish().concat(view.afterViewLifecycleCallbacksMethod.finish());
+	    if (afterViewStmts.length > 0) {
+	        stmts.push(new o.IfStmt(o.not(constants_1.DetectChangesVars.throwOnChange), afterViewStmts));
+	    }
+	    var varStmts = [];
+	    var readVars = o.findReadVarNames(stmts);
+	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.changed.name)) {
+	        varStmts.push(constants_1.DetectChangesVars.changed.set(o.literal(true)).toDeclStmt(o.BOOL_TYPE));
+	    }
+	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.changes.name)) {
+	        varStmts.push(constants_1.DetectChangesVars.changes.set(o.NULL_EXPR)
+	            .toDeclStmt(new o.MapType(o.importType(identifiers_1.Identifiers.SimpleChange))));
+	    }
+	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.valUnwrapper.name)) {
+	        varStmts.push(constants_1.DetectChangesVars.valUnwrapper.set(o.importExpr(identifiers_1.Identifiers.ValueUnwrapper).instantiate([]))
+	            .toDeclStmt(null, [o.StmtModifier.Final]));
+	    }
+	    return varStmts.concat(stmts);
+	}
+	function addReturnValuefNotEmpty(statements, value) {
+	    if (statements.length > 0) {
+	        return statements.concat([new o.ReturnStatement(value)]);
+	    }
+	    else {
+	        return statements;
+	    }
+	}
+	function getContextType(view) {
+	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
+	        return o.importType(view.component.type);
+	    }
+	    return o.DYNAMIC_TYPE;
+	}
+	function getChangeDetectionMode(view) {
+	    var mode;
+	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
+	        mode = core_private_1.isDefaultChangeDetectionStrategy(view.component.changeDetection) ?
+	            core_private_1.ChangeDetectorStatus.CheckAlways :
+	            core_private_1.ChangeDetectorStatus.CheckOnce;
+	    }
+	    else {
+	        mode = core_private_1.ChangeDetectorStatus.CheckAlways;
+	    }
+	    return mode;
+	}
+	//# sourceMappingURL=view_builder.js.map
+
+/***/ },
+/* 365 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	// TODO: vsavkin rename it into TemplateLoader
+	/**
+	 * An interface for retrieving documents by URL that the compiler uses
+	 * to load templates.
+	 */
+	var XHR = (function () {
+	    function XHR() {
+	    }
+	    XHR.prototype.get = function (url) { return null; };
+	    return XHR;
+	}());
+	exports.XHR = XHR;
+	//# sourceMappingURL=xhr.js.map
+
+/***/ },
+/* 366 */
+/***/ function(module, exports) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	exports.FILL_STYLE_FLAG = 'true'; // TODO (matsko): change to boolean
 	exports.ANY_STATE = '*';
@@ -31669,12 +34176,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_constants.js.map
 
 /***/ },
-/* 358 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	var math_1 = __webpack_require__(553);
+	var math_1 = __webpack_require__(566);
 	var AnimationGroupPlayer = (function () {
 	    function AnimationGroupPlayer(_players) {
 	        var _this = this;
@@ -31738,9 +34252,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_group_player.js.map
 
 /***/ },
-/* 359 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -31749,11 +34270,16 @@ webpackJsonp([2],[
 	};
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
+	/**
+	 * @experimental Animation support is experimental.
+	 */
 	exports.AUTO_STYLE = '*';
 	/**
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link trigger trigger
 	 * animation function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationEntryMetadata = (function () {
 	    function AnimationEntryMetadata(name, definitions) {
@@ -31763,6 +34289,9 @@ webpackJsonp([2],[
 	    return AnimationEntryMetadata;
 	}());
 	exports.AnimationEntryMetadata = AnimationEntryMetadata;
+	/**
+	 * @experimental Animation support is experimental.
+	 */
 	var AnimationStateMetadata = (function () {
 	    function AnimationStateMetadata() {
 	    }
@@ -31773,6 +34302,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link state state animation
 	 * function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationStateDeclarationMetadata = (function (_super) {
 	    __extends(AnimationStateDeclarationMetadata, _super);
@@ -31788,6 +34319,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the
 	 * {@link transition transition animation function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationStateTransitionMetadata = (function (_super) {
 	    __extends(AnimationStateTransitionMetadata, _super);
@@ -31799,6 +34332,9 @@ webpackJsonp([2],[
 	    return AnimationStateTransitionMetadata;
 	}(AnimationStateMetadata));
 	exports.AnimationStateTransitionMetadata = AnimationStateTransitionMetadata;
+	/**
+	 * @experimental Animation support is experimental.
+	 */
 	var AnimationMetadata = (function () {
 	    function AnimationMetadata() {
 	    }
@@ -31809,6 +34345,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link keyframes keyframes
 	 * animation function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationKeyframesSequenceMetadata = (function (_super) {
 	    __extends(AnimationKeyframesSequenceMetadata, _super);
@@ -31823,6 +34361,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link style style animation
 	 * function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationStyleMetadata = (function (_super) {
 	    __extends(AnimationStyleMetadata, _super);
@@ -31839,6 +34379,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link animate animate
 	 * animation function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationAnimateMetadata = (function (_super) {
 	    __extends(AnimationAnimateMetadata, _super);
@@ -31850,6 +34392,9 @@ webpackJsonp([2],[
 	    return AnimationAnimateMetadata;
 	}(AnimationMetadata));
 	exports.AnimationAnimateMetadata = AnimationAnimateMetadata;
+	/**
+	 * @experimental Animation support is experimental.
+	 */
 	var AnimationWithStepsMetadata = (function (_super) {
 	    __extends(AnimationWithStepsMetadata, _super);
 	    function AnimationWithStepsMetadata() {
@@ -31867,6 +34412,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link sequence sequence
 	 * animation function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationSequenceMetadata = (function (_super) {
 	    __extends(AnimationSequenceMetadata, _super);
@@ -31886,6 +34433,8 @@ webpackJsonp([2],[
 	 * Metadata representing the entry of animations.
 	 * Instances of this class are provided via the animation DSL when the {@link group group animation
 	 * function} is called.
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	var AnimationGroupMetadata = (function (_super) {
 	    __extends(AnimationGroupMetadata, _super);
@@ -31950,6 +34499,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function animate(timing, styles) {
 	    if (styles === void 0) { styles = null; }
@@ -31996,6 +34547,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function group(steps) {
 	    return new AnimationGroupMetadata(steps);
@@ -32037,6 +34590,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function sequence(steps) {
 	    return new AnimationSequenceMetadata(steps);
@@ -32086,6 +34641,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function style(tokens) {
 	    var input;
@@ -32161,6 +34718,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function state(stateNameExpr, styles) {
 	    return new AnimationStateDeclarationMetadata(stateNameExpr, styles);
@@ -32212,6 +34771,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function keyframes(steps) {
 	    return new AnimationKeyframesSequenceMetadata(steps);
@@ -32302,6 +34863,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function transition(stateChangeExpr, steps) {
 	    var animationData = lang_1.isArray(steps) ? new AnimationSequenceMetadata(steps) :
@@ -32362,6 +34925,8 @@ webpackJsonp([2],[
 	 * ### Example ([live demo](http://plnkr.co/edit/Kez8XGWBxWue7qP7nNvF?p=preview))
 	 *
 	 * {@example core/animation/ts/dsl/animation_example.ts region='Component'}
+	 *
+	 * @experimental Animation support is experimental.
 	 */
 	function trigger(name, animation) {
 	    return new AnimationEntryMetadata(name, animation);
@@ -32370,11 +34935,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=metadata.js.map
 
 /***/ },
-/* 360 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
 	/* @ts2dart_const */
@@ -32735,12 +35307,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=default_keyvalue_differ.js.map
 
 /***/ },
-/* 361 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var di_1 = __webpack_require__(111);
-	var collection_1 = __webpack_require__(25);
+	var di_1 = __webpack_require__(112);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
 	/**
@@ -32812,12 +35391,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=iterable_differs.js.map
 
 /***/ },
-/* 362 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var di_1 = __webpack_require__(111);
-	var collection_1 = __webpack_require__(25);
+	var di_1 = __webpack_require__(112);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
 	/**
@@ -32889,16 +35475,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=keyvalue_differs.js.map
 
 /***/ },
-/* 363 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
 	var EventListener = (function () {
 	    function EventListener(name, callback) {
@@ -32910,7 +35503,7 @@ webpackJsonp([2],[
 	}());
 	exports.EventListener = EventListener;
 	/**
-	 * @experimental
+	 * @experimental All debugging apis are currently experimental.
 	 */
 	var DebugNode = (function () {
 	    function DebugNode(nativeNode, parent, _debugInfo) {
@@ -32970,7 +35563,7 @@ webpackJsonp([2],[
 	}());
 	exports.DebugNode = DebugNode;
 	/**
-	 * @experimental
+	 * @experimental All debugging apis are currently experimental.
 	 */
 	var DebugElement = (function (_super) {
 	    __extends(DebugElement, _super);
@@ -33102,11 +35695,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=debug_node.js.map
 
 /***/ },
-/* 364 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var provider_1 = __webpack_require__(244);
+	var provider_1 = __webpack_require__(247);
 	function isProviderLiteral(obj) {
 	    return obj && typeof obj == 'object' && obj.provide;
 	}
@@ -33118,17 +35718,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=provider_util.js.map
 
 /***/ },
-/* 365 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
-	var injector_1 = __webpack_require__(243);
-	var metadata_1 = __webpack_require__(113);
-	var reflective_exceptions_1 = __webpack_require__(245);
-	var reflective_key_1 = __webpack_require__(246);
-	var reflective_provider_1 = __webpack_require__(247);
+	var injector_1 = __webpack_require__(246);
+	var metadata_1 = __webpack_require__(114);
+	var reflective_exceptions_1 = __webpack_require__(248);
+	var reflective_key_1 = __webpack_require__(249);
+	var reflective_provider_1 = __webpack_require__(250);
 	var __unused; // avoid unused import when Type union types are erased
 	// Threshold for the dynamic version
 	var _MAX_CONSTRUCTION_COUNTER = 10;
@@ -33439,6 +36046,8 @@ webpackJsonp([2],[
 	 *
 	 * Notice, we don't use the `new` operator because we explicitly want to have the `Injector`
 	 * resolve all of the object's dependencies automatically.
+	 *
+	 * @stable
 	 */
 	var ReflectiveInjector = (function () {
 	    function ReflectiveInjector() {
@@ -33943,18 +36552,25 @@ webpackJsonp([2],[
 	exports.ReflectiveInjector_ = ReflectiveInjector_;
 	var INJECTOR_KEY = reflective_key_1.ReflectiveKey.get(injector_1.Injector);
 	function _mapProviders(injector, fn) {
-	    var res = [];
+	    var res = new Array(injector._proto.numberOfProviders);
 	    for (var i = 0; i < injector._proto.numberOfProviders; ++i) {
-	        res.push(fn(injector._proto.getProviderAtIndex(i)));
+	        res[i] = fn(injector._proto.getProviderAtIndex(i));
 	    }
 	    return res;
 	}
 	//# sourceMappingURL=reflective_injector.js.map
 
 /***/ },
-/* 366 */
+/* 375 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -34007,12 +36623,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 367 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(366);
-	var collection_1 = __webpack_require__(25);
+	var base_wrapped_exception_1 = __webpack_require__(375);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
@@ -34145,9 +36768,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 368 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -34156,7 +36786,7 @@ webpackJsonp([2],[
 	};
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var view_utils_1 = __webpack_require__(162);
+	var view_utils_1 = __webpack_require__(166);
 	/**
 	 * Represents an instance of a Component created via a {@link ComponentFactory}.
 	 *
@@ -34271,6 +36901,9 @@ webpackJsonp([2],[
 	 * @ts2dart_const
 	 */
 	var EMPTY_CONTEXT = new Object();
+	/**
+	 * @stable
+	 */
 	var ComponentFactory = (function () {
 	    function ComponentFactory(selector, _viewFactory, _componentType) {
 	        this.selector = selector;
@@ -34303,13 +36936,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=component_factory.js.map
 
 /***/ },
-/* 369 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
-	var view_type_1 = __webpack_require__(161);
+	var view_type_1 = __webpack_require__(165);
 	/* @ts2dart_const */
 	var StaticNodeDebugInfo = (function () {
 	    function StaticNodeDebugInfo(providerTokens, componentToken, refTokens) {
@@ -34426,19 +37066,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=debug_context.js.map
 
 /***/ },
-/* 370 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var decorators_1 = __webpack_require__(112);
-	var reflective_injector_1 = __webpack_require__(365);
+	var decorators_1 = __webpack_require__(113);
+	var reflective_injector_1 = __webpack_require__(374);
 	var lang_1 = __webpack_require__(6);
-	var component_resolver_1 = __webpack_require__(127);
+	var component_resolver_1 = __webpack_require__(129);
 	/**
 	 * Use ComponentResolver and ViewContainerRef directly.
 	 *
@@ -34490,15 +37137,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dynamic_component_loader.js.map
 
 /***/ },
-/* 371 */
+/* 380 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * A wrapper around a native element inside of a View.
 	 *
 	 * An `ElementRef` is backed by a render-specific element. In the browser, this is usually a DOM
 	 * element.
+	 *
+	 * @security Permitting direct access to the DOM can make your application more vulnerable to
+	 * XSS attacks. Carefully review any use of `ElementRef` in your code. For more detail, see the
+	 * [Security Guide](http://g.co/ng/security).
+	 *
+	 * @stable
 	 */
 	// Note: We don't expose things like `Injector`, `ViewContainer`, ... here,
 	// i.e. users have to ask for what they need. With that, we can build better analysis tools
@@ -34513,9 +37173,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=element_ref.js.map
 
 /***/ },
-/* 372 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -34586,14 +37253,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=template_ref.js.map
 
 /***/ },
-/* 373 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var profile_1 = __webpack_require__(163);
+	var profile_1 = __webpack_require__(167);
 	/**
 	 * Represents a container where one or more Views can be attached.
 	 *
@@ -34745,16 +37419,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_container_ref.js.map
 
 /***/ },
-/* 374 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var constants_1 = __webpack_require__(159);
+	var constants_1 = __webpack_require__(163);
 	var exceptions_1 = __webpack_require__(19);
 	/**
 	 * @stable
@@ -34870,7 +37551,7 @@ webpackJsonp([2],[
 	        configurable: true
 	    });
 	    ViewRef_.prototype.markForCheck = function () { this._view.markPathToRootAsCheckOnce(); };
-	    ViewRef_.prototype.detach = function () { this._view.cdMode = constants_1.ChangeDetectionStrategy.Detached; };
+	    ViewRef_.prototype.detach = function () { this._view.cdMode = constants_1.ChangeDetectorStatus.Detached; };
 	    ViewRef_.prototype.detectChanges = function () { this._view.detectChanges(false); };
 	    ViewRef_.prototype.checkNoChanges = function () { this._view.detectChanges(true); };
 	    ViewRef_.prototype.reattach = function () {
@@ -34885,17 +37566,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_ref.js.map
 
 /***/ },
-/* 375 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var forward_ref_1 = __webpack_require__(160);
-	var metadata_1 = __webpack_require__(113);
+	var forward_ref_1 = __webpack_require__(164);
+	var metadata_1 = __webpack_require__(114);
 	var lang_1 = __webpack_require__(6);
 	/**
 	 * Specifies that a constant attribute value should be injected.
@@ -35385,17 +38073,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=di.js.map
 
 /***/ },
-/* 376 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var constants_1 = __webpack_require__(159);
-	var metadata_1 = __webpack_require__(113);
+	var constants_1 = __webpack_require__(163);
+	var metadata_1 = __webpack_require__(114);
 	var lang_1 = __webpack_require__(6);
 	/**
 	 * Directives allow you to attach behavior to elements in the DOM.
@@ -35988,7 +38683,7 @@ webpackJsonp([2],[
 	var ComponentMetadata = (function (_super) {
 	    __extends(ComponentMetadata, _super);
 	    function ComponentMetadata(_a) {
-	        var _b = _a === void 0 ? {} : _a, selector = _b.selector, inputs = _b.inputs, outputs = _b.outputs, properties = _b.properties, events = _b.events, host = _b.host, exportAs = _b.exportAs, moduleId = _b.moduleId, providers = _b.providers, viewProviders = _b.viewProviders, _c = _b.changeDetection, changeDetection = _c === void 0 ? constants_1.ChangeDetectionStrategy.Default : _c, queries = _b.queries, templateUrl = _b.templateUrl, template = _b.template, styleUrls = _b.styleUrls, styles = _b.styles, animations = _b.animations, directives = _b.directives, pipes = _b.pipes, encapsulation = _b.encapsulation, interpolation = _b.interpolation;
+	        var _b = _a === void 0 ? {} : _a, selector = _b.selector, inputs = _b.inputs, outputs = _b.outputs, properties = _b.properties, events = _b.events, host = _b.host, exportAs = _b.exportAs, moduleId = _b.moduleId, providers = _b.providers, viewProviders = _b.viewProviders, _c = _b.changeDetection, changeDetection = _c === void 0 ? constants_1.ChangeDetectionStrategy.Default : _c, queries = _b.queries, templateUrl = _b.templateUrl, template = _b.template, styleUrls = _b.styleUrls, styles = _b.styles, animations = _b.animations, directives = _b.directives, pipes = _b.pipes, encapsulation = _b.encapsulation, interpolation = _b.interpolation, precompile = _b.precompile;
 	        _super.call(this, {
 	            selector: selector,
 	            inputs: inputs,
@@ -36012,6 +38707,7 @@ webpackJsonp([2],[
 	        this.moduleId = moduleId;
 	        this.animations = animations;
 	        this.interpolation = interpolation;
+	        this.precompile = precompile;
 	    }
 	    Object.defineProperty(ComponentMetadata.prototype, "viewProviders", {
 	        /**
@@ -36283,9 +38979,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=directives.js.map
 
 /***/ },
-/* 377 */
+/* 386 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * @stable
@@ -36800,9 +39503,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=lifecycle_hooks.js.map
 
 /***/ },
-/* 378 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	var ReflectionCapabilities = (function () {
@@ -37036,19 +39746,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflection_capabilities.js.map
 
 /***/ },
-/* 379 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var exceptions_1 = __webpack_require__(19);
 	var lang_1 = __webpack_require__(6);
-	var reflector_reader_1 = __webpack_require__(251);
+	var reflector_reader_1 = __webpack_require__(255);
 	/**
 	 * Reflective information about a symbol, including annotations, interfaces, and other metadata.
 	 */
@@ -37208,9 +39925,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=reflector.js.map
 
 /***/ },
-/* 380 */
+/* 389 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * A SecurityContext marks a location that has dangerous security implications, e.g. a DOM property
@@ -37218,6 +39942,8 @@ webpackJsonp([2],[
 	 * handled.
 	 *
 	 * See DomSanitizationService for more details on security in Angular applications.
+	 *
+	 * @stable
 	 */
 	(function (SecurityContext) {
 	    SecurityContext[SecurityContext["NONE"] = 0] = "NONE";
@@ -37231,6 +39957,8 @@ webpackJsonp([2],[
 	/**
 	 * SanitizationService is used by the views to sanitize potentially dangerous values. This is a
 	 * private API, use code should only refer to DomSanitizationService.
+	 *
+	 * @stable
 	 */
 	var SanitizationService = (function () {
 	    function SanitizationService() {
@@ -37241,9 +39969,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=security.js.map
 
 /***/ },
-/* 381 */
+/* 390 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Stores error information; delivered via [NgZone.onError] stream.
@@ -37332,23 +40067,37 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_zone_impl.js.map
 
 /***/ },
-/* 382 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(568));
+	__export(__webpack_require__(582));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 383 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(37);
+	var lang_1 = __webpack_require__(38);
 	var _nextRequestId = 0;
 	exports.JSONP_HOME = '__ng_jsonp__';
 	var _jsonpConnections = null;
@@ -37395,9 +40144,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser_jsonp.js.map
 
 /***/ },
-/* 384 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -37406,17 +40162,19 @@ webpackJsonp([2],[
 	};
 	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
-	var base_response_options_1 = __webpack_require__(166);
-	var enums_1 = __webpack_require__(76);
-	var exceptions_1 = __webpack_require__(128);
-	var lang_1 = __webpack_require__(37);
-	var interfaces_1 = __webpack_require__(130);
-	var static_response_1 = __webpack_require__(258);
-	var browser_jsonp_1 = __webpack_require__(383);
+	var base_response_options_1 = __webpack_require__(170);
+	var enums_1 = __webpack_require__(78);
+	var exceptions_1 = __webpack_require__(130);
+	var lang_1 = __webpack_require__(38);
+	var interfaces_1 = __webpack_require__(132);
+	var static_response_1 = __webpack_require__(262);
+	var browser_jsonp_1 = __webpack_require__(392);
 	var JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
 	var JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
 	/**
 	 * Abstract base class for an in-flight JSONP request.
+	 *
+	 * @experimental
 	 */
 	var JSONPConnection = (function () {
 	    function JSONPConnection() {
@@ -37508,6 +40266,8 @@ webpackJsonp([2],[
 	exports.JSONPConnection_ = JSONPConnection_;
 	/**
 	 * A {@link ConnectionBackend} that uses the JSONP strategy of making requests.
+	 *
+	 * @experimental
 	 */
 	var JSONPBackend = (function (_super) {
 	    __extends(JSONPBackend, _super);
@@ -37542,21 +40302,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=jsonp_backend.js.map
 
 /***/ },
-/* 385 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var platform_browser_1 = __webpack_require__(168);
+	var platform_browser_1 = __webpack_require__(172);
 	var Observable_1 = __webpack_require__(1);
-	var base_response_options_1 = __webpack_require__(166);
-	var enums_1 = __webpack_require__(76);
-	var lang_1 = __webpack_require__(37);
-	var headers_1 = __webpack_require__(129);
-	var http_utils_1 = __webpack_require__(167);
-	var interfaces_1 = __webpack_require__(130);
-	var static_response_1 = __webpack_require__(258);
-	var browser_xhr_1 = __webpack_require__(255);
+	var base_response_options_1 = __webpack_require__(170);
+	var enums_1 = __webpack_require__(78);
+	var lang_1 = __webpack_require__(38);
+	var headers_1 = __webpack_require__(131);
+	var http_utils_1 = __webpack_require__(171);
+	var interfaces_1 = __webpack_require__(132);
+	var static_response_1 = __webpack_require__(262);
+	var browser_xhr_1 = __webpack_require__(259);
 	var XSSI_PREFIX = /^\)\]\}',?\n/;
 	/**
 	 * Creates connections using `XMLHttpRequest`. Given a fully-qualified
@@ -37565,6 +40332,8 @@ webpackJsonp([2],[
 	 *
 	 * This class would typically not be created or interacted with directly inside applications, though
 	 * the {@link MockConnection} may be interacted with in tests.
+	 *
+	 * @experimental
 	 */
 	var XHRConnection = (function () {
 	    function XHRConnection(req, browserXHR, baseResponseOptions) {
@@ -37674,6 +40443,8 @@ webpackJsonp([2],[
 	 * Applications can configure custom cookie and header names by binding an instance of this class
 	 * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
 	 * details.
+	 *
+	 * @experimental
 	 */
 	var CookieXSRFStrategy = (function () {
 	    function CookieXSRFStrategy(_cookieName, _headerName) {
@@ -37717,9 +40488,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xhr_backend.js.map
 
 /***/ },
-/* 386 */
+/* 395 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -37772,13 +40550,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 387 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(386);
-	var collection_1 = __webpack_require__(257);
-	var lang_1 = __webpack_require__(37);
+	var base_wrapped_exception_1 = __webpack_require__(395);
+	var collection_1 = __webpack_require__(261);
+	var lang_1 = __webpack_require__(38);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
 	        this.res = [];
@@ -37910,9 +40695,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 388 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -37920,12 +40712,12 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(128);
-	var lang_1 = __webpack_require__(37);
-	var base_request_options_1 = __webpack_require__(256);
-	var enums_1 = __webpack_require__(76);
-	var interfaces_1 = __webpack_require__(130);
-	var static_request_1 = __webpack_require__(389);
+	var exceptions_1 = __webpack_require__(130);
+	var lang_1 = __webpack_require__(38);
+	var base_request_options_1 = __webpack_require__(260);
+	var enums_1 = __webpack_require__(78);
+	var interfaces_1 = __webpack_require__(132);
+	var static_request_1 = __webpack_require__(398);
 	function httpRequest(backend, request) {
 	    return backend.createConnection(request).response;
 	}
@@ -38031,6 +40823,14 @@ webpackJsonp([2],[
 	     * a {@link Request} instance. If the first argument is a url, an optional {@link RequestOptions}
 	     * object can be provided as the 2nd argument. The options object will be merged with the values
 	     * of {@link BaseRequestOptions} before performing the request.
+	     *
+	     * @security Regular XHR is the safest alternative to JSONP for most applications, and is
+	     * supported by all current browsers. Because JSONP creates a `<script>` element with
+	     * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
+	     * source could expose your application to XSS risks. Data exposed by JSONP may also be
+	     * readable by malicious third-party websites. In addition, JSONP introduces potential risk for
+	     * future security issues (e.g. content sniffing).  For more detail, see the
+	     * [Security Guide](http://g.co/ng/security).
 	     */
 	    Jsonp.prototype.request = function (url, options) {
 	        var responseObservable;
@@ -38064,15 +40864,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=http.js.map
 
 /***/ },
-/* 389 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(37);
-	var enums_1 = __webpack_require__(76);
-	var headers_1 = __webpack_require__(129);
-	var http_utils_1 = __webpack_require__(167);
-	var url_search_params_1 = __webpack_require__(259);
+	var lang_1 = __webpack_require__(38);
+	var enums_1 = __webpack_require__(78);
+	var headers_1 = __webpack_require__(131);
+	var http_utils_1 = __webpack_require__(171);
+	var url_search_params_1 = __webpack_require__(263);
 	// TODO(jeffbcross): properly implement body accessors
 	/**
 	 * Creates `Request` instances from provided values.
@@ -38110,6 +40917,8 @@ webpackJsonp([2],[
 	 *   console.log('people', res.json());
 	 * });
 	 * ```
+	 *
+	 * @experimental
 	 */
 	var Request = (function () {
 	    function Request(requestOptions) {
@@ -38229,19 +41038,29 @@ webpackJsonp([2],[
 	//# sourceMappingURL=static_request.js.map
 
 /***/ },
-/* 390 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
-	var compiler_1 = __webpack_require__(223);
+	var common_1 = __webpack_require__(55);
+	var compiler_1 = __webpack_require__(229);
 	var core_1 = __webpack_require__(2);
-	var platform_browser_1 = __webpack_require__(168);
-	var core_private_1 = __webpack_require__(569);
-	var async_1 = __webpack_require__(570);
-	var lang_1 = __webpack_require__(114);
-	var xhr_cache_1 = __webpack_require__(573);
-	var xhr_impl_1 = __webpack_require__(574);
+	var platform_browser_1 = __webpack_require__(172);
+	var core_private_1 = __webpack_require__(583);
+	var async_1 = __webpack_require__(584);
+	var lang_1 = __webpack_require__(115);
+	var xhr_cache_1 = __webpack_require__(587);
+	var xhr_impl_1 = __webpack_require__(588);
+	/**
+	 * @experimental
+	 */
 	exports.BROWSER_APP_COMPILER_PROVIDERS = [
 	    compiler_1.COMPILER_PROVIDERS, {
 	        provide: compiler_1.CompilerConfig,
@@ -38254,6 +41073,9 @@ webpackJsonp([2],[
 	    { provide: core_1.PLATFORM_DIRECTIVES, useValue: common_1.COMMON_DIRECTIVES, multi: true },
 	    { provide: core_1.PLATFORM_PIPES, useValue: common_1.COMMON_PIPES, multi: true }
 	];
+	/**
+	 * @experimental
+	 */
 	exports.CACHED_TEMPLATE_PROVIDER = [{ provide: compiler_1.XHR, useClass: xhr_cache_1.CachedXHR }];
 	/**
 	 * Bootstrapping for Angular applications.
@@ -38322,6 +41144,9 @@ webpackJsonp([2],[
 	 *   app injector to override default injection behavior.
 	 *
 	 * Returns a `Promise` of {@link ComponentRef}.
+	 *
+	 * @experimental This api cannot be used with the offline compiler and thus is still subject to
+	 * change.
 	 */
 	function bootstrap(appComponentType, customProviders) {
 	    core_private_1.reflector.reflectionCapabilities = new core_private_1.ReflectionCapabilities();
@@ -38377,9 +41202,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 391 */
+/* 400 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -38432,13 +41264,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 392 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(391);
-	var collection_1 = __webpack_require__(571);
-	var lang_1 = __webpack_require__(114);
+	var base_wrapped_exception_1 = __webpack_require__(400);
+	var collection_1 = __webpack_require__(585);
+	var lang_1 = __webpack_require__(115);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
 	        this.res = [];
@@ -38570,19 +41409,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 393 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var dom_adapter_1 = __webpack_require__(27);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
-	var generic_browser_adapter_1 = __webpack_require__(576);
+	var dom_adapter_1 = __webpack_require__(28);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
+	var generic_browser_adapter_1 = __webpack_require__(590);
 	var _attrToPropMap = {
 	    'class': 'className',
 	    'innerHtml': 'innerHTML',
@@ -39039,14 +41885,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser_adapter.js.map
 
 /***/ },
-/* 394 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
+	var dom_adapter_1 = __webpack_require__(28);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
 	var PublicTestability = (function () {
 	    function PublicTestability(testability) {
 	        this._testability = testability;
@@ -39121,14 +41974,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=testability.js.map
 
 /***/ },
-/* 395 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(115);
-	var dom_adapter_1 = __webpack_require__(27);
-	var dom_renderer_1 = __webpack_require__(171);
+	var core_private_1 = __webpack_require__(116);
+	var dom_adapter_1 = __webpack_require__(28);
+	var dom_renderer_1 = __webpack_require__(174);
 	var CORE_TOKENS = {
 	    'ApplicationRef': core_1.ApplicationRef,
 	    'NgZone': core_1.NgZone
@@ -39163,11 +42023,137 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ng_probe.js.map
 
 /***/ },
-/* 396 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(17);
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var core_1 = __webpack_require__(2);
+	var lang_1 = __webpack_require__(18);
+	var collection_1 = __webpack_require__(35);
+	var dom_adapter_1 = __webpack_require__(28);
+	var event_manager_1 = __webpack_require__(94);
+	var modifierKeys = ['alt', 'control', 'meta', 'shift'];
+	var modifierKeyGetters = {
+	    'alt': function (event) { return event.altKey; },
+	    'control': function (event) { return event.ctrlKey; },
+	    'meta': function (event) { return event.metaKey; },
+	    'shift': function (event) { return event.shiftKey; }
+	};
+	var KeyEventsPlugin = (function (_super) {
+	    __extends(KeyEventsPlugin, _super);
+	    function KeyEventsPlugin() {
+	        _super.call(this);
+	    }
+	    KeyEventsPlugin.prototype.supports = function (eventName) {
+	        return lang_1.isPresent(KeyEventsPlugin.parseEventName(eventName));
+	    };
+	    KeyEventsPlugin.prototype.addEventListener = function (element, eventName, handler) {
+	        var parsedEvent = KeyEventsPlugin.parseEventName(eventName);
+	        var outsideHandler = KeyEventsPlugin.eventCallback(element, collection_1.StringMapWrapper.get(parsedEvent, 'fullKey'), handler, this.manager.getZone());
+	        return this.manager.getZone().runOutsideAngular(function () {
+	            return dom_adapter_1.getDOM().onAndCancel(element, collection_1.StringMapWrapper.get(parsedEvent, 'domEventName'), outsideHandler);
+	        });
+	    };
+	    KeyEventsPlugin.parseEventName = function (eventName) {
+	        var parts = eventName.toLowerCase().split('.');
+	        var domEventName = parts.shift();
+	        if ((parts.length === 0) ||
+	            !(lang_1.StringWrapper.equals(domEventName, 'keydown') ||
+	                lang_1.StringWrapper.equals(domEventName, 'keyup'))) {
+	            return null;
+	        }
+	        var key = KeyEventsPlugin._normalizeKey(parts.pop());
+	        var fullKey = '';
+	        modifierKeys.forEach(function (modifierName) {
+	            if (collection_1.ListWrapper.contains(parts, modifierName)) {
+	                collection_1.ListWrapper.remove(parts, modifierName);
+	                fullKey += modifierName + '.';
+	            }
+	        });
+	        fullKey += key;
+	        if (parts.length != 0 || key.length === 0) {
+	            // returning null instead of throwing to let another plugin process the event
+	            return null;
+	        }
+	        var result = collection_1.StringMapWrapper.create();
+	        collection_1.StringMapWrapper.set(result, 'domEventName', domEventName);
+	        collection_1.StringMapWrapper.set(result, 'fullKey', fullKey);
+	        return result;
+	    };
+	    KeyEventsPlugin.getEventFullKey = function (event) {
+	        var fullKey = '';
+	        var key = dom_adapter_1.getDOM().getEventKey(event);
+	        key = key.toLowerCase();
+	        if (lang_1.StringWrapper.equals(key, ' ')) {
+	            key = 'space'; // for readability
+	        }
+	        else if (lang_1.StringWrapper.equals(key, '.')) {
+	            key = 'dot'; // because '.' is used as a separator in event names
+	        }
+	        modifierKeys.forEach(function (modifierName) {
+	            if (modifierName != key) {
+	                var modifierGetter = collection_1.StringMapWrapper.get(modifierKeyGetters, modifierName);
+	                if (modifierGetter(event)) {
+	                    fullKey += modifierName + '.';
+	                }
+	            }
+	        });
+	        fullKey += key;
+	        return fullKey;
+	    };
+	    KeyEventsPlugin.eventCallback = function (element, fullKey, handler, zone) {
+	        return function (event /** TODO #9100 */) {
+	            if (lang_1.StringWrapper.equals(KeyEventsPlugin.getEventFullKey(event), fullKey)) {
+	                zone.runGuarded(function () { return handler(event); });
+	            }
+	        };
+	    };
+	    /** @internal */
+	    KeyEventsPlugin._normalizeKey = function (keyName) {
+	        // TODO: switch to a StringMap if the mapping grows too much
+	        switch (keyName) {
+	            case 'esc':
+	                return 'escape';
+	            default:
+	                return keyName;
+	        }
+	    };
+	    /** @nocollapse */
+	    KeyEventsPlugin.decorators = [
+	        { type: core_1.Injectable },
+	    ];
+	    /** @nocollapse */
+	    KeyEventsPlugin.ctorParameters = [];
+	    return KeyEventsPlugin;
+	}(event_manager_1.EventManagerPlugin));
+	exports.KeyEventsPlugin = KeyEventsPlugin;
+	//# sourceMappingURL=key_events.js.map
+
+/***/ },
+/* 406 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var lang_1 = __webpack_require__(18);
 	var CAMEL_CASE_REGEXP = /([A-Z])/g;
 	var DASH_CASE_REGEXP = /-([a-z])/g;
 	function camelCaseToDashCase(input) {
@@ -39181,9 +42167,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=util.js.map
 
 /***/ },
-/* 397 */
+/* 407 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -39236,13 +42229,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=base_wrapped_exception.js.map
 
 /***/ },
-/* 398 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var base_wrapped_exception_1 = __webpack_require__(397);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
+	var base_wrapped_exception_1 = __webpack_require__(407);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
 	var _ArrayLogger = (function () {
 	    function _ArrayLogger() {
 	        this.res = [];
@@ -39374,9 +42374,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exception_handler.js.map
 
 /***/ },
-/* 399 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -39384,11 +42391,11 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(115);
+	var core_private_1 = __webpack_require__(116);
 	exports.SecurityContext = core_private_1.SecurityContext;
-	var html_sanitizer_1 = __webpack_require__(587);
-	var style_sanitizer_1 = __webpack_require__(588);
-	var url_sanitizer_1 = __webpack_require__(264);
+	var html_sanitizer_1 = __webpack_require__(601);
+	var style_sanitizer_1 = __webpack_require__(602);
+	var url_sanitizer_1 = __webpack_require__(268);
 	/**
 	 * DomSanitizationService helps preventing Cross Site Scripting Security bugs (XSS) by sanitizing
 	 * values to be safe to use in the different DOM contexts.
@@ -39412,6 +42419,13 @@ webpackJsonp([2],[
 	 * It is not required (and not recommended) to bypass security if the value is safe, e.g. a URL that
 	 * does not start with a suspicious protocol, or an HTML snippet that does not contain dangerous
 	 * code. The sanitizer leaves safe values intact.
+	 *
+	 * @security Calling any of the `bypassSecurityTrust...` APIs disables Angular's built-in
+	 * sanitization for the value passed in. Carefully check and audit all values and code paths going
+	 * into this call. Make sure any user data is appropriately escaped for this security context.
+	 * For more detail, see the [Security Guide](http://g.co/ng/security).
+	 *
+	 * @stable
 	 */
 	var DomSanitizationService = (function () {
 	    function DomSanitizationService() {
@@ -39455,14 +42469,15 @@ webpackJsonp([2],[
 	                    return value.changingThisBreaksApplicationSecurity;
 	                }
 	                this.checkNotSafeValue(value, 'ResourceURL');
-	                throw new Error('unsafe value used in a resource URL context');
+	                throw new Error('unsafe value used in a resource URL context (see http://g.co/ng/security#xss)');
 	            default:
-	                throw new Error("Unexpected SecurityContext " + ctx);
+	                throw new Error("Unexpected SecurityContext " + ctx + " (see http://g.co/ng/security#xss)");
 	        }
 	    };
 	    DomSanitizationServiceImpl.prototype.checkNotSafeValue = function (value, expectedType) {
 	        if (value instanceof SafeValueImpl) {
-	            throw new Error("Required a safe " + expectedType + ", got a " + value.getTypeName());
+	            throw new Error(("Required a safe " + expectedType + ", got a " + value.getTypeName() + " ") +
+	                "(see http://g.co/ng/security#xss)");
 	        }
 	    };
 	    DomSanitizationServiceImpl.prototype.bypassSecurityTrustHtml = function (value) { return new SafeHtmlImpl(value); };
@@ -39485,7 +42500,8 @@ webpackJsonp([2],[
 	        // empty
 	    }
 	    SafeValueImpl.prototype.toString = function () {
-	        return "SafeValue must use [property]=binding: " + this.changingThisBreaksApplicationSecurity;
+	        return ("SafeValue must use [property]=binding: " + this.changingThisBreaksApplicationSecurity) +
+	            " (see http://g.co/ng/security#xss)";
 	    };
 	    return SafeValueImpl;
 	}());
@@ -39532,23 +42548,37 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_sanitization_service.js.map
 
 /***/ },
-/* 400 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	exports.ON_WEB_WORKER = new core_1.OpaqueToken('WebWorker.onWebWorker');
 	//# sourceMappingURL=api.js.map
 
 /***/ },
-/* 401 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(94);
-	var collection_1 = __webpack_require__(34);
-	var exceptions_1 = __webpack_require__(77);
+	var async_1 = __webpack_require__(95);
+	var collection_1 = __webpack_require__(35);
+	var exceptions_1 = __webpack_require__(79);
 	var PostMessageBusSink = (function () {
 	    function PostMessageBusSink(_postMessageTarget) {
 	        this._postMessageTarget = _postMessageTarget;
@@ -39693,9 +42723,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=post_message_bus.js.map
 
 /***/ },
-/* 402 */
+/* 412 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// no deserialization is necessary in TS.
 	// This is only here to match dart interface
@@ -39706,7 +42743,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_deserializer.js.map
 
 /***/ },
-/* 403 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -39717,147 +42754,271 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
 	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(174);
-	var router_state_1 = __webpack_require__(116);
-	var RouterLink = (function () {
-	    /**
-	     * @internal
-	     */
-	    function RouterLink(router, route, locationStrategy) {
+	var router_1 = __webpack_require__(177);
+	var url_tree_1 = __webpack_require__(81);
+	var router_link_1 = __webpack_require__(271);
+	var RouterLinkActive = (function () {
+	    function RouterLinkActive(router, element, renderer) {
+	        var _this = this;
 	        this.router = router;
-	        this.route = route;
-	        this.locationStrategy = locationStrategy;
-	        this.commands = [];
+	        this.element = element;
+	        this.renderer = renderer;
+	        this.classes = [];
+	        this.routerLinkActiveOptions = { exact: false };
+	        this.subscription = router.events.subscribe(function (s) {
+	            if (s instanceof router_1.NavigationEnd) {
+	                _this.update();
+	            }
+	        });
 	    }
-	    Object.defineProperty(RouterLink.prototype, "routerLink", {
+	    RouterLinkActive.prototype.ngAfterContentInit = function () {
+	        var _this = this;
+	        this.links.changes.subscribe(function (s) { return _this.update(); });
+	        this.linksWithHrefs.changes.subscribe(function (s) { return _this.update(); });
+	        this.update();
+	    };
+	    Object.defineProperty(RouterLinkActive.prototype, "routerLinkActive", {
 	        set: function (data) {
 	            if (Array.isArray(data)) {
-	                this.commands = data;
+	                this.classes = data;
 	            }
 	            else {
-	                this.commands = [data];
+	                this.classes = data.split(' ');
 	            }
 	        },
 	        enumerable: true,
 	        configurable: true
 	    });
-	    RouterLink.prototype.ngOnChanges = function (changes) { this.updateTargetUrlAndHref(); };
-	    RouterLink.prototype.onClick = function (button, ctrlKey, metaKey) {
-	        if (button !== 0 || ctrlKey || metaKey) {
-	            return true;
-	        }
-	        if (typeof this.target === 'string' && this.target != '_self') {
-	            return true;
-	        }
-	        this.router.navigateByUrl(this.urlTree);
-	        return false;
+	    RouterLinkActive.prototype.ngOnChanges = function (changes) { this.update(); };
+	    RouterLinkActive.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+	    RouterLinkActive.prototype.update = function () {
+	        var _this = this;
+	        if (!this.links || !this.linksWithHrefs)
+	            return;
+	        var currentUrlTree = this.router.parseUrl(this.router.url);
+	        var isActiveLinks = this.reduceList(currentUrlTree, this.links);
+	        var isActiveLinksWithHrefs = this.reduceList(currentUrlTree, this.linksWithHrefs);
+	        this.classes.forEach(function (c) { return _this.renderer.setElementClass(_this.element.nativeElement, c, isActiveLinks || isActiveLinksWithHrefs); });
 	    };
-	    RouterLink.prototype.updateTargetUrlAndHref = function () {
-	        this.urlTree = this.router.createUrlTree(this.commands, { relativeTo: this.route, queryParams: this.queryParams, fragment: this.fragment });
-	        if (this.urlTree) {
-	            this.href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.urlTree));
-	        }
+	    RouterLinkActive.prototype.reduceList = function (currentUrlTree, q) {
+	        var _this = this;
+	        return q.reduce(function (res, link) {
+	            return res || url_tree_1.containsTree(currentUrlTree, link.urlTree, _this.routerLinkActiveOptions.exact);
+	        }, false);
 	    };
 	    /** @nocollapse */
-	    RouterLink.decorators = [
-	        { type: core_1.Directive, args: [{ selector: '[routerLink]' },] },
+	    RouterLinkActive.decorators = [
+	        { type: core_1.Directive, args: [{ selector: '[routerLinkActive]' },] },
 	    ];
 	    /** @nocollapse */
-	    RouterLink.ctorParameters = [
+	    RouterLinkActive.ctorParameters = [
 	        { type: router_1.Router, },
-	        { type: router_state_1.ActivatedRoute, },
-	        { type: common_1.LocationStrategy, },
+	        { type: core_1.ElementRef, },
+	        { type: core_1.Renderer, },
 	    ];
 	    /** @nocollapse */
-	    RouterLink.propDecorators = {
-	        'target': [{ type: core_1.Input },],
-	        'queryParams': [{ type: core_1.Input },],
-	        'fragment': [{ type: core_1.Input },],
-	        'href': [{ type: core_1.HostBinding },],
-	        'routerLink': [{ type: core_1.Input },],
-	        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey'],] },],
+	    RouterLinkActive.propDecorators = {
+	        'links': [{ type: core_1.ContentChildren, args: [router_link_1.RouterLink,] },],
+	        'linksWithHrefs': [{ type: core_1.ContentChildren, args: [router_link_1.RouterLinkWithHref,] },],
+	        'routerLinkActiveOptions': [{ type: core_1.Input },],
+	        'routerLinkActive': [{ type: core_1.Input },],
 	    };
-	    return RouterLink;
+	    return RouterLinkActive;
 	}());
-	exports.RouterLink = RouterLink;
-	//# sourceMappingURL=router_link.js.map
+	exports.RouterLinkActive = RouterLinkActive;
+	//# sourceMappingURL=router_link_active.js.map
 
 /***/ },
-/* 404 */,
-/* 405 */
+/* 414 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var core_1 = __webpack_require__(2);
+	var router_outlet_map_1 = __webpack_require__(178);
+	var shared_1 = __webpack_require__(80);
+	var RouterOutlet = (function () {
+	    /**
+	     * @internal
+	     */
+	    function RouterOutlet(parentOutletMap, location, componentFactoryResolver, name) {
+	        this.location = location;
+	        this.componentFactoryResolver = componentFactoryResolver;
+	        parentOutletMap.registerOutlet(name ? name : shared_1.PRIMARY_OUTLET, this);
+	    }
+	    Object.defineProperty(RouterOutlet.prototype, "isActivated", {
+	        get: function () { return !!this.activated; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(RouterOutlet.prototype, "component", {
+	        get: function () {
+	            if (!this.activated)
+	                throw new Error('Outlet is not activated');
+	            return this.activated.instance;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(RouterOutlet.prototype, "activatedRoute", {
+	        get: function () {
+	            if (!this.activated)
+	                throw new Error('Outlet is not activated');
+	            return this._activatedRoute;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    RouterOutlet.prototype.deactivate = function () {
+	        if (this.activated) {
+	            this.activated.destroy();
+	            this.activated = null;
+	        }
+	    };
+	    RouterOutlet.prototype.activate = function (activatedRoute, providers, outletMap) {
+	        this.outletMap = outletMap;
+	        this._activatedRoute = activatedRoute;
+	        var snapshot = activatedRoute._futureSnapshot;
+	        var component = snapshot._routeConfig.component;
+	        var factory;
+	        try {
+	            factory = typeof component === 'string' ?
+	                snapshot._resolvedComponentFactory :
+	                this.componentFactoryResolver.resolveComponentFactory(component);
+	        }
+	        catch (e) {
+	            if (!(e instanceof core_1.NoComponentFactoryError))
+	                throw e;
+	            // TODO: vsavkin uncomment this once CompoentResolver is deprecated
+	            // const componentName = component ? component.name : null;
+	            // console.warn(
+	            //     `'${componentName}' not found in precompile array.  To ensure all components referred
+	            //     to by the RouterConfig are compiled, you must add '${componentName}' to the
+	            //     'precompile' array of your application component. This will be required in a future
+	            //     release of the router.`);
+	            factory = snapshot._resolvedComponentFactory;
+	        }
+	        var inj = core_1.ReflectiveInjector.fromResolvedProviders(providers, this.location.parentInjector);
+	        this.activated = this.location.createComponent(factory, this.location.length, inj, []);
+	    };
+	    /** @nocollapse */
+	    RouterOutlet.decorators = [
+	        { type: core_1.Directive, args: [{ selector: 'router-outlet' },] },
+	    ];
+	    /** @nocollapse */
+	    RouterOutlet.ctorParameters = [
+	        { type: router_outlet_map_1.RouterOutletMap, },
+	        { type: core_1.ViewContainerRef, },
+	        { type: core_1.ComponentFactoryResolver, },
+	        { type: undefined, decorators: [{ type: core_1.Attribute, args: ['name',] },] },
+	    ];
+	    return RouterOutlet;
+	}());
+	exports.RouterOutlet = RouterOutlet;
+	//# sourceMappingURL=router_outlet.js.map
+
+/***/ },
+/* 415 */,
+/* 416 */,
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var from_1 = __webpack_require__(735);
+	var forkJoin_1 = __webpack_require__(425);
+	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+	//# sourceMappingURL=forkJoin.js.map
+
+/***/ },
+/* 418 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var from_1 = __webpack_require__(744);
 	Observable_1.Observable.from = from_1.from;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
-/* 406 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var every_1 = __webpack_require__(767);
+	var every_1 = __webpack_require__(776);
 	Observable_1.Observable.prototype.every = every_1.every;
 	//# sourceMappingURL=every.js.map
 
 /***/ },
-/* 407 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var mergeAll_1 = __webpack_require__(180);
+	var mergeAll_1 = __webpack_require__(183);
 	Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 408 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var mergeMap_1 = __webpack_require__(416);
+	var mergeMap_1 = __webpack_require__(430);
 	Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 	Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 409 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var toPromise_1 = __webpack_require__(119);
+	var reduce_1 = __webpack_require__(791);
+	Observable_1.Observable.prototype.reduce = reduce_1.reduce;
+	//# sourceMappingURL=reduce.js.map
+
+/***/ },
+/* 423 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var toPromise_1 = __webpack_require__(120);
 	Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 410 */,
-/* 411 */
+/* 424 */,
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ForkJoinObservable_1 = __webpack_require__(720);
+	var ForkJoinObservable_1 = __webpack_require__(729);
 	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 412 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var PromiseObservable_1 = __webpack_require__(95);
+	var PromiseObservable_1 = __webpack_require__(96);
 	exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 413 */,
-/* 414 */
+/* 427 */,
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39948,8 +43109,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 415 */,
-/* 416 */
+/* 429 */,
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -39958,8 +43119,8 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var subscribeToResult_1 = __webpack_require__(14);
-	var OuterSubscriber_1 = __webpack_require__(13);
+	var subscribeToResult_1 = __webpack_require__(15);
+	var OuterSubscriber_1 = __webpack_require__(14);
 	/**
 	 * Projects each source value to an Observable which is merged in the output
 	 * Observable.
@@ -40115,12 +43276,12 @@ webpackJsonp([2],[
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40147,7 +43308,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 423 */
+/* 437 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40158,7 +43319,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 424 */
+/* 438 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40169,8 +43330,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=isPromise.js.map
 
 /***/ },
-/* 425 */,
-/* 426 */
+/* 439 */,
+/* 440 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40179,20 +43340,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=throwError.js.map
 
 /***/ },
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */,
 /* 441 */,
 /* 442 */,
 /* 443 */,
@@ -40253,12 +43400,34 @@ webpackJsonp([2],[
 /* 498 */,
 /* 499 */,
 /* 500 */,
-/* 501 */
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var directives_1 = __webpack_require__(319);
-	var forms_deprecated_1 = __webpack_require__(330);
+	var directives_1 = __webpack_require__(325);
+	var forms_deprecated_1 = __webpack_require__(336);
 	/**
 	 * A collection of Angular core directives that are likely to be used in each and every Angular
 	 * application. This includes core directives (e.g., NgIf and NgFor), and forms directives (e.g.,
@@ -40308,17 +43477,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=common_directives.js.map
 
 /***/ },
-/* 502 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var ng_class_1 = __webpack_require__(320);
-	var ng_for_1 = __webpack_require__(321);
-	var ng_if_1 = __webpack_require__(322);
-	var ng_plural_1 = __webpack_require__(323);
-	var ng_style_1 = __webpack_require__(324);
-	var ng_switch_1 = __webpack_require__(210);
-	var ng_template_outlet_1 = __webpack_require__(325);
+	var ng_class_1 = __webpack_require__(326);
+	var ng_for_1 = __webpack_require__(327);
+	var ng_if_1 = __webpack_require__(328);
+	var ng_plural_1 = __webpack_require__(329);
+	var ng_style_1 = __webpack_require__(330);
+	var ng_switch_1 = __webpack_require__(214);
+	var ng_template_outlet_1 = __webpack_require__(331);
 	/**
 	 * A collection of Angular core directives that are likely to be used in each and every Angular
 	 * application.
@@ -40376,56 +43552,63 @@ webpackJsonp([2],[
 	//# sourceMappingURL=core_directives.js.map
 
 /***/ },
-/* 503 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var checkbox_value_accessor_1 = __webpack_require__(145);
-	var default_value_accessor_1 = __webpack_require__(146);
-	var ng_control_group_1 = __webpack_require__(212);
-	var ng_control_name_1 = __webpack_require__(213);
-	var ng_control_status_1 = __webpack_require__(214);
-	var ng_form_1 = __webpack_require__(215);
-	var ng_form_control_1 = __webpack_require__(216);
-	var ng_form_model_1 = __webpack_require__(217);
-	var ng_model_1 = __webpack_require__(218);
-	var number_value_accessor_1 = __webpack_require__(219);
-	var radio_control_value_accessor_1 = __webpack_require__(147);
-	var select_control_value_accessor_1 = __webpack_require__(148);
-	var select_multiple_control_value_accessor_1 = __webpack_require__(331);
-	var validators_1 = __webpack_require__(220);
-	var checkbox_value_accessor_2 = __webpack_require__(145);
+	var checkbox_value_accessor_1 = __webpack_require__(148);
+	var default_value_accessor_1 = __webpack_require__(149);
+	var ng_control_group_1 = __webpack_require__(216);
+	var ng_control_name_1 = __webpack_require__(217);
+	var ng_control_status_1 = __webpack_require__(218);
+	var ng_form_1 = __webpack_require__(219);
+	var ng_form_control_1 = __webpack_require__(220);
+	var ng_form_model_1 = __webpack_require__(221);
+	var ng_model_1 = __webpack_require__(222);
+	var number_value_accessor_1 = __webpack_require__(223);
+	var radio_control_value_accessor_1 = __webpack_require__(150);
+	var select_control_value_accessor_1 = __webpack_require__(151);
+	var select_multiple_control_value_accessor_1 = __webpack_require__(224);
+	var validators_1 = __webpack_require__(225);
+	var checkbox_value_accessor_2 = __webpack_require__(148);
 	exports.CheckboxControlValueAccessor = checkbox_value_accessor_2.CheckboxControlValueAccessor;
-	var default_value_accessor_2 = __webpack_require__(146);
+	var default_value_accessor_2 = __webpack_require__(149);
 	exports.DefaultValueAccessor = default_value_accessor_2.DefaultValueAccessor;
-	var ng_control_1 = __webpack_require__(91);
+	var ng_control_1 = __webpack_require__(92);
 	exports.NgControl = ng_control_1.NgControl;
-	var ng_control_group_2 = __webpack_require__(212);
+	var ng_control_group_2 = __webpack_require__(216);
 	exports.NgControlGroup = ng_control_group_2.NgControlGroup;
-	var ng_control_name_2 = __webpack_require__(213);
+	var ng_control_name_2 = __webpack_require__(217);
 	exports.NgControlName = ng_control_name_2.NgControlName;
-	var ng_control_status_2 = __webpack_require__(214);
+	var ng_control_status_2 = __webpack_require__(218);
 	exports.NgControlStatus = ng_control_status_2.NgControlStatus;
-	var ng_form_2 = __webpack_require__(215);
+	var ng_form_2 = __webpack_require__(219);
 	exports.NgForm = ng_form_2.NgForm;
-	var ng_form_control_2 = __webpack_require__(216);
+	var ng_form_control_2 = __webpack_require__(220);
 	exports.NgFormControl = ng_form_control_2.NgFormControl;
-	var ng_form_model_2 = __webpack_require__(217);
+	var ng_form_model_2 = __webpack_require__(221);
 	exports.NgFormModel = ng_form_model_2.NgFormModel;
-	var ng_model_2 = __webpack_require__(218);
+	var ng_model_2 = __webpack_require__(222);
 	exports.NgModel = ng_model_2.NgModel;
-	var number_value_accessor_2 = __webpack_require__(219);
+	var number_value_accessor_2 = __webpack_require__(223);
 	exports.NumberValueAccessor = number_value_accessor_2.NumberValueAccessor;
-	var radio_control_value_accessor_2 = __webpack_require__(147);
+	var radio_control_value_accessor_2 = __webpack_require__(150);
 	exports.RadioButtonState = radio_control_value_accessor_2.RadioButtonState;
 	exports.RadioControlValueAccessor = radio_control_value_accessor_2.RadioControlValueAccessor;
-	var select_control_value_accessor_2 = __webpack_require__(148);
+	var select_control_value_accessor_2 = __webpack_require__(151);
 	exports.NgSelectOption = select_control_value_accessor_2.NgSelectOption;
 	exports.SelectControlValueAccessor = select_control_value_accessor_2.SelectControlValueAccessor;
-	var select_multiple_control_value_accessor_2 = __webpack_require__(331);
+	var select_multiple_control_value_accessor_2 = __webpack_require__(224);
 	exports.NgSelectMultipleOption = select_multiple_control_value_accessor_2.NgSelectMultipleOption;
 	exports.SelectMultipleControlValueAccessor = select_multiple_control_value_accessor_2.SelectMultipleControlValueAccessor;
-	var validators_2 = __webpack_require__(220);
+	var validators_2 = __webpack_require__(225);
 	exports.MaxLengthValidator = validators_2.MaxLengthValidator;
 	exports.MinLengthValidator = validators_2.MinLengthValidator;
 	exports.PatternValidator = validators_2.PatternValidator;
@@ -40471,9 +43654,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=directives.js.map
 
 /***/ },
-/* 504 */
+/* 519 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function normalizeValidator(validator) {
 	    if (validator.validate !== undefined) {
@@ -40486,7 +43676,7 @@ webpackJsonp([2],[
 	exports.normalizeValidator = normalizeValidator;
 	function normalizeAsyncValidator(validator) {
 	    if (validator.validate !== undefined) {
-	        return function (c) { return Promise.resolve(validator.validate(c)); };
+	        return function (c) { return validator.validate(c); };
 	    }
 	    else {
 	        return validator;
@@ -40496,24 +43686,38 @@ webpackJsonp([2],[
 	//# sourceMappingURL=normalize_validator.js.map
 
 /***/ },
-/* 505 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(222));
-	__export(__webpack_require__(150));
-	__export(__webpack_require__(506));
-	__export(__webpack_require__(507));
-	__export(__webpack_require__(221));
+	__export(__webpack_require__(228));
+	__export(__webpack_require__(153));
+	__export(__webpack_require__(521));
+	__export(__webpack_require__(522));
+	__export(__webpack_require__(227));
 	//# sourceMappingURL=location.js.map
 
 /***/ },
-/* 506 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -40522,9 +43726,9 @@ webpackJsonp([2],[
 	};
 	var core_1 = __webpack_require__(2);
 	var lang_1 = __webpack_require__(9);
-	var location_1 = __webpack_require__(221);
-	var location_strategy_1 = __webpack_require__(150);
-	var platform_location_1 = __webpack_require__(222);
+	var location_1 = __webpack_require__(227);
+	var location_strategy_1 = __webpack_require__(153);
+	var platform_location_1 = __webpack_require__(228);
 	var HashLocationStrategy = (function (_super) {
 	    __extends(HashLocationStrategy, _super);
 	    function HashLocationStrategy(_platformLocation, _baseHref) {
@@ -40540,7 +43744,8 @@ webpackJsonp([2],[
 	        this._platformLocation.onHashChange(fn);
 	    };
 	    HashLocationStrategy.prototype.getBaseHref = function () { return this._baseHref; };
-	    HashLocationStrategy.prototype.path = function () {
+	    HashLocationStrategy.prototype.path = function (includeHash) {
+	        if (includeHash === void 0) { includeHash = false; }
 	        // the hash value is always prefixed with a `#`
 	        // and if it is empty then it will stay empty
 	        var path = this._platformLocation.hash;
@@ -40586,9 +43791,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=hash_location_strategy.js.map
 
 /***/ },
-/* 507 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -40596,11 +43808,11 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(71);
+	var exceptions_1 = __webpack_require__(73);
 	var lang_1 = __webpack_require__(9);
-	var location_1 = __webpack_require__(221);
-	var location_strategy_1 = __webpack_require__(150);
-	var platform_location_1 = __webpack_require__(222);
+	var location_1 = __webpack_require__(227);
+	var location_strategy_1 = __webpack_require__(153);
+	var platform_location_1 = __webpack_require__(228);
 	var PathLocationStrategy = (function (_super) {
 	    __extends(PathLocationStrategy, _super);
 	    function PathLocationStrategy(_platformLocation, href) {
@@ -40622,9 +43834,12 @@ webpackJsonp([2],[
 	    PathLocationStrategy.prototype.prepareExternalUrl = function (internal) {
 	        return location_1.Location.joinWithSlash(this._baseHref, internal);
 	    };
-	    PathLocationStrategy.prototype.path = function () {
-	        return this._platformLocation.pathname +
+	    PathLocationStrategy.prototype.path = function (includeHash) {
+	        if (includeHash === void 0) { includeHash = false; }
+	        var pathname = this._platformLocation.pathname +
 	            location_1.Location.normalizeQueryParams(this._platformLocation.search);
+	        var hash = this._platformLocation.hash;
+	        return hash && includeHash ? "" + pathname + hash : pathname;
 	    };
 	    PathLocationStrategy.prototype.pushState = function (state, title, url, queryParams) {
 	        var externalUrl = this.prepareExternalUrl(url + location_1.Location.normalizeQueryParams(queryParams));
@@ -40651,61 +43866,75 @@ webpackJsonp([2],[
 	//# sourceMappingURL=path_location_strategy.js.map
 
 /***/ },
-/* 508 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	/**
 	 * @module
 	 * @description
 	 * This module provides a set of common Pipes.
 	 */
-	"use strict";
-	var async_pipe_1 = __webpack_require__(333);
+	var async_pipe_1 = __webpack_require__(338);
 	exports.AsyncPipe = async_pipe_1.AsyncPipe;
-	var common_pipes_1 = __webpack_require__(509);
+	var common_pipes_1 = __webpack_require__(524);
 	exports.COMMON_PIPES = common_pipes_1.COMMON_PIPES;
-	var date_pipe_1 = __webpack_require__(334);
+	var date_pipe_1 = __webpack_require__(339);
 	exports.DatePipe = date_pipe_1.DatePipe;
-	var i18n_plural_pipe_1 = __webpack_require__(335);
+	var i18n_plural_pipe_1 = __webpack_require__(340);
 	exports.I18nPluralPipe = i18n_plural_pipe_1.I18nPluralPipe;
-	var i18n_select_pipe_1 = __webpack_require__(336);
+	var i18n_select_pipe_1 = __webpack_require__(341);
 	exports.I18nSelectPipe = i18n_select_pipe_1.I18nSelectPipe;
-	var json_pipe_1 = __webpack_require__(337);
+	var json_pipe_1 = __webpack_require__(342);
 	exports.JsonPipe = json_pipe_1.JsonPipe;
-	var lowercase_pipe_1 = __webpack_require__(338);
+	var lowercase_pipe_1 = __webpack_require__(343);
 	exports.LowerCasePipe = lowercase_pipe_1.LowerCasePipe;
-	var number_pipe_1 = __webpack_require__(339);
+	var number_pipe_1 = __webpack_require__(344);
 	exports.CurrencyPipe = number_pipe_1.CurrencyPipe;
 	exports.DecimalPipe = number_pipe_1.DecimalPipe;
 	exports.PercentPipe = number_pipe_1.PercentPipe;
-	var replace_pipe_1 = __webpack_require__(340);
+	var replace_pipe_1 = __webpack_require__(345);
 	exports.ReplacePipe = replace_pipe_1.ReplacePipe;
-	var slice_pipe_1 = __webpack_require__(341);
+	var slice_pipe_1 = __webpack_require__(346);
 	exports.SlicePipe = slice_pipe_1.SlicePipe;
-	var uppercase_pipe_1 = __webpack_require__(342);
+	var uppercase_pipe_1 = __webpack_require__(347);
 	exports.UpperCasePipe = uppercase_pipe_1.UpperCasePipe;
 	//# sourceMappingURL=pipes.js.map
 
 /***/ },
-/* 509 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * @module
 	 * @description
 	 * This module provides a set of common Pipes.
 	 */
-	var async_pipe_1 = __webpack_require__(333);
-	var date_pipe_1 = __webpack_require__(334);
-	var i18n_plural_pipe_1 = __webpack_require__(335);
-	var i18n_select_pipe_1 = __webpack_require__(336);
-	var json_pipe_1 = __webpack_require__(337);
-	var lowercase_pipe_1 = __webpack_require__(338);
-	var number_pipe_1 = __webpack_require__(339);
-	var replace_pipe_1 = __webpack_require__(340);
-	var slice_pipe_1 = __webpack_require__(341);
-	var uppercase_pipe_1 = __webpack_require__(342);
+	var async_pipe_1 = __webpack_require__(338);
+	var date_pipe_1 = __webpack_require__(339);
+	var i18n_plural_pipe_1 = __webpack_require__(340);
+	var i18n_select_pipe_1 = __webpack_require__(341);
+	var json_pipe_1 = __webpack_require__(342);
+	var lowercase_pipe_1 = __webpack_require__(343);
+	var number_pipe_1 = __webpack_require__(344);
+	var replace_pipe_1 = __webpack_require__(345);
+	var slice_pipe_1 = __webpack_require__(346);
+	var uppercase_pipe_1 = __webpack_require__(347);
 	/**
 	 * A collection of Angular core pipes that are likely to be used in each and every
 	 * application.
@@ -40732,9 +43961,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=common_pipes.js.map
 
 /***/ },
-/* 510 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
@@ -40744,7 +43980,7 @@ webpackJsonp([2],[
 	 * @description
 	 * Starting point to import all compiler APIs.
 	 */
-	var compiler_1 = __webpack_require__(516);
+	var compiler_1 = __webpack_require__(530);
 	exports.COMPILER_PROVIDERS = compiler_1.COMPILER_PROVIDERS;
 	exports.CompileDiDependencyMetadata = compiler_1.CompileDiDependencyMetadata;
 	exports.CompileDirectiveMetadata = compiler_1.CompileDirectiveMetadata;
@@ -40772,34 +44008,41 @@ webpackJsonp([2],[
 	exports.ViewResolver = compiler_1.ViewResolver;
 	exports.XHR = compiler_1.XHR;
 	exports.createOfflineCompileUrlResolver = compiler_1.createOfflineCompileUrlResolver;
-	var element_schema_registry_1 = __webpack_require__(154);
+	var element_schema_registry_1 = __webpack_require__(157);
 	exports.ElementSchemaRegistry = element_schema_registry_1.ElementSchemaRegistry;
-	__export(__webpack_require__(74));
-	__export(__webpack_require__(511));
+	__export(__webpack_require__(76));
+	__export(__webpack_require__(526));
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 511 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var directive_normalizer = __webpack_require__(224);
-	var lexer = __webpack_require__(226);
-	var parser = __webpack_require__(227);
-	var html_parser = __webpack_require__(108);
-	var i18n_html_parser = __webpack_require__(522);
-	var i18n_message = __webpack_require__(125);
-	var i18n_extractor = __webpack_require__(523);
-	var xmb_serializer = __webpack_require__(524);
-	var metadata_resolver = __webpack_require__(230);
-	var path_util = __webpack_require__(531);
-	var ts_emitter = __webpack_require__(348);
-	var parse_util = __webpack_require__(73);
-	var dom_element_schema_registry = __webpack_require__(350);
-	var selector = __webpack_require__(232);
-	var style_compiler = __webpack_require__(233);
-	var template_parser = __webpack_require__(155);
-	var view_compiler = __webpack_require__(236);
+	var directive_normalizer = __webpack_require__(231);
+	var lexer = __webpack_require__(233);
+	var parser = __webpack_require__(234);
+	var html_parser = __webpack_require__(109);
+	var i18n_html_parser = __webpack_require__(536);
+	var i18n_message = __webpack_require__(127);
+	var i18n_extractor = __webpack_require__(537);
+	var xmb_serializer = __webpack_require__(538);
+	var metadata_resolver = __webpack_require__(236);
+	var path_util = __webpack_require__(545);
+	var ts_emitter = __webpack_require__(354);
+	var parse_util = __webpack_require__(75);
+	var dom_element_schema_registry = __webpack_require__(356);
+	var selector = __webpack_require__(238);
+	var style_compiler = __webpack_require__(239);
+	var template_parser = __webpack_require__(158);
+	var view_compiler = __webpack_require__(159);
 	var __compiler_private__;
 	(function (__compiler_private__) {
 	    __compiler_private__.SelectorMatcher = selector.SelectorMatcher;
@@ -40832,23 +44075,30 @@ webpackJsonp([2],[
 	//# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 512 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var core_private_1 = __webpack_require__(29);
-	var compile_metadata_1 = __webpack_require__(39);
-	var collection_1 = __webpack_require__(11);
+	var core_private_1 = __webpack_require__(30);
+	var compile_metadata_1 = __webpack_require__(40);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var math_1 = __webpack_require__(518);
-	var parse_util_1 = __webpack_require__(73);
-	var animation_ast_1 = __webpack_require__(343);
-	var styles_collection_1 = __webpack_require__(513);
+	var math_1 = __webpack_require__(532);
+	var parse_util_1 = __webpack_require__(75);
+	var animation_ast_1 = __webpack_require__(348);
+	var styles_collection_1 = __webpack_require__(528);
 	var _INITIAL_KEYFRAME = 0;
 	var _TERMINAL_KEYFRAME = 1;
 	var _ONE_SECOND = 1000;
@@ -41305,11 +44555,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_parser.js.map
 
 /***/ },
-/* 513 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
 	var StylesCollectionEntry = (function () {
 	    function StylesCollectionEntry(time, value) {
@@ -41366,12 +44623,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=styles_collection.js.map
 
 /***/ },
-/* 514 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	function assertArrayOfStrings(identifier, value) {
 	    if (!core_1.isDevMode() || lang_1.isBlank(value)) {
@@ -41388,9 +44652,10 @@ webpackJsonp([2],[
 	}
 	exports.assertArrayOfStrings = assertArrayOfStrings;
 	var INTERPOLATION_BLACKLIST_REGEXPS = [
-	    /^\s*$/g,
-	    /[<>]/g,
-	    /^[\{\}]$/g,
+	    /^\s*$/,
+	    /[<>]/,
+	    /^[{}]$/,
+	    /&(#|[a-z])/i,
 	];
 	function assertInterpolationSymbols(identifier, value) {
 	    if (core_1.isDevMode() && !lang_1.isBlank(value) && (!lang_1.isArray(value) || value.length != 2)) {
@@ -41411,116 +44676,55 @@ webpackJsonp([2],[
 	//# sourceMappingURL=assertions.js.map
 
 /***/ },
-/* 515 */
-/***/ function(module, exports) {
-
-	"use strict";
-	exports.$EOF = 0;
-	exports.$TAB = 9;
-	exports.$LF = 10;
-	exports.$VTAB = 11;
-	exports.$FF = 12;
-	exports.$CR = 13;
-	exports.$SPACE = 32;
-	exports.$BANG = 33;
-	exports.$DQ = 34;
-	exports.$HASH = 35;
-	exports.$$ = 36;
-	exports.$PERCENT = 37;
-	exports.$AMPERSAND = 38;
-	exports.$SQ = 39;
-	exports.$LPAREN = 40;
-	exports.$RPAREN = 41;
-	exports.$STAR = 42;
-	exports.$PLUS = 43;
-	exports.$COMMA = 44;
-	exports.$MINUS = 45;
-	exports.$PERIOD = 46;
-	exports.$SLASH = 47;
-	exports.$COLON = 58;
-	exports.$SEMICOLON = 59;
-	exports.$LT = 60;
-	exports.$EQ = 61;
-	exports.$GT = 62;
-	exports.$QUESTION = 63;
-	exports.$0 = 48;
-	exports.$9 = 57;
-	exports.$A = 65;
-	exports.$E = 69;
-	exports.$F = 70;
-	exports.$X = 88;
-	exports.$Z = 90;
-	exports.$LBRACKET = 91;
-	exports.$BACKSLASH = 92;
-	exports.$RBRACKET = 93;
-	exports.$CARET = 94;
-	exports.$_ = 95;
-	exports.$a = 97;
-	exports.$e = 101;
-	exports.$f = 102;
-	exports.$n = 110;
-	exports.$r = 114;
-	exports.$t = 116;
-	exports.$u = 117;
-	exports.$v = 118;
-	exports.$x = 120;
-	exports.$z = 122;
-	exports.$LBRACE = 123;
-	exports.$BAR = 124;
-	exports.$RBRACE = 125;
-	exports.$NBSP = 160;
-	exports.$PIPE = 124;
-	exports.$TILDA = 126;
-	exports.$AT = 64;
-	function isWhitespace(code) {
-	    return (code >= exports.$TAB && code <= exports.$SPACE) || (code == exports.$NBSP);
-	}
-	exports.isWhitespace = isWhitespace;
-	//# sourceMappingURL=chars.js.map
-
-/***/ },
-/* 516 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	var core_1 = __webpack_require__(2);
-	__export(__webpack_require__(74));
-	var template_parser_1 = __webpack_require__(155);
+	__export(__webpack_require__(76));
+	var template_parser_1 = __webpack_require__(158);
 	exports.TEMPLATE_TRANSFORMS = template_parser_1.TEMPLATE_TRANSFORMS;
-	var config_1 = __webpack_require__(107);
+	var config_1 = __webpack_require__(108);
 	exports.CompilerConfig = config_1.CompilerConfig;
 	exports.RenderTypes = config_1.RenderTypes;
-	__export(__webpack_require__(39));
-	__export(__webpack_require__(525));
-	var runtime_compiler_1 = __webpack_require__(349);
+	__export(__webpack_require__(40));
+	__export(__webpack_require__(539));
+	var runtime_compiler_1 = __webpack_require__(355);
 	exports.RuntimeCompiler = runtime_compiler_1.RuntimeCompiler;
-	__export(__webpack_require__(109));
-	__export(__webpack_require__(238));
-	var view_resolver_1 = __webpack_require__(237);
+	__export(__webpack_require__(110));
+	__export(__webpack_require__(365));
+	var view_resolver_1 = __webpack_require__(241);
 	exports.ViewResolver = view_resolver_1.ViewResolver;
-	var directive_resolver_1 = __webpack_require__(225);
+	var directive_resolver_1 = __webpack_require__(232);
 	exports.DirectiveResolver = directive_resolver_1.DirectiveResolver;
-	var pipe_resolver_1 = __webpack_require__(231);
+	var pipe_resolver_1 = __webpack_require__(237);
 	exports.PipeResolver = pipe_resolver_1.PipeResolver;
-	var template_parser_2 = __webpack_require__(155);
-	var html_parser_1 = __webpack_require__(108);
-	var directive_normalizer_1 = __webpack_require__(224);
-	var metadata_resolver_1 = __webpack_require__(230);
-	var style_compiler_1 = __webpack_require__(233);
-	var view_compiler_1 = __webpack_require__(236);
-	var config_2 = __webpack_require__(107);
-	var runtime_compiler_2 = __webpack_require__(349);
-	var element_schema_registry_1 = __webpack_require__(154);
-	var dom_element_schema_registry_1 = __webpack_require__(350);
-	var url_resolver_2 = __webpack_require__(109);
-	var parser_1 = __webpack_require__(227);
-	var lexer_1 = __webpack_require__(226);
-	var view_resolver_2 = __webpack_require__(237);
-	var directive_resolver_2 = __webpack_require__(225);
-	var pipe_resolver_2 = __webpack_require__(231);
+	var template_parser_2 = __webpack_require__(158);
+	var html_parser_1 = __webpack_require__(109);
+	var directive_normalizer_1 = __webpack_require__(231);
+	var metadata_resolver_1 = __webpack_require__(236);
+	var style_compiler_1 = __webpack_require__(239);
+	var view_compiler_1 = __webpack_require__(159);
+	var config_2 = __webpack_require__(108);
+	var runtime_compiler_2 = __webpack_require__(355);
+	var element_schema_registry_1 = __webpack_require__(157);
+	var dom_element_schema_registry_1 = __webpack_require__(356);
+	var url_resolver_2 = __webpack_require__(110);
+	var parser_1 = __webpack_require__(234);
+	var lexer_1 = __webpack_require__(233);
+	var view_resolver_2 = __webpack_require__(241);
+	var directive_resolver_2 = __webpack_require__(232);
+	var pipe_resolver_2 = __webpack_require__(237);
 	/**
 	 * A set of providers that provide `RuntimeCompiler` and its dependencies to use for
 	 * template compilation.
@@ -41532,6 +44736,7 @@ webpackJsonp([2],[
 	    /*@ts2dart_Provider*/ { provide: config_2.CompilerConfig, useValue: new config_2.CompilerConfig() },
 	    runtime_compiler_2.RuntimeCompiler,
 	    /*@ts2dart_Provider*/ { provide: core_1.ComponentResolver, useExisting: runtime_compiler_2.RuntimeCompiler },
+	    /*@ts2dart_Provider*/ { provide: core_1.Compiler, useExisting: runtime_compiler_2.RuntimeCompiler },
 	    dom_element_schema_registry_1.DomElementSchemaRegistry,
 	    /*@ts2dart_Provider*/ { provide: element_schema_registry_1.ElementSchemaRegistry, useExisting: dom_element_schema_registry_1.DomElementSchemaRegistry },
 	    url_resolver_2.UrlResolver, view_resolver_2.ViewResolver, directive_resolver_2.DirectiveResolver, pipe_resolver_2.PipeResolver
@@ -41539,13 +44744,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 517 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
+	var core_private_1 = __webpack_require__(30);
+	var collection_1 = __webpack_require__(13);
 	var LIFECYCLE_INTERFACES = collection_1.MapWrapper.createFromPairs([
 	    [core_private_1.LifecycleHooks.OnInit, core_1.OnInit],
 	    [core_private_1.LifecycleHooks.OnDestroy, core_1.OnDestroy],
@@ -41566,7 +44778,7 @@ webpackJsonp([2],[
 	    [core_private_1.LifecycleHooks.AfterViewInit, 'ngAfterViewInit'],
 	    [core_private_1.LifecycleHooks.AfterViewChecked, 'ngAfterViewChecked'],
 	]);
-	function hasLifecycleHook(hook, token /** TODO #9100 */) {
+	function hasLifecycleHook(hook, token) {
 	    var lcInterface = LIFECYCLE_INTERFACES.get(hook);
 	    var lcProp = LIFECYCLE_PROPS.get(hook);
 	    return core_private_1.reflector.hasLifecycleHook(token, lcInterface, lcProp);
@@ -41575,9 +44787,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=directive_lifecycle_reflector.js.map
 
 /***/ },
-/* 518 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(5);
 	exports.Math = lang_1.global.Math;
@@ -41585,9 +44804,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=math.js.map
 
 /***/ },
-/* 519 */
+/* 533 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var PromiseCompleter = (function () {
 	    function PromiseCompleter() {
@@ -41638,21 +44864,27 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 520 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var chars = __webpack_require__(515);
-	var collection_1 = __webpack_require__(11);
+	var chars = __webpack_require__(230);
 	var lang_1 = __webpack_require__(5);
-	var html_tags_1 = __webpack_require__(151);
-	var interpolation_config_1 = __webpack_require__(152);
-	var parse_util_1 = __webpack_require__(73);
+	var html_tags_1 = __webpack_require__(154);
+	var interpolation_config_1 = __webpack_require__(155);
+	var parse_util_1 = __webpack_require__(75);
 	(function (HtmlTokenType) {
 	    HtmlTokenType[HtmlTokenType["TAG_OPEN_START"] = 0] = "TAG_OPEN_START";
 	    HtmlTokenType[HtmlTokenType["TAG_OPEN_END"] = 1] = "TAG_OPEN_END";
@@ -41737,6 +44969,7 @@ webpackJsonp([2],[
 	        this._line = 0;
 	        this._column = -1;
 	        this._expansionCaseStack = [];
+	        this._inInterpolation = false;
 	        this.tokens = [];
 	        this.errors = [];
 	        this._input = file.content;
@@ -41882,8 +45115,12 @@ webpackJsonp([2],[
 	        }
 	    };
 	    _HtmlTokenizer.prototype._attemptStr = function (chars) {
+	        var len = chars.length;
+	        if (this._index + len > this._length) {
+	            return false;
+	        }
 	        var initialPosition = this._savePosition();
-	        for (var i = 0; i < chars.length; i++) {
+	        for (var i = 0; i < len; i++) {
 	            if (!this._attemptCharCode(lang_1.StringWrapper.charCodeAt(chars, i))) {
 	                // If attempting to parse the string fails, we want to reset the parser
 	                // to where it was before the attempt
@@ -41982,6 +45219,7 @@ webpackJsonp([2],[
 	                break;
 	            }
 	            if (this._index > tagCloseStart.offset) {
+	                // add the characters consumed by the previous if statement to the output
 	                parts.push(this._input.substring(tagCloseStart.offset, this._index));
 	            }
 	            while (this._peek !== firstCharOfEnd) {
@@ -42037,7 +45275,7 @@ webpackJsonp([2],[
 	        var savedPos = this._savePosition();
 	        var lowercaseTagName;
 	        try {
-	            if (!isAsciiLetter(this._peek)) {
+	            if (!chars.isAsciiLetter(this._peek)) {
 	                throw this._createError(unexpectedCharacterErrorMsg(this._peek), this._getSpan());
 	            }
 	            var nameStart = this._index;
@@ -42179,43 +45417,34 @@ webpackJsonp([2],[
 	        var start = this._getLocation();
 	        this._beginToken(HtmlTokenType.TEXT, start);
 	        var parts = [];
-	        var interpolation = false;
 	        do {
-	            var savedPos = this._savePosition();
-	            // _attemptStr advances the position when it is true.
-	            // To push interpolation symbols, we have to reset it.
 	            if (this._attemptStr(this.interpolationConfig.start)) {
-	                this._restorePosition(savedPos);
-	                for (var i = 0; i < this.interpolationConfig.start.length; i++) {
-	                    parts.push(this._readChar(true));
-	                }
-	                interpolation = true;
+	                parts.push(this.interpolationConfig.start);
+	                this._inInterpolation = true;
 	            }
-	            else if (this._attemptStr(this.interpolationConfig.end) && interpolation) {
-	                this._restorePosition(savedPos);
-	                for (var i = 0; i < this.interpolationConfig.end.length; i++) {
-	                    parts.push(this._readChar(true));
-	                }
-	                interpolation = false;
+	            else if (this._attemptStr(this.interpolationConfig.end) && this._inInterpolation) {
+	                parts.push(this.interpolationConfig.end);
+	                this._inInterpolation = false;
 	            }
 	            else {
-	                this._restorePosition(savedPos);
 	                parts.push(this._readChar(true));
 	            }
-	        } while (!this._isTextEnd(interpolation));
+	        } while (!this._isTextEnd());
 	        this._endToken([this._processCarriageReturns(parts.join(''))]);
 	    };
-	    _HtmlTokenizer.prototype._isTextEnd = function (interpolation) {
-	        if (this._peek === chars.$LT || this._peek === chars.$EOF)
+	    _HtmlTokenizer.prototype._isTextEnd = function () {
+	        if (this._peek === chars.$LT || this._peek === chars.$EOF) {
 	            return true;
+	        }
 	        if (this.tokenizeExpansionForms) {
-	            var savedPos = this._savePosition();
-	            if (isExpansionFormStart(this._input, this._index, this.interpolationConfig.start))
+	            if (isExpansionFormStart(this._input, this._index, this.interpolationConfig.start)) {
+	                // start of an expansion form
 	                return true;
-	            this._restorePosition(savedPos);
-	            if (this._peek === chars.$RBRACE && !interpolation &&
-	                (this._isInExpansionCase() || this._isInExpansionForm()))
+	            }
+	            if (this._peek === chars.$RBRACE && !this._inInterpolation && this._isInExpansionCase()) {
+	                // end of and expansion case
 	                return true;
+	            }
 	        }
 	        return false;
 	    };
@@ -42235,7 +45464,7 @@ webpackJsonp([2],[
 	        var nbTokens = position[4];
 	        if (nbTokens < this.tokens.length) {
 	            // remove any extra tokens
-	            this.tokens = collection_1.ListWrapper.slice(this.tokens, 0, nbTokens);
+	            this.tokens = this.tokens.slice(0, nbTokens);
 	        }
 	    };
 	    _HtmlTokenizer.prototype._isInExpansionCase = function () {
@@ -42251,40 +45480,28 @@ webpackJsonp([2],[
 	    return _HtmlTokenizer;
 	}());
 	function isNotWhitespace(code) {
-	    return !isWhitespace(code) || code === chars.$EOF;
-	}
-	function isWhitespace(code) {
-	    return (code >= chars.$TAB && code <= chars.$SPACE) || (code === chars.$NBSP);
+	    return !chars.isWhitespace(code) || code === chars.$EOF;
 	}
 	function isNameEnd(code) {
-	    return isWhitespace(code) || code === chars.$GT || code === chars.$SLASH || code === chars.$SQ ||
-	        code === chars.$DQ || code === chars.$EQ;
+	    return chars.isWhitespace(code) || code === chars.$GT || code === chars.$SLASH ||
+	        code === chars.$SQ || code === chars.$DQ || code === chars.$EQ;
 	}
 	function isPrefixEnd(code) {
 	    return (code < chars.$a || chars.$z < code) && (code < chars.$A || chars.$Z < code) &&
 	        (code < chars.$0 || code > chars.$9);
 	}
 	function isDigitEntityEnd(code) {
-	    return code == chars.$SEMICOLON || code == chars.$EOF || !isAsciiHexDigit(code);
+	    return code == chars.$SEMICOLON || code == chars.$EOF || !chars.isAsciiHexDigit(code);
 	}
 	function isNamedEntityEnd(code) {
-	    return code == chars.$SEMICOLON || code == chars.$EOF || !isAsciiLetter(code);
+	    return code == chars.$SEMICOLON || code == chars.$EOF || !chars.isAsciiLetter(code);
 	}
 	function isExpansionFormStart(input, offset, interpolationStart) {
-	    var substr = input.substring(offset);
-	    return lang_1.StringWrapper.charCodeAt(substr, 0) === chars.$LBRACE &&
-	        lang_1.StringWrapper.charCodeAt(substr, 1) !== chars.$LBRACE &&
-	        !substr.startsWith(interpolationStart);
+	    return input.charCodeAt(offset) == chars.$LBRACE &&
+	        input.indexOf(interpolationStart, offset) != offset;
 	}
 	function isExpansionCaseStart(peek) {
-	    return peek === chars.$EQ || isAsciiLetter(peek);
-	}
-	function isAsciiLetter(code) {
-	    return code >= chars.$a && code <= chars.$z || code >= chars.$A && code <= chars.$Z;
-	}
-	function isAsciiHexDigit(code) {
-	    return code >= chars.$a && code <= chars.$f || code >= chars.$A && code <= chars.$F ||
-	        code >= chars.$0 && code <= chars.$9;
+	    return peek === chars.$EQ || chars.isAsciiLetter(peek);
 	}
 	function compareCharCodeCaseInsensitive(code1, code2) {
 	    return toUpperCaseCharCode(code1) == toUpperCaseCharCode(code2);
@@ -42312,13 +45529,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_lexer.js.map
 
 /***/ },
-/* 521 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
-	var html_ast_1 = __webpack_require__(72);
-	var shared_1 = __webpack_require__(229);
+	var exceptions_1 = __webpack_require__(17);
+	var html_ast_1 = __webpack_require__(74);
+	var shared_1 = __webpack_require__(235);
 	// http://cldr.unicode.org/index/cldr-spec/plural-rules
 	var PLURAL_CASES = ['zero', 'one', 'two', 'few', 'many', 'other'];
 	/**
@@ -42408,19 +45632,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=expander.js.map
 
 /***/ },
-/* 522 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var html_ast_1 = __webpack_require__(72);
-	var html_parser_1 = __webpack_require__(108);
-	var interpolation_config_1 = __webpack_require__(152);
-	var expander_1 = __webpack_require__(521);
-	var message_1 = __webpack_require__(125);
-	var shared_1 = __webpack_require__(229);
+	var html_ast_1 = __webpack_require__(74);
+	var html_parser_1 = __webpack_require__(109);
+	var interpolation_config_1 = __webpack_require__(155);
+	var expander_1 = __webpack_require__(535);
+	var message_1 = __webpack_require__(127);
+	var shared_1 = __webpack_require__(235);
 	var _PLACEHOLDER_ELEMENT = 'ph';
 	var _NAME_ATTR = 'name';
 	var _PLACEHOLDER_EXPANDED_REGEXP = /<ph(\s)+name=("(\w)+")><\/ph>/gi;
@@ -42685,16 +45916,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=i18n_html_parser.js.map
 
 /***/ },
-/* 523 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var html_ast_1 = __webpack_require__(72);
-	var interpolation_config_1 = __webpack_require__(152);
-	var message_1 = __webpack_require__(125);
-	var shared_1 = __webpack_require__(229);
+	var html_ast_1 = __webpack_require__(74);
+	var interpolation_config_1 = __webpack_require__(155);
+	var message_1 = __webpack_require__(127);
+	var shared_1 = __webpack_require__(235);
 	/**
 	 * All messages extracted from a template.
 	 */
@@ -42856,9 +46094,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=message_extractor.js.map
 
 /***/ },
-/* 524 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -42866,10 +46111,10 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var lang_1 = __webpack_require__(5);
-	var html_ast_1 = __webpack_require__(72);
-	var html_parser_1 = __webpack_require__(108);
-	var parse_util_1 = __webpack_require__(73);
-	var message_1 = __webpack_require__(125);
+	var html_ast_1 = __webpack_require__(74);
+	var html_parser_1 = __webpack_require__(109);
+	var parse_util_1 = __webpack_require__(75);
+	var message_1 = __webpack_require__(127);
 	var _PLACEHOLDER_REGEXP = lang_1.RegExpWrapper.create("\\<ph(\\s)+name=(\"(\\w)+\")\\/\\>");
 	var _ID_ATTR = 'id';
 	var _MSG_ELEMENT = 'msg';
@@ -42964,16 +46209,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xmb_serializer.js.map
 
 /***/ },
-/* 525 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var compile_metadata_1 = __webpack_require__(39);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
-	var o = __webpack_require__(24);
-	var util_1 = __webpack_require__(75);
+	var compile_metadata_1 = __webpack_require__(40);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
+	var o = __webpack_require__(25);
+	var util_1 = __webpack_require__(77);
+	var view_compiler_1 = __webpack_require__(159);
 	var _COMPONENT_FACTORY_IDENTIFIER = new compile_metadata_1.CompileIdentifierMetadata({
 	    name: 'ComponentFactory',
 	    runtime: core_1.ComponentFactory,
@@ -43005,16 +46258,15 @@ webpackJsonp([2],[
 	}());
 	exports.NormalizedComponentWithViewDirectives = NormalizedComponentWithViewDirectives;
 	var OfflineCompiler = (function () {
-	    function OfflineCompiler(_directiveNormalizer, _templateParser, _styleCompiler, _viewCompiler, _outputEmitter, _xhr) {
+	    function OfflineCompiler(_directiveNormalizer, _templateParser, _styleCompiler, _viewCompiler, _outputEmitter) {
 	        this._directiveNormalizer = _directiveNormalizer;
 	        this._templateParser = _templateParser;
 	        this._styleCompiler = _styleCompiler;
 	        this._viewCompiler = _viewCompiler;
 	        this._outputEmitter = _outputEmitter;
-	        this._xhr = _xhr;
 	    }
 	    OfflineCompiler.prototype.normalizeDirectiveMetadata = function (directive) {
-	        return this._directiveNormalizer.normalizeDirective(directive);
+	        return this._directiveNormalizer.normalizeDirective(directive).asyncResult;
 	    };
 	    OfflineCompiler.prototype.compileTemplates = function (components) {
 	        var _this = this;
@@ -43023,15 +46275,21 @@ webpackJsonp([2],[
 	        }
 	        var statements = [];
 	        var exportedVars = [];
-	        var moduleUrl = _templateModuleUrl(components[0].component);
+	        var moduleUrl = _ngfactoryModuleUrl(components[0].component.type);
+	        var outputSourceModules = [];
 	        components.forEach(function (componentWithDirs) {
 	            var compMeta = componentWithDirs.component;
 	            _assertComponent(compMeta);
-	            var compViewFactoryVar = _this._compileComponent(compMeta, componentWithDirs.directives, componentWithDirs.pipes, statements);
+	            var fileSuffix = _splitLastSuffix(compMeta.type.moduleUrl)[1];
+	            var stylesCompileResults = _this._styleCompiler.compileComponent(compMeta);
+	            stylesCompileResults.externalStylesheets.forEach(function (compiledStyleSheet) {
+	                outputSourceModules.push(_this._codgenStyles(compiledStyleSheet, fileSuffix));
+	            });
+	            var compViewFactoryVar = _this._compileComponent(compMeta, componentWithDirs.directives, componentWithDirs.pipes, stylesCompileResults.componentStylesheet, fileSuffix, statements);
 	            exportedVars.push(compViewFactoryVar);
 	            var hostMeta = compile_metadata_1.createHostComponentMeta(compMeta.type, compMeta.selector);
-	            var hostViewFactoryVar = _this._compileComponent(hostMeta, [compMeta], [], statements);
-	            var compFactoryVar = compMeta.type.name + "NgFactory";
+	            var hostViewFactoryVar = _this._compileComponent(hostMeta, [compMeta], [], null, fileSuffix, statements);
+	            var compFactoryVar = _componentFactoryName(compMeta.type);
 	            statements.push(o.variable(compFactoryVar)
 	                .set(o.importExpr(_COMPONENT_FACTORY_IDENTIFIER, [o.importType(compMeta.type)])
 	                .instantiate([
@@ -43041,30 +46299,22 @@ webpackJsonp([2],[
 	                .toDeclStmt(null, [o.StmtModifier.Final]));
 	            exportedVars.push(compFactoryVar);
 	        });
-	        return this._codegenSourceModule(moduleUrl, statements, exportedVars);
+	        outputSourceModules.unshift(this._codegenSourceModule(moduleUrl, statements, exportedVars));
+	        return outputSourceModules;
 	    };
-	    OfflineCompiler.prototype.loadAndCompileStylesheet = function (stylesheetUrl, shim, suffix) {
-	        var _this = this;
-	        return this._xhr.get(stylesheetUrl).then(function (cssText) {
-	            var compileResult = _this._styleCompiler.compileStylesheet(stylesheetUrl, cssText, shim);
-	            var importedUrls = [];
-	            compileResult.dependencies.forEach(function (dep) {
-	                importedUrls.push(dep.moduleUrl);
-	                dep.valuePlaceholder.moduleUrl = _stylesModuleUrl(dep.moduleUrl, dep.isShimmed, suffix);
-	            });
-	            return new StyleSheetSourceWithImports(_this._codgenStyles(stylesheetUrl, shim, suffix, compileResult), importedUrls);
-	        });
-	    };
-	    OfflineCompiler.prototype._compileComponent = function (compMeta, directives, pipes, targetStatements) {
-	        var styleResult = this._styleCompiler.compileComponent(compMeta);
+	    OfflineCompiler.prototype._compileComponent = function (compMeta, directives, pipes, componentStyles, fileSuffix, targetStatements) {
 	        var parsedTemplate = this._templateParser.parse(compMeta, compMeta.template.template, directives, pipes, compMeta.type.name);
-	        var viewResult = this._viewCompiler.compileComponent(compMeta, parsedTemplate, o.variable(styleResult.stylesVar), pipes);
-	        collection_1.ListWrapper.addAll(targetStatements, _resolveStyleStatements(compMeta.type.moduleUrl, styleResult));
+	        var stylesExpr = componentStyles ? o.variable(componentStyles.stylesVar) : o.literalArr([]);
+	        var viewResult = this._viewCompiler.compileComponent(compMeta, parsedTemplate, stylesExpr, pipes);
+	        if (componentStyles) {
+	            collection_1.ListWrapper.addAll(targetStatements, _resolveStyleStatements(componentStyles, fileSuffix));
+	        }
 	        collection_1.ListWrapper.addAll(targetStatements, _resolveViewStatements(viewResult));
 	        return viewResult.viewFactoryVar;
 	    };
-	    OfflineCompiler.prototype._codgenStyles = function (inputUrl, shim, suffix, stylesCompileResult) {
-	        return this._codegenSourceModule(_stylesModuleUrl(inputUrl, shim, suffix), stylesCompileResult.statements, [stylesCompileResult.stylesVar]);
+	    OfflineCompiler.prototype._codgenStyles = function (stylesCompileResult, fileSuffix) {
+	        _resolveStyleStatements(stylesCompileResult, fileSuffix);
+	        return this._codegenSourceModule(_stylesModuleUrl(stylesCompileResult.meta.moduleUrl, stylesCompileResult.isShimmed, fileSuffix), stylesCompileResult.statements, [stylesCompileResult.stylesVar]);
 	    };
 	    OfflineCompiler.prototype._codegenSourceModule = function (moduleUrl, statements, exportedVars) {
 	        return new SourceModule(moduleUrl, this._outputEmitter.emitStatements(moduleUrl, statements, exportedVars));
@@ -43073,20 +46323,31 @@ webpackJsonp([2],[
 	}());
 	exports.OfflineCompiler = OfflineCompiler;
 	function _resolveViewStatements(compileResult) {
-	    compileResult.dependencies.forEach(function (dep) { dep.factoryPlaceholder.moduleUrl = _templateModuleUrl(dep.comp); });
-	    return compileResult.statements;
-	}
-	function _resolveStyleStatements(containingModuleUrl, compileResult) {
-	    var containingSuffix = _splitSuffix(containingModuleUrl)[1];
 	    compileResult.dependencies.forEach(function (dep) {
-	        dep.valuePlaceholder.moduleUrl =
-	            _stylesModuleUrl(dep.moduleUrl, dep.isShimmed, containingSuffix);
+	        if (dep instanceof view_compiler_1.ViewFactoryDependency) {
+	            var vfd = dep;
+	            vfd.placeholder.moduleUrl = _ngfactoryModuleUrl(vfd.comp);
+	        }
+	        else if (dep instanceof view_compiler_1.ComponentFactoryDependency) {
+	            var cfd = dep;
+	            cfd.placeholder.name = _componentFactoryName(cfd.comp);
+	            cfd.placeholder.moduleUrl = _ngfactoryModuleUrl(cfd.comp);
+	        }
 	    });
 	    return compileResult.statements;
 	}
-	function _templateModuleUrl(comp) {
-	    var urlWithSuffix = _splitSuffix(comp.type.moduleUrl);
+	function _resolveStyleStatements(compileResult, fileSuffix) {
+	    compileResult.dependencies.forEach(function (dep) {
+	        dep.valuePlaceholder.moduleUrl = _stylesModuleUrl(dep.moduleUrl, dep.isShimmed, fileSuffix);
+	    });
+	    return compileResult.statements;
+	}
+	function _ngfactoryModuleUrl(comp) {
+	    var urlWithSuffix = _splitLastSuffix(comp.moduleUrl);
 	    return urlWithSuffix[0] + ".ngfactory" + urlWithSuffix[1];
+	}
+	function _componentFactoryName(comp) {
+	    return comp.name + "NgFactory";
 	}
 	function _stylesModuleUrl(stylesheetUrl, shim, suffix) {
 	    return shim ? stylesheetUrl + ".shim" + suffix : "" + stylesheetUrl + suffix;
@@ -43096,7 +46357,7 @@ webpackJsonp([2],[
 	        throw new exceptions_1.BaseException("Could not compile '" + meta.type.name + "' because it is not a component.");
 	    }
 	}
-	function _splitSuffix(path) {
+	function _splitLastSuffix(path) {
 	    var lastDot = path.lastIndexOf('.');
 	    if (lastDot !== -1) {
 	        return [path.substring(0, lastDot), path.substring(lastDot)];
@@ -43108,19 +46369,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=offline_compiler.js.map
 
 /***/ },
-/* 526 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var abstract_emitter_1 = __webpack_require__(153);
-	var o = __webpack_require__(24);
+	var abstract_emitter_1 = __webpack_require__(156);
+	var o = __webpack_require__(25);
 	var AbstractJsEmitterVisitor = (function (_super) {
 	    __extends(AbstractJsEmitterVisitor, _super);
 	    function AbstractJsEmitterVisitor() {
@@ -43277,19 +46545,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=abstract_js_emitter.js.map
 
 /***/ },
-/* 527 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var o = __webpack_require__(24);
-	var abstract_emitter_1 = __webpack_require__(153);
+	var o = __webpack_require__(25);
+	var abstract_emitter_1 = __webpack_require__(156);
 	var _debugModuleUrl = 'asset://debug/lib';
 	function debugOutputAstAsDart(ast) {
 	    var converter = new _DartEmitterVisitor(_debugModuleUrl);
@@ -43663,17 +46938,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dart_emitter.js.map
 
 /***/ },
-/* 528 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var core_private_1 = __webpack_require__(29);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	var InterpretiveAppViewInstanceFactory = (function () {
 	    function InterpretiveAppViewInstanceFactory() {
@@ -43761,18 +47043,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=interpretive_view.js.map
 
 /***/ },
-/* 529 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
-	var async_1 = __webpack_require__(228);
-	var collection_1 = __webpack_require__(11);
-	var exceptions_1 = __webpack_require__(16);
+	var core_private_1 = __webpack_require__(30);
+	var async_1 = __webpack_require__(351);
+	var collection_1 = __webpack_require__(13);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var dart_emitter_1 = __webpack_require__(527);
-	var o = __webpack_require__(24);
-	var ts_emitter_1 = __webpack_require__(348);
+	var dart_emitter_1 = __webpack_require__(541);
+	var o = __webpack_require__(25);
+	var ts_emitter_1 = __webpack_require__(354);
 	function interpretStatements(statements, resultVar, instanceFactory) {
 	    var stmtsWithReturn = statements.concat([new o.ReturnStatement(o.variable(resultVar))]);
 	    var ctx = new _ExecutionContext(null, null, null, null, new Map(), new Map(), new Map(), new Map(), instanceFactory);
@@ -44216,9 +47505,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=output_interpreter.js.map
 
 /***/ },
-/* 530 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -44226,9 +47522,9 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var lang_1 = __webpack_require__(5);
-	var abstract_emitter_1 = __webpack_require__(153);
-	var abstract_js_emitter_1 = __webpack_require__(526);
-	var util_1 = __webpack_require__(75);
+	var abstract_emitter_1 = __webpack_require__(156);
+	var abstract_js_emitter_1 = __webpack_require__(540);
+	var util_1 = __webpack_require__(77);
 	function jitStatements(sourceUrl, statements, resultVar) {
 	    var converter = new JitEmitterVisitor();
 	    var ctx = abstract_emitter_1.EmitterVisitorContext.createRoot([resultVar]);
@@ -44267,11 +47563,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=output_jit.js.map
 
 /***/ },
-/* 531 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
 	// asset:<package-name>/<realm>/<path-to-module>
 	var _ASSET_URL_RE = /asset:([^\/]+)\/([^\/]+)\/(.+)/g;
@@ -44308,21 +47611,28 @@ webpackJsonp([2],[
 	//# sourceMappingURL=path_util.js.map
 
 /***/ },
-/* 532 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var compile_metadata_1 = __webpack_require__(39);
-	var identifiers_1 = __webpack_require__(40);
-	var parse_util_1 = __webpack_require__(73);
-	var template_ast_1 = __webpack_require__(74);
+	var compile_metadata_1 = __webpack_require__(40);
+	var identifiers_1 = __webpack_require__(41);
+	var parse_util_1 = __webpack_require__(75);
+	var template_ast_1 = __webpack_require__(76);
 	var ProviderError = (function (_super) {
 	    __extends(ProviderError, _super);
 	    function ProviderError(message, span) {
@@ -44689,11 +47999,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=provider_parser.js.map
 
 /***/ },
-/* 533 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
+	var core_private_1 = __webpack_require__(30);
 	// =================================================================================================
 	// =================================================================================================
 	// =========== S T O P   -  S T O P   -  S T O P   -  S T O P   -  S T O P   -  S T O P  ===========
@@ -44745,11 +48062,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=dom_security_schema.js.map
 
 /***/ },
-/* 534 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
 	/**
 	 * This file is a port of shadowCSS from webcomponents.js to TypeScript.
@@ -45250,15 +48574,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=shadow_css.js.map
 
 /***/ },
-/* 535 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var exceptions_1 = __webpack_require__(16);
+	var exceptions_1 = __webpack_require__(17);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var util_1 = __webpack_require__(126);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var util_1 = __webpack_require__(128);
 	var _PurePipeProxy = (function () {
 	    function _PurePipeProxy(view, instance, argCount) {
 	        this.view = view;
@@ -45354,17 +48685,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=compile_pipe.js.map
 
 /***/ },
-/* 536 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
+	var collection_1 = __webpack_require__(13);
 	var lang_1 = __webpack_require__(5);
-	var o = __webpack_require__(24);
-	var compile_binding_1 = __webpack_require__(352);
-	var compile_method_1 = __webpack_require__(235);
-	var constants_1 = __webpack_require__(110);
-	var expression_converter_1 = __webpack_require__(356);
+	var o = __webpack_require__(25);
+	var compile_binding_1 = __webpack_require__(359);
+	var compile_method_1 = __webpack_require__(240);
+	var constants_1 = __webpack_require__(111);
+	var expression_converter_1 = __webpack_require__(363);
 	var CompileEventListener = (function () {
 	    function CompileEventListener(compileElement, eventTarget, eventName, listenerIndex) {
 	        this.compileElement = compileElement;
@@ -45493,14 +48831,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_binder.js.map
 
 /***/ },
-/* 537 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
-	var o = __webpack_require__(24);
-	var constants_1 = __webpack_require__(110);
-	var STATE_IS_NEVER_CHECKED = o.THIS_EXPR.prop('cdState').identical(constants_1.ChangeDetectorStateEnum.NeverChecked);
+	var core_private_1 = __webpack_require__(30);
+	var o = __webpack_require__(25);
+	var constants_1 = __webpack_require__(111);
+	var STATE_IS_NEVER_CHECKED = o.THIS_EXPR.prop('numberOfChecks').identical(new o.LiteralExpr(0));
 	var NOT_THROW_ON_CHANGES = o.not(constants_1.DetectChangesVars.throwOnChange);
 	function bindDirectiveDetectChangesLifecycleCallbacks(directiveAst, directiveInstance, compileElement) {
 	    var view = compileElement.view;
@@ -45561,19 +48906,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=lifecycle_binder.js.map
 
 /***/ },
-/* 538 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var core_private_1 = __webpack_require__(29);
+	var core_private_1 = __webpack_require__(30);
 	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var constants_1 = __webpack_require__(110);
-	var template_ast_1 = __webpack_require__(74);
-	var util_1 = __webpack_require__(75);
-	var expression_converter_1 = __webpack_require__(356);
-	var compile_binding_1 = __webpack_require__(352);
+	var identifiers_1 = __webpack_require__(41);
+	var o = __webpack_require__(25);
+	var constants_1 = __webpack_require__(111);
+	var template_ast_1 = __webpack_require__(76);
+	var util_1 = __webpack_require__(77);
+	var expression_converter_1 = __webpack_require__(363);
+	var compile_binding_1 = __webpack_require__(359);
 	var core_1 = __webpack_require__(2);
 	function createBindFieldExpr(exprIndex) {
 	    return o.THIS_EXPR.prop("_expr_" + exprIndex);
@@ -45777,15 +49129,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=property_binder.js.map
 
 /***/ },
-/* 539 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(11);
-	var template_ast_1 = __webpack_require__(74);
-	var property_binder_1 = __webpack_require__(538);
-	var event_binder_1 = __webpack_require__(536);
-	var lifecycle_binder_1 = __webpack_require__(537);
+	var collection_1 = __webpack_require__(13);
+	var template_ast_1 = __webpack_require__(76);
+	var property_binder_1 = __webpack_require__(552);
+	var event_binder_1 = __webpack_require__(550);
+	var lifecycle_binder_1 = __webpack_require__(551);
 	function bindView(view, parsedTemplate) {
 	    var visitor = new ViewBinderVisitor(view);
 	    template_ast_1.templateVisitAll(visitor, parsedTemplate);
@@ -45859,544 +49218,58 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view_binder.js.map
 
 /***/ },
-/* 540 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(29);
-	var collection_1 = __webpack_require__(11);
-	var lang_1 = __webpack_require__(5);
-	var identifiers_1 = __webpack_require__(40);
-	var o = __webpack_require__(24);
-	var compile_element_1 = __webpack_require__(353);
-	var compile_view_1 = __webpack_require__(355);
-	var constants_1 = __webpack_require__(110);
-	var template_ast_1 = __webpack_require__(74);
-	var util_1 = __webpack_require__(126);
-	var compile_metadata_1 = __webpack_require__(39);
-	var animation_compiler_1 = __webpack_require__(344);
-	var IMPLICIT_TEMPLATE_VAR = '\$implicit';
-	var CLASS_ATTR = 'class';
-	var STYLE_ATTR = 'style';
-	var NG_CONTAINER_TAG = 'ng-container';
-	var parentRenderNodeVar = o.variable('parentRenderNode');
-	var rootSelectorVar = o.variable('rootSelector');
-	var ViewCompileDependency = (function () {
-	    function ViewCompileDependency(comp, factoryPlaceholder) {
-	        this.comp = comp;
-	        this.factoryPlaceholder = factoryPlaceholder;
-	    }
-	    return ViewCompileDependency;
-	}());
-	exports.ViewCompileDependency = ViewCompileDependency;
-	function buildView(view, template, targetDependencies) {
-	    var builderVisitor = new ViewBuilderVisitor(view, targetDependencies);
-	    template_ast_1.templateVisitAll(builderVisitor, template, view.declarationElement.isNull() ? view.declarationElement : view.declarationElement.parent);
-	    return builderVisitor.nestedViewCount;
-	}
-	exports.buildView = buildView;
-	function finishView(view, targetStatements) {
-	    view.afterNodes();
-	    createViewTopLevelStmts(view, targetStatements);
-	    view.nodes.forEach(function (node) {
-	        if (node instanceof compile_element_1.CompileElement && node.hasEmbeddedView) {
-	            finishView(node.embeddedView, targetStatements);
-	        }
-	    });
-	}
-	exports.finishView = finishView;
-	var ViewBuilderVisitor = (function () {
-	    function ViewBuilderVisitor(view, targetDependencies) {
-	        this.view = view;
-	        this.targetDependencies = targetDependencies;
-	        this.nestedViewCount = 0;
-	        this._animationCompiler = new animation_compiler_1.AnimationCompiler();
-	    }
-	    ViewBuilderVisitor.prototype._isRootNode = function (parent) { return parent.view !== this.view; };
-	    ViewBuilderVisitor.prototype._addRootNodeAndProject = function (node) {
-	        var projectedNode = _getOuterContainerOrSelf(node);
-	        var parent = projectedNode.parent;
-	        var ngContentIndex = projectedNode.sourceAst.ngContentIndex;
-	        var vcAppEl = (node instanceof compile_element_1.CompileElement && node.hasViewContainer) ? node.appElement : null;
-	        if (this._isRootNode(parent)) {
-	            // store appElement as root node only for ViewContainers
-	            if (this.view.viewType !== core_private_1.ViewType.COMPONENT) {
-	                this.view.rootNodesOrAppElements.push(lang_1.isPresent(vcAppEl) ? vcAppEl : node.renderNode);
-	            }
-	        }
-	        else if (lang_1.isPresent(parent.component) && lang_1.isPresent(ngContentIndex)) {
-	            parent.addContentNode(ngContentIndex, lang_1.isPresent(vcAppEl) ? vcAppEl : node.renderNode);
-	        }
-	    };
-	    ViewBuilderVisitor.prototype._getParentRenderNode = function (parent) {
-	        parent = _getOuterContainerParentOrSelf(parent);
-	        if (this._isRootNode(parent)) {
-	            if (this.view.viewType === core_private_1.ViewType.COMPONENT) {
-	                return parentRenderNodeVar;
-	            }
-	            else {
-	                // root node of an embedded/host view
-	                return o.NULL_EXPR;
-	            }
-	        }
-	        else {
-	            return lang_1.isPresent(parent.component) &&
-	                parent.component.template.encapsulation !== core_1.ViewEncapsulation.Native ?
-	                o.NULL_EXPR :
-	                parent.renderNode;
-	        }
-	    };
-	    ViewBuilderVisitor.prototype.visitBoundText = function (ast, parent) {
-	        return this._visitText(ast, '', parent);
-	    };
-	    ViewBuilderVisitor.prototype.visitText = function (ast, parent) {
-	        return this._visitText(ast, ast.value, parent);
-	    };
-	    ViewBuilderVisitor.prototype._visitText = function (ast, value, parent) {
-	        var fieldName = "_text_" + this.view.nodes.length;
-	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderText)));
-	        var renderNode = o.THIS_EXPR.prop(fieldName);
-	        var compileNode = new compile_element_1.CompileNode(parent, this.view, this.view.nodes.length, renderNode, ast);
-	        var createRenderNode = o.THIS_EXPR.prop(fieldName)
-	            .set(constants_1.ViewProperties.renderer.callMethod('createText', [
-	            this._getParentRenderNode(parent), o.literal(value),
-	            this.view.createMethod.resetDebugInfoExpr(this.view.nodes.length, ast)
-	        ]))
-	            .toStmt();
-	        this.view.nodes.push(compileNode);
-	        this.view.createMethod.addStmt(createRenderNode);
-	        this._addRootNodeAndProject(compileNode);
-	        return renderNode;
-	    };
-	    ViewBuilderVisitor.prototype.visitNgContent = function (ast, parent) {
-	        // the projected nodes originate from a different view, so we don't
-	        // have debug information for them...
-	        this.view.createMethod.resetDebugInfo(null, ast);
-	        var parentRenderNode = this._getParentRenderNode(parent);
-	        var nodesExpression = constants_1.ViewProperties.projectableNodes.key(o.literal(ast.index), new o.ArrayType(o.importType(this.view.genConfig.renderTypes.renderNode)));
-	        if (parentRenderNode !== o.NULL_EXPR) {
-	            this.view.createMethod.addStmt(constants_1.ViewProperties.renderer
-	                .callMethod('projectNodes', [
-	                parentRenderNode,
-	                o.importExpr(identifiers_1.Identifiers.flattenNestedViewRenderNodes).callFn([nodesExpression])
-	            ])
-	                .toStmt());
-	        }
-	        else if (this._isRootNode(parent)) {
-	            if (this.view.viewType !== core_private_1.ViewType.COMPONENT) {
-	                // store root nodes only for embedded/host views
-	                this.view.rootNodesOrAppElements.push(nodesExpression);
-	            }
-	        }
-	        else {
-	            if (lang_1.isPresent(parent.component) && lang_1.isPresent(ast.ngContentIndex)) {
-	                parent.addContentNode(ast.ngContentIndex, nodesExpression);
-	            }
-	        }
-	        return null;
-	    };
-	    ViewBuilderVisitor.prototype.visitElement = function (ast, parent) {
-	        var nodeIndex = this.view.nodes.length;
-	        var createRenderNodeExpr;
-	        var debugContextExpr = this.view.createMethod.resetDebugInfoExpr(nodeIndex, ast);
-	        if (nodeIndex === 0 && this.view.viewType === core_private_1.ViewType.HOST) {
-	            createRenderNodeExpr = o.THIS_EXPR.callMethod('selectOrCreateHostElement', [o.literal(ast.name), rootSelectorVar, debugContextExpr]);
-	        }
-	        else {
-	            if (ast.name === NG_CONTAINER_TAG) {
-	                createRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createTemplateAnchor', [this._getParentRenderNode(parent), debugContextExpr]);
-	            }
-	            else {
-	                createRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createElement', [this._getParentRenderNode(parent), o.literal(ast.name), debugContextExpr]);
-	            }
-	        }
-	        var fieldName = "_el_" + nodeIndex;
-	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderElement)));
-	        this.view.createMethod.addStmt(o.THIS_EXPR.prop(fieldName).set(createRenderNodeExpr).toStmt());
-	        var renderNode = o.THIS_EXPR.prop(fieldName);
-	        var directives = ast.directives.map(function (directiveAst) { return directiveAst.directive; });
-	        var component = directives.find(function (directive) { return directive.isComponent; });
-	        var htmlAttrs = _readHtmlAttrs(ast.attrs);
-	        var attrNameAndValues = _mergeHtmlAndDirectiveAttrs(htmlAttrs, directives);
-	        for (var i = 0; i < attrNameAndValues.length; i++) {
-	            var attrName = attrNameAndValues[i][0];
-	            var attrValue = attrNameAndValues[i][1];
-	            this.view.createMethod.addStmt(constants_1.ViewProperties.renderer
-	                .callMethod('setElementAttribute', [renderNode, o.literal(attrName), o.literal(attrValue)])
-	                .toStmt());
-	        }
-	        var compileElement = new compile_element_1.CompileElement(parent, this.view, nodeIndex, renderNode, ast, component, directives, ast.providers, ast.hasViewContainer, false, ast.references);
-	        this.view.nodes.push(compileElement);
-	        var compViewExpr = null;
-	        if (lang_1.isPresent(component)) {
-	            var nestedComponentIdentifier = new compile_metadata_1.CompileIdentifierMetadata({ name: util_1.getViewFactoryName(component, 0) });
-	            this.targetDependencies.push(new ViewCompileDependency(component, nestedComponentIdentifier));
-	            compViewExpr = o.variable("compView_" + nodeIndex); // fix highlighting: `
-	            compileElement.setComponentView(compViewExpr);
-	            this.view.createMethod.addStmt(compViewExpr
-	                .set(o.importExpr(nestedComponentIdentifier).callFn([
-	                constants_1.ViewProperties.viewUtils, compileElement.injector, compileElement.appElement
-	            ]))
-	                .toDeclStmt());
-	        }
-	        compileElement.beforeChildren();
-	        this._addRootNodeAndProject(compileElement);
-	        template_ast_1.templateVisitAll(this, ast.children, compileElement);
-	        compileElement.afterChildren(this.view.nodes.length - nodeIndex - 1);
-	        if (lang_1.isPresent(compViewExpr)) {
-	            var codeGenContentNodes;
-	            if (this.view.component.type.isHost) {
-	                codeGenContentNodes = constants_1.ViewProperties.projectableNodes;
-	            }
-	            else {
-	                codeGenContentNodes = o.literalArr(compileElement.contentNodesByNgContentIndex.map(function (nodes) { return util_1.createFlatArray(nodes); }));
-	            }
-	            this.view.createMethod.addStmt(compViewExpr
-	                .callMethod('create', [compileElement.getComponent(), codeGenContentNodes, o.NULL_EXPR])
-	                .toStmt());
-	        }
-	        return null;
-	    };
-	    ViewBuilderVisitor.prototype.visitEmbeddedTemplate = function (ast, parent) {
-	        var nodeIndex = this.view.nodes.length;
-	        var fieldName = "_anchor_" + nodeIndex;
-	        this.view.fields.push(new o.ClassField(fieldName, o.importType(this.view.genConfig.renderTypes.renderComment)));
-	        this.view.createMethod.addStmt(o.THIS_EXPR.prop(fieldName)
-	            .set(constants_1.ViewProperties.renderer.callMethod('createTemplateAnchor', [
-	            this._getParentRenderNode(parent),
-	            this.view.createMethod.resetDebugInfoExpr(nodeIndex, ast)
-	        ]))
-	            .toStmt());
-	        var renderNode = o.THIS_EXPR.prop(fieldName);
-	        var templateVariableBindings = ast.variables.map(function (varAst) { return [varAst.value.length > 0 ? varAst.value : IMPLICIT_TEMPLATE_VAR, varAst.name]; });
-	        var directives = ast.directives.map(function (directiveAst) { return directiveAst.directive; });
-	        var compileElement = new compile_element_1.CompileElement(parent, this.view, nodeIndex, renderNode, ast, null, directives, ast.providers, ast.hasViewContainer, true, ast.references);
-	        this.view.nodes.push(compileElement);
-	        var compiledAnimations = this._animationCompiler.compileComponent(this.view.component);
-	        this.nestedViewCount++;
-	        var embeddedView = new compile_view_1.CompileView(this.view.component, this.view.genConfig, this.view.pipeMetas, o.NULL_EXPR, compiledAnimations, this.view.viewIndex + this.nestedViewCount, compileElement, templateVariableBindings);
-	        this.nestedViewCount += buildView(embeddedView, ast.children, this.targetDependencies);
-	        compileElement.beforeChildren();
-	        this._addRootNodeAndProject(compileElement);
-	        compileElement.afterChildren(0);
-	        return null;
-	    };
-	    ViewBuilderVisitor.prototype.visitAttr = function (ast, ctx) { return null; };
-	    ViewBuilderVisitor.prototype.visitDirective = function (ast, ctx) { return null; };
-	    ViewBuilderVisitor.prototype.visitEvent = function (ast, eventTargetAndNames) {
-	        return null;
-	    };
-	    ViewBuilderVisitor.prototype.visitReference = function (ast, ctx) { return null; };
-	    ViewBuilderVisitor.prototype.visitVariable = function (ast, ctx) { return null; };
-	    ViewBuilderVisitor.prototype.visitDirectiveProperty = function (ast, context) { return null; };
-	    ViewBuilderVisitor.prototype.visitElementProperty = function (ast, context) { return null; };
-	    return ViewBuilderVisitor;
-	}());
 	/**
-	 * Walks up the nodes while the direct parent is a container.
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
 	 *
-	 * Returns the outer container or the node itself when it is not a direct child of a container.
-	 *
-	 * @internal
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
-	function _getOuterContainerOrSelf(node) {
-	    var view = node.view;
-	    while (_isNgContainer(node.parent, view)) {
-	        node = node.parent;
-	    }
-	    return node;
-	}
-	/**
-	 * Walks up the nodes while they are container and returns the first parent which is not.
-	 *
-	 * Returns the parent of the outer container or the node itself when it is not a container.
-	 *
-	 * @internal
-	 */
-	function _getOuterContainerParentOrSelf(el) {
-	    var view = el.view;
-	    while (_isNgContainer(el, view)) {
-	        el = el.parent;
-	    }
-	    return el;
-	}
-	function _isNgContainer(node, view) {
-	    return !node.isNull() && node.sourceAst.name === NG_CONTAINER_TAG &&
-	        node.view === view;
-	}
-	function _mergeHtmlAndDirectiveAttrs(declaredHtmlAttrs, directives) {
-	    var result = {};
-	    collection_1.StringMapWrapper.forEach(declaredHtmlAttrs, function (value, key) { result[key] = value; });
-	    directives.forEach(function (directiveMeta) {
-	        collection_1.StringMapWrapper.forEach(directiveMeta.hostAttributes, function (value, name) {
-	            var prevValue = result[name];
-	            result[name] = lang_1.isPresent(prevValue) ? mergeAttributeValue(name, prevValue, value) : value;
-	        });
-	    });
-	    return mapToKeyValueArray(result);
-	}
-	function _readHtmlAttrs(attrs) {
-	    var htmlAttrs = {};
-	    attrs.forEach(function (ast) { htmlAttrs[ast.name] = ast.value; });
-	    return htmlAttrs;
-	}
-	function mergeAttributeValue(attrName, attrValue1, attrValue2) {
-	    if (attrName == CLASS_ATTR || attrName == STYLE_ATTR) {
-	        return attrValue1 + " " + attrValue2;
-	    }
-	    else {
-	        return attrValue2;
-	    }
-	}
-	function mapToKeyValueArray(data) {
-	    var entryArray = [];
-	    collection_1.StringMapWrapper.forEach(data, function (value, name) {
-	        entryArray.push([name, value]);
-	    });
-	    // We need to sort to get a defined output order
-	    // for tests and for caching generated artifacts...
-	    collection_1.ListWrapper.sort(entryArray, function (entry1, entry2) { return lang_1.StringWrapper.compare(entry1[0], entry2[0]); });
-	    return entryArray;
-	}
-	function createViewTopLevelStmts(view, targetStatements) {
-	    var nodeDebugInfosVar = o.NULL_EXPR;
-	    if (view.genConfig.genDebugInfo) {
-	        nodeDebugInfosVar = o.variable("nodeDebugInfos_" + view.component.type.name + view.viewIndex); // fix highlighting: `
-	        targetStatements.push(nodeDebugInfosVar
-	            .set(o.literalArr(view.nodes.map(createStaticNodeDebugInfo), new o.ArrayType(new o.ExternalType(identifiers_1.Identifiers.StaticNodeDebugInfo), [o.TypeModifier.Const])))
-	            .toDeclStmt(null, [o.StmtModifier.Final]));
-	    }
-	    var renderCompTypeVar = o.variable("renderType_" + view.component.type.name); // fix highlighting: `
-	    if (view.viewIndex === 0) {
-	        targetStatements.push(renderCompTypeVar.set(o.NULL_EXPR)
-	            .toDeclStmt(o.importType(identifiers_1.Identifiers.RenderComponentType)));
-	    }
-	    var viewClass = createViewClass(view, renderCompTypeVar, nodeDebugInfosVar);
-	    targetStatements.push(viewClass);
-	    targetStatements.push(createViewFactory(view, viewClass, renderCompTypeVar));
-	}
-	function createStaticNodeDebugInfo(node) {
-	    var compileElement = node instanceof compile_element_1.CompileElement ? node : null;
-	    var providerTokens = [];
-	    var componentToken = o.NULL_EXPR;
-	    var varTokenEntries = [];
-	    if (lang_1.isPresent(compileElement)) {
-	        providerTokens = compileElement.getProviderTokens();
-	        if (lang_1.isPresent(compileElement.component)) {
-	            componentToken = util_1.createDiTokenExpression(identifiers_1.identifierToken(compileElement.component.type));
-	        }
-	        collection_1.StringMapWrapper.forEach(compileElement.referenceTokens, function (token, varName) {
-	            varTokenEntries.push([varName, lang_1.isPresent(token) ? util_1.createDiTokenExpression(token) : o.NULL_EXPR]);
-	        });
-	    }
-	    return o.importExpr(identifiers_1.Identifiers.StaticNodeDebugInfo)
-	        .instantiate([
-	        o.literalArr(providerTokens, new o.ArrayType(o.DYNAMIC_TYPE, [o.TypeModifier.Const])),
-	        componentToken,
-	        o.literalMap(varTokenEntries, new o.MapType(o.DYNAMIC_TYPE, [o.TypeModifier.Const]))
-	    ], o.importType(identifiers_1.Identifiers.StaticNodeDebugInfo, null, [o.TypeModifier.Const]));
-	}
-	function createViewClass(view, renderCompTypeVar, nodeDebugInfosVar) {
-	    var viewConstructorArgs = [
-	        new o.FnParam(constants_1.ViewConstructorVars.viewUtils.name, o.importType(identifiers_1.Identifiers.ViewUtils)),
-	        new o.FnParam(constants_1.ViewConstructorVars.parentInjector.name, o.importType(identifiers_1.Identifiers.Injector)),
-	        new o.FnParam(constants_1.ViewConstructorVars.declarationEl.name, o.importType(identifiers_1.Identifiers.AppElement))
-	    ];
-	    var superConstructorArgs = [
-	        o.variable(view.className), renderCompTypeVar, constants_1.ViewTypeEnum.fromValue(view.viewType),
-	        constants_1.ViewConstructorVars.viewUtils, constants_1.ViewConstructorVars.parentInjector,
-	        constants_1.ViewConstructorVars.declarationEl,
-	        constants_1.ChangeDetectionStrategyEnum.fromValue(getChangeDetectionMode(view))
-	    ];
-	    if (view.genConfig.genDebugInfo) {
-	        superConstructorArgs.push(nodeDebugInfosVar);
-	    }
-	    var viewConstructor = new o.ClassMethod(null, viewConstructorArgs, [o.SUPER_EXPR.callFn(superConstructorArgs).toStmt()]);
-	    var viewMethods = [
-	        new o.ClassMethod('createInternal', [new o.FnParam(rootSelectorVar.name, o.STRING_TYPE)], generateCreateMethod(view), o.importType(identifiers_1.Identifiers.AppElement)),
-	        new o.ClassMethod('injectorGetInternal', [
-	            new o.FnParam(constants_1.InjectMethodVars.token.name, o.DYNAMIC_TYPE),
-	            // Note: Can't use o.INT_TYPE here as the method in AppView uses number
-	            new o.FnParam(constants_1.InjectMethodVars.requestNodeIndex.name, o.NUMBER_TYPE),
-	            new o.FnParam(constants_1.InjectMethodVars.notFoundResult.name, o.DYNAMIC_TYPE)
-	        ], addReturnValuefNotEmpty(view.injectorGetMethod.finish(), constants_1.InjectMethodVars.notFoundResult), o.DYNAMIC_TYPE),
-	        new o.ClassMethod('detectChangesInternal', [new o.FnParam(constants_1.DetectChangesVars.throwOnChange.name, o.BOOL_TYPE)], generateDetectChangesMethod(view)),
-	        new o.ClassMethod('dirtyParentQueriesInternal', [], view.dirtyParentQueriesMethod.finish()),
-	        new o.ClassMethod('destroyInternal', [], view.destroyMethod.finish()),
-	        new o.ClassMethod('detachInternal', [], view.detachMethod.finish())
-	    ].concat(view.eventHandlerMethods);
-	    var superClass = view.genConfig.genDebugInfo ? identifiers_1.Identifiers.DebugAppView : identifiers_1.Identifiers.AppView;
-	    var viewClass = new o.ClassStmt(view.className, o.importExpr(superClass, [getContextType(view)]), view.fields, view.getters, viewConstructor, viewMethods.filter(function (method) { return method.body.length > 0; }));
-	    return viewClass;
-	}
-	function createViewFactory(view, viewClass, renderCompTypeVar) {
-	    var viewFactoryArgs = [
-	        new o.FnParam(constants_1.ViewConstructorVars.viewUtils.name, o.importType(identifiers_1.Identifiers.ViewUtils)),
-	        new o.FnParam(constants_1.ViewConstructorVars.parentInjector.name, o.importType(identifiers_1.Identifiers.Injector)),
-	        new o.FnParam(constants_1.ViewConstructorVars.declarationEl.name, o.importType(identifiers_1.Identifiers.AppElement))
-	    ];
-	    var initRenderCompTypeStmts = [];
-	    var templateUrlInfo;
-	    if (view.component.template.templateUrl == view.component.type.moduleUrl) {
-	        templateUrlInfo =
-	            view.component.type.moduleUrl + " class " + view.component.type.name + " - inline template";
-	    }
-	    else {
-	        templateUrlInfo = view.component.template.templateUrl;
-	    }
-	    if (view.viewIndex === 0) {
-	        initRenderCompTypeStmts = [new o.IfStmt(renderCompTypeVar.identical(o.NULL_EXPR), [
-	                renderCompTypeVar
-	                    .set(constants_1.ViewConstructorVars.viewUtils.callMethod('createRenderComponentType', [
-	                    o.literal(templateUrlInfo),
-	                    o.literal(view.component.template.ngContentSelectors.length),
-	                    constants_1.ViewEncapsulationEnum.fromValue(view.component.template.encapsulation), view.styles
-	                ]))
-	                    .toStmt()
-	            ])];
-	    }
-	    return o
-	        .fn(viewFactoryArgs, initRenderCompTypeStmts.concat([new o.ReturnStatement(o.variable(viewClass.name)
-	            .instantiate(viewClass.constructorMethod.params.map(function (param) { return o.variable(param.name); })))]), o.importType(identifiers_1.Identifiers.AppView, [getContextType(view)]))
-	        .toDeclStmt(view.viewFactory.name, [o.StmtModifier.Final]);
-	}
-	function generateCreateMethod(view) {
-	    var parentRenderNodeExpr = o.NULL_EXPR;
-	    var parentRenderNodeStmts = [];
-	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
-	        parentRenderNodeExpr = constants_1.ViewProperties.renderer.callMethod('createViewRoot', [o.THIS_EXPR.prop('declarationAppElement').prop('nativeElement')]);
-	        parentRenderNodeStmts =
-	            [parentRenderNodeVar.set(parentRenderNodeExpr)
-	                    .toDeclStmt(o.importType(view.genConfig.renderTypes.renderNode), [o.StmtModifier.Final])];
-	    }
-	    var resultExpr;
-	    if (view.viewType === core_private_1.ViewType.HOST) {
-	        resultExpr = view.nodes[0].appElement;
-	    }
-	    else {
-	        resultExpr = o.NULL_EXPR;
-	    }
-	    return parentRenderNodeStmts.concat(view.createMethod.finish(), [
-	        o.THIS_EXPR
-	            .callMethod('init', [
-	            util_1.createFlatArray(view.rootNodesOrAppElements),
-	            o.literalArr(view.nodes.map(function (node) { return node.renderNode; })), o.literalArr(view.disposables),
-	            o.literalArr(view.subscriptions)
-	        ])
-	            .toStmt(),
-	        new o.ReturnStatement(resultExpr)
-	    ]);
-	}
-	function generateDetectChangesMethod(view) {
-	    var stmts = [];
-	    if (view.detectChangesInInputsMethod.isEmpty() && view.updateContentQueriesMethod.isEmpty() &&
-	        view.afterContentLifecycleCallbacksMethod.isEmpty() &&
-	        view.detectChangesRenderPropertiesMethod.isEmpty() &&
-	        view.updateViewQueriesMethod.isEmpty() && view.afterViewLifecycleCallbacksMethod.isEmpty()) {
-	        return stmts;
-	    }
-	    collection_1.ListWrapper.addAll(stmts, view.detectChangesInInputsMethod.finish());
-	    stmts.push(o.THIS_EXPR.callMethod('detectContentChildrenChanges', [constants_1.DetectChangesVars.throwOnChange])
-	        .toStmt());
-	    var afterContentStmts = view.updateContentQueriesMethod.finish().concat(view.afterContentLifecycleCallbacksMethod.finish());
-	    if (afterContentStmts.length > 0) {
-	        stmts.push(new o.IfStmt(o.not(constants_1.DetectChangesVars.throwOnChange), afterContentStmts));
-	    }
-	    collection_1.ListWrapper.addAll(stmts, view.detectChangesRenderPropertiesMethod.finish());
-	    stmts.push(o.THIS_EXPR.callMethod('detectViewChildrenChanges', [constants_1.DetectChangesVars.throwOnChange])
-	        .toStmt());
-	    var afterViewStmts = view.updateViewQueriesMethod.finish().concat(view.afterViewLifecycleCallbacksMethod.finish());
-	    if (afterViewStmts.length > 0) {
-	        stmts.push(new o.IfStmt(o.not(constants_1.DetectChangesVars.throwOnChange), afterViewStmts));
-	    }
-	    var varStmts = [];
-	    var readVars = o.findReadVarNames(stmts);
-	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.changed.name)) {
-	        varStmts.push(constants_1.DetectChangesVars.changed.set(o.literal(true)).toDeclStmt(o.BOOL_TYPE));
-	    }
-	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.changes.name)) {
-	        varStmts.push(constants_1.DetectChangesVars.changes.set(o.NULL_EXPR)
-	            .toDeclStmt(new o.MapType(o.importType(identifiers_1.Identifiers.SimpleChange))));
-	    }
-	    if (collection_1.SetWrapper.has(readVars, constants_1.DetectChangesVars.valUnwrapper.name)) {
-	        varStmts.push(constants_1.DetectChangesVars.valUnwrapper.set(o.importExpr(identifiers_1.Identifiers.ValueUnwrapper).instantiate([]))
-	            .toDeclStmt(null, [o.StmtModifier.Final]));
-	    }
-	    return varStmts.concat(stmts);
-	}
-	function addReturnValuefNotEmpty(statements, value) {
-	    if (statements.length > 0) {
-	        return statements.concat([new o.ReturnStatement(value)]);
-	    }
-	    else {
-	        return statements;
-	    }
-	}
-	function getContextType(view) {
-	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
-	        return o.importType(view.component.type);
-	    }
-	    return o.DYNAMIC_TYPE;
-	}
-	function getChangeDetectionMode(view) {
-	    var mode;
-	    if (view.viewType === core_private_1.ViewType.COMPONENT) {
-	        mode = core_private_1.isDefaultChangeDetectionStrategy(view.component.changeDetection) ?
-	            core_1.ChangeDetectionStrategy.CheckAlways :
-	            core_1.ChangeDetectionStrategy.CheckOnce;
-	    }
-	    else {
-	        mode = core_1.ChangeDetectionStrategy.CheckAlways;
-	    }
-	    return mode;
-	}
-	//# sourceMappingURL=view_builder.js.map
-
-/***/ },
-/* 541 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
-	var animation_constants_1 = __webpack_require__(357);
-	var animation_driver_1 = __webpack_require__(543);
-	var animation_group_player_1 = __webpack_require__(358);
-	var animation_keyframe_1 = __webpack_require__(544);
-	var animation_player_1 = __webpack_require__(156);
-	var animation_sequence_player_1 = __webpack_require__(545);
-	var animationUtils = __webpack_require__(546);
-	var animation_styles_1 = __webpack_require__(547);
-	var change_detection_util = __webpack_require__(240);
-	var constants = __webpack_require__(159);
-	var console = __webpack_require__(242);
-	var debug = __webpack_require__(551);
-	var provider_util = __webpack_require__(364);
-	var reflective_provider = __webpack_require__(247);
-	var component_resolver = __webpack_require__(127);
-	var debug_context = __webpack_require__(369);
-	var element = __webpack_require__(248);
-	var template_ref = __webpack_require__(372);
-	var view = __webpack_require__(559);
-	var view_type = __webpack_require__(161);
-	var view_utils = __webpack_require__(162);
-	var lifecycle_hooks = __webpack_require__(377);
-	var metadata_view = __webpack_require__(250);
-	var wtf_init = __webpack_require__(564);
-	var reflection = __webpack_require__(164);
-	var reflection_capabilities = __webpack_require__(378);
-	var reflector_reader = __webpack_require__(251);
-	var api = __webpack_require__(252);
-	var security = __webpack_require__(380);
-	var decorators = __webpack_require__(165);
+	var animation_constants_1 = __webpack_require__(366);
+	var animation_driver_1 = __webpack_require__(556);
+	var animation_group_player_1 = __webpack_require__(367);
+	var animation_keyframe_1 = __webpack_require__(557);
+	var animation_player_1 = __webpack_require__(160);
+	var animation_sequence_player_1 = __webpack_require__(558);
+	var animationUtils = __webpack_require__(559);
+	var animation_styles_1 = __webpack_require__(560);
+	var change_detection_util = __webpack_require__(243);
+	var constants = __webpack_require__(163);
+	var console = __webpack_require__(245);
+	var debug = __webpack_require__(564);
+	var provider_util = __webpack_require__(373);
+	var reflective_provider = __webpack_require__(250);
+	var component_factory_resolver = __webpack_require__(251);
+	var component_resolver = __webpack_require__(129);
+	var debug_context = __webpack_require__(378);
+	var element = __webpack_require__(252);
+	var template_ref = __webpack_require__(381);
+	var view = __webpack_require__(573);
+	var view_type = __webpack_require__(165);
+	var view_utils = __webpack_require__(166);
+	var lifecycle_hooks = __webpack_require__(386);
+	var metadata_view = __webpack_require__(254);
+	var wtf_init = __webpack_require__(578);
+	var reflection = __webpack_require__(168);
+	var reflection_capabilities = __webpack_require__(387);
+	var reflector_reader = __webpack_require__(255);
+	var api = __webpack_require__(256);
+	var security = __webpack_require__(389);
+	var decorators = __webpack_require__(169);
 	exports.__core_private__ = {
 	    isDefaultChangeDetectionStrategy: constants.isDefaultChangeDetectionStrategy,
-	    ChangeDetectorState: constants.ChangeDetectorState,
+	    ChangeDetectorStatus: constants.ChangeDetectorStatus,
 	    CHANGE_DETECTION_STRATEGY_VALUES: constants.CHANGE_DETECTION_STRATEGY_VALUES,
 	    constructDependencies: reflective_provider.constructDependencies,
 	    LifecycleHooks: lifecycle_hooks.LifecycleHooks,
 	    LIFECYCLE_HOOKS_VALUES: lifecycle_hooks.LIFECYCLE_HOOKS_VALUES,
 	    ReflectorReader: reflector_reader.ReflectorReader,
 	    ReflectorComponentResolver: component_resolver.ReflectorComponentResolver,
+	    CodegenComponentFactoryResolver: component_factory_resolver.CodegenComponentFactoryResolver,
 	    AppElement: element.AppElement,
 	    AppView: view.AppView,
 	    DebugAppView: view.DebugAppView,
@@ -46460,11 +49333,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 542 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
 	var ActiveAnimationPlayersMap = (function () {
 	    function ActiveAnimationPlayersMap() {
@@ -46519,16 +49399,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=active_animation_players_map.js.map
 
 /***/ },
-/* 543 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var animation_player_1 = __webpack_require__(156);
+	var animation_player_1 = __webpack_require__(160);
 	var AnimationDriver = (function () {
 	    function AnimationDriver() {
 	    }
@@ -46549,9 +49436,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_driver.js.map
 
 /***/ },
-/* 544 */
+/* 557 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var AnimationKeyframe = (function () {
 	    function AnimationKeyframe(offset, styles) {
@@ -46564,12 +49458,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_keyframe.js.map
 
 /***/ },
-/* 545 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	var animation_player_1 = __webpack_require__(156);
+	var animation_player_1 = __webpack_require__(160);
 	var AnimationSequencePlayer = (function () {
 	    function AnimationSequencePlayer(_players) {
 	        var _this = this;
@@ -46638,14 +49539,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_sequence_player.js.map
 
 /***/ },
-/* 546 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
-	var animation_constants_1 = __webpack_require__(357);
-	var metadata_1 = __webpack_require__(359);
+	var animation_constants_1 = __webpack_require__(366);
+	var metadata_1 = __webpack_require__(368);
 	function prepareFinalAnimationStyles(previousStyles, newStyles, nullValue) {
 	    if (nullValue === void 0) { nullValue = null; }
 	    var finalStyles = {};
@@ -46742,9 +49650,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_style_util.js.map
 
 /***/ },
-/* 547 */
+/* 560 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var AnimationStyles = (function () {
 	    function AnimationStyles(styles) {
@@ -46756,16 +49671,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=animation_styles.js.map
 
 /***/ },
-/* 548 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var application_ref_1 = __webpack_require__(239);
-	var application_tokens_1 = __webpack_require__(157);
-	var change_detection_1 = __webpack_require__(158);
-	var component_resolver_1 = __webpack_require__(127);
-	var dynamic_component_loader_1 = __webpack_require__(370);
-	var view_utils_1 = __webpack_require__(162);
+	var application_ref_1 = __webpack_require__(242);
+	var application_tokens_1 = __webpack_require__(161);
+	var change_detection_1 = __webpack_require__(162);
+	var component_factory_resolver_1 = __webpack_require__(251);
+	var component_resolver_1 = __webpack_require__(129);
+	var dynamic_component_loader_1 = __webpack_require__(379);
+	var view_utils_1 = __webpack_require__(166);
 	var __unused; // avoid unused import when Type union types are erased
 	/**
 	 * A default set of providers which should be included in any Angular
@@ -46776,6 +49699,7 @@ webpackJsonp([2],[
 	/*@ts2dart_const*/ [
 	    application_ref_1.APPLICATION_CORE_PROVIDERS,
 	    /* @ts2dart_Provider */ { provide: component_resolver_1.ComponentResolver, useClass: component_resolver_1.ReflectorComponentResolver },
+	    { provide: component_factory_resolver_1.ComponentFactoryResolver, useValue: component_factory_resolver_1.ComponentFactoryResolver.NULL },
 	    application_tokens_1.APP_ID_RANDOM_PROVIDER,
 	    view_utils_1.ViewUtils,
 	    /* @ts2dart_Provider */ { provide: change_detection_1.IterableDiffers, useValue: change_detection_1.defaultIterableDiffers },
@@ -46785,16 +49709,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=application_common_providers.js.map
 
 /***/ },
-/* 549 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
 	/**
 	 * @module
 	 * @description
 	 * Change detection enables data binding in Angular.
 	 */
-	"use strict";
-	var change_detection_1 = __webpack_require__(158);
+	var change_detection_1 = __webpack_require__(162);
 	exports.ChangeDetectionStrategy = change_detection_1.ChangeDetectionStrategy;
 	exports.ChangeDetectorRef = change_detection_1.ChangeDetectorRef;
 	exports.CollectionChangeRecord = change_detection_1.CollectionChangeRecord;
@@ -46807,9 +49738,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=change_detection.js.map
 
 /***/ },
-/* 550 */
+/* 563 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * @stable
@@ -46823,12 +49761,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=change_detector_ref.js.map
 
 /***/ },
-/* 551 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
-	var debug_node_1 = __webpack_require__(363);
+	var debug_node_1 = __webpack_require__(372);
 	var DebugDomRootRenderer = (function () {
 	    function DebugDomRootRenderer(_delegate) {
 	        this._delegate = _delegate;
@@ -46956,9 +49901,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=debug_renderer.js.map
 
 /***/ },
-/* 552 */
+/* 565 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * Creates a token that can be used in a DI Provider.
@@ -46994,9 +49946,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=opaque_token.js.map
 
 /***/ },
-/* 553 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	exports.Math = lang_1.global.Math;
@@ -47004,9 +49963,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=math.js.map
 
 /***/ },
-/* 554 */
+/* 567 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var PromiseCompleter = (function () {
 	    function PromiseCompleter() {
@@ -47057,47 +50023,115 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 555 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// Public API for compiler
-	var component_factory_1 = __webpack_require__(368);
+	var compiler_1 = __webpack_require__(569);
+	exports.Compiler = compiler_1.Compiler;
+	var component_factory_1 = __webpack_require__(377);
 	exports.ComponentFactory = component_factory_1.ComponentFactory;
 	exports.ComponentRef = component_factory_1.ComponentRef;
-	var component_resolver_1 = __webpack_require__(127);
+	var component_factory_resolver_1 = __webpack_require__(251);
+	exports.ComponentFactoryResolver = component_factory_resolver_1.ComponentFactoryResolver;
+	exports.NoComponentFactoryError = component_factory_resolver_1.NoComponentFactoryError;
+	var component_resolver_1 = __webpack_require__(129);
 	exports.ComponentResolver = component_resolver_1.ComponentResolver;
-	var dynamic_component_loader_1 = __webpack_require__(370);
+	var dynamic_component_loader_1 = __webpack_require__(379);
 	exports.DynamicComponentLoader = dynamic_component_loader_1.DynamicComponentLoader;
-	var element_ref_1 = __webpack_require__(371);
+	var element_ref_1 = __webpack_require__(380);
 	exports.ElementRef = element_ref_1.ElementRef;
-	var exceptions_1 = __webpack_require__(249);
+	var exceptions_1 = __webpack_require__(253);
 	exports.ExpressionChangedAfterItHasBeenCheckedException = exceptions_1.ExpressionChangedAfterItHasBeenCheckedException;
-	var query_list_1 = __webpack_require__(557);
+	var query_list_1 = __webpack_require__(571);
 	exports.QueryList = query_list_1.QueryList;
-	var systemjs_component_resolver_1 = __webpack_require__(558);
+	var systemjs_component_resolver_1 = __webpack_require__(572);
 	exports.SystemJsCmpFactoryResolver = systemjs_component_resolver_1.SystemJsCmpFactoryResolver;
 	exports.SystemJsComponentResolver = systemjs_component_resolver_1.SystemJsComponentResolver;
-	var template_ref_1 = __webpack_require__(372);
+	var template_ref_1 = __webpack_require__(381);
 	exports.TemplateRef = template_ref_1.TemplateRef;
-	var view_container_ref_1 = __webpack_require__(373);
+	var view_container_ref_1 = __webpack_require__(382);
 	exports.ViewContainerRef = view_container_ref_1.ViewContainerRef;
-	var view_ref_1 = __webpack_require__(374);
+	var view_ref_1 = __webpack_require__(383);
 	exports.EmbeddedViewRef = view_ref_1.EmbeddedViewRef;
 	exports.ViewRef = view_ref_1.ViewRef;
 	//# sourceMappingURL=linker.js.map
 
 /***/ },
-/* 556 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
+	"use strict";
+	var exceptions_1 = __webpack_require__(19);
+	var lang_1 = __webpack_require__(6);
+	/**
+	 * Low-level service for running the angular compiler duirng runtime
+	 * to create {@link ComponentFactory}s, which
+	 * can later be used to create and render a Component instance.
+	 * @stable
+	 */
+	var Compiler = (function () {
+	    function Compiler() {
+	    }
+	    /**
+	     * Loads the template and styles of a component and returns the associated `ComponentFactory`.
+	     */
+	    Compiler.prototype.compileComponentAsync = function (component) {
+	        throw new exceptions_1.BaseException("Runtime compiler is not loaded. Tried to compile " + lang_1.stringify(component));
+	    };
+	    /**
+	     * Compiles the given component. All templates have to be either inline or compiled via
+	     * `compileComponentAsync` before.
+	     */
+	    Compiler.prototype.compileComponentSync = function (component) {
+	        throw new exceptions_1.BaseException("Runtime compiler is not loaded. Tried to compile " + lang_1.stringify(component));
+	    };
+	    /**
+	     * Clears all caches
+	     */
+	    Compiler.prototype.clearCache = function () { };
+	    /**
+	     * Clears the cache for the given component.
+	     */
+	    Compiler.prototype.clearCacheFor = function (compType) { };
+	    return Compiler;
+	}());
+	exports.Compiler = Compiler;
+	//# sourceMappingURL=compiler.js.map
+
+/***/ },
+/* 570 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var injector_1 = __webpack_require__(243);
+	var injector_1 = __webpack_require__(246);
 	var _UNDEFINED = new Object();
 	var ElementInjector = (function (_super) {
 	    __extends(ElementInjector, _super);
@@ -47123,12 +50157,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=element_injector.js.map
 
 /***/ },
-/* 557 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var async_1 = __webpack_require__(92);
-	var collection_1 = __webpack_require__(25);
+	var async_1 = __webpack_require__(93);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
 	/**
 	 * An unmodifiable list of items that Angular keeps up to date when the state
@@ -47170,40 +50211,48 @@ webpackJsonp([2],[
 	        configurable: true
 	    });
 	    Object.defineProperty(QueryList.prototype, "first", {
-	        get: function () { return collection_1.ListWrapper.first(this._results); },
+	        get: function () { return this._results[0]; },
 	        enumerable: true,
 	        configurable: true
 	    });
 	    Object.defineProperty(QueryList.prototype, "last", {
-	        get: function () { return collection_1.ListWrapper.last(this._results); },
+	        get: function () { return this._results[this.length - 1]; },
 	        enumerable: true,
 	        configurable: true
 	    });
 	    /**
-	     * returns a new array with the passed in function applied to each element.
+	     * See
+	     * [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 	     */
 	    QueryList.prototype.map = function (fn) { return this._results.map(fn); };
 	    /**
-	     * returns a filtered array.
+	     * See
+	     * [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 	     */
-	    QueryList.prototype.filter = function (fn) { return this._results.filter(fn); };
+	    QueryList.prototype.filter = function (fn) {
+	        return this._results.filter(fn);
+	    };
 	    /**
-	     * returns a reduced value.
+	     * See
+	     * [Array.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 	     */
 	    QueryList.prototype.reduce = function (fn, init) {
 	        return this._results.reduce(fn, init);
 	    };
 	    /**
-	     * executes function for each element in a query.
+	     * See
+	     * [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 	     */
 	    QueryList.prototype.forEach = function (fn) { this._results.forEach(fn); };
 	    /**
-	     * converts QueryList into an array
+	     * See
+	     * [Array.some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 	     */
-	    QueryList.prototype.toArray = function () { return collection_1.ListWrapper.clone(this._results); };
-	    QueryList.prototype[lang_1.getSymbolIterator()] = function () {
-	        return this._results[lang_1.getSymbolIterator()]();
+	    QueryList.prototype.some = function (fn) {
+	        return this._results.some(fn);
 	    };
+	    QueryList.prototype.toArray = function () { return this._results.slice(); };
+	    QueryList.prototype[lang_1.getSymbolIterator()] = function () { return this._results[lang_1.getSymbolIterator()](); };
 	    QueryList.prototype.toString = function () { return this._results.toString(); };
 	    QueryList.prototype.reset = function (res) {
 	        this._results = collection_1.ListWrapper.flatten(res);
@@ -47224,9 +50273,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=query_list.js.map
 
 /***/ },
-/* 558 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	var _SEPARATOR = '#';
@@ -47281,29 +50337,36 @@ webpackJsonp([2],[
 	//# sourceMappingURL=systemjs_component_resolver.js.map
 
 /***/ },
-/* 559 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var async_1 = __webpack_require__(92);
-	var collection_1 = __webpack_require__(25);
+	var async_1 = __webpack_require__(93);
+	var collection_1 = __webpack_require__(26);
 	var lang_1 = __webpack_require__(6);
-	var element_1 = __webpack_require__(248);
-	var view_ref_1 = __webpack_require__(374);
-	var view_type_1 = __webpack_require__(161);
-	var view_utils_1 = __webpack_require__(162);
-	var change_detection_1 = __webpack_require__(158);
-	var profile_1 = __webpack_require__(163);
-	var exceptions_1 = __webpack_require__(249);
-	var debug_context_1 = __webpack_require__(369);
-	var element_injector_1 = __webpack_require__(556);
-	var animation_group_player_1 = __webpack_require__(358);
-	var active_animation_players_map_1 = __webpack_require__(542);
+	var element_1 = __webpack_require__(252);
+	var view_ref_1 = __webpack_require__(383);
+	var view_type_1 = __webpack_require__(165);
+	var view_utils_1 = __webpack_require__(166);
+	var change_detection_1 = __webpack_require__(162);
+	var profile_1 = __webpack_require__(167);
+	var exceptions_1 = __webpack_require__(253);
+	var debug_context_1 = __webpack_require__(378);
+	var element_injector_1 = __webpack_require__(570);
+	var animation_group_player_1 = __webpack_require__(367);
+	var active_animation_players_map_1 = __webpack_require__(555);
 	var _scope_check = profile_1.wtfCreateScope("AppView#check(ascii id)");
 	/**
 	 * Cost of making objects: http://jsperf.com/instantiate-size-of-object
@@ -47321,10 +50384,7 @@ webpackJsonp([2],[
 	        this.contentChildren = [];
 	        this.viewChildren = [];
 	        this.viewContainerElement = null;
-	        // The names of the below fields must be kept in sync with codegen_name_util.ts or
-	        // change detection will fail.
-	        this.cdState = change_detection_1.ChangeDetectorState.NeverChecked;
-	        this.destroyed = false;
+	        this.numberOfChecks = 0;
 	        this.activeAnimationPlayers = new active_animation_players_map_1.ActiveAnimationPlayersMap();
 	        this.ref = new view_ref_1.ViewRef_(this);
 	        if (type === view_type_1.ViewType.COMPONENT || type === view_type_1.ViewType.HOST) {
@@ -47334,6 +50394,11 @@ webpackJsonp([2],[
 	            this.renderer = declarationAppElement.parentView.renderer;
 	        }
 	    }
+	    Object.defineProperty(AppView.prototype, "destroyed", {
+	        get: function () { return this.cdMode === change_detection_1.ChangeDetectorStatus.Destroyed; },
+	        enumerable: true,
+	        configurable: true
+	    });
 	    AppView.prototype.cancelActiveAnimation = function (element, animationName, removeAllAnimations) {
 	        if (removeAllAnimations === void 0) { removeAllAnimations = false; }
 	        if (removeAllAnimations) {
@@ -47426,7 +50491,7 @@ webpackJsonp([2],[
 	        this._destroyRecurse();
 	    };
 	    AppView.prototype._destroyRecurse = function () {
-	        if (this.destroyed) {
+	        if (this.cdMode === change_detection_1.ChangeDetectorStatus.Destroyed) {
 	            return;
 	        }
 	        var children = this.contentChildren;
@@ -47438,7 +50503,7 @@ webpackJsonp([2],[
 	            children[i]._destroyRecurse();
 	        }
 	        this.destroyLocal();
-	        this.destroyed = true;
+	        this.cdMode = change_detection_1.ChangeDetectorStatus.Destroyed;
 	    };
 	    AppView.prototype.destroyLocal = function () {
 	        var _this = this;
@@ -47511,16 +50576,16 @@ webpackJsonp([2],[
 	    AppView.prototype.dirtyParentQueriesInternal = function () { };
 	    AppView.prototype.detectChanges = function (throwOnChange) {
 	        var s = _scope_check(this.clazz);
-	        if (this.cdMode === change_detection_1.ChangeDetectionStrategy.Checked ||
-	            this.cdState === change_detection_1.ChangeDetectorState.Errored)
+	        if (this.cdMode === change_detection_1.ChangeDetectorStatus.Checked ||
+	            this.cdMode === change_detection_1.ChangeDetectorStatus.Errored)
 	            return;
-	        if (this.destroyed) {
+	        if (this.cdMode === change_detection_1.ChangeDetectorStatus.Destroyed) {
 	            this.throwDestroyedError('detectChanges');
 	        }
 	        this.detectChangesInternal(throwOnChange);
-	        if (this.cdMode === change_detection_1.ChangeDetectionStrategy.CheckOnce)
-	            this.cdMode = change_detection_1.ChangeDetectionStrategy.Checked;
-	        this.cdState = change_detection_1.ChangeDetectorState.CheckedBefore;
+	        if (this.cdMode === change_detection_1.ChangeDetectorStatus.CheckOnce)
+	            this.cdMode = change_detection_1.ChangeDetectorStatus.Checked;
+	        this.numberOfChecks++;
 	        profile_1.wtfLeave(s);
 	    };
 	    /**
@@ -47533,7 +50598,7 @@ webpackJsonp([2],[
 	    AppView.prototype.detectContentChildrenChanges = function (throwOnChange) {
 	        for (var i = 0; i < this.contentChildren.length; ++i) {
 	            var child = this.contentChildren[i];
-	            if (child.cdMode === change_detection_1.ChangeDetectionStrategy.Detached)
+	            if (child.cdMode === change_detection_1.ChangeDetectorStatus.Detached)
 	                continue;
 	            child.detectChanges(throwOnChange);
 	        }
@@ -47541,7 +50606,7 @@ webpackJsonp([2],[
 	    AppView.prototype.detectViewChildrenChanges = function (throwOnChange) {
 	        for (var i = 0; i < this.viewChildren.length; ++i) {
 	            var child = this.viewChildren[i];
-	            if (child.cdMode === change_detection_1.ChangeDetectionStrategy.Detached)
+	            if (child.cdMode === change_detection_1.ChangeDetectorStatus.Detached)
 	                continue;
 	            child.detectChanges(throwOnChange);
 	        }
@@ -47556,12 +50621,12 @@ webpackJsonp([2],[
 	        this.dirtyParentQueriesInternal();
 	        this.viewContainerElement = null;
 	    };
-	    AppView.prototype.markAsCheckOnce = function () { this.cdMode = change_detection_1.ChangeDetectionStrategy.CheckOnce; };
+	    AppView.prototype.markAsCheckOnce = function () { this.cdMode = change_detection_1.ChangeDetectorStatus.CheckOnce; };
 	    AppView.prototype.markPathToRootAsCheckOnce = function () {
 	        var c = this;
-	        while (lang_1.isPresent(c) && c.cdMode !== change_detection_1.ChangeDetectionStrategy.Detached) {
-	            if (c.cdMode === change_detection_1.ChangeDetectionStrategy.Checked) {
-	                c.cdMode = change_detection_1.ChangeDetectionStrategy.CheckOnce;
+	        while (lang_1.isPresent(c) && c.cdMode !== change_detection_1.ChangeDetectorStatus.Detached) {
+	            if (c.cdMode === change_detection_1.ChangeDetectorStatus.Checked) {
+	                c.cdMode = change_detection_1.ChangeDetectorStatus.CheckOnce;
 	            }
 	            var parentEl = c.type === view_type_1.ViewType.COMPONENT ? c.declarationAppElement : c.viewContainerElement;
 	            c = lang_1.isPresent(parentEl) ? parentEl.parentView : null;
@@ -47636,7 +50701,7 @@ webpackJsonp([2],[
 	    DebugAppView.prototype._rethrowWithContext = function (e, stack) {
 	        if (!(e instanceof exceptions_1.ViewWrappedException)) {
 	            if (!(e instanceof exceptions_1.ExpressionChangedAfterItHasBeenCheckedException)) {
-	                this.cdState = change_detection_1.ChangeDetectorState.Errored;
+	                this.cdMode = change_detection_1.ChangeDetectorStatus.Errored;
 	            }
 	            if (lang_1.isPresent(this._currentDebugContext)) {
 	                throw new exceptions_1.ViewWrappedException(e, stack, this._currentDebugContext);
@@ -47683,18 +50748,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=view.js.map
 
 /***/ },
-/* 560 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * This indirection is needed to free up Component, etc symbols in the public API
-	 * to be used by the decorator versions of these annotations.
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var di_1 = __webpack_require__(375);
-	var directives_1 = __webpack_require__(376);
-	var view_1 = __webpack_require__(250);
-	var di_2 = __webpack_require__(375);
+	var di_1 = __webpack_require__(384);
+	var directives_1 = __webpack_require__(385);
+	var view_1 = __webpack_require__(254);
+	var di_2 = __webpack_require__(384);
 	exports.AttributeMetadata = di_2.AttributeMetadata;
 	exports.ContentChildMetadata = di_2.ContentChildMetadata;
 	exports.ContentChildrenMetadata = di_2.ContentChildrenMetadata;
@@ -47702,7 +50770,7 @@ webpackJsonp([2],[
 	exports.ViewChildMetadata = di_2.ViewChildMetadata;
 	exports.ViewChildrenMetadata = di_2.ViewChildrenMetadata;
 	exports.ViewQueryMetadata = di_2.ViewQueryMetadata;
-	var directives_2 = __webpack_require__(376);
+	var directives_2 = __webpack_require__(385);
 	exports.ComponentMetadata = directives_2.ComponentMetadata;
 	exports.DirectiveMetadata = directives_2.DirectiveMetadata;
 	exports.HostBindingMetadata = directives_2.HostBindingMetadata;
@@ -47710,7 +50778,7 @@ webpackJsonp([2],[
 	exports.InputMetadata = directives_2.InputMetadata;
 	exports.OutputMetadata = directives_2.OutputMetadata;
 	exports.PipeMetadata = directives_2.PipeMetadata;
-	var lifecycle_hooks_1 = __webpack_require__(377);
+	var lifecycle_hooks_1 = __webpack_require__(386);
 	exports.AfterContentChecked = lifecycle_hooks_1.AfterContentChecked;
 	exports.AfterContentInit = lifecycle_hooks_1.AfterContentInit;
 	exports.AfterViewChecked = lifecycle_hooks_1.AfterViewChecked;
@@ -47719,10 +50787,10 @@ webpackJsonp([2],[
 	exports.OnChanges = lifecycle_hooks_1.OnChanges;
 	exports.OnDestroy = lifecycle_hooks_1.OnDestroy;
 	exports.OnInit = lifecycle_hooks_1.OnInit;
-	var view_2 = __webpack_require__(250);
+	var view_2 = __webpack_require__(254);
 	exports.ViewEncapsulation = view_2.ViewEncapsulation;
 	exports.ViewMetadata = view_2.ViewMetadata;
-	var decorators_1 = __webpack_require__(165);
+	var decorators_1 = __webpack_require__(169);
 	// TODO(alexeagle): remove the duplication of this doc. It is copied from ComponentMetadata.
 	/**
 	 * Declare reusable UI building blocks for an application.
@@ -48005,7 +51073,7 @@ webpackJsonp([2],[
 	 *   overlayManager:OverlayManager; // NOT YET IMPLEMENTED
 	 *
 	 *   constructor(overlayManager:OverlayManager) {
-	 *     this.overlay = overlay;
+	 *     this.overlayManager = overlayManager;
 	 *   }
 	 *
 	 *   onMouseEnter() {
@@ -48730,15 +51798,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=metadata.js.map
 
 /***/ },
-/* 561 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var application_ref_1 = __webpack_require__(239);
-	var console_1 = __webpack_require__(242);
-	var reflection_1 = __webpack_require__(164);
-	var reflector_reader_1 = __webpack_require__(251);
-	var testability_1 = __webpack_require__(253);
+	var application_ref_1 = __webpack_require__(242);
+	var console_1 = __webpack_require__(245);
+	var reflection_1 = __webpack_require__(168);
+	var reflector_reader_1 = __webpack_require__(255);
+	var testability_1 = __webpack_require__(257);
 	function _reflector() {
 	    return reflection_1.reflector;
 	}
@@ -48756,11 +51831,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_common_providers.js.map
 
 /***/ },
-/* 562 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var di_1 = __webpack_require__(111);
+	var di_1 = __webpack_require__(112);
 	/**
 	   A token that can be provided when bootstrapping an application to make an array of directives
 	  * available in every component of the application.
@@ -48817,9 +51899,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_directives_and_pipes.js.map
 
 /***/ },
-/* 563 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var lang_1 = __webpack_require__(6);
 	var trace;
@@ -48857,9 +51946,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=wtf_impl.js.map
 
 /***/ },
-/* 564 */
+/* 578 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * This is here because DART requires it. It is noop in JS.
@@ -48869,84 +51965,113 @@ webpackJsonp([2],[
 	//# sourceMappingURL=wtf_init.js.map
 
 /***/ },
-/* 565 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// Public API for render
-	var api_1 = __webpack_require__(252);
+	var api_1 = __webpack_require__(256);
 	exports.RenderComponentType = api_1.RenderComponentType;
 	exports.Renderer = api_1.Renderer;
 	exports.RootRenderer = api_1.RootRenderer;
 	//# sourceMappingURL=render.js.map
 
 /***/ },
-/* 566 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// Public API for util
-	var decorators_1 = __webpack_require__(165);
+	var decorators_1 = __webpack_require__(169);
 	exports.Class = decorators_1.Class;
 	//# sourceMappingURL=util.js.map
 
 /***/ },
-/* 567 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	// Public API for Zone
-	var ng_zone_1 = __webpack_require__(254);
+	var ng_zone_1 = __webpack_require__(258);
 	exports.NgZone = ng_zone_1.NgZone;
 	exports.NgZoneError = ng_zone_1.NgZoneError;
 	//# sourceMappingURL=zone.js.map
 
 /***/ },
-/* 568 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var browser_jsonp_1 = __webpack_require__(383);
-	var browser_xhr_1 = __webpack_require__(255);
-	var jsonp_backend_1 = __webpack_require__(384);
-	var xhr_backend_1 = __webpack_require__(385);
-	var base_request_options_1 = __webpack_require__(256);
-	var base_response_options_1 = __webpack_require__(166);
-	var http_1 = __webpack_require__(388);
-	var interfaces_1 = __webpack_require__(130);
-	var browser_xhr_2 = __webpack_require__(255);
+	var browser_jsonp_1 = __webpack_require__(392);
+	var browser_xhr_1 = __webpack_require__(259);
+	var jsonp_backend_1 = __webpack_require__(393);
+	var xhr_backend_1 = __webpack_require__(394);
+	var base_request_options_1 = __webpack_require__(260);
+	var base_response_options_1 = __webpack_require__(170);
+	var http_1 = __webpack_require__(397);
+	var interfaces_1 = __webpack_require__(132);
+	var browser_xhr_2 = __webpack_require__(259);
 	exports.BrowserXhr = browser_xhr_2.BrowserXhr;
-	var jsonp_backend_2 = __webpack_require__(384);
+	var jsonp_backend_2 = __webpack_require__(393);
 	exports.JSONPBackend = jsonp_backend_2.JSONPBackend;
 	exports.JSONPConnection = jsonp_backend_2.JSONPConnection;
-	var xhr_backend_2 = __webpack_require__(385);
+	var xhr_backend_2 = __webpack_require__(394);
 	exports.CookieXSRFStrategy = xhr_backend_2.CookieXSRFStrategy;
 	exports.XHRBackend = xhr_backend_2.XHRBackend;
 	exports.XHRConnection = xhr_backend_2.XHRConnection;
-	var base_request_options_2 = __webpack_require__(256);
+	var base_request_options_2 = __webpack_require__(260);
 	exports.BaseRequestOptions = base_request_options_2.BaseRequestOptions;
 	exports.RequestOptions = base_request_options_2.RequestOptions;
-	var base_response_options_2 = __webpack_require__(166);
+	var base_response_options_2 = __webpack_require__(170);
 	exports.BaseResponseOptions = base_response_options_2.BaseResponseOptions;
 	exports.ResponseOptions = base_response_options_2.ResponseOptions;
-	var enums_1 = __webpack_require__(76);
+	var enums_1 = __webpack_require__(78);
 	exports.ReadyState = enums_1.ReadyState;
 	exports.RequestMethod = enums_1.RequestMethod;
 	exports.ResponseType = enums_1.ResponseType;
-	var headers_1 = __webpack_require__(129);
+	var headers_1 = __webpack_require__(131);
 	exports.Headers = headers_1.Headers;
-	var http_2 = __webpack_require__(388);
+	var http_2 = __webpack_require__(397);
 	exports.Http = http_2.Http;
 	exports.Jsonp = http_2.Jsonp;
-	var interfaces_2 = __webpack_require__(130);
+	var interfaces_2 = __webpack_require__(132);
 	exports.Connection = interfaces_2.Connection;
 	exports.ConnectionBackend = interfaces_2.ConnectionBackend;
 	exports.XSRFStrategy = interfaces_2.XSRFStrategy;
-	var static_request_1 = __webpack_require__(389);
+	var static_request_1 = __webpack_require__(398);
 	exports.Request = static_request_1.Request;
-	var static_response_1 = __webpack_require__(258);
+	var static_response_1 = __webpack_require__(262);
 	exports.Response = static_response_1.Response;
-	var url_search_params_1 = __webpack_require__(259);
+	var url_search_params_1 = __webpack_require__(263);
+	exports.QueryEncoder = url_search_params_1.QueryEncoder;
 	exports.URLSearchParams = url_search_params_1.URLSearchParams;
 	/**
 	 * Provides a basic set of injectables to use the {@link Http} service in any application.
@@ -49090,6 +52215,8 @@ webpackJsonp([2],[
 	 *         useValue: new CookieXSRFStrategy('MY-XSRF-COOKIE-NAME', 'X-MY-XSRF-HEADER-NAME')}])
 	 *   .catch(err => console.error(err));
 	 * ```
+	 *
+	 * @experimental
 	 */
 	exports.HTTP_PROVIDERS = [
 	    // TODO(pascal): use factory type annotations once supported in DI
@@ -49101,6 +52228,9 @@ webpackJsonp([2],[
 	    xhr_backend_1.XHRBackend,
 	    { provide: interfaces_1.XSRFStrategy, useValue: new xhr_backend_1.CookieXSRFStrategy() },
 	];
+	/**
+	 * @experimental
+	 */
 	function httpFactory(xhrBackend, requestOptions) {
 	    return new http_1.Http(xhrBackend, requestOptions);
 	}
@@ -49217,6 +52347,8 @@ webpackJsonp([2],[
 	 *   }
 	 * });
 	 * ```
+	 *
+	 * @experimental
 	 */
 	exports.JSONP_PROVIDERS = [
 	    // TODO(pascal): use factory type annotations once supported in DI
@@ -49239,9 +52371,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=http.js.map
 
 /***/ },
-/* 569 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
 	exports.ReflectionCapabilities = core_1.__core_private__.ReflectionCapabilities;
@@ -49249,24 +52388,31 @@ webpackJsonp([2],[
 	//# sourceMappingURL=core_private.js.map
 
 /***/ },
-/* 570 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subject_1 = __webpack_require__(20);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var toPromise_1 = __webpack_require__(119);
-	var lang_1 = __webpack_require__(114);
+	var Subject_1 = __webpack_require__(21);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var toPromise_1 = __webpack_require__(120);
+	var lang_1 = __webpack_require__(115);
 	var Observable_1 = __webpack_require__(1);
 	exports.Observable = Observable_1.Observable;
-	var Subject_2 = __webpack_require__(20);
+	var Subject_2 = __webpack_require__(21);
 	exports.Subject = Subject_2.Subject;
-	var promise_1 = __webpack_require__(260);
+	var promise_1 = __webpack_require__(264);
 	exports.PromiseCompleter = promise_1.PromiseCompleter;
 	exports.PromiseWrapper = promise_1.PromiseWrapper;
 	var TimerWrapper = (function () {
@@ -49414,11 +52560,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=async.js.map
 
 /***/ },
-/* 571 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(114);
+	var lang_1 = __webpack_require__(115);
 	exports.Map = lang_1.global.Map;
 	exports.Set = lang_1.global.Set;
 	// Safari and Internet Explorer do not support the iterable parameter to the
@@ -49787,18 +52940,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=collection.js.map
 
 /***/ },
-/* 572 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var base_wrapped_exception_1 = __webpack_require__(391);
-	var exception_handler_1 = __webpack_require__(392);
-	var exception_handler_2 = __webpack_require__(392);
+	var base_wrapped_exception_1 = __webpack_require__(400);
+	var exception_handler_1 = __webpack_require__(401);
+	var exception_handler_2 = __webpack_require__(401);
 	exports.ExceptionHandler = exception_handler_2.ExceptionHandler;
 	/**
 	 * @stable
@@ -49874,19 +53034,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=exceptions.js.map
 
 /***/ },
-/* 573 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var compiler_1 = __webpack_require__(223);
-	var exceptions_1 = __webpack_require__(572);
-	var lang_1 = __webpack_require__(114);
-	var promise_1 = __webpack_require__(260);
+	var compiler_1 = __webpack_require__(229);
+	var exceptions_1 = __webpack_require__(586);
+	var lang_1 = __webpack_require__(115);
+	var promise_1 = __webpack_require__(264);
 	/**
 	 * An implementation of XHR that uses a template cache to avoid doing an actual
 	 * XHR.
@@ -49917,18 +53084,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xhr_cache.js.map
 
 /***/ },
-/* 574 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var compiler_1 = __webpack_require__(223);
-	var lang_1 = __webpack_require__(114);
-	var promise_1 = __webpack_require__(260);
+	var compiler_1 = __webpack_require__(229);
+	var lang_1 = __webpack_require__(115);
+	var promise_1 = __webpack_require__(264);
 	var XHRImpl = (function (_super) {
 	    __extends(XHRImpl, _super);
 	    function XHRImpl() {
@@ -49968,13 +53142,22 @@ webpackJsonp([2],[
 	//# sourceMappingURL=xhr_impl.js.map
 
 /***/ },
-/* 575 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var dom_adapter = __webpack_require__(27);
-	var dom_renderer = __webpack_require__(171);
-	var shared_styles_host = __webpack_require__(172);
+	var ng_proble = __webpack_require__(404);
+	var dom_adapter = __webpack_require__(28);
+	var dom_renderer = __webpack_require__(174);
+	var dom_events = __webpack_require__(266);
+	var shared_styles_host = __webpack_require__(175);
 	exports.__platform_browser_private__ = {
 	    DomAdapter: dom_adapter.DomAdapter,
 	    getDOM: dom_adapter.getDOM,
@@ -49982,23 +53165,32 @@ webpackJsonp([2],[
 	    DomRootRenderer: dom_renderer.DomRootRenderer,
 	    DomRootRenderer_: dom_renderer.DomRootRenderer_,
 	    DomSharedStylesHost: shared_styles_host.DomSharedStylesHost,
-	    SharedStylesHost: shared_styles_host.SharedStylesHost
+	    SharedStylesHost: shared_styles_host.SharedStylesHost,
+	    ELEMENT_PROBE_PROVIDERS: ng_proble.ELEMENT_PROBE_PROVIDERS,
+	    DomEventsPlugin: dom_events.DomEventsPlugin
 	};
 	//# sourceMappingURL=private_export.js.map
 
 /***/ },
-/* 576 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var dom_adapter_1 = __webpack_require__(27);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
+	var dom_adapter_1 = __webpack_require__(28);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
 	/**
 	 * Provides DOM operations in any browser environment.
 	 */
@@ -50061,9 +53253,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=generic_browser_adapter.js.map
 
 /***/ },
-/* 577 */
+/* 591 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	function supportsState() {
 	    return !!window.history.pushState;
@@ -50072,11 +53271,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=history.js.map
 
 /***/ },
-/* 578 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var dom_adapter_1 = __webpack_require__(27);
+	var dom_adapter_1 = __webpack_require__(28);
 	/**
 	 * A service that can be used to get and set the title of a current HTML document.
 	 *
@@ -50106,14 +53312,21 @@ webpackJsonp([2],[
 	//# sourceMappingURL=title.js.map
 
 /***/ },
-/* 579 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var browser_1 = __webpack_require__(585);
-	var lang_1 = __webpack_require__(17);
+	var dom_adapter_1 = __webpack_require__(28);
+	var browser_1 = __webpack_require__(599);
+	var lang_1 = __webpack_require__(18);
 	var ChangeDetectionPerfRecord = (function () {
 	    function ChangeDetectionPerfRecord(msPerTick, numTicks) {
 	        this.msPerTick = msPerTick;
@@ -50190,12 +53403,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=common_tools.js.map
 
 /***/ },
-/* 580 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(17);
-	var common_tools_1 = __webpack_require__(579);
+	var lang_1 = __webpack_require__(18);
+	var common_tools_1 = __webpack_require__(593);
 	var context = lang_1.global;
 	/**
 	 * Enabled Angular 2 debug tools that are accessible via your browser's
@@ -50207,6 +53427,8 @@ webpackJsonp([2],[
 	 * 1. Type `ng.` (usually the console will show auto-complete suggestion)
 	 * 1. Try the change detection profiler `ng.profiler.timeChangeDetection()`
 	 *    then hit Enter.
+	 *
+	 * @experimental All debugging apis are currently experimental.
 	 */
 	function enableDebugTools(ref) {
 	    context.ng = new common_tools_1.AngularTools(ref);
@@ -50215,6 +53437,8 @@ webpackJsonp([2],[
 	exports.enableDebugTools = enableDebugTools;
 	/**
 	 * Disables Angular 2 tools.
+	 *
+	 * @experimental All debugging apis are currently experimental.
 	 */
 	function disableDebugTools() {
 	    delete context.ng;
@@ -50223,14 +53447,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=tools.js.map
 
 /***/ },
-/* 581 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var dom_adapter_1 = __webpack_require__(27);
-	var lang_1 = __webpack_require__(17);
+	var dom_adapter_1 = __webpack_require__(28);
+	var lang_1 = __webpack_require__(18);
 	/**
 	 * Predicates for use with {@link DebugElement}'s query functions.
+	 *
+	 * @experimental All debugging apis are currently experimental.
 	 */
 	var By = (function () {
 	    function By() {
@@ -50273,17 +53506,24 @@ webpackJsonp([2],[
 	//# sourceMappingURL=by.js.map
 
 /***/ },
-/* 582 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var collection_1 = __webpack_require__(34);
-	var event_manager_1 = __webpack_require__(93);
+	var collection_1 = __webpack_require__(35);
+	var event_manager_1 = __webpack_require__(94);
 	var _eventNames = {
 	    // pan
 	    'pan': true,
@@ -50336,16 +53576,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=hammer_common.js.map
 
 /***/ },
-/* 583 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
-	var dom_adapter_1 = __webpack_require__(27);
-	var util_1 = __webpack_require__(396);
-	var web_animations_player_1 = __webpack_require__(584);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
+	var dom_adapter_1 = __webpack_require__(28);
+	var util_1 = __webpack_require__(406);
+	var web_animations_player_1 = __webpack_require__(598);
 	var WebAnimationsDriver = (function () {
 	    function WebAnimationsDriver() {
 	    }
@@ -50375,6 +53622,7 @@ webpackJsonp([2],[
 	        var playerOptions = {
 	            'duration': duration,
 	            'delay': delay,
+	            'easing': easing,
 	            'fill': 'both' // we use `both` because it allows for styling at 0% to work with `delay`
 	        };
 	        var player = this._triggerWebAnimation(anyElm, formattedSteps, playerOptions);
@@ -50469,11 +53717,18 @@ webpackJsonp([2],[
 	//# sourceMappingURL=web_animations_driver.js.map
 
 /***/ },
-/* 584 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var lang_1 = __webpack_require__(17);
+	var lang_1 = __webpack_require__(18);
 	var WebAnimationsPlayer = (function () {
 	    function WebAnimationsPlayer(_player, totalTime) {
 	        var _this = this;
@@ -50520,9 +53775,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=web_animations_player.js.map
 
 /***/ },
-/* 585 */
+/* 599 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	/**
 	 * JS version of browser APIs. This library can only run in the browser.
@@ -50543,9 +53805,16 @@ webpackJsonp([2],[
 	//# sourceMappingURL=browser.js.map
 
 /***/ },
-/* 586 */
+/* 600 */
 /***/ function(module, exports) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var PromiseCompleter = (function () {
 	    function PromiseCompleter() {
@@ -50596,13 +53865,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=promise.js.map
 
 /***/ },
-/* 587 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var url_sanitizer_1 = __webpack_require__(264);
+	var dom_adapter_1 = __webpack_require__(28);
+	var url_sanitizer_1 = __webpack_require__(268);
 	/** A <body> element that can be safely used to parse untrusted HTML. Lazily initialized below. */
 	var inertElement = null;
 	/** Lazily initialized to make sure the DOM adapter gets set before use. */
@@ -50664,19 +53940,21 @@ webpackJsonp([2],[
 	var OPTIONAL_END_TAG_ELEMENTS = merge(OPTIONAL_END_TAG_INLINE_ELEMENTS, OPTIONAL_END_TAG_BLOCK_ELEMENTS);
 	// Safe Block Elements - HTML5
 	var BLOCK_ELEMENTS = merge(OPTIONAL_END_TAG_BLOCK_ELEMENTS, tagSet('address,article,' +
-	    'aside,blockquote,caption,center,del,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5,' +
-	    'h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,section,table,ul'));
+	    'aside,blockquote,caption,center,del,details,dialog,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5,' +
+	    'h6,header,hgroup,hr,ins,main,map,menu,nav,ol,pre,section,summary,table,ul'));
 	// Inline Elements - HTML5
-	var INLINE_ELEMENTS = merge(OPTIONAL_END_TAG_INLINE_ELEMENTS, tagSet('a,abbr,acronym,b,' +
-	    'bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,q,ruby,rp,rt,s,' +
-	    'samp,small,span,strike,strong,sub,sup,time,tt,u,var'));
+	var INLINE_ELEMENTS = merge(OPTIONAL_END_TAG_INLINE_ELEMENTS, tagSet('a,abbr,acronym,audio,b,' +
+	    'bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,picture,q,ruby,rp,rt,s,' +
+	    'samp,small,source,span,strike,strong,sub,sup,time,track,tt,u,var,video'));
 	var VALID_ELEMENTS = merge(VOID_ELEMENTS, BLOCK_ELEMENTS, INLINE_ELEMENTS, OPTIONAL_END_TAG_ELEMENTS);
 	// Attributes that have href and hence need to be sanitized
-	var URI_ATTRS = tagSet('background,cite,href,longdesc,src,xlink:href');
-	var HTML_ATTRS = tagSet('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspacing,class,clear,' +
-	    'color,cols,colspan,compact,coords,dir,face,headers,height,hreflang,hspace,' +
-	    'ismap,lang,language,nohref,nowrap,rel,rev,rows,rowspan,rules,' +
-	    'scope,scrolling,shape,size,span,start,summary,tabindex,target,title,type,' +
+	var URI_ATTRS = tagSet('background,cite,href,itemtype,longdesc,poster,src,xlink:href');
+	// Attributes that have special href set hence need to be sanitized
+	var SRCSET_ATTRS = tagSet('srcset');
+	var HTML_ATTRS = tagSet('abbr,accesskey,align,alt,autoplay,axis,bgcolor,border,cellpadding,cellspacing,class,clear,color,cols,colspan,' +
+	    'compact,controls,coords,datetime,default,dir,download,face,headers,height,hidden,hreflang,hspace,' +
+	    'ismap,itemscope,itemprop,kind,label,lang,language,loop,media,muted,nohref,nowrap,open,preload,rel,rev,role,rows,rowspan,rules,' +
+	    'scope,scrolling,shape,size,sizes,span,srclang,start,summary,tabindex,target,title,translate,type,usemap,' +
 	    'valign,value,vspace,width');
 	// NB: This currently conciously doesn't support SVG. SVG sanitization has had several security
 	// issues in the past, so it seems safer to leave it out if possible. If support for binding SVG via
@@ -50684,7 +53962,7 @@ webpackJsonp([2],[
 	// NB: Sanitization does not allow <form> elements or other active elements (<button> etc). Those
 	// can be sanitized, but they increase security surface area without a legitimate use case, so they
 	// are left out here.
-	var VALID_ATTRS = merge(URI_ATTRS, HTML_ATTRS);
+	var VALID_ATTRS = merge(URI_ATTRS, SRCSET_ATTRS, HTML_ATTRS);
 	/**
 	 * SanitizingHtmlSerializer serializes a DOM fragment, stripping out any unsafe elements and unsafe
 	 * attributes.
@@ -50737,6 +54015,8 @@ webpackJsonp([2],[
 	                // TODO(martinprobst): Special case image URIs for data:image/...
 	                if (URI_ATTRS[lower])
 	                    value = url_sanitizer_1.sanitizeUrl(value);
+	                if (SRCSET_ATTRS[lower])
+	                    value = url_sanitizer_1.sanitizeSrcset(value);
 	                _this.buf.push(' ');
 	                _this.buf.push(attrName);
 	                _this.buf.push('="');
@@ -50802,11 +54082,11 @@ webpackJsonp([2],[
 	 * Sanitizes the given unsafe, untrusted HTML fragment, and returns HTML text that is safe to add to
 	 * the DOM in a browser environment.
 	 */
-	function sanitizeHtml(unsafeHtml) {
+	function sanitizeHtml(unsafeHtmlInput) {
 	    try {
 	        var containerEl = getInertElement();
 	        // Make sure unsafeHtml is actually a string (TypeScript types are not enforced at runtime).
-	        unsafeHtml = unsafeHtml ? String(unsafeHtml) : '';
+	        var unsafeHtml = unsafeHtmlInput ? String(unsafeHtmlInput) : '';
 	        // mXSS protection. Repeatedly parse the document to make sure it stabilizes, so that a browser
 	        // trying to auto-correct incorrect HTML cannot cause formerly inert HTML to become dangerous.
 	        var mXSSAttempts = 5;
@@ -50832,8 +54112,8 @@ webpackJsonp([2],[
 	            var child = _a[_i];
 	            DOM.removeChild(parent_1, child);
 	        }
-	        if (core_1.isDevMode() && safeHtml !== unsafeHtml) {
-	            DOM.log('WARNING: sanitizing HTML stripped some content.');
+	        if (core_1.isDevMode() && safeHtml !== unsafeHtmlInput) {
+	            DOM.log('WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).');
 	        }
 	        return safeHtml;
 	    }
@@ -50847,13 +54127,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=html_sanitizer.js.map
 
 /***/ },
-/* 588 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var dom_adapter_1 = __webpack_require__(27);
-	var url_sanitizer_1 = __webpack_require__(264);
+	var dom_adapter_1 = __webpack_require__(28);
+	var url_sanitizer_1 = __webpack_require__(268);
 	/**
 	 * Regular expression for safe style values.
 	 *
@@ -50920,6 +54207,8 @@ webpackJsonp([2],[
 	 */
 	function sanitizeStyle(value) {
 	    value = String(value).trim(); // Make sure it's actually a string.
+	    if (!value)
+	        return '';
 	    // Single url(...) values are supported, but only for URLs that sanitize cleanly. See above for
 	    // reasoning behind this.
 	    var urlMatch = URL_RE.exec(value);
@@ -50927,22 +54216,30 @@ webpackJsonp([2],[
 	        value.match(SAFE_STYLE_VALUE) && hasBalancedQuotes(value)) {
 	        return value; // Safe style values.
 	    }
-	    if (core_1.isDevMode())
-	        dom_adapter_1.getDOM().log('WARNING: sanitizing unsafe style value ' + value);
+	    if (core_1.isDevMode()) {
+	        dom_adapter_1.getDOM().log("WARNING: sanitizing unsafe style value " + value + " (see http://g.co/ng/security#xss).");
+	    }
 	    return 'unsafe';
 	}
 	exports.sanitizeStyle = sanitizeStyle;
 	//# sourceMappingURL=style_sanitizer.js.map
 
 /***/ },
-/* 589 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var async_1 = __webpack_require__(94);
-	var exceptions_1 = __webpack_require__(77);
-	var serializer_1 = __webpack_require__(56);
-	var event_serializer_1 = __webpack_require__(590);
+	var async_1 = __webpack_require__(95);
+	var exceptions_1 = __webpack_require__(79);
+	var serializer_1 = __webpack_require__(57);
+	var event_serializer_1 = __webpack_require__(604);
 	var EventDispatcher = (function () {
 	    function EventDispatcher(_sink, _serializer) {
 	        this._sink = _sink;
@@ -51047,12 +54344,19 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_dispatcher.js.map
 
 /***/ },
-/* 590 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
 	var MOUSE_EVENT_PROPERTIES = [
 	    'altKey', 'button', 'clientX', 'clientY', 'metaKey', 'movementX', 'movementY', 'offsetX',
 	    'offsetY', 'region', 'screenX', 'screenY', 'shiftKey'
@@ -51111,13 +54415,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=event_serializer.js.map
 
 /***/ },
-/* 591 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var browser_platform_location_1 = __webpack_require__(170);
-	var platform_location_1 = __webpack_require__(592);
+	var browser_platform_location_1 = __webpack_require__(173);
+	var platform_location_1 = __webpack_require__(606);
 	/**
 	 * A list of {@link Provider}s. To use the router in a Worker enabled application you must
 	 * include these providers when setting up the render thread.
@@ -51136,19 +54447,26 @@ webpackJsonp([2],[
 	//# sourceMappingURL=location_providers.js.map
 
 /***/ },
-/* 592 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var browser_platform_location_1 = __webpack_require__(170);
-	var async_1 = __webpack_require__(94);
-	var lang_1 = __webpack_require__(17);
-	var message_bus_1 = __webpack_require__(64);
-	var messaging_api_1 = __webpack_require__(173);
-	var serialized_types_1 = __webpack_require__(265);
-	var serializer_1 = __webpack_require__(56);
-	var service_message_broker_1 = __webpack_require__(134);
+	var browser_platform_location_1 = __webpack_require__(173);
+	var async_1 = __webpack_require__(95);
+	var lang_1 = __webpack_require__(18);
+	var message_bus_1 = __webpack_require__(65);
+	var messaging_api_1 = __webpack_require__(176);
+	var serialized_types_1 = __webpack_require__(269);
+	var serializer_1 = __webpack_require__(57);
+	var service_message_broker_1 = __webpack_require__(136);
 	var MessageBasedPlatformLocation = (function () {
 	    function MessageBasedPlatformLocation(_brokerFactory, _platformLocation, bus, _serializer) {
 	        this._brokerFactory = _brokerFactory;
@@ -51193,18 +54511,25 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_location.js.map
 
 /***/ },
-/* 593 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var lang_1 = __webpack_require__(17);
-	var message_bus_1 = __webpack_require__(64);
-	var messaging_api_1 = __webpack_require__(173);
-	var render_store_1 = __webpack_require__(133);
-	var serializer_1 = __webpack_require__(56);
-	var service_message_broker_1 = __webpack_require__(134);
-	var event_dispatcher_1 = __webpack_require__(589);
+	var lang_1 = __webpack_require__(18);
+	var message_bus_1 = __webpack_require__(65);
+	var messaging_api_1 = __webpack_require__(176);
+	var render_store_1 = __webpack_require__(135);
+	var serializer_1 = __webpack_require__(57);
+	var service_message_broker_1 = __webpack_require__(136);
+	var event_dispatcher_1 = __webpack_require__(603);
 	var MessageBasedRenderer = (function () {
 	    function MessageBasedRenderer(_brokerFactory, _bus, _serializer, _renderStore, _rootRenderer) {
 	        this._brokerFactory = _brokerFactory;
@@ -51329,13 +54654,20 @@ webpackJsonp([2],[
 	//# sourceMappingURL=renderer.js.map
 
 /***/ },
-/* 594 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(55);
 	var core_1 = __webpack_require__(2);
-	var platform_location_1 = __webpack_require__(595);
+	var platform_location_1 = __webpack_require__(609);
 	/**
 	 * Those providers should be added when the router is used in a worker context in addition to the
 	 * {@link ROUTER_PROVIDERS} and after them.
@@ -51355,27 +54687,34 @@ webpackJsonp([2],[
 	//# sourceMappingURL=location_providers.js.map
 
 /***/ },
-/* 595 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var common_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(55);
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(94);
-	var collection_1 = __webpack_require__(34);
-	var exceptions_1 = __webpack_require__(77);
-	var lang_1 = __webpack_require__(17);
-	var client_message_broker_1 = __webpack_require__(132);
-	var message_bus_1 = __webpack_require__(64);
-	var messaging_api_1 = __webpack_require__(173);
-	var serialized_types_1 = __webpack_require__(265);
-	var serializer_1 = __webpack_require__(56);
-	var event_deserializer_1 = __webpack_require__(402);
+	var async_1 = __webpack_require__(95);
+	var collection_1 = __webpack_require__(35);
+	var exceptions_1 = __webpack_require__(79);
+	var lang_1 = __webpack_require__(18);
+	var client_message_broker_1 = __webpack_require__(134);
+	var message_bus_1 = __webpack_require__(65);
+	var messaging_api_1 = __webpack_require__(176);
+	var serialized_types_1 = __webpack_require__(269);
+	var serializer_1 = __webpack_require__(57);
+	var event_deserializer_1 = __webpack_require__(412);
 	var WebWorkerPlatformLocation = (function (_super) {
 	    __extends(WebWorkerPlatformLocation, _super);
 	    function WebWorkerPlatformLocation(brokerFactory, bus, _serializer) {
@@ -51494,20 +54833,27 @@ webpackJsonp([2],[
 	//# sourceMappingURL=platform_location.js.map
 
 /***/ },
-/* 596 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var async_1 = __webpack_require__(94);
-	var collection_1 = __webpack_require__(34);
-	var lang_1 = __webpack_require__(17);
-	var client_message_broker_1 = __webpack_require__(132);
-	var message_bus_1 = __webpack_require__(64);
-	var messaging_api_1 = __webpack_require__(173);
-	var render_store_1 = __webpack_require__(133);
-	var serializer_1 = __webpack_require__(56);
-	var event_deserializer_1 = __webpack_require__(402);
+	var async_1 = __webpack_require__(95);
+	var collection_1 = __webpack_require__(35);
+	var lang_1 = __webpack_require__(18);
+	var client_message_broker_1 = __webpack_require__(134);
+	var message_bus_1 = __webpack_require__(65);
+	var messaging_api_1 = __webpack_require__(176);
+	var render_store_1 = __webpack_require__(135);
+	var serializer_1 = __webpack_require__(57);
+	var event_deserializer_1 = __webpack_require__(412);
 	var WebWorkerRootRenderer = (function () {
 	    function WebWorkerRootRenderer(messageBrokerFactory, bus, _serializer, _renderStore) {
 	        var _this = this;
@@ -51740,16 +55086,23 @@ webpackJsonp([2],[
 	//# sourceMappingURL=renderer.js.map
 
 /***/ },
-/* 597 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var __extends = (this && this.__extends) || function (d, b) {
 	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var dom_adapter_1 = __webpack_require__(27);
+	var dom_adapter_1 = __webpack_require__(28);
 	/**
 	 * This adapter is required to log error messages.
 	 *
@@ -51953,23 +55306,30 @@ webpackJsonp([2],[
 	//# sourceMappingURL=worker_adapter.js.map
 
 /***/ },
-/* 598 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(55);
 	var core_1 = __webpack_require__(2);
-	var browser_1 = __webpack_require__(169);
-	var lang_1 = __webpack_require__(17);
-	var api_1 = __webpack_require__(400);
-	var client_message_broker_1 = __webpack_require__(132);
-	var message_bus_1 = __webpack_require__(64);
-	var post_message_bus_1 = __webpack_require__(401);
-	var render_store_1 = __webpack_require__(133);
-	var serializer_1 = __webpack_require__(56);
-	var service_message_broker_1 = __webpack_require__(134);
-	var renderer_1 = __webpack_require__(596);
-	var worker_adapter_1 = __webpack_require__(597);
+	var browser_1 = __webpack_require__(265);
+	var lang_1 = __webpack_require__(18);
+	var api_1 = __webpack_require__(410);
+	var client_message_broker_1 = __webpack_require__(134);
+	var message_bus_1 = __webpack_require__(65);
+	var post_message_bus_1 = __webpack_require__(411);
+	var render_store_1 = __webpack_require__(135);
+	var serializer_1 = __webpack_require__(57);
+	var service_message_broker_1 = __webpack_require__(136);
+	var renderer_1 = __webpack_require__(610);
+	var worker_adapter_1 = __webpack_require__(611);
 	var PrintLogger = (function () {
 	    function PrintLogger() {
 	        this.log = lang_1.print;
@@ -52029,33 +55389,40 @@ webpackJsonp([2],[
 	//# sourceMappingURL=worker_app.js.map
 
 /***/ },
-/* 599 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/**
+	 * @license
+	 * Copyright Google Inc. All Rights Reserved.
+	 *
+	 * Use of this source code is governed by an MIT-style license that can be
+	 * found in the LICENSE file at https://angular.io/license
+	 */
 	"use strict";
 	var core_1 = __webpack_require__(2);
-	var core_private_1 = __webpack_require__(115);
-	var browser_1 = __webpack_require__(169);
-	var browser_adapter_1 = __webpack_require__(393);
-	var testability_1 = __webpack_require__(394);
-	var dom_adapter_1 = __webpack_require__(27);
-	var dom_renderer_1 = __webpack_require__(171);
-	var dom_tokens_1 = __webpack_require__(131);
-	var dom_events_1 = __webpack_require__(261);
-	var event_manager_1 = __webpack_require__(93);
-	var hammer_gestures_1 = __webpack_require__(262);
-	var key_events_1 = __webpack_require__(263);
-	var shared_styles_host_1 = __webpack_require__(172);
-	var exceptions_1 = __webpack_require__(77);
-	var lang_1 = __webpack_require__(17);
-	var api_1 = __webpack_require__(400);
-	var client_message_broker_1 = __webpack_require__(132);
-	var message_bus_1 = __webpack_require__(64);
-	var post_message_bus_1 = __webpack_require__(401);
-	var render_store_1 = __webpack_require__(133);
-	var serializer_1 = __webpack_require__(56);
-	var service_message_broker_1 = __webpack_require__(134);
-	var renderer_1 = __webpack_require__(593);
+	var core_private_1 = __webpack_require__(116);
+	var browser_1 = __webpack_require__(265);
+	var browser_adapter_1 = __webpack_require__(402);
+	var testability_1 = __webpack_require__(403);
+	var dom_adapter_1 = __webpack_require__(28);
+	var dom_renderer_1 = __webpack_require__(174);
+	var dom_tokens_1 = __webpack_require__(133);
+	var dom_events_1 = __webpack_require__(266);
+	var event_manager_1 = __webpack_require__(94);
+	var hammer_gestures_1 = __webpack_require__(267);
+	var key_events_1 = __webpack_require__(405);
+	var shared_styles_host_1 = __webpack_require__(175);
+	var exceptions_1 = __webpack_require__(79);
+	var lang_1 = __webpack_require__(18);
+	var api_1 = __webpack_require__(410);
+	var client_message_broker_1 = __webpack_require__(134);
+	var message_bus_1 = __webpack_require__(65);
+	var post_message_bus_1 = __webpack_require__(411);
+	var render_store_1 = __webpack_require__(135);
+	var serializer_1 = __webpack_require__(57);
+	var service_message_broker_1 = __webpack_require__(136);
+	var renderer_1 = __webpack_require__(607);
 	var WORKER_RENDER_PLATFORM_MARKER = new core_1.OpaqueToken('WorkerRenderPlatformMarker');
 	var WebWorkerInstance = (function () {
 	    function WebWorkerInstance() {
@@ -52073,7 +55440,7 @@ webpackJsonp([2],[
 	}());
 	exports.WebWorkerInstance = WebWorkerInstance;
 	/**
-	 * @experimental
+	 * @experimental WebWorker support is currently experimental.
 	 */
 	exports.WORKER_SCRIPT = new core_1.OpaqueToken('WebWorkerScript');
 	/**
@@ -52081,18 +55448,18 @@ webpackJsonp([2],[
 	 * created.
 	 *
 	 * TODO(vicb): create an interface for startable services to implement
-	 * @experimental
+	 * @experimental WebWorker support is currently experimental.
 	 */
 	exports.WORKER_UI_STARTABLE_MESSAGING_SERVICE = new core_1.OpaqueToken('WorkerRenderStartableMsgService');
 	/**
-	 * @experimental
+	 * @experimental WebWorker support is currently experimental.
 	 */
 	exports.WORKER_UI_PLATFORM_PROVIDERS = [
 	    core_1.PLATFORM_COMMON_PROVIDERS, { provide: WORKER_RENDER_PLATFORM_MARKER, useValue: true },
 	    { provide: core_1.PLATFORM_INITIALIZER, useValue: initWebWorkerRenderPlatform, multi: true }
 	];
 	/**
-	 * @experimental
+	 * @experimental WebWorker support is currently experimental.
 	 */
 	exports.WORKER_UI_APPLICATION_PROVIDERS = [
 	    core_1.APPLICATION_COMMON_PROVIDERS,
@@ -52129,7 +55496,7 @@ webpackJsonp([2],[
 	    bus.attachToZone(zone);
 	    // initialize message services after the bus has been created
 	    var services = injector.get(exports.WORKER_UI_STARTABLE_MESSAGING_SERVICE);
-	    zone.runGuarded(function () { services.forEach(function (svc /** TODO #9100 */) { svc.start(); }); });
+	    zone.runGuarded(function () { services.forEach(function (svc) { svc.start(); }); });
 	}
 	function messageBusFactory(instance) {
 	    return instance.bus;
@@ -52140,7 +55507,7 @@ webpackJsonp([2],[
 	    testability_1.BrowserGetTestability.init();
 	}
 	/**
-	 * @experimental
+	 * @experimental WebWorker support is currently experimental.
 	 */
 	function workerUiPlatform() {
 	    if (lang_1.isBlank(core_1.getPlatform())) {
@@ -52187,7 +55554,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=worker_render.js.map
 
 /***/ },
-/* 600 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52199,10 +55566,10 @@ webpackJsonp([2],[
 	 */
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var of_1 = __webpack_require__(179);
-	var shared_1 = __webpack_require__(78);
-	var url_tree_1 = __webpack_require__(79);
-	var collection_1 = __webpack_require__(117);
+	var of_1 = __webpack_require__(182);
+	var shared_1 = __webpack_require__(80);
+	var url_tree_1 = __webpack_require__(81);
+	var collection_1 = __webpack_require__(118);
 	var NoMatch = (function () {
 	    function NoMatch(segment) {
 	        if (segment === void 0) { segment = null; }
@@ -52330,7 +55697,8 @@ webpackJsonp([2],[
 	}
 	function match(segment, route, paths) {
 	    if (route.path === '') {
-	        if (route.terminal && (segment.hasChildren() || paths.length > 0)) {
+	        if ((route.terminal || route.pathMatch === 'full') &&
+	            (segment.hasChildren() || paths.length > 0)) {
 	            throw new NoMatch();
 	        }
 	        else {
@@ -52382,28 +55750,38 @@ webpackJsonp([2],[
 	    return pos;
 	}
 	function findOrCreatePath(part, paths) {
-	    var matchingIndex = paths.findIndex(function (s) { return s.path === part; });
-	    if (matchingIndex > -1) {
-	        var r = paths[matchingIndex];
-	        paths.splice(matchingIndex);
-	        return r;
+	    var idx = 0;
+	    for (var _i = 0, paths_1 = paths; _i < paths_1.length; _i++) {
+	        var s = paths_1[_i];
+	        if (s.path === part) {
+	            paths.splice(idx);
+	            return s;
+	        }
+	        idx++;
 	    }
-	    else {
-	        return new url_tree_1.UrlPathWithParams(part, {});
-	    }
+	    return new url_tree_1.UrlPathWithParams(part, {});
 	}
 	function split(segment, consumedPaths, slicedPath, config) {
 	    if (slicedPath.length > 0 &&
 	        containsEmptyPathRedirectsWithNamedOutlets(segment, slicedPath, config)) {
 	        var s = new url_tree_1.UrlSegment(consumedPaths, createChildrenForEmptyPaths(config, new url_tree_1.UrlSegment(slicedPath, segment.children)));
-	        return { segment: s, slicedPath: [] };
+	        return { segment: mergeTrivialChildren(s), slicedPath: [] };
 	    }
 	    else if (slicedPath.length === 0 && containsEmptyPathRedirects(segment, slicedPath, config)) {
 	        var s = new url_tree_1.UrlSegment(segment.pathsWithParams, addEmptyPathsToChildrenIfNeeded(segment, slicedPath, config, segment.children));
-	        return { segment: s, slicedPath: slicedPath };
+	        return { segment: mergeTrivialChildren(s), slicedPath: slicedPath };
 	    }
 	    else {
 	        return { segment: segment, slicedPath: slicedPath };
+	    }
+	}
+	function mergeTrivialChildren(s) {
+	    if (s.numberOfChildren === 1 && s.children[shared_1.PRIMARY_OUTLET]) {
+	        var c = s.children[shared_1.PRIMARY_OUTLET];
+	        return new url_tree_1.UrlSegment(s.pathsWithParams.concat(c.pathsWithParams), c.children);
+	    }
+	    else {
+	        return s;
 	    }
 	}
 	function addEmptyPathsToChildrenIfNeeded(segment, slicedPath, routes, children) {
@@ -52436,7 +55814,7 @@ webpackJsonp([2],[
 	    return routes.filter(function (r) { return emptyPathRedirect(segment, slicedPath, r); }).length > 0;
 	}
 	function emptyPathRedirect(segment, slicedPath, r) {
-	    if ((segment.hasChildren() || slicedPath.length > 0) && r.terminal)
+	    if ((segment.hasChildren() || slicedPath.length > 0) && (r.terminal || r.pathMatch === 'full'))
 	        return false;
 	    return r.path === '' && r.redirectTo !== undefined;
 	}
@@ -52446,7 +55824,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=apply_redirects.js.map
 
 /***/ },
-/* 601 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52457,12 +55835,12 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(55);
 	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(174);
-	var router_outlet_map_1 = __webpack_require__(175);
-	var router_state_1 = __webpack_require__(116);
-	var url_tree_1 = __webpack_require__(79);
+	var router_1 = __webpack_require__(177);
+	var router_outlet_map_1 = __webpack_require__(178);
+	var router_state_1 = __webpack_require__(117);
+	var url_tree_1 = __webpack_require__(81);
 	exports.ROUTER_CONFIG = new core_1.OpaqueToken('ROUTER_CONFIG');
 	exports.ROUTER_OPTIONS = new core_1.OpaqueToken('ROUTER_OPTIONS');
 	function setupRouter(ref, resolver, urlSerializer, outletMap, location, injector, config, opts) {
@@ -52500,7 +55878,7 @@ webpackJsonp([2],[
 	}
 	exports.setupRouterInitializer = setupRouterInitializer;
 	/**
-	 * A list of {@link Provider}s. To use the router, you must add this to your application.
+	 * An array of {@link Provider}s. To use the router, you must add this to your application.
 	 *
 	 * ### Example
 	 *
@@ -52510,12 +55888,14 @@ webpackJsonp([2],[
 	 *   // ...
 	 * }
 	 *
-	 * const router = [
-	 *   {path: '/home', component: Home}
+	 * const config = [
+	 *   {path: 'home', component: Home}
 	 * ];
 	 *
-	 * bootstrap(AppCmp, [provideRouter(router)]);
+	 * bootstrap(AppCmp, [provideRouter(config)]);
 	 * ```
+	 *
+	 * @stable
 	 */
 	function provideRouter(_config, _opts) {
 	    return [
@@ -52540,7 +55920,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=common_router_providers.js.map
 
 /***/ },
-/* 602 */
+/* 616 */
 /***/ function(module, exports) {
 
 	/**
@@ -52571,11 +55951,16 @@ webpackJsonp([2],[
 	    if (route.path.startsWith('/')) {
 	        throw new Error("Invalid route configuration of route '" + route.path + "': path cannot start with a slash");
 	    }
+	    if (route.path === '' && route.redirectTo !== undefined &&
+	        (route.terminal === undefined && route.pathMatch === undefined)) {
+	        var exp = "The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.";
+	        throw new Error("Invalid route configuration of route '{path: \"" + route.path + "\", redirectTo: \"" + route.redirectTo + "\"}': please provide 'pathMatch'. " + exp);
+	    }
 	}
 	//# sourceMappingURL=config.js.map
 
 /***/ },
-/* 603 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52586,9 +55971,9 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var BehaviorSubject_1 = __webpack_require__(177);
-	var router_state_1 = __webpack_require__(116);
-	var tree_1 = __webpack_require__(267);
+	var BehaviorSubject_1 = __webpack_require__(180);
+	var router_state_1 = __webpack_require__(117);
+	var tree_1 = __webpack_require__(272);
 	function createRouterState(curr, prevState) {
 	    var root = createNode(curr._root, prevState ? prevState._root : undefined);
 	    var queryParams = prevState ? prevState.queryParams : new BehaviorSubject_1.BehaviorSubject(curr.queryParams);
@@ -52611,17 +55996,17 @@ webpackJsonp([2],[
 	}
 	function createOrReuseChildren(curr, prevState) {
 	    return curr.children.map(function (child) {
-	        var index = prevState.children.findIndex(function (p) { return equalRouteSnapshots(p.value.snapshot, child.value); });
-	        if (index >= 0) {
-	            return createNode(child, prevState.children[index]);
+	        for (var _i = 0, _a = prevState.children; _i < _a.length; _i++) {
+	            var p = _a[_i];
+	            if (equalRouteSnapshots(p.value.snapshot, child.value)) {
+	                return createNode(child, p);
+	            }
 	        }
-	        else {
-	            return createNode(child);
-	        }
+	        return createNode(child);
 	    });
 	}
 	function createActivatedRoute(c) {
-	    return new router_state_1.ActivatedRoute(new BehaviorSubject_1.BehaviorSubject(c.url), new BehaviorSubject_1.BehaviorSubject(c.params), c.outlet, c.component, c);
+	    return new router_state_1.ActivatedRoute(new BehaviorSubject_1.BehaviorSubject(c.url), new BehaviorSubject_1.BehaviorSubject(c.params), new BehaviorSubject_1.BehaviorSubject(c.data), c.outlet, c.component, c);
 	}
 	function equalRouteSnapshots(a, b) {
 	    return a._routeConfig === b._routeConfig;
@@ -52629,7 +56014,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=create_router_state.js.map
 
 /***/ },
-/* 604 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52640,9 +56025,9 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var shared_1 = __webpack_require__(78);
-	var url_tree_1 = __webpack_require__(79);
-	var collection_1 = __webpack_require__(117);
+	var shared_1 = __webpack_require__(80);
+	var url_tree_1 = __webpack_require__(81);
+	var collection_1 = __webpack_require__(118);
 	function createUrlTree(route, urlTree, commands, queryParams, fragment) {
 	    if (commands.length === 0) {
 	        return tree(urlTree.root, urlTree.root, urlTree, queryParams, fragment);
@@ -52862,163 +56247,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=create_url_tree.js.map
 
 /***/ },
-/* 605 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @license
-	 * Copyright Google Inc. All Rights Reserved.
-	 *
-	 * Use of this source code is governed by an MIT-style license that can be
-	 * found in the LICENSE file at https://angular.io/license
-	 */
-	"use strict";
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(174);
-	var url_tree_1 = __webpack_require__(79);
-	var router_link_1 = __webpack_require__(403);
-	var RouterLinkActive = (function () {
-	    /**
-	     * @internal
-	     */
-	    function RouterLinkActive(router, element, renderer) {
-	        var _this = this;
-	        this.router = router;
-	        this.element = element;
-	        this.renderer = renderer;
-	        this.classes = [];
-	        this.routerLinkActiveOptions = { exact: false };
-	        this.subscription = router.events.subscribe(function (s) {
-	            if (s instanceof router_1.NavigationEnd) {
-	                _this.update();
-	            }
-	        });
-	    }
-	    RouterLinkActive.prototype.ngAfterContentInit = function () {
-	        var _this = this;
-	        this.links.changes.subscribe(function (s) { return _this.update(); });
-	        this.update();
-	    };
-	    Object.defineProperty(RouterLinkActive.prototype, "routerLinkActive", {
-	        set: function (data) {
-	            if (Array.isArray(data)) {
-	                this.classes = data;
-	            }
-	            else {
-	                this.classes = data.split(' ');
-	            }
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    RouterLinkActive.prototype.ngOnChanges = function (changes) { this.update(); };
-	    RouterLinkActive.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
-	    RouterLinkActive.prototype.update = function () {
-	        var _this = this;
-	        if (!this.links || this.links.length === 0)
-	            return;
-	        var currentUrlTree = this.router.parseUrl(this.router.url);
-	        var isActive = this.links.reduce(function (res, link) {
-	            return res || url_tree_1.containsTree(currentUrlTree, link.urlTree, _this.routerLinkActiveOptions.exact);
-	        }, false);
-	        this.classes.forEach(function (c) { return _this.renderer.setElementClass(_this.element.nativeElement, c, isActive); });
-	    };
-	    /** @nocollapse */
-	    RouterLinkActive.decorators = [
-	        { type: core_1.Directive, args: [{ selector: '[routerLinkActive]' },] },
-	    ];
-	    /** @nocollapse */
-	    RouterLinkActive.ctorParameters = [
-	        { type: router_1.Router, },
-	        { type: core_1.ElementRef, },
-	        { type: core_1.Renderer, },
-	    ];
-	    /** @nocollapse */
-	    RouterLinkActive.propDecorators = {
-	        'links': [{ type: core_1.ContentChildren, args: [router_link_1.RouterLink,] },],
-	        'routerLinkActiveOptions': [{ type: core_1.Input },],
-	        'routerLinkActive': [{ type: core_1.Input },],
-	    };
-	    return RouterLinkActive;
-	}());
-	exports.RouterLinkActive = RouterLinkActive;
-	//# sourceMappingURL=router_link_active.js.map
-
-/***/ },
-/* 606 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * @license
-	 * Copyright Google Inc. All Rights Reserved.
-	 *
-	 * Use of this source code is governed by an MIT-style license that can be
-	 * found in the LICENSE file at https://angular.io/license
-	 */
-	"use strict";
-	var core_1 = __webpack_require__(2);
-	var router_outlet_map_1 = __webpack_require__(175);
-	var shared_1 = __webpack_require__(78);
-	var RouterOutlet = (function () {
-	    /**
-	     * @internal
-	     */
-	    function RouterOutlet(parentOutletMap, location, name) {
-	        this.location = location;
-	        parentOutletMap.registerOutlet(name ? name : shared_1.PRIMARY_OUTLET, this);
-	    }
-	    Object.defineProperty(RouterOutlet.prototype, "isActivated", {
-	        get: function () { return !!this.activated; },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(RouterOutlet.prototype, "component", {
-	        get: function () {
-	            if (!this.activated)
-	                throw new Error('Outlet is not activated');
-	            return this.activated.instance;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(RouterOutlet.prototype, "activatedRoute", {
-	        get: function () {
-	            if (!this.activated)
-	                throw new Error('Outlet is not activated');
-	            return this._activatedRoute;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    RouterOutlet.prototype.deactivate = function () {
-	        if (this.activated) {
-	            this.activated.destroy();
-	            this.activated = null;
-	        }
-	    };
-	    RouterOutlet.prototype.activate = function (factory, activatedRoute, providers, outletMap) {
-	        this.outletMap = outletMap;
-	        this._activatedRoute = activatedRoute;
-	        var inj = core_1.ReflectiveInjector.fromResolvedProviders(providers, this.location.parentInjector);
-	        this.activated = this.location.createComponent(factory, this.location.length, inj, []);
-	    };
-	    /** @nocollapse */
-	    RouterOutlet.decorators = [
-	        { type: core_1.Directive, args: [{ selector: 'router-outlet' },] },
-	    ];
-	    /** @nocollapse */
-	    RouterOutlet.ctorParameters = [
-	        { type: router_outlet_map_1.RouterOutletMap, },
-	        { type: core_1.ViewContainerRef, },
-	        { type: undefined, decorators: [{ type: core_1.Attribute, args: ['name',] },] },
-	    ];
-	    return RouterOutlet;
-	}());
-	exports.RouterOutlet = RouterOutlet;
-	//# sourceMappingURL=router_outlet.js.map
-
-/***/ },
-/* 607 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53030,12 +56259,12 @@ webpackJsonp([2],[
 	 */
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var of_1 = __webpack_require__(179);
-	var router_state_1 = __webpack_require__(116);
-	var shared_1 = __webpack_require__(78);
-	var url_tree_1 = __webpack_require__(79);
-	var collection_1 = __webpack_require__(117);
-	var tree_1 = __webpack_require__(267);
+	var of_1 = __webpack_require__(182);
+	var router_state_1 = __webpack_require__(117);
+	var shared_1 = __webpack_require__(80);
+	var url_tree_1 = __webpack_require__(81);
+	var collection_1 = __webpack_require__(118);
+	var tree_1 = __webpack_require__(272);
 	var NoMatch = (function () {
 	    function NoMatch(segment) {
 	        if (segment === void 0) { segment = null; }
@@ -53043,10 +56272,38 @@ webpackJsonp([2],[
 	    }
 	    return NoMatch;
 	}());
+	var InheritedFromParent = (function () {
+	    function InheritedFromParent(parent, params, data, resolve) {
+	        this.parent = parent;
+	        this.params = params;
+	        this.data = data;
+	        this.resolve = resolve;
+	    }
+	    Object.defineProperty(InheritedFromParent.prototype, "allParams", {
+	        get: function () {
+	            return this.parent ? collection_1.merge(this.parent.allParams, this.params) : this.params;
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(InheritedFromParent.prototype, "allData", {
+	        get: function () { return this.parent ? collection_1.merge(this.parent.allData, this.data) : this.data; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(InheritedFromParent, "empty", {
+	        get: function () {
+	            return new InheritedFromParent(null, {}, {}, new router_state_1.InheritedResolve(null, {}));
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    return InheritedFromParent;
+	}());
 	function recognize(rootComponentType, config, urlTree, url) {
 	    try {
-	        var children = processSegment(config, urlTree.root, {}, shared_1.PRIMARY_OUTLET);
-	        var root = new router_state_1.ActivatedRouteSnapshot([], {}, shared_1.PRIMARY_OUTLET, rootComponentType, null, urlTree.root, -1);
+	        var children = processSegment(config, urlTree.root, InheritedFromParent.empty, shared_1.PRIMARY_OUTLET);
+	        var root = new router_state_1.ActivatedRouteSnapshot([], {}, {}, shared_1.PRIMARY_OUTLET, rootComponentType, null, urlTree.root, -1, router_state_1.InheritedResolve.empty);
 	        var rootNode = new tree_1.TreeNode(root, children);
 	        return of_1.of(new router_state_1.RouterStateSnapshot(url, rootNode, urlTree.queryParams, urlTree.fragment));
 	    }
@@ -53062,16 +56319,16 @@ webpackJsonp([2],[
 	    }
 	}
 	exports.recognize = recognize;
-	function processSegment(config, segment, extraParams, outlet) {
+	function processSegment(config, segment, inherited, outlet) {
 	    if (segment.pathsWithParams.length === 0 && segment.hasChildren()) {
-	        return processSegmentChildren(config, segment, extraParams);
+	        return processSegmentChildren(config, segment, inherited);
 	    }
 	    else {
-	        return processPathsWithParams(config, segment, 0, segment.pathsWithParams, extraParams, outlet);
+	        return processPathsWithParams(config, segment, 0, segment.pathsWithParams, inherited, outlet);
 	    }
 	}
-	function processSegmentChildren(config, segment, extraParams) {
-	    var children = url_tree_1.mapChildrenIntoArray(segment, function (child, childOutlet) { return processSegment(config, child, extraParams, childOutlet); });
+	function processSegmentChildren(config, segment, inherited) {
+	    var children = url_tree_1.mapChildrenIntoArray(segment, function (child, childOutlet) { return processSegment(config, child, inherited, childOutlet); });
 	    checkOutletNameUniqueness(children);
 	    sortActivatedRouteSnapshots(children);
 	    return children;
@@ -53085,11 +56342,11 @@ webpackJsonp([2],[
 	        return a.value.outlet.localeCompare(b.value.outlet);
 	    });
 	}
-	function processPathsWithParams(config, segment, pathIndex, paths, extraParams, outlet) {
+	function processPathsWithParams(config, segment, pathIndex, paths, inherited, outlet) {
 	    for (var _i = 0, config_1 = config; _i < config_1.length; _i++) {
 	        var r = config_1[_i];
 	        try {
-	            return processPathsWithParamsAgainstRoute(r, segment, pathIndex, paths, extraParams, outlet);
+	            return processPathsWithParamsAgainstRoute(r, segment, pathIndex, paths, inherited, outlet);
 	        }
 	        catch (e) {
 	            if (!(e instanceof NoMatch))
@@ -53098,40 +56355,45 @@ webpackJsonp([2],[
 	    }
 	    throw new NoMatch(segment);
 	}
-	function processPathsWithParamsAgainstRoute(route, rawSegment, pathIndex, paths, parentExtraParams, outlet) {
+	function processPathsWithParamsAgainstRoute(route, rawSegment, pathIndex, paths, inherited, outlet) {
 	    if (route.redirectTo)
 	        throw new NoMatch();
 	    if ((route.outlet ? route.outlet : shared_1.PRIMARY_OUTLET) !== outlet)
 	        throw new NoMatch();
+	    var newInheritedResolve = new router_state_1.InheritedResolve(inherited.resolve, getResolve(route));
 	    if (route.path === '**') {
 	        var params = paths.length > 0 ? collection_1.last(paths).parameters : {};
-	        var snapshot_1 = new router_state_1.ActivatedRouteSnapshot(paths, collection_1.merge(parentExtraParams, params), outlet, route.component, route, getSourceSegment(rawSegment), getPathIndexShift(rawSegment) - 1);
+	        var snapshot_1 = new router_state_1.ActivatedRouteSnapshot(paths, collection_1.merge(inherited.allParams, params), collection_1.merge(inherited.allData, getData(route)), outlet, route.component, route, getSourceSegment(rawSegment), getPathIndexShift(rawSegment) - 1, newInheritedResolve);
 	        return [new tree_1.TreeNode(snapshot_1, [])];
 	    }
-	    var _a = match(rawSegment, route, paths, parentExtraParams), consumedPaths = _a.consumedPaths, parameters = _a.parameters, extraParams = _a.extraParams, lastChild = _a.lastChild;
+	    var _a = match(rawSegment, route, paths), consumedPaths = _a.consumedPaths, parameters = _a.parameters, lastChild = _a.lastChild;
 	    var rawSlicedPath = paths.slice(lastChild);
 	    var childConfig = route.children ? route.children : [];
+	    var newInherited = route.component ?
+	        InheritedFromParent.empty :
+	        new InheritedFromParent(inherited, parameters, getData(route), newInheritedResolve);
 	    var _b = split(rawSegment, consumedPaths, rawSlicedPath, childConfig), segment = _b.segment, slicedPath = _b.slicedPath;
-	    var snapshot = new router_state_1.ActivatedRouteSnapshot(consumedPaths, parameters, outlet, route.component, route, getSourceSegment(rawSegment), getPathIndexShift(rawSegment) + pathIndex + lastChild - 1);
+	    var snapshot = new router_state_1.ActivatedRouteSnapshot(consumedPaths, collection_1.merge(inherited.allParams, parameters), collection_1.merge(inherited.allData, getData(route)), outlet, route.component, route, getSourceSegment(rawSegment), getPathIndexShift(rawSegment) + pathIndex + lastChild - 1, newInheritedResolve);
 	    if (slicedPath.length === 0 && segment.hasChildren()) {
-	        var children = processSegmentChildren(childConfig, segment, extraParams);
+	        var children = processSegmentChildren(childConfig, segment, newInherited);
 	        return [new tree_1.TreeNode(snapshot, children)];
 	    }
 	    else if (childConfig.length === 0 && slicedPath.length === 0) {
 	        return [new tree_1.TreeNode(snapshot, [])];
 	    }
 	    else {
-	        var children = processPathsWithParams(childConfig, segment, pathIndex + lastChild, slicedPath, extraParams, shared_1.PRIMARY_OUTLET);
+	        var children = processPathsWithParams(childConfig, segment, pathIndex + lastChild, slicedPath, newInherited, shared_1.PRIMARY_OUTLET);
 	        return [new tree_1.TreeNode(snapshot, children)];
 	    }
 	}
-	function match(segment, route, paths, parentExtraParams) {
+	function match(segment, route, paths) {
 	    if (route.path === '') {
-	        if (route.terminal && (segment.hasChildren() || paths.length > 0)) {
+	        if ((route.terminal || route.pathMatch === 'full') &&
+	            (segment.hasChildren() || paths.length > 0)) {
 	            throw new NoMatch();
 	        }
 	        else {
-	            return { consumedPaths: [], lastChild: 0, parameters: {}, extraParams: {} };
+	            return { consumedPaths: [], lastChild: 0, parameters: {} };
 	        }
 	    }
 	    var path = route.path;
@@ -53153,12 +56415,12 @@ webpackJsonp([2],[
 	        consumedPaths.push(current);
 	        currentIndex++;
 	    }
-	    if (route.terminal && (segment.hasChildren() || currentIndex < paths.length)) {
+	    if ((route.terminal || route.pathMatch === 'full') &&
+	        (segment.hasChildren() || currentIndex < paths.length)) {
 	        throw new NoMatch();
 	    }
-	    var parameters = collection_1.merge(parentExtraParams, collection_1.merge(posParameters, consumedPaths[consumedPaths.length - 1].parameters));
-	    var extraParams = route.component ? {} : parameters;
-	    return { consumedPaths: consumedPaths, lastChild: currentIndex, parameters: parameters, extraParams: extraParams };
+	    var parameters = collection_1.merge(posParameters, consumedPaths[consumedPaths.length - 1].parameters);
+	    return { consumedPaths: consumedPaths, lastChild: currentIndex, parameters: parameters };
 	}
 	function checkOutletNameUniqueness(nodes) {
 	    var names = {};
@@ -53244,17 +56506,23 @@ webpackJsonp([2],[
 	    return routes.filter(function (r) { return emptyPathMatch(segment, slicedPath, r); }).length > 0;
 	}
 	function emptyPathMatch(segment, slicedPath, r) {
-	    if ((segment.hasChildren() || slicedPath.length > 0) && r.terminal)
+	    if ((segment.hasChildren() || slicedPath.length > 0) && (r.terminal || r.pathMatch === 'full'))
 	        return false;
 	    return r.path === '' && r.redirectTo === undefined;
 	}
 	function getOutlet(route) {
 	    return route.outlet ? route.outlet : shared_1.PRIMARY_OUTLET;
 	}
+	function getData(route) {
+	    return route.data ? route.data : {};
+	}
+	function getResolve(route) {
+	    return route.resolve ? route.resolve : {};
+	}
 	//# sourceMappingURL=recognize.js.map
 
 /***/ },
-/* 608 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53265,10 +56533,10 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	__webpack_require__(268);
-	__webpack_require__(409);
-	var forkJoin_1 = __webpack_require__(411);
-	var fromPromise_1 = __webpack_require__(412);
+	__webpack_require__(273);
+	__webpack_require__(423);
+	var forkJoin_1 = __webpack_require__(425);
+	var fromPromise_1 = __webpack_require__(426);
 	function resolve(resolver, state) {
 	    return resolveNode(resolver, state._root).map(function (_) { return state; });
 	}
@@ -53289,6 +56557,7 @@ webpackJsonp([2],[
 	    }
 	}
 	function resolveComponent(resolver, snapshot) {
+	    // TODO: vsavkin change to typeof snapshot.component === 'string' in beta2
 	    if (snapshot.component && snapshot._routeConfig) {
 	        return resolver.resolveComponent(snapshot.component);
 	    }
@@ -53299,7 +56568,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=resolve.js.map
 
 /***/ },
-/* 609 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53310,9 +56579,9 @@ webpackJsonp([2],[
 	 * found in the LICENSE file at https://angular.io/license
 	 */
 	"use strict";
-	var common_1 = __webpack_require__(54);
-	var platform_browser_1 = __webpack_require__(168);
-	var common_router_providers_1 = __webpack_require__(601);
+	var common_1 = __webpack_require__(55);
+	var platform_browser_1 = __webpack_require__(172);
+	var common_router_providers_1 = __webpack_require__(615);
 	/**
 	 * A list of {@link Provider}s. To use the router, you must add this to your application.
 	 *
@@ -53325,11 +56594,13 @@ webpackJsonp([2],[
 	 * }
 	 *
 	 * const router = [
-	 *   {path: '/home', component: Home}
+	 *   {path: 'home', component: Home}
 	 * ];
 	 *
-	 * bootstrap(AppCmp, [provideRouter(router)]);
+	 * bootstrap(AppCmp, [provideRouter(router, {enableTracing: true})]);
 	 * ```
+	 *
+	 * @experimental
 	 */
 	function provideRouter(config, opts) {
 	    if (opts === void 0) { opts = {}; }
@@ -53341,9 +56612,9 @@ webpackJsonp([2],[
 	//# sourceMappingURL=router_providers.js.map
 
 /***/ },
-/* 610 */,
-/* 611 */,
-/* 612 */
+/* 622 */,
+/* 623 */,
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53384,7 +56655,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 613 */
+/* 625 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -53397,9 +56668,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 614 */,
-/* 615 */,
-/* 616 */
+/* 626 */,
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53408,7 +56678,7 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Subscription_1 = __webpack_require__(41);
+	var Subscription_1 = __webpack_require__(42);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -53444,17 +56714,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 617 */,
-/* 618 */,
-/* 619 */,
-/* 620 */,
-/* 621 */,
-/* 622 */,
-/* 623 */,
-/* 624 */,
-/* 625 */,
-/* 626 */,
-/* 627 */,
 /* 628 */,
 /* 629 */,
 /* 630 */,
@@ -53542,7 +56801,16 @@ webpackJsonp([2],[
 /* 712 */,
 /* 713 */,
 /* 714 */,
-/* 715 */
+/* 715 */,
+/* 716 */,
+/* 717 */,
+/* 718 */,
+/* 719 */,
+/* 720 */,
+/* 721 */,
+/* 722 */,
+/* 723 */,
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53552,8 +56820,8 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
-	var ScalarObservable_1 = __webpack_require__(269);
-	var EmptyObservable_1 = __webpack_require__(81);
+	var ScalarObservable_1 = __webpack_require__(274);
+	var EmptyObservable_1 = __webpack_require__(83);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -53622,11 +56890,11 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 716 */,
-/* 717 */,
-/* 718 */,
-/* 719 */,
-/* 720 */
+/* 725 */,
+/* 726 */,
+/* 727 */,
+/* 728 */,
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53636,10 +56904,10 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
-	var EmptyObservable_1 = __webpack_require__(81);
-	var isArray_1 = __webpack_require__(82);
-	var subscribeToResult_1 = __webpack_require__(14);
-	var OuterSubscriber_1 = __webpack_require__(13);
+	var EmptyObservable_1 = __webpack_require__(83);
+	var isArray_1 = __webpack_require__(84);
+	var subscribeToResult_1 = __webpack_require__(15);
+	var OuterSubscriber_1 = __webpack_require__(14);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -53742,9 +57010,9 @@ webpackJsonp([2],[
 	//# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 721 */,
-/* 722 */,
-/* 723 */
+/* 730 */,
+/* 731 */,
+/* 732 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53753,18 +57021,18 @@ webpackJsonp([2],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isArray_1 = __webpack_require__(82);
-	var isFunction_1 = __webpack_require__(186);
-	var isPromise_1 = __webpack_require__(424);
-	var isScheduler_1 = __webpack_require__(96);
-	var PromiseObservable_1 = __webpack_require__(95);
-	var IteratorObservable_1 = __webpack_require__(725);
-	var ArrayObservable_1 = __webpack_require__(80);
-	var ArrayLikeObservable_1 = __webpack_require__(715);
-	var observable_1 = __webpack_require__(182);
-	var iterator_1 = __webpack_require__(135);
+	var isArray_1 = __webpack_require__(84);
+	var isFunction_1 = __webpack_require__(189);
+	var isPromise_1 = __webpack_require__(438);
+	var isScheduler_1 = __webpack_require__(97);
+	var PromiseObservable_1 = __webpack_require__(96);
+	var IteratorObservable_1 = __webpack_require__(734);
+	var ArrayObservable_1 = __webpack_require__(82);
+	var ArrayLikeObservable_1 = __webpack_require__(724);
+	var observable_1 = __webpack_require__(185);
+	var iterator_1 = __webpack_require__(137);
 	var Observable_1 = __webpack_require__(1);
-	var observeOn_1 = __webpack_require__(272);
+	var observeOn_1 = __webpack_require__(277);
 	var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -53826,8 +57094,8 @@ webpackJsonp([2],[
 	//# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 724 */,
-/* 725 */
+/* 733 */,
+/* 734 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -53837,12 +57105,12 @@ webpackJsonp([2],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var root_1 = __webpack_require__(50);
-	var isObject_1 = __webpack_require__(423);
-	var tryCatch_1 = __webpack_require__(42);
+	var isObject_1 = __webpack_require__(437);
+	var tryCatch_1 = __webpack_require__(43);
 	var Observable_1 = __webpack_require__(1);
-	var isFunction_1 = __webpack_require__(186);
-	var iterator_1 = __webpack_require__(135);
-	var errorObject_1 = __webpack_require__(38);
+	var isFunction_1 = __webpack_require__(189);
+	var iterator_1 = __webpack_require__(137);
+	var errorObject_1 = __webpack_require__(39);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -54025,24 +57293,7 @@ webpackJsonp([2],[
 	//# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 726 */,
-/* 727 */,
-/* 728 */,
-/* 729 */,
-/* 730 */,
-/* 731 */,
-/* 732 */,
-/* 733 */,
-/* 734 */,
-/* 735 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var FromObservable_1 = __webpack_require__(723);
-	exports.from = FromObservable_1.FromObservable.create;
-	//# sourceMappingURL=from.js.map
-
-/***/ },
+/* 735 */,
 /* 736 */,
 /* 737 */,
 /* 738 */,
@@ -54051,7 +57302,15 @@ webpackJsonp([2],[
 /* 741 */,
 /* 742 */,
 /* 743 */,
-/* 744 */,
+/* 744 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromObservable_1 = __webpack_require__(732);
+	exports.from = FromObservable_1.FromObservable.create;
+	//# sourceMappingURL=from.js.map
+
+/***/ },
 /* 745 */,
 /* 746 */,
 /* 747 */,
@@ -54074,7 +57333,16 @@ webpackJsonp([2],[
 /* 764 */,
 /* 765 */,
 /* 766 */,
-/* 767 */
+/* 767 */,
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */,
+/* 773 */,
+/* 774 */,
+/* 775 */,
+/* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -54148,15 +57416,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=every.js.map
 
 /***/ },
-/* 768 */,
-/* 769 */,
-/* 770 */,
-/* 771 */,
-/* 772 */,
-/* 773 */,
-/* 774 */,
-/* 775 */,
-/* 776 */,
 /* 777 */,
 /* 778 */,
 /* 779 */,
@@ -54171,7 +57430,95 @@ webpackJsonp([2],[
 /* 788 */,
 /* 789 */,
 /* 790 */,
-/* 791 */,
+/* 791 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Subscriber_1 = __webpack_require__(7);
+	/**
+	 * Returns an Observable that applies a specified accumulator function to the first item emitted by a source Observable,
+	 * then feeds the result of that function along with the second item emitted by the source Observable into the same
+	 * function, and so on until all items have been emitted by the source Observable, and emits the final result from
+	 * the final call to your function as its sole item.
+	 * This technique, which is called "reduce" here, is sometimes called "aggregate," "fold," "accumulate," "compress," or
+	 * "inject" in other programming contexts.
+	 *
+	 * <img src="./img/reduce.png" width="100%">
+	 *
+	 * @param {initialValue} the initial (seed) accumulator value
+	 * @param {accumulator} an accumulator function to be invoked on each item emitted by the source Observable, the
+	 * result of which will be used in the next accumulator call.
+	 * @return {Observable} an Observable that emits a single item that is the result of accumulating the output from the
+	 * items emitted by the source Observable.
+	 * @method reduce
+	 * @owner Observable
+	 */
+	function reduce(project, seed) {
+	    return this.lift(new ReduceOperator(project, seed));
+	}
+	exports.reduce = reduce;
+	var ReduceOperator = (function () {
+	    function ReduceOperator(project, seed) {
+	        this.project = project;
+	        this.seed = seed;
+	    }
+	    ReduceOperator.prototype.call = function (subscriber, source) {
+	        return source._subscribe(new ReduceSubscriber(subscriber, this.project, this.seed));
+	    };
+	    return ReduceOperator;
+	}());
+	exports.ReduceOperator = ReduceOperator;
+	/**
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @ignore
+	 * @extends {Ignored}
+	 */
+	var ReduceSubscriber = (function (_super) {
+	    __extends(ReduceSubscriber, _super);
+	    function ReduceSubscriber(destination, project, seed) {
+	        _super.call(this, destination);
+	        this.hasValue = false;
+	        this.acc = seed;
+	        this.project = project;
+	        this.hasSeed = typeof seed !== 'undefined';
+	    }
+	    ReduceSubscriber.prototype._next = function (value) {
+	        if (this.hasValue || (this.hasValue = this.hasSeed)) {
+	            this._tryReduce(value);
+	        }
+	        else {
+	            this.acc = value;
+	            this.hasValue = true;
+	        }
+	    };
+	    ReduceSubscriber.prototype._tryReduce = function (value) {
+	        var result;
+	        try {
+	            result = this.project(this.acc, value);
+	        }
+	        catch (err) {
+	            this.destination.error(err);
+	            return;
+	        }
+	        this.acc = result;
+	    };
+	    ReduceSubscriber.prototype._complete = function () {
+	        if (this.hasValue || this.hasSeed) {
+	            this.destination.next(this.acc);
+	        }
+	        this.destination.complete();
+	    };
+	    return ReduceSubscriber;
+	}(Subscriber_1.Subscriber));
+	exports.ReduceSubscriber = ReduceSubscriber;
+	//# sourceMappingURL=reduce.js.map
+
+/***/ },
 /* 792 */,
 /* 793 */,
 /* 794 */,
@@ -54204,12 +57551,21 @@ webpackJsonp([2],[
 /* 821 */,
 /* 822 */,
 /* 823 */,
-/* 824 */
+/* 824 */,
+/* 825 */,
+/* 826 */,
+/* 827 */,
+/* 828 */,
+/* 829 */,
+/* 830 */,
+/* 831 */,
+/* 832 */,
+/* 833 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subscriber_1 = __webpack_require__(7);
-	var rxSubscriber_1 = __webpack_require__(183);
+	var rxSubscriber_1 = __webpack_require__(186);
 	function toSubscriber(nextOrObserver, error, complete) {
 	    if (nextOrObserver && typeof nextOrObserver === 'object') {
 	        if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -54225,15 +57581,6 @@ webpackJsonp([2],[
 	//# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 825 */,
-/* 826 */,
-/* 827 */,
-/* 828 */,
-/* 829 */,
-/* 830 */,
-/* 831 */,
-/* 832 */,
-/* 833 */,
 /* 834 */,
 /* 835 */,
 /* 836 */,
@@ -54472,7 +57819,19 @@ webpackJsonp([2],[
 /* 1069 */,
 /* 1070 */,
 /* 1071 */,
-/* 1072 */
+/* 1072 */,
+/* 1073 */,
+/* 1074 */,
+/* 1075 */,
+/* 1076 */,
+/* 1077 */,
+/* 1078 */,
+/* 1079 */,
+/* 1080 */,
+/* 1081 */,
+/* 1082 */,
+/* 1083 */,
+/* 1084 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
