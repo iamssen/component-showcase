@@ -1,5 +1,5 @@
-import {Component, ChangeDetectorRef, ViewChildren, QueryList, Input} from "@angular/core";
-import {DotterComponent} from "./dotter.component";
+import {Component, ChangeDetectorRef, ViewChildren, QueryList, Input, ChangeDetectionStrategy} from "@angular/core";
+import {DotterComponent} from "../../../ssen/draw/dotter.component";
 import {Pixels} from "../../../ssen/draw/Pixels";
 import {interpolateObject} from "d3-interpolate";
 import {easeQuadOut} from "d3-ease";
@@ -32,7 +32,8 @@ function getRandomId(curr:number, max:number):number {
     dotter {
       cursor: pointer;
     }
-  `]
+  `],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DotterMapSampleComponent {
   @Input() source:Pixels;
@@ -55,7 +56,7 @@ export class DotterMapSampleComponent {
   constructor(private changeDetectorRef:ChangeDetectorRef) {
     this.sourceRect = this.rects[this.rectIndex];
   }
-  
+
   private sampleDotterClick() {
     this.rectIndex = getRandomId(this.rectIndex, this.rects.length);
     
@@ -66,22 +67,24 @@ export class DotterMapSampleComponent {
     
     if (curr.x !== next.x) {
       const interpolate = interpolateObject(curr, next);
-      
-      let f:number = 0;
-      const max:number = 30;
-      
+
+      const duration:number = 600; // ms
+      const start:number = Date.now();
+      const end:number = start + duration;
+
       const animate = () => {
-        f++;
-        
-        const t:number = Math.min(easeQuadOut(f / max), 1);
+        const current:number = Date.now();
+        const progress:number = 1 - Math.min(((end - current) / duration), 1);
+
+        const t:number = easeQuadOut(progress);
         const rect = interpolate(t);
         
         this.dotters.toArray().forEach(dotter => {
           dotter.sourceRect = rect;
-          dotter.render(() => true);
+          dotter.validateNow();
         });
         
-        if (f > max) {
+        if (progress >= 1) {
           this.changeDetectorRef.reattach();
         } else {
           requestAnimationFrame(animate);

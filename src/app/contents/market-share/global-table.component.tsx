@@ -5,7 +5,8 @@ import {
   OnChanges,
   Input,
   ViewChild,
-  ElementRef
+  ElementRef,
+  SimpleChanges
 } from "@angular/core";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
@@ -42,11 +43,8 @@ export class GlobalTableComponent extends RenderComponent implements OnChanges {
   @Input() columns:number = 2;
   @ViewChild('table') private tableElement:ElementRef;
   
-  render(complete:(success:boolean)=>void) {
-    if (!this.data) {
-      complete(false);
-      return;
-    }
+  protected render(changes:SimpleChanges):boolean {
+    if (!this.data) return false;
     
     const numRows:number = Math.ceil(this.data.length / this.columns);
     const rows:JSX.Element[] = [];
@@ -76,6 +74,6 @@ export class GlobalTableComponent extends RenderComponent implements OnChanges {
       <tbody>{rows}</tbody>
     ), this.tableElement.nativeElement) as HTMLTableElement;
     
-    complete(true);
+    return true;
   }
 }

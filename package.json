@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "description": "Component Showcase",
   "scripts": {
-    "typings-install": "typings install",
-    "postinstall": "npm run typings-install",
     "build": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 4200  --content-base src",
@@ -12,8 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "typescript": "~1.8.9",
-    "typings": "~1.0.3",
+    "typescript": "^2.0.0",
 
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0",
@@ -33,7 +30,11 @@
     "precss": "^1.4.0",
     "less": "^2.7.1",
     
-    "glob": "^7.0.5"
+    "glob": "^7.0.5",
+  
+    "@types/react": "^0.14.26-alpha",
+    "@types/react-dom": "^0.14.12-alpha",
+    "types.d3": "^0.1.0"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
@@ -44,6 +45,7 @@
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/platform-server": "2.0.0-rc.4",
     "@angular/router": "3.0.0-beta.2",
+    
     "core-js": "^2.2.0",
     "ie-shim": "^0.1.0",
     "rxjs": "5.0.0-beta.6",

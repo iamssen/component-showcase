@@ -34,12 +34,14 @@ export class MarketShareComponent implements AfterViewInit, OnDestroy {
   worldmapSubscription:Subscription;
   
   constructor(private changeDetectorRef:ChangeDetectorRef, private resources:Resources) {
-    this.worldmapSubscription = resources.worldmap.subscribe(pixels => {
-      this.worldmap = pixels;
-    });
   }
   
   ngAfterViewInit() {
+    this.worldmapSubscription = this.resources.worldmap.subscribe(pixels => {
+      this.worldmap = pixels;
+      this.changeDetectorRef.detectChanges();
+    });
+
     this.global = [
       {name: 'Samsung', value: 21},
       {name: 'Apple', value: 12},

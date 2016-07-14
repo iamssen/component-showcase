@@ -5,7 +5,8 @@ import {
   OnChanges,
   Input,
   ElementRef,
-  ViewChild
+  ViewChild,
+  SimpleChanges
 } from "@angular/core";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
@@ -43,11 +44,8 @@ export class LocalTableComponent extends RenderComponent implements OnChanges {
   
   @ViewChild('table') private tableElement:ElementRef;
   
-  render(complete:(success:boolean)=>void) {
-    if (!this.data) {
-      complete(false);
-      return;
-    }
+  protected render(changes:SimpleChanges):boolean {
+    if (!this.data) return false;
     
     const rows:JSX.Element[] = [];
     
@@ -69,6 +67,6 @@ export class LocalTableComponent extends RenderComponent implements OnChanges {
       <tbody>{rows}</tbody>
     ), this.tableElement.nativeElement);
     
-    complete(true);
+    return true;
   }
 }

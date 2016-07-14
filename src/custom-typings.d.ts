@@ -49,3 +49,6 @@ declare module 'angular2/testing' {
 declare module 'angular2/http/testing' {
   export * from '@angular/http/testing';
 }
+
+declare const require:any;
+declare const process:any;

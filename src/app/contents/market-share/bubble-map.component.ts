@@ -1,10 +1,18 @@
-import {Component, ViewChild, ElementRef, Input, ChangeDetectionStrategy, OnChanges} from "@angular/core";
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  Input,
+  ChangeDetectionStrategy,
+  OnChanges,
+  SimpleChanges
+} from "@angular/core";
 import {select, Selection} from "d3-selection";
 import {stratify, Node as D3Node, pack, CircleNode} from "d3-hierarchy";
 import {Pixels} from "../../../ssen/draw/Pixels";
 import {Bubble} from "./Bubble";
 import {RenderComponent} from "../../../ssen/components/render-component";
-import {DotterComponent} from "./dotter.component";
+import {DotterComponent} from "../../../ssen/draw/dotter.component";
 import {Rect} from "../../../ssen/draw/Rect";
 
 @Component({
@@ -58,11 +66,8 @@ export class BubbleMapComponent extends RenderComponent implements OnChanges {
     super();
   }
   
-  render(complete:(success:boolean) => void) {
-    if (!this.data) {
-      complete(false);
-      return;
-    }
+  protected render(changes:SimpleChanges):boolean {
+    if (!this.data) return false;
     
     const container:HTMLElement = this.hostElement.nativeElement;
     const svg:SVGElement = this.svgElement.nativeElement as SVGElement;
@@ -171,6 +176,6 @@ export class BubbleMapComponent extends RenderComponent implements OnChanges {
       .style('font-size', (d:CircleNode<Bubble>) => (d.r * 0.35) + 'px')
       .style('text-anchor', 'middle')
     
-    complete(true);
+    return true;
   }
 }
