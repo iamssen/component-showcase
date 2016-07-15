@@ -23,15 +23,15 @@ declare var console:any;
   styles: [require('./market-share.component.less')]
 })
 export class MarketShareComponent implements AfterViewInit, OnDestroy {
-  global:Bubble[];
-  asia:Bubble[];
-  northAmerica:Bubble[];
-  europe:Bubble[];
-  latam:Bubble[];
-  mea:Bubble[];
-
-  worldmap:Pixels;
-  worldmapSubscription:Subscription;
+  private global:Bubble[];
+  private asia:Bubble[];
+  private northAmerica:Bubble[];
+  private europe:Bubble[];
+  private latam:Bubble[];
+  private mea:Bubble[];
+  
+  private worldmap:Pixels;
+  private worldmapSubscription:Subscription;
   
   constructor(private changeDetectorRef:ChangeDetectorRef, private resources:Resources) {
   }

@@ -15,7 +15,7 @@ const shapeWidth:number = 46;
     <svg #chart>
       <defs>
         <clipPath id="clip-path">
-          <rect x="0" y="0" #mask/>
+          <rect #mask x="0" y="0" width="100" height="100"/>
         </clipPath>
         <symbol id="shape">
           <g transform="matrix(0.785206,0,0,0.785206,-254.861,-97.578)">
@@ -79,11 +79,11 @@ export class ShapedColumnChartComponent extends RenderComponent {
     const h:number = this.height - this.gutterTop - this.gutterBottom;
     
     if (drawContainer) {
-      select(chart).attr('width', this.width).attr('height', this.height);
-      select(series).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop})`);
-      select(axisX).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop + h})`);
-      select(axisY).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop})`);
-      select(mask).attr('width', this.width - this.gutterLeft - this.gutterRight).attr('height', this.height - this.gutterTop - this.gutterBottom);
+      select(chart).style('width', this.width).style('height', this.height);
+      select(series).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
+      select(axisX).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop + h}px)`);
+      select(axisY).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
+      select(mask).style('width', this.width - this.gutterLeft - this.gutterRight).style('height', this.height - this.gutterTop - this.gutterBottom);
     }
     
     const ymax:number = max(this.datas, (d:Data) => max(this.dataFields, (dataField:string) => d[dataField]));
@@ -127,38 +127,38 @@ export class ShapedColumnChartComponent extends RenderComponent {
       .ease(easeQuadOut)
     
     update
-      .attr('opacity', 1)
-      .attr('fill', color)
+      .style('opacity', 1)
+      .style('fill', color)
       .style('color', color)
-      .attr('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}, ${r.y})`)
+      .style('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}px, ${r.y}px)`)
     
     const exit:BaseSelection = !drawTransition ? selection.exit() : selection.exit()
       .transition()
       .duration(this.duration)
       .delay(delay)
       .ease(easeQuadOut)
-      .attr('opacity', 0)
-      .attr('transform', (r:Rect) => `translate(${w + ((r.width - shapeWidth) / 2)}, ${h})`)
+      .style('opacity', 0)
+      .style('transform', (r:Rect) => `translate(${w + ((r.width - shapeWidth) / 2)}px, ${h}px)`)
     
     exit.remove()
     
     const enterSelection:Selection = selection.enter()
       .append('use')
-      .attr('fill', color)
-      .style('color', color)
       .attr('xlink:href', '#shape')
+      .style('fill', color)
+      .style('color', color)
     
     const enter:BaseSelection = !drawTransition ? enterSelection : enterSelection
-      .attr('opacity', 0)
-      .attr('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}, ${h})`)
+      .style('opacity', 0)
+      .style('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}px, ${h}px)`)
       .transition()
       .duration(this.duration)
       .delay(delay)
       .ease(easeQuadOut)
     
     enter
-      .attr('opacity', 1)
-      .attr('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}, ${r.y})`)
+      .style('opacity', 1)
+      .style('transform', (r:Rect) => `translate(${r.x + ((r.width - shapeWidth) / 2)}px, ${r.y}px)`)
     
     select(axisX).call(axisBottom(xscale));
     select(axisY).call(axisLeft(yscale));

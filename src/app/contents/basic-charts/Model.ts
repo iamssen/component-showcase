@@ -1,8 +1,10 @@
 import {Data} from "./Data";
 import {Observable, Subject, BehaviorSubject} from "rxjs";
 import {range} from "d3-array";
+import {Subscriptions} from "../../../ssen/utils/Subscriptions";
 
 export class Model {
+  private _subscriptions:Subscriptions = new Subscriptions;
   private _data:Subject<Data[]>;
   private _dataFields:Subject<string[]>;
   private _categoryField:Subject<string>;
@@ -11,6 +13,7 @@ export class Model {
   get data():Observable<Data[]> {
     if (!this._data) {
       this._data = new BehaviorSubject<Data[]>(this.getData());
+      this._subscriptions.add(this._data);
     }
     return this._data;
   }
@@ -18,6 +21,7 @@ export class Model {
   get dataFields():Observable<string[]> {
     if (!this._dataFields) {
       this._dataFields = new BehaviorSubject<string[]>(this.getDataFields());
+      this._subscriptions.add(this._dataFields);
     }
     return this._dataFields;
   }
@@ -25,13 +29,15 @@ export class Model {
   get categoryField():Observable<string> {
     if (!this._categoryField) {
       this._categoryField = new BehaviorSubject<string>('category');
+      this._subscriptions.add(this._categoryField);
     }
     return this._categoryField;
   }
   
   get size():Observable<[number, number]> {
     if (!this._size) {
-      this._size = new BehaviorSubject<[number, number]>(this._sizeSources[0]);
+      this._size = new BehaviorSubject<[number, number]>(this.getSize());
+      this._subscriptions.add(this._size);
     }
     return this._size;
   }
@@ -45,18 +51,8 @@ export class Model {
   
   private _dataFieldsNext:number = -1;
   
-  private _sizeSources:[number, number][] = [
-    [380, 230],
-    [450, 280],
-    [540, 320],
-  ];
-  
-  
-  private _sizeNext:number = 0;
-  
   getSize():[number, number] {
-    this._sizeNext = (this._sizeNext + 1) % this._sizeSources.length;
-    return this._sizeSources[this._sizeNext];
+    return [200 + Math.floor(Math.random() * 350), 120 + Math.floor(Math.random() * 250)];
   }
   
   getDataFields():string[] {
@@ -89,19 +85,11 @@ export class Model {
   }
   
   destory() {
-    if (this._data) {
-      this._data.unsubscribe();
-      this._data = null;
-    }
+    this._subscriptions.unsubscribe();
+    this._subscriptions = null;
     
-    if (this._dataFields) {
-      this._dataFields.unsubscribe();
-      this._dataFields = null;
-    }
-    
-    if (this._categoryField) {
-      this._categoryField.unsubscribe();
-      this._categoryField = null;
-    }
+    this._data = null;
+    this._dataFields = null;
+    this._categoryField = null;
   }
 }

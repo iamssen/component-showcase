@@ -3,6 +3,7 @@ import {BasicColumnChartComponent} from "./column/basic-column-chart.component";
 import {ShapedColumnChartComponent} from "./column/shaped-column-chart.component";
 import {Model} from "./Model";
 import {Data} from "./Data";
+import {Subscriptions} from "../../../ssen/utils/Subscriptions";
 
 @Component({
   selector: 'basic-charts',
@@ -38,8 +39,10 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
   private categoryField:string;
   private width:number;
   private height:number;
+  private subscriptions:Subscriptions;
   
   constructor(private changeDetectorRef:ChangeDetectorRef, private model:Model) {
+    this.subscriptions = new Subscriptions;
   }
   
   refreshData() {
@@ -55,29 +58,31 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
   }
   
   ngAfterViewInit() {
-    this.model.data.subscribe(datas => {
+    this.subscriptions.add(this.model.data.subscribe(datas => {
       this.datas = datas;
       this.changeDetectorRef.detectChanges();
-    });
-    
-    this.model.dataFields.subscribe(dataFields => {
+    }));
+  
+    this.subscriptions.add(this.model.dataFields.subscribe(dataFields => {
       this.dataFields = dataFields;
       this.changeDetectorRef.detectChanges();
-    });
-    
-    this.model.categoryField.subscribe(categoryField => {
+    }));
+  
+    this.subscriptions.add(this.model.categoryField.subscribe(categoryField => {
       this.categoryField = categoryField;
       this.changeDetectorRef.detectChanges();
-    });
-    
-    this.model.size.subscribe(size => {
+    }));
+  
+    this.subscriptions.add(this.model.size.subscribe(size => {
       this.width = size[0];
       this.height = size[1];
       this.changeDetectorRef.detectChanges();
-    });
+    }));
   }
   
   ngOnDestroy() {
+    this.subscriptions.unsubscribe();
+    this.subscriptions = null;
     this.model.destory();
     this.model = null;
   }
