@@ -23,7 +23,7 @@ export abstract class RenderComponent {
   }
 
   get canAnimate():boolean {
-    return typeof window !== 'undefined' && (!process || process.title === 'browser');
+    return typeof window !== 'undefined' && (!process || !process.title || process.title === 'browser');
   }
   
   ngOnChanges(changes:SimpleChanges) {
