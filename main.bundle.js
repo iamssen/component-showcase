@@ -40211,6 +40211,7 @@ webpackJsonp([1],[
 	    function BasicChartsComponent(changeDetectorRef, model) {
 	        this.changeDetectorRef = changeDetectorRef;
 	        this.model = model;
+	        this.count = (new Array(100)).slice();
 	        this.subscriptions = new Subscriptions_1.Subscriptions;
 	    }
 	    BasicChartsComponent.prototype.refreshData = function () {
@@ -40251,7 +40252,7 @@ webpackJsonp([1],[
 	    BasicChartsComponent = __decorate([
 	        core_1.Component({
 	            selector: 'basic-charts',
-	            template: "\n    <div>\n      <button (click)=\"refreshData()\">refresh data</button>\n      <button (click)=\"changeDataFields()\">change data fields</button>\n      <button (click)=\"changeSize()\">change size</button>\n    </div>\n    <basic-column-chart [datas]=\"datas\" \n                        [categoryField]=\"categoryField\" \n                        [dataFields]=\"dataFields\"\n                        [width]=\"width\"\n                        [height]=\"height\">\n    </basic-column-chart>\n    <shaped-column-chart [datas]=\"datas\" \n                         [categoryField]=\"categoryField\" \n                         [dataFields]=\"dataFields\"\n                         [width]=\"width\"\n                         [height]=\"height\">\n    </shaped-column-chart>\n  ",
+	            template: "\n    <div>\n      <button (click)=\"refreshData()\">refresh data</button>\n      <button (click)=\"changeDataFields()\">change data fields</button>\n      <button (click)=\"changeSize()\">change size</button>\n    </div>\n    <basic-column-chart [datas]=\"datas\" \n                        [categoryField]=\"categoryField\" \n                        [dataFields]=\"dataFields\"\n                        [width]=\"width\"\n                        [height]=\"height\">\n    </basic-column-chart>\n    <shaped-column-chart [datas]=\"datas\" \n                         [categoryField]=\"categoryField\" \n                         [dataFields]=\"dataFields\"\n                         [width]=\"width\"\n                         [height]=\"height\">\n    </shaped-column-chart>\n    <div *ngFor=\"let x of count\">{{x}}</div>\n  ",
 	            directives: [
 	                basic_column_chart_component_1.BasicColumnChartComponent,
 	                shaped_column_chart_component_1.ShapedColumnChartComponent,
@@ -40548,7 +40549,7 @@ webpackJsonp([1],[
 	            d3_selection_1.select(series).style('transform', "translate(" + this.gutterLeft + "px, " + this.gutterTop + "px)");
 	            d3_selection_1.select(axisX).style('transform', "translate(" + this.gutterLeft + "px, " + (this.gutterTop + h) + "px)");
 	            d3_selection_1.select(axisY).style('transform', "translate(" + this.gutterLeft + "px, " + this.gutterTop + "px)");
-	            d3_selection_1.select(mask).style('width', this.width - this.gutterLeft - this.gutterRight).style('height', this.height - this.gutterTop - this.gutterBottom);
+	            d3_selection_1.select(mask).style('width', w).style('height', h);
 	        }
 	        var ymax = d3_array_1.max(this.datas, function (d) { return d3_array_1.max(_this.dataFields, function (dataField) { return d[dataField]; }); });
 	        var xscale = d3_scale_1.scaleBand().rangeRound([0, w]).domain(this.datas.map(function (d) { return d[_this.categoryField]; }));
