@@ -25,6 +25,7 @@ import {Subscriptions} from "../../../ssen/utils/Subscriptions";
                          [width]="width"
                          [height]="height">
     </shaped-column-chart>
+    <div *ngFor="let x of count">{{x}}</div>
   `,
   directives: [
     BasicColumnChartComponent,
@@ -40,6 +41,7 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
   private width:number;
   private height:number;
   private subscriptions:Subscriptions;
+  private count:number[] = [...new Array(100)];
   
   constructor(private changeDetectorRef:ChangeDetectorRef, private model:Model) {
     this.subscriptions = new Subscriptions;
@@ -62,17 +64,17 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
       this.datas = datas;
       this.changeDetectorRef.detectChanges();
     }));
-  
+    
     this.subscriptions.add(this.model.dataFields.subscribe(dataFields => {
       this.dataFields = dataFields;
       this.changeDetectorRef.detectChanges();
     }));
-  
+    
     this.subscriptions.add(this.model.categoryField.subscribe(categoryField => {
       this.categoryField = categoryField;
       this.changeDetectorRef.detectChanges();
     }));
-  
+    
     this.subscriptions.add(this.model.size.subscribe(size => {
       this.width = size[0];
       this.height = size[1];

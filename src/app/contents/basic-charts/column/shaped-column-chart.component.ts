@@ -83,7 +83,7 @@ export class ShapedColumnChartComponent extends RenderComponent {
       select(series).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
       select(axisX).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop + h}px)`);
       select(axisY).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
-      select(mask).style('width', this.width - this.gutterLeft - this.gutterRight).style('height', this.height - this.gutterTop - this.gutterBottom);
+      select(mask).style('width', w).style('height', h);
     }
     
     const ymax:number = max(this.datas, (d:Data) => max(this.dataFields, (dataField:string) => d[dataField]));
