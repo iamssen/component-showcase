@@ -1,17 +1,23 @@
-<nav>
-	<a [routerLink]="['/']">
-    Home
-  </a>
-  |
-  <a [routerLink]="['/market-share']">
-    Market Share
-  </a>
-  |
-  <a [routerLink]="['/basic-charts']">
-    Basic Charts
-  </a>
+<nav style="margin-top: 20px;">
+  <ul class="nav nav-pills">
+    <li class="nav-item dropdown">
+      <a href="#"
+         class="nav-link dropdown-toggle"
+         data-toggle="dropdown"
+         role="button"
+         aria-haspopup="true"
+         aria-expanded="false">SAMPLES</a>
+      <div class="dropdown-menu">
+        <a [routerLink]="['/market-share']" class="dropdown-item">Market Share</a>
+        <a [routerLink]="['/basic-charts']" class="dropdown-item">Basic Charts</a>
+        <div class="dropdown-divider"></div>
+        <a [routerLink]="['/angular-form']" class="dropdown-item">Angular2 Form</a>
+        <a [routerLink]="['/angular-form-model']" class="dropdown-item">Angular2 Form Model</a>
+      </div>
+    </li>
+  </ul>
 </nav>
 
-<main style="padding-top: 30px;">
-	<router-outlet></router-outlet>
+<main class="container" style="margin-top: 20px;">
+  <router-outlet></router-outlet>
 </main>

@@ -1,0 +1,20 @@
+<div>
+  <button (click)="refreshData()">refresh data</button>
+  <button (click)="changeDataFields()">change data fields</button>
+  <button (click)="changeSize()">change size</button>
+  <button (click)="changeColor()">change color</button>
+</div>
+<basic-column-chart [datas]="datas"
+                    [categoryField]="categoryField"
+                    [dataFields]="dataFields"
+                    [width]="width"
+                    [height]="height"
+                    [color]="color">
+</basic-column-chart>
+<shaped-column-chart [datas]="datas"
+                     [categoryField]="categoryField"
+                     [dataFields]="dataFields"
+                     [width]="width"
+                     [height]="height"
+                     [color]="color">
+</shaped-column-chart>

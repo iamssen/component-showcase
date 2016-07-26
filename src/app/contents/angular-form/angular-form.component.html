@@ -1,0 +1,61 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Text</label>
+      <input type="text" name="text" class="form-control" [(ngModel)]="data.text">
+    </div>
+    
+    <div class="form-group">
+      <label>Number</label>
+      <input type="number" name="number" class="form-control" [(ngModel)]="data.number">
+    </div>
+    
+    <div class="form-group">
+      <label>Custom</label>
+      <custom-form-component name="custom" [(ngModel)]="data.custom"></custom-form-component>
+    </div>
+    
+    <div class="form-group">
+      <label>Radio</label>
+      <div class="radio" *ngFor="let i of radioList">
+        <label>
+          <input type="radio" name="radio" [(ngModel)]="data.radio" [value]="i">
+          {{i.label}}
+        </label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>Select</label>
+      <select name="select" class="form-control" [(ngModel)]="data.select">
+        <option *ngFor="let i of selectList" [ngValue]="i">{{i.label}}</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="bool" [(ngModel)]="data.bool">
+          Checkbox
+        </label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>List</label>
+      <select multiple name="list" class="form-control" [(ngModel)]="data.list">
+        <option *ngFor="let i of listList" [ngValue]="i">{{i.label}}</option>
+      </select>
+    </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+  <div style="margin-top: 50px; background-color: #eeeeee;">
+    <pre>{{data | json}}</pre>
+    <ul>
+      <li>radio → {{data.radio.label}}</li>
+      <li>select → {{data.select.label}}</li>
+    </ul>
+  </div>
+</div>

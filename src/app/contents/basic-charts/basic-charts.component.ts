@@ -7,26 +7,7 @@ import {Subscriptions} from "../../../ssen/utils/Subscriptions";
 
 @Component({
   selector: 'basic-charts',
-  template: `
-    <div>
-      <button (click)="refreshData()">refresh data</button>
-      <button (click)="changeDataFields()">change data fields</button>
-      <button (click)="changeSize()">change size</button>
-    </div>
-    <basic-column-chart [datas]="datas" 
-                        [categoryField]="categoryField" 
-                        [dataFields]="dataFields"
-                        [width]="width"
-                        [height]="height">
-    </basic-column-chart>
-    <shaped-column-chart [datas]="datas" 
-                         [categoryField]="categoryField" 
-                         [dataFields]="dataFields"
-                         [width]="width"
-                         [height]="height">
-    </shaped-column-chart>
-    <div *ngFor="let x of count">{{x}}</div>
-  `,
+  template: require('./basic-charts.component.html'),
   directives: [
     BasicColumnChartComponent,
     ShapedColumnChartComponent,
@@ -40,6 +21,7 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
   private categoryField:string;
   private width:number;
   private height:number;
+  private color:string[];
   private subscriptions:Subscriptions;
   private count:number[] = [...new Array(100)];
   
@@ -57,6 +39,10 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
   
   changeSize() {
     this.model.changeSize();
+  }
+  
+  changeColor() {
+    this.model.changeColor();
   }
   
   ngAfterViewInit() {
@@ -78,6 +64,11 @@ export class BasicChartsComponent implements AfterViewInit, OnDestroy {
     this.subscriptions.add(this.model.size.subscribe(size => {
       this.width = size[0];
       this.height = size[1];
+      this.changeDetectorRef.detectChanges();
+    }));
+    
+    this.subscriptions.add(this.model.color.subscribe(color => {
+      this.color = color;
       this.changeDetectorRef.detectChanges();
     }));
   }

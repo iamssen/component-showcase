@@ -4,6 +4,7 @@ import {schemeCategory20c, scaleOrdinal, Ordinal, Linear, scaleLinear, Band, sca
 import {axisLeft, axisBottom} from "d3-axis";
 import {easeQuadOut} from "d3-ease";
 import {max} from "d3-array";
+import d3tip from 'd3tip';
 import {RenderComponent} from "../../../../ssen/components/render-component";
 import {Data} from "../Data";
 
@@ -64,10 +65,10 @@ export class BasicColumnChartComponent extends RenderComponent {
     const h:number = this.height - this.gutterTop - this.gutterBottom;
     
     if (drawContainer) {
-      select(chart).attr('width', this.width).attr('height', this.height);
-      select(series).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop})`);
-      select(axisX).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop + h})`);
-      select(axisY).attr('transform', `translate(${this.gutterLeft}, ${this.gutterTop})`);
+      select(chart).style('width', this.width).style('height', this.height);
+      select(series).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
+      select(axisX).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop + h}px)`);
+      select(axisY).style('transform', `translate(${this.gutterLeft}px, ${this.gutterTop}px)`);
     }
     
     const ymax:number = max(this.datas, (d:Data) => max(this.dataFields, (dataField:string) => d[dataField]));
@@ -141,6 +142,10 @@ export class BasicColumnChartComponent extends RenderComponent {
       .attr('fill', color)
       .attr('x', x)
       .attr('width', width)
+      .call(d3tip({
+        html: (r:Rect) => `<b>Category</b>: ${r.data.category}<br/><b>Data</b>: ${r.data[r.dataField]}`,
+        target: 'element'
+      }))
     
     const enter:BaseSelection = !drawTransition ? enterSelection : enterSelection
       .attr('opacity', 0)

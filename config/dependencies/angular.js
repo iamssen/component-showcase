@@ -10,5 +10,6 @@ module.exports = {
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/platform-server": "2.0.0-rc.4",
     "@angular/router": "3.0.0-beta.2",
+    "@angular/forms": "0.2.0",
   }
 }

@@ -1,0 +1,72 @@
+<div class="container">
+  <form [formGroup]="form" novalidate (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Text</label>
+      <input type="text" class="form-control" formControlName="text"/>
+      <small [hidden]="textValidated" class="text-danger">
+        Text is required (minimum 5 characters).
+      </small>
+    </div>
+    
+    <div class="form-group">
+      <label>Number</label>
+      <input type="number" class="form-control" formControlName="number"/>
+    </div>
+    
+    <div class="form-group">
+      <label>Radio</label>
+      <div class="radio" *ngFor="let i of radioList">
+        <label>
+          <input type="radio" formControlName="radio" [value]="i">
+          {{i.label}}
+        </label>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <md-checkbox formControlName="mdCheckboxValue">
+        Material 2 Component
+      </md-checkbox>
+    </div>
+    
+    <div class="form-group">
+      <label>Custom</label>
+      <custom-form-component formControlName="custom"></custom-form-component>
+      <!--<custom-tags ngControl="someValue" [(ngModel)]="dataModel"></custom-tags>-->
+      <!--<custom-form formControlName="custom"></custom-form>-->
+    </div>
+    
+    <div class="form-group">
+      <label>Select</label>
+      <select class="form-control" formControlName="select">
+        <option *ngFor="let i of selectList" [ngValue]="i">{{i.label}}</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" formControlName="bool">
+          Checkbox
+        </label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>List</label>
+      <select multiple class="form-control" formControlName="list">
+        <option *ngFor="let i of listList" [ngValue]="i">{{i.label}}</option>
+      </select>
+      <small [hidden]="listValidated" class="text-danger">
+        Need selected items are 2 and more...
+      </small>
+    </div>
+    
+    <button type="submit" [disabled]="!form.valid" class="btn btn-default">Submit</button>
+  </form>
+  
+  <div style="margin-top: 50px; background-color: #eeeeee;">
+    <p>Valid: {{form.valid}}</p>
+    <pre>{{form.value | json}}</pre>
+  </div>
+</div>

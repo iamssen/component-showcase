@@ -1,7 +1,9 @@
+import {Injectable} from '@angular/core';
 import {Observable, BehaviorSubject} from "rxjs";
 import {getImageContext} from "../../../ssen/draw/getImageContext";
 import {Pixels} from "../../../ssen/draw/Pixels";
 
+@Injectable()
 export class Resources {
   private _worldmap:BehaviorSubject<Pixels>;
   

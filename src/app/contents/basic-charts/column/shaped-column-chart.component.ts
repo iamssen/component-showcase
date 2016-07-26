@@ -4,6 +4,7 @@ import {schemeCategory20c, scaleOrdinal, Ordinal, Linear, scaleLinear, Band, sca
 import {axisLeft, axisBottom} from "d3-axis";
 import {easeQuadOut} from "d3-ease";
 import {max} from "d3-array";
+import d3tip from 'd3tip';
 import {RenderComponent} from "../../../../ssen/components/render-component";
 import {Data} from "../Data";
 
@@ -147,6 +148,9 @@ export class ShapedColumnChartComponent extends RenderComponent {
       .attr('xlink:href', '#shape')
       .style('fill', color)
       .style('color', color)
+      .call(d3tip({
+        html: (r:Rect) => `<b>Category</b>: ${r.data.category}<br/><b>Data</b>: ${r.data[r.dataField]}`
+      }))
     
     const enter:BaseSelection = !drawTransition ? enterSelection : enterSelection
       .style('opacity', 0)

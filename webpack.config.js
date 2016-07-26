@@ -66,25 +66,6 @@ const defaultConfig = {
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
   },
-
-  module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'source-map-loader',
-        exclude: [
-          // these packages have problems with their sourcemaps
-          path.join(__dirname, 'node_modules', 'rxjs'),
-          path.join(__dirname, 'node_modules', '@angular2-material'),
-          path.join(__dirname, 'node_modules', '@angular')
-        ]
-      }
-    ],
-    noParse: [
-      path.join(__dirname, 'node_modules', 'zone.js', 'dist'),
-      path.join(__dirname, 'node_modules', 'angular2', 'bundles')
-    ]
-  },
   
   devServer: {
     historyApiFallback: true,
