@@ -1,6 +1,1 @@
-# Title
-
-...
-
-# Referenced from...
-<https://github.com/angular/angular2-seed>
+- [ ] 여러 Sample이 있는데 이건 2019년 3월 현재 React 기반으로 전환해야 하는 것들이다. 정리해서 옮겨야 한다.
